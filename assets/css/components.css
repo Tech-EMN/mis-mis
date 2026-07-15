@@ -1,0 +1,301 @@
+/* === COMPONENTS (Nav, Cards, Buttons, Forms, etc.) === */
+
+.mis-logo { width: 48px; height: 48px; border: 0; border-radius: 50%; margin: 0 0 24px 3px; cursor: pointer; color: white; background: radial-gradient(circle at 35% 28%, #174a69 0, #082f49 35%, #071a2e 78%); box-shadow: 0 8px 18px rgba(7,26,46,.25), inset 0 1px 1px rgba(255,255,255,.22); display: flex; align-items: center; justify-content: center; }
+
+.mis-logo span { font-size: 14px; font-weight: 800; letter-spacing: -.35px; }
+
+.mis-nav { display: flex; flex-direction: column; gap: 8px; flex: 1; overflow-y: auto; padding-right: 1px; }
+
+.mis-nav-section { padding: 10px 13px 2px; color: #a0a6ad; font-size: 9px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; white-space: nowrap; }
+
+.mis-nav-item { width: 100%; min-height: 43px; border: 0; border-radius: 11px; background: transparent; color: #20242b; padding: 0 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 13px; font-weight: 500; text-align: left; box-shadow: none; }
+
+.mis-nav-item:hover { background: #f5f6f6; }
+
+.mis-nav-item.active { background: var(--mis-nav-active); color: #fff; box-shadow: 0 11px 20px rgba(2,3,59,.22); }
+
+.project-workspace { background: #fff; border: 1px solid rgba(15,23,42,.06); border-radius: 18px; box-shadow: 0 10px 28px rgba(15,23,42,.055); padding: 14px 16px 15px; margin-bottom: 18px; }
+
+.project-workspace-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; min-width: 0; }
+
+.project-workspace-back { border: 0; background: transparent; color: #68707b; display: inline-flex; align-items: center; gap: 6px; padding: 0; cursor: pointer; font-size: 12px; font-weight: 600; }
+
+.project-workspace-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #111827; font-size: 13px; font-weight: 800; }
+
+.project-workspace-groups { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 3px; scrollbar-width: thin; }
+
+.project-workspace-group { flex: 0 0 auto; min-width: 170px; border: 1px solid #edf0f2; background: #fbfcfc; border-radius: 13px; padding: 9px; }
+
+.project-workspace-group-label { color: #9aa1a9; font-size: 9px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; padding: 1px 4px 7px; }
+
+.project-workspace-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.project-workspace-btn { border: 1px solid #e5e8eb; background: #fff; color: #3f4650; border-radius: 9px; min-height: 34px; padding: 7px 9px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+
+.project-workspace-btn:hover { border-color: #cfd5da; background: #f5f7f7; }
+
+.project-workspace-btn.active { background: var(--mis-nav-active); border-color: var(--mis-nav-active); color: #fff; box-shadow: 0 7px 15px rgba(2,3,59,.18); }
+
+.mis-nav-badge { min-width: 23px; height: 23px; border-radius: 12px; padding: 0 7px; display: inline-flex; align-items: center; justify-content: center; background: #d9ecff; color: #24649b; font-size: 11px; font-weight: 700; }
+
+.mis-nav-badge.active { background: rgba(255,255,255,.15); color: #fff; }
+
+.mis-profile-card { width: 100%; min-height: 66px; border: 1px solid #f0f1f2; background: #fff; border-radius: 16px; padding: 9px 10px; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 20px rgba(15,23,42,.05); }
+
+.mis-profile-card:hover { background: #fafafa; }
+
+.mis-profile-menu-item { width: 100%; border: 0; background: transparent; padding: 9px 10px; border-radius: 9px; display: flex; align-items: center; gap: 8px; cursor: pointer; color: #374151; font-size: 12px; text-align: left; }
+
+.mis-profile-menu-item:hover { background: #f3f4f6; }
+
+.mis-search-trigger { width: min(420px, 38vw); min-height: 46px; border: 1px solid #e8eaed; border-radius: 15px; background: rgba(255,255,255,.92); padding: 0 16px; display: flex; align-items: center; gap: 10px; cursor: text; box-shadow: 0 7px 20px rgba(15,23,42,.035); color: #737980; }
+
+.mis-search-trigger span { flex: 1; text-align: left; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.mis-search-trigger kbd { font-family: inherit; border: 1px solid #e0e3e6; border-radius: 5px; background: #fafafa; padding: 2px 7px; font-size: 10px; color: #8a9097; box-shadow: inset 0 -1px 0 #e5e7eb; }
+
+.mis-main-cta { min-height: 43px; border: 0; border-radius: 23px; background: #171717; color: white; padding: 0 22px; cursor: pointer; font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 12px 24px rgba(0,0,0,.16); }
+
+.mis-main-cta:hover { background: #000; transform: translateY(-1px); }
+
+.mis-icon-btn { width: 43px; height: 43px; border: 0; border-radius: 50%; background: rgba(255,255,255,.92); color: #252a30; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(15,23,42,.05); }
+
+.mis-icon-btn:hover { background: #fff; transform: translateY(-1px); }
+
+.mis-notification-dot { position: absolute; top: -3px; right: -2px; min-width: 17px; height: 17px; border-radius: 9px; background: #ef4444; border: 2px solid #f2f3f4; color: #fff; font-size: 9px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+
+.project-context-compact { position: relative; z-index: 40; min-height: 66px; background: #fff; border: 1px solid rgba(15,23,42,.06); border-radius: 17px; box-shadow: 0 9px 25px rgba(15,23,42,.05); padding: 10px 13px; margin-bottom: 18px; display: flex; align-items: center; gap: 14px; }
+
+.project-context-identity { min-width: 0; display: flex; align-items: center; gap: 9px; }
+
+.project-context-divider { color: #d1d5db; }
+
+.project-context-project { min-width: 0; max-width: 270px; display: flex; align-items: center; gap: 7px; color: #111827; font-size: 12px; }
+
+.project-context-project strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.project-module-picker { margin-left: auto; position: relative; display: flex; align-items: center; gap: 9px; }
+
+.project-module-caption { color: #9299a2; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+
+.project-module-trigger { min-width: 210px; height: 42px; border: 1px solid #dfe3e7; border-radius: 11px; background: #fff; color: #20262e; padding: 0 12px; display: flex; align-items: center; gap: 9px; cursor: pointer; font-size: 12px; font-weight: 750; box-shadow: 0 4px 12px rgba(15,23,42,.035); }
+
+.project-module-trigger span { flex: 1; text-align: left; }
+
+.project-module-trigger.open, .project-module-trigger:hover { border-color: #9aa6b1; background: #fafbfb; }
+
+.project-module-menu { position: absolute; right: 0; top: calc(100% + 9px); width: 520px; max-height: min(67vh, 580px); overflow-y: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 12px; border-radius: 15px; background: #fff; border: 1px solid #e4e7ea; box-shadow: 0 20px 48px rgba(15,23,42,.18); }
+
+.project-module-group { border: 1px solid #eef0f2; border-radius: 12px; padding: 8px; background: #fbfcfc; }
+
+.project-module-group-title { padding: 3px 7px 7px; color: #9aa1aa; font-size: 9px; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+
+.project-module-option { width: 100%; min-height: 36px; border: 0; border-radius: 8px; background: transparent; color: #414852; padding: 7px 8px; display: flex; align-items: center; gap: 8px; cursor: pointer; text-align: left; font-size: 11px; font-weight: 650; }
+
+.project-module-option span { flex: 1; }
+
+.project-module-option:hover { background: #f0f3f4; }
+
+.project-module-option.active { background: var(--mis-nav-active); color: #fff; }
+
+.project-change-btn { border: 1px solid #e1e4e7; background: #fff; color: #49515b; border-radius: 10px; height: 39px; padding: 0 12px; cursor: pointer; font-size: 11px; font-weight: 700; white-space: nowrap; }
+
+.new-project-flow { min-height: 72px; border: 1px solid rgba(15,23,42,.06); border-radius: 17px; background: #fff; box-shadow: 0 9px 25px rgba(15,23,42,.045); padding: 11px 14px; margin-bottom: 18px; display: flex; align-items: center; gap: 18px; }
+
+.new-project-flow-copy { min-width: 170px; display: flex; flex-direction: column; gap: 3px; }
+
+.new-project-flow-copy span { color: #9aa1aa; font-size: 9px; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+
+.new-project-flow-copy strong { color: #111827; font-size: 12px; }
+
+.new-project-flow-steps { flex: 1; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 7px; }
+
+.new-project-step { min-height: 40px; border: 1px solid #e5e8eb; border-radius: 10px; background: #fff; color: #6b7280; padding: 0 9px; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+
+.new-project-step-index { width: 21px; height: 21px; border-radius: 50%; background: #f1f3f4; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+.new-project-step.done { color: #16734d; border-color: #ccebdc; background: #f4fbf7; }
+
+.new-project-step.done .new-project-step-index { background: #dff5e9; }
+
+.new-project-step.active { background: var(--mis-nav-active); border-color: var(--mis-nav-active); color: #fff; box-shadow: 0 7px 15px rgba(2,3,59,.18); }
+
+.new-project-step.active .new-project-step-index { background: rgba(255,255,255,.16); }
+
+.general-link-btn { width: 100%; border: 1px solid #e5e7eb; background: #fff; color: #374151; border-radius: 9px; padding: 9px 10px; cursor: pointer; text-align: left; font-size: 11px; font-weight: 650; }
+
+.general-link-btn:hover { background: #f7f8f8; }
+
+.mis-select-btn:not(.active):hover {
+      background: #f5f6f6 !important;
+      border-color: #cfd5da !important;
+    }
+
+.mis-select-btn.active {
+      background: var(--mis-nav-active) !important;
+      color: #fff !important;
+      border-color: var(--mis-nav-active) !important;
+      box-shadow: 0 11px 20px rgba(2,3,59,.22) !important;
+    }
+
+.mis-select-btn.active *,
+    .mis-select-btn.active svg {
+      color: inherit !important;
+      stroke: currentColor !important;
+    }
+
+.mis-select-btn.active .new-project-step-index {
+      background: rgba(255,255,255,.16) !important;
+    }
+
+.mis-logo-image,
+    .mis-orb-image {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      border-radius: 50% !important;
+    }
+
+/* === ADDITIONAL COMPONENT STYLES === */
+
+/* Scrollbars */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+
+/* Inputs */
+    input, textarea, select, button { font-family: inherit; }
+
+input::placeholder, textarea::placeholder { color: #9CA3AF; }
+
+a { color: inherit; }
+
+/* Table */
+    table { border-collapse: collapse; }
+
+/* Transition smoothing */
+    button { transition: opacity 0.15s ease, background 0.15s ease, transform 0.1s ease; }
+
+/* MIS visual system adapted from the approved desktop references */
+    :root { color-scheme: light; }
+
+/* Authentication pages: complete HTML/CSS reconstruction */
+    .auth-stage { min-height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 28px; background: #f2f1ef; }
+
+/* Compact project module dropdown */
+    .project-context-wrap { width: 100%; }
+
+/* Dark mode palette — only the color system changes; layout and component geometry remain untouched. */
+    :root {
+      --mis-bg: #BBBBBB;
+      --mis-sidebar: #ffffff;
+      --mis-card: #ffffff;
+      --mis-surface-muted: #f6f7f8;
+      --mis-surface-soft: #fafbfb;
+      --mis-border: #e5e7ea;
+      --mis-text-strong: #081225;
+      --mis-text-secondary: #374151;
+      --mis-text-muted: #717780;
+      --mis-text-soft: #9aa1a9;
+      --mis-text-faint: #d1d5db;
+      --mis-nav-active: #02033B;
+    }
+
+/* Unified selected-state language: every selectable control follows the sidebar active item. */
+    .mis-select-btn {
+      position: relative;
+      isolation: isolate;
+    }
+
+/* ================================================================
+       AUTHENTICATION — FULL DARK MODE
+       Login, registration and e-mail verification now share the same
+       premium glass atmosphere as the authenticated MIS experience.
+       ================================================================ */
+    .auth-theme-toggle {
+      position: fixed;
+      top: 22px;
+      right: 22px;
+      z-index: 20;
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      border: 1px solid rgba(13, 27, 45, .10);
+      background: rgba(255, 255, 255, .78);
+      color: #02033B;
+      box-shadow: 0 14px 34px rgba(20, 30, 45, .14), inset 0 1px 0 rgba(255,255,255,.86);
+      backdrop-filter: blur(22px) saturate(130%);
+      -webkit-backdrop-filter: blur(22px) saturate(130%);
+      cursor: pointer;
+    }
+
+.mis-dashboard-page-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+  }
+
+.mis-dashboard-summary-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px 180px;
+    gap: 14px;
+    align-items: stretch;
+    min-width: 0;
+  }
+
+.mis-dashboard-summary-row > * {
+    min-width: 0;
+    height: 100%;
+  }
+
+.mis-dashboard-project-card {
+    width: auto !important;
+  }
+
+.mis-dashboard-progress-card,
+  .mis-dashboard-safety-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.mis-dashboard-content-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    min-width: 0;
+  }
+
+.mis-dashboard-side {
+    margin-top: 0;
+  }
+
+/* Atualizações: keep the application shell fixed and scroll only the central feed. */
+  .mis-page-scroll.page-atualizacoes {
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 0 !important;
+  }
+
+/* Responsive foundation — desktop, notebook, tablet and mobile */
+  *, *::before, *::after { box-sizing: border-box; }
+
+img, svg, video, canvas { max-width: 100%; }
+
+.mis-feed-project-card { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease !important; }
+
+.mis-feed-project-card:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(15,23,42,.12) !important; }
+
+.mis-feed-project-card:focus-visible { outline: 3px solid rgba(46,114,242,.28); outline-offset: 3px; }
+
+body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #BBBBBB;
+      color: #111827;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: 100%;
+    }

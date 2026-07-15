@@ -1,0 +1,35 @@
+/* === APP LAYOUT (Sidebar, Topbar, Main Shell) === */
+
+.mis-app { min-height: 100vh; height: 100vh; overflow: hidden; display: flex; background: #BBBBBB; transition: filter .2s ease; }
+
+.mis-sidebar { width: 216px; min-width: 216px; height: calc(100vh - 32px); margin: 16px 0 16px 16px; padding: 18px 14px 14px; border-radius: 22px; background: #fff; border: 1px solid rgba(15,23,42,.04); box-shadow: 0 14px 36px rgba(15,23,42,.06); display: flex; flex-direction: column; position: relative; z-index: 20; }
+
+.mis-main-shell { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
+
+.mis-topbar { min-height: 76px; display: flex; align-items: center; gap: 12px; padding: 15px 22px 11px 18px; flex-shrink: 0; }
+
+.mis-page-scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 0 22px 26px 18px; }
+
+.mis-page-scroll.no-pad { padding: 0 22px 20px 18px; }
+
+.mis-page-scroll.page-atualizacoes > .project-context-wrap {
+    flex: 0 0 auto;
+  }
+
+.mis-page-scroll.page-atualizacoes > .updates-workspace {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+
+.mis-page-scroll.page-atualizacoes .updates-workspace > div {
+    min-height: 0;
+  }
+
+.mis-page-scroll.page-atualizacoes .updates-workspace > div:nth-child(2) > div:last-child {
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+
+.mis-main-shell, .mis-page-scroll, .mis-card { min-width: 0; }

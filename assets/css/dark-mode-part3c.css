@@ -1,0 +1,288 @@
+/* === DARK MODE: Overrides Part 3c === */
+
+html:not([data-theme="dark"]) .mis-sidebar,
+  html:not([data-theme="dark"]) .mis-profile-card,
+  html:not([data-theme="dark"]) .project-workspace,
+  html:not([data-theme="dark"]) .project-workspace-group,
+  html:not([data-theme="dark"]) .project-workspace-btn,
+  html:not([data-theme="dark"]) .general-link-btn,
+  html:not([data-theme="dark"]) .new-project-step,
+  html:not([data-theme="dark"]) .mis-search-trigger,
+  html:not([data-theme="dark"]) .mis-filter-bar,
+  html:not([data-theme="dark"]) .mis-inline-panel,
+  html:not([data-theme="dark"]) .mis-soft-panel {
+    background: #BBBBBB !important;
+    background-color: #BBBBBB !important;
+    border-color: rgba(15,23,42,.10) !important;
+    box-shadow: 0 6px 18px rgba(15,23,42,.035) !important;
+  }
+
+html:not([data-theme="dark"]) .mis-sidebar,
+  html:not([data-theme="dark"]) .mis-card,
+  html:not([data-theme="dark"]) .mis-profile-card,
+  html:not([data-theme="dark"]) .project-workspace,
+  html:not([data-theme="dark"]) .project-workspace-group,
+  html:not([data-theme="dark"]) .project-workspace-btn,
+  html:not([data-theme="dark"]) .general-link-btn,
+  html:not([data-theme="dark"]) .new-project-step,
+  html:not([data-theme="dark"]) .mis-search-trigger,
+  html:not([data-theme="dark"]) .mis-main-cta,
+  html:not([data-theme="dark"]) .mis-topbar > button,
+  html:not([data-theme="dark"]) .mis-inline-panel,
+  html:not([data-theme="dark"]) .mis-soft-panel,
+  html:not([data-theme="dark"]) .dropdown-menu,
+  html:not([data-theme="dark"]) .auth-card {
+    background: linear-gradient(180deg, rgba(255,255,255,.11) 0%, rgba(255,255,255,.04) 100%), #BBBBBB !important;
+    background-color: #BBBBBB !important;
+    border: 1px solid rgba(255,255,255,.32) !important;
+    box-shadow:
+      10px 10px 22px rgba(137,137,137,.32),
+      -8px -8px 20px rgba(255,255,255,.28),
+      inset 0 1px 0 rgba(255,255,255,.28) !important;
+  }
+
+/* Light mode — unify all surfaces so cards, tables, forms and side panels share the same visual family */
+  html:not([data-theme="dark"]) {
+    --mis-bg: #BBBBBB;
+    --mis-sidebar: #BBBBBB;
+    --mis-card: #BBBBBB;
+    --mis-surface-muted: #c5c5c5;
+    --mis-surface-soft: #c9c9c9;
+    --mis-border: rgba(255,255,255,.34);
+    --mis-light-stroke: rgba(255,255,255,.34);
+    --mis-light-shadow-dark: rgba(138,138,138,.28);
+    --mis-light-shadow-light: rgba(255,255,255,.24);
+    --mis-light-elevated: #c3c3c3;
+    --mis-light-field: #d4d4d4;
+  }
+
+html:not([data-theme="dark"]) .mis-sidebar,
+  html:not([data-theme="dark"]) .mis-card,
+  html:not([data-theme="dark"]) .mis-profile-card,
+  html:not([data-theme="dark"]) .project-workspace,
+  html:not([data-theme="dark"]) .project-workspace-group,
+  html:not([data-theme="dark"]) .project-module-trigger,
+  html:not([data-theme="dark"]) .project-module-menu,
+  html:not([data-theme="dark"]) .project-module-group,
+  html:not([data-theme="dark"]) .project-workspace-btn,
+  html:not([data-theme="dark"]) .general-link-btn,
+  html:not([data-theme="dark"]) .new-project-step,
+  html:not([data-theme="dark"]) .mis-search-trigger,
+  html:not([data-theme="dark"]) .auth-card,
+  html:not([data-theme="dark"]) .notification-row,
+  html:not([data-theme="dark"]) .mis-inline-panel,
+  html:not([data-theme="dark"]) .mis-soft-panel,
+  html:not([data-theme="dark"]) .project-context-card,
+  html:not([data-theme="dark"]) .dropdown-menu,
+  html:not([data-theme="dark"]) .modal-panel,
+  html:not([data-theme="dark"]) [style*="background: #fff"],
+  html:not([data-theme="dark"]) [style*="background:#fff"],
+  html:not([data-theme="dark"]) [style*="background: #FFF"],
+  html:not([data-theme="dark"]) [style*="background:#FFF"],
+  html:not([data-theme="dark"]) [style*="background: #ffffff"],
+  html:not([data-theme="dark"]) [style*="background:#ffffff"],
+  html:not([data-theme="dark"]) [style*="background: white"] {
+    background: linear-gradient(180deg, rgba(255,255,255,.11) 0%, rgba(255,255,255,.04) 100%), var(--mis-light-elevated) !important;
+    background-color: var(--mis-light-elevated) !important;
+    border-color: var(--mis-light-stroke) !important;
+    box-shadow:
+      10px 10px 22px var(--mis-light-shadow-dark),
+      -8px -8px 18px var(--mis-light-shadow-light),
+      inset 0 1px 0 rgba(255,255,255,.25) !important;
+  }
+
+html:not([data-theme="dark"]) input:not([type="checkbox"]):not([type="radio"]),
+  html:not([data-theme="dark"]) select,
+  html:not([data-theme="dark"]) textarea,
+  html:not([data-theme="dark"]) .project-module-trigger,
+  html:not([data-theme="dark"]) .mis-search-trigger,
+  html:not([data-theme="dark"]) .otp-box,
+  html:not([data-theme="dark"]) [style*="background: #F9FAFB"],
+  html:not([data-theme="dark"]) [style*="background:#F9FAFB"],
+  html:not([data-theme="dark"]) [style*="background: #fafbfb"],
+  html:not([data-theme="dark"]) [style*="background:#fafbfb"],
+  html:not([data-theme="dark"]) [style*="background: #F3F4F6"],
+  html:not([data-theme="dark"]) [style*="background:#F3F4F6"] {
+    background: linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.05)), var(--mis-light-field) !important;
+    background-color: var(--mis-light-field) !important;
+    border-color: rgba(255,255,255,.40) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.24) !important;
+  }
+
+/* Light mode: use the exact same #BBBBBB base on every page and create hierarchy only with borders/shadows. */
+  html:not([data-theme="dark"]) {
+    color-scheme: light;
+    --mis-bg: #BBBBBB;
+    --mis-sidebar: #BBBBBB;
+    --mis-card: #BBBBBB;
+    --mis-surface-muted: #BBBBBB;
+    --mis-surface-soft: #BBBBBB;
+    --mis-border: rgba(255,255,255,.36);
+    --mis-light-base: #BBBBBB;
+    --mis-light-border: rgba(255,255,255,.38);
+    --mis-light-shadow-dark: rgba(126,126,126,.24);
+    --mis-light-shadow-light: rgba(255,255,255,.23);
+  }
+
+html:not([data-theme="dark"]) body,
+  html:not([data-theme="dark"]) #root,
+  html:not([data-theme="dark"]) .mis-app,
+  html:not([data-theme="dark"]) .mis-main-shell,
+  html:not([data-theme="dark"]) .mis-page-scroll,
+  html:not([data-theme="dark"]) .mis-page-scroll.no-pad,
+  html:not([data-theme="dark"]) .updates-workspace,
+  html:not([data-theme="dark"]) .auth-stage {
+    background: #BBBBBB !important;
+    background-color: #BBBBBB !important;
+  }
+
+/* Main elevated surfaces keep the same color, with relief instead of a different fill. */
+  html:not([data-theme="dark"]) .mis-sidebar,
+  html:not([data-theme="dark"]) .mis-card,
+  html:not([data-theme="dark"]) .mis-profile-card,
+  html:not([data-theme="dark"]) .project-context-compact,
+  html:not([data-theme="dark"]) .project-workspace,
+  html:not([data-theme="dark"]) .project-workspace-group,
+  html:not([data-theme="dark"]) .project-module-trigger,
+  html:not([data-theme="dark"]) .project-module-menu,
+  html:not([data-theme="dark"]) .project-module-group,
+  html:not([data-theme="dark"]) .project-workspace-btn,
+  html:not([data-theme="dark"]) .general-link-btn,
+  html:not([data-theme="dark"]) .new-project-step,
+  html:not([data-theme="dark"]) .mis-search-trigger,
+  html:not([data-theme="dark"]) .notification-row,
+  html:not([data-theme="dark"]) .auth-card,
+  html:not([data-theme="dark"]) .mis-inline-panel,
+  html:not([data-theme="dark"]) .mis-soft-panel {
+    background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.025)), #BBBBBB !important;
+    background-color: #BBBBBB !important;
+    border-color: var(--mis-light-border) !important;
+  }
+
+/* Convert white/near-white inline surfaces throughout the application to the same base. */
+  html:not([data-theme="dark"]) [style*="background: rgb(255, 255, 255)"],
+  html:not([data-theme="dark"]) [style*="background-color: rgb(255, 255, 255)"],
+  html:not([data-theme="dark"]) [style*="background: #fff"],
+  html:not([data-theme="dark"]) [style*="background:#fff"],
+  html:not([data-theme="dark"]) [style*="background: #FFF"],
+  html:not([data-theme="dark"]) [style*="background:#FFF"],
+  html:not([data-theme="dark"]) [style*="background: #ffffff"],
+  html:not([data-theme="dark"]) [style*="background:#ffffff"],
+  html:not([data-theme="dark"]) [style*="background: white"],
+  html:not([data-theme="dark"]) [style*="background: rgb(250, 250, 250)"],
+  html:not([data-theme="dark"]) [style*="background: rgb(250, 251, 251)"],
+  html:not([data-theme="dark"]) [style*="background: rgb(251, 252, 252)"],
+  html:not([data-theme="dark"]) [style*="background: #fafafa"],
+  html:not([data-theme="dark"]) [style*="background: #fafbfb"],
+  html:not([data-theme="dark"]) [style*="background: #fbfcfc"] {
+    background: #BBBBBB !important;
+    background-color: #BBBBBB !important;
+    border-color: var(--mis-light-border) !important;
+  }
+
+html:not([data-theme="dark"]) input:not([type="checkbox"]):not([type="radio"]),
+  html:not([data-theme="dark"]) select,
+  html:not([data-theme="dark"]) textarea,
+  html:not([data-theme="dark"]) .mis-input,
+  html:not([data-theme="dark"]) .otp-box {
+    background: #BBBBBB !important;
+    background-color: #BBBBBB !important;
+    border-color: var(--mis-light-border) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.22), inset 0 -1px 0 rgba(100,100,100,.06) !important;
+  }
+
+html:not([data-theme="dark"]) table,
+  html:not([data-theme="dark"]) table thead,
+  html:not([data-theme="dark"]) table tbody,
+  html:not([data-theme="dark"]) table tr {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+
+/* Preserve the navy active language after the global background normalization. */
+  html:not([data-theme="dark"]) .mis-nav-item.active,
+  html:not([data-theme="dark"]) .mis-select-btn.active,
+  html:not([data-theme="dark"]) .project-workspace-btn.active,
+  html:not([data-theme="dark"]) .project-module-option.active,
+  html:not([data-theme="dark"]) .new-project-step.active {
+    background: #02033B !important;
+    background-color: #02033B !important;
+    color: #fff !important;
+    border-color: #02033B !important;
+    box-shadow: 0 9px 18px rgba(2,3,59,.20) !important;
+  }
+
+/* Final light-mode palette:
+     - page/background: #BBBBBB
+     - everything else (cards, sidebar, inputs, tables, panels): #D1CDCD */
+  html:not([data-theme="dark"]) {
+    --mis-bg: #BBBBBB;
+    --mis-sidebar: #D1CDCD;
+    --mis-card: #D1CDCD;
+    --mis-surface-muted: #D1CDCD;
+    --mis-surface-soft: #D1CDCD;
+    --mis-light-base: #D1CDCD;
+    --mis-light-elevated: #D1CDCD;
+    --mis-light-field: #D1CDCD;
+    --mis-light-border: rgba(255,255,255,.34);
+    --mis-border: rgba(255,255,255,.34);
+  }
+
+html:not([data-theme="dark"]) body,
+  html:not([data-theme="dark"]) #root,
+  html:not([data-theme="dark"]) .mis-app,
+  html:not([data-theme="dark"]) .mis-page-scroll,
+  html:not([data-theme="dark"]) .mis-page-scroll.no-pad,
+  html:not([data-theme="dark"]) .auth-stage {
+    background: #BBBBBB !important;
+    background-color: #BBBBBB !important;
+  }
+
+html:not([data-theme="dark"]) .mis-sidebar,
+  html:not([data-theme="dark"]) .mis-card,
+  html:not([data-theme="dark"]) .mis-profile-card,
+  html:not([data-theme="dark"]) .project-workspace,
+  html:not([data-theme="dark"]) .project-workspace-group,
+  html:not([data-theme="dark"]) .project-module-trigger,
+  html:not([data-theme="dark"]) .project-module-menu,
+  html:not([data-theme="dark"]) .project-module-group,
+  html:not([data-theme="dark"]) .project-workspace-btn,
+  html:not([data-theme="dark"]) .general-link-btn,
+  html:not([data-theme="dark"]) .new-project-step,
+  html:not([data-theme="dark"]) .mis-search-trigger,
+  html:not([data-theme="dark"]) .auth-card,
+  html:not([data-theme="dark"]) .notification-row,
+  html:not([data-theme="dark"]) .mis-inline-panel,
+  html:not([data-theme="dark"]) .mis-soft-panel,
+  html:not([data-theme="dark"]) .project-context-card,
+  html:not([data-theme="dark"]) .dropdown-menu,
+  html:not([data-theme="dark"]) .modal-panel,
+  html:not([data-theme="dark"]) .project-module-dropdown,
+  html:not([data-theme="dark"]) .chart-shell,
+  html:not([data-theme="dark"]) .chart-wrapper,
+  html:not([data-theme="dark"]) [style*="background: #fff"],
+  html:not([data-theme="dark"]) [style*="background:#fff"],
+  html:not([data-theme="dark"]) [style*="background: #FFF"],
+  html:not([data-theme="dark"]) [style*="background:#FFF"],
+  html:not([data-theme="dark"]) [style*="background: #ffffff"],
+  html:not([data-theme="dark"]) [style*="background:#ffffff"],
+  html:not([data-theme="dark"]) [style*="background: white"] {
+    background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.03)), #D1CDCD !important;
+    background-color: #D1CDCD !important;
+    border-color: rgba(255,255,255,.34) !important;
+  }
+
+html:not([data-theme="dark"]) input:not([type="checkbox"]):not([type="radio"]),
+  html:not([data-theme="dark"]) select,
+  html:not([data-theme="dark"]) textarea,
+  html:not([data-theme="dark"]) .otp-box,
+  html:not([data-theme="dark"]) [style*="background: #F9FAFB"],
+  html:not([data-theme="dark"]) [style*="background:#F9FAFB"],
+  html:not([data-theme="dark"]) [style*="background: #fafbfb"],
+  html:not([data-theme="dark"]) [style*="background:#fafbfb"],
+  html:not([data-theme="dark"]) [style*="background: #F3F4F6"],
+  html:not([data-theme="dark"]) [style*="background:#F3F4F6"] {
+    background: linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.05)), #D1CDCD !important;
+    background-color: #D1CDCD !important;
+    border-color: rgba(255,255,255,.38) !important;
+  }

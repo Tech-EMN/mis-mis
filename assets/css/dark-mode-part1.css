@@ -1,0 +1,342 @@
+/* === DARK MODE: Component Overrides (Part 1/3) === */
+
+
+/* === DARK MODE (Variables + Overrides) === */
+
+html[data-theme="dark"] .mis-sidebar { background: #192536 !important; }
+
+html[data-theme="dark"] .mis-topbar { background: transparent; }
+
+html[data-theme="dark"] .mis-nav-section,
+    html[data-theme="dark"] .project-workspace-group-label { color: #718197 !important; }
+
+html[data-theme="dark"] .mis-nav-item { color: #d8e2ed; }
+
+html[data-theme="dark"] .mis-nav-item:hover { background: #233247; }
+
+html[data-theme="dark"] .mis-nav-item.active { color: #fff; }
+
+html[data-theme="dark"] .mis-profile-card:hover,
+    html[data-theme="dark"] .project-workspace-btn:hover { background: #29384b !important; }
+
+html[data-theme="dark"] .project-workspace-btn.active { background: #063c2b !important; color: #fff !important; }
+
+html[data-theme="dark"] .mis-search-trigger,
+    html[data-theme="dark"] .mis-icon-btn { color: #dce6f1; }
+
+html[data-theme="dark"] .mis-notification-dot { border-color: #151f2e; }
+
+html[data-theme="dark"] .mis-main-cta { background: #0e1724; box-shadow: 0 12px 24px rgba(0,0,0,.28); }
+
+html[data-theme="dark"] .mis-main-cta:hover { background: #080f19; }
+
+html[data-theme="dark"] .mis-icon-btn.theme-active {
+      background: #2a3950 !important;
+      box-shadow: inset 0 0 0 1px rgba(126,168,255,.28), 0 8px 20px rgba(2,8,18,.25) !important;
+    }
+
+html[data-theme="dark"] input::placeholder,
+    html[data-theme="dark"] textarea::placeholder { color: #718197 !important; }
+
+html[data-theme="dark"] option { background: #1b2738; color: #eef4fb; }
+
+html[data-theme="dark"] th { color: #9eafc3 !important; }
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb { background: #43536a; }
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: #586b84; }
+
+/* Standalone authentication pages inherit the palette without changing their composition. */
+    html[data-theme="dark"] .auth-stage { background: #151f2e !important; }
+
+html[data-theme="dark"] .auth-architecture { filter: brightness(.36) saturate(.7) hue-rotate(170deg); }
+
+html[data-theme="dark"] body,
+    html[data-theme="dark"] #root {
+      background:
+        radial-gradient(circle at 54% -8%, rgba(116, 127, 139, .35) 0, rgba(73, 87, 101, .15) 24%, transparent 46%),
+        radial-gradient(circle at 92% 42%, rgba(42, 75, 119, .19) 0, transparent 39%),
+        linear-gradient(135deg, #1b2733 0%, #26323e 46%, #1c2732 100%) !important;
+      background-attachment: fixed !important;
+    }
+
+html[data-theme="dark"] .mis-app {
+      background: transparent !important;
+    }
+
+html[data-theme="dark"] .mis-sidebar {
+      background: linear-gradient(180deg, rgba(31, 45, 59, .98), rgba(24, 37, 50, .98)) !important;
+      border-color: rgba(184, 202, 219, .14) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.045), 0 18px 42px rgba(3, 10, 18, .32) !important;
+    }
+
+html[data-theme="dark"] .mis-card,
+    html[data-theme="dark"] .project-context-compact,
+    html[data-theme="dark"] .project-workspace,
+    html[data-theme="dark"] .project-workspace-group,
+    html[data-theme="dark"] .new-project-flow,
+    html[data-theme="dark"] .mis-profile-card {
+      background: linear-gradient(145deg, rgba(50, 63, 76, .95), rgba(39, 51, 64, .96)) !important;
+      border-color: rgba(190, 207, 224, .16) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.055), 0 15px 34px rgba(3, 10, 18, .25) !important;
+    }
+
+html[data-theme="dark"] .mis-search-trigger,
+    html[data-theme="dark"] .mis-icon-btn,
+    html[data-theme="dark"] .project-module-trigger,
+    html[data-theme="dark"] .project-change-btn,
+    html[data-theme="dark"] .general-link-btn {
+      background: linear-gradient(145deg, rgba(52, 65, 78, .92), rgba(40, 52, 65, .94)) !important;
+      color: #e8edf2 !important;
+      border-color: rgba(193, 210, 226, .17) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.05), 0 9px 22px rgba(4, 11, 19, .20) !important;
+      backdrop-filter: blur(14px);
+    }
+
+html[data-theme="dark"] .project-module-menu {
+      background: linear-gradient(145deg, #2f3c49, #263340) !important;
+      border-color: rgba(190, 207, 224, .18) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.055), 0 24px 58px rgba(2, 8, 15, .42) !important;
+    }
+
+html[data-theme="dark"] .project-module-group {
+      background: rgba(30, 43, 56, .72) !important;
+      border-color: rgba(184, 201, 218, .13) !important;
+    }
+
+html[data-theme="dark"] .mis-nav-item { color: #d5dce3; }
+
+html[data-theme="dark"] .mis-nav-item:hover,
+    html[data-theme="dark"] .mis-profile-card:hover,
+    html[data-theme="dark"] .project-workspace-btn:hover,
+    html[data-theme="dark"] .project-module-option:hover,
+    html[data-theme="dark"] .general-link-btn:hover {
+      background: rgba(89, 109, 131, .24) !important;
+    }
+
+html[data-theme="dark"] .mis-nav-item.active,
+    html[data-theme="dark"] .project-workspace-btn.active,
+    html[data-theme="dark"] .project-module-option.active,
+    html[data-theme="dark"] .new-project-step.active {
+      background: linear-gradient(135deg, #355fae 0%, #4d82ea 100%) !important;
+      color: #fff !important;
+      border-color: rgba(108, 154, 244, .72) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 10px 24px rgba(32, 80, 177, .32) !important;
+    }
+
+html[data-theme="dark"] .mis-main-cta {
+      background: linear-gradient(135deg, #355fae 0%, #4d82ea 100%) !important;
+      border: 1px solid rgba(121, 164, 247, .45) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.14), 0 12px 28px rgba(31, 74, 160, .32) !important;
+    }
+
+html[data-theme="dark"] .mis-main-cta:hover {
+      background: linear-gradient(135deg, #3d69bb 0%, #5b8df0 100%) !important;
+    }
+
+html[data-theme="dark"] .mis-icon-btn.theme-active {
+      background: linear-gradient(145deg, #354557, #2b3948) !important;
+      box-shadow: inset 0 0 0 1px rgba(120, 161, 240, .34), 0 9px 22px rgba(3, 10, 18, .26) !important;
+    }
+
+html[data-theme="dark"] input,
+    html[data-theme="dark"] textarea,
+    html[data-theme="dark"] select,
+    html[data-theme="dark"] .mis-input {
+      background: rgba(34, 47, 61, .92) !important;
+      color: #f0f3f6 !important;
+      border-color: rgba(190, 207, 224, .16) !important;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.16);
+    }
+
+html[data-theme="dark"] [style*="background: rgb(229, 231, 235)"],
+    html[data-theme="dark"] [style*="background: #E5E7EB"],
+    html[data-theme="dark"] [style*="background: #e5e7eb"] {
+      background: #53606d !important;
+    }
+
+html[data-theme="dark"] [style*="box-shadow: 0 8px 24px"],
+    html[data-theme="dark"] [style*="box-shadow: 0 1px 3px"] {
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.05), 0 13px 30px rgba(3,10,18,.22) !important;
+    }
+
+html[data-theme="dark"] .mis-logo {
+      background: radial-gradient(circle at 35% 28%, #4f86b3 0, #174b6b 34%, #0b263b 72%, #071b2c 100%) !important;
+      box-shadow: 0 0 0 1px rgba(135,189,232,.20), 0 0 26px rgba(59,127,193,.24), inset 0 1px 2px rgba(255,255,255,.25) !important;
+    }
+
+html[data-theme="dark"] .mis-notification-dot { border-color: #26323e !important; }
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb { background: #536171; }
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: #69798b; }
+
+html[data-theme="dark"] .auth-stage {
+      background:
+        radial-gradient(circle at 50% 12%, rgba(113,127,141,.30), transparent 43%),
+        linear-gradient(135deg, #1b2733, #26323e 48%, #1c2732) !important;
+    }
+
+html[data-theme="dark"] .mis-select-btn:not(.active):hover {
+      background: rgba(89,109,131,.24) !important;
+      border-color: rgba(193,210,226,.28) !important;
+    }
+
+html[data-theme="dark"] .mis-select-btn.active {
+      background: linear-gradient(135deg, #355fae 0%, #4d82ea 100%) !important;
+      color: #fff !important;
+      border-color: rgba(108,154,244,.72) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 10px 24px rgba(32,80,177,.32) !important;
+    }
+
+html[data-theme="dark"] .mis-select-btn.active::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.12);
+    }
+
+html[data-theme="dark"] body {
+      position: relative;
+      isolation: isolate;
+      background:
+        radial-gradient(1100px 720px at 48% -12%, rgba(103, 128, 161, .26) 0%, rgba(55, 82, 113, .10) 38%, transparent 70%),
+        radial-gradient(760px 620px at 104% 22%, rgba(44, 91, 143, .18) 0%, transparent 70%),
+        radial-gradient(900px 700px at -8% 88%, rgba(18, 70, 92, .18) 0%, transparent 68%),
+        linear-gradient(138deg, #050d18 0%, #091625 38%, #0c1a2b 64%, #081321 100%) !important;
+      background-attachment: fixed !important;
+      overflow: hidden;
+    }
+
+html[data-theme="dark"] body::before,
+    html[data-theme="dark"] body::after {
+      content: "";
+      position: fixed;
+      inset: -18%;
+      pointer-events: none;
+      z-index: -2;
+    }
+
+html[data-theme="dark"] body::before {
+      background:
+        radial-gradient(circle at 28% 14%, rgba(116, 145, 183, .20) 0 9%, transparent 28%),
+        radial-gradient(circle at 82% 28%, rgba(44, 92, 151, .18) 0 10%, transparent 31%),
+        radial-gradient(circle at 58% 96%, rgba(14, 75, 92, .17) 0 11%, transparent 33%);
+      filter: blur(72px) saturate(105%);
+      opacity: .86;
+      transform: translateZ(0);
+    }
+
+html[data-theme="dark"] body::after {
+      z-index: -1;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .025), transparent 20%),
+        radial-gradient(ellipse at center, transparent 45%, rgba(0, 4, 12, .34) 100%);
+      opacity: .95;
+    }
+
+html[data-theme="dark"] #root,
+    html[data-theme="dark"] .mis-app {
+      position: relative;
+      background: transparent !important;
+    }
+
+html[data-theme="dark"] .mis-app::before {
+      content: "";
+      position: fixed;
+      top: -180px;
+      left: 18%;
+      width: 64vw;
+      height: 330px;
+      pointer-events: none;
+      background: radial-gradient(ellipse, rgba(255, 255, 255, .075), transparent 68%);
+      filter: blur(48px);
+      opacity: .62;
+      z-index: 0;
+    }
+
+html[data-theme="dark"] .mis-sidebar,
+    html[data-theme="dark"] .mis-card,
+    html[data-theme="dark"] .project-context-compact,
+    html[data-theme="dark"] .project-workspace,
+    html[data-theme="dark"] .project-workspace-group,
+    html[data-theme="dark"] .new-project-flow,
+    html[data-theme="dark"] .mis-profile-card,
+    html[data-theme="dark"] .project-module-menu,
+    html[data-theme="dark"] .project-module-group,
+    html[data-theme="dark"] .auth-glass {
+      position: relative;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .095) 0%, rgba(255, 255, 255, .052) 48%, rgba(255, 255, 255, .035) 100%) !important;
+      border: 1px solid rgba(255, 255, 255, .13) !important;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .12),
+        inset 0 -1px 0 rgba(255, 255, 255, .025),
+        0 30px 90px rgba(0, 5, 15, .32),
+        0 8px 26px rgba(8, 31, 58, .14) !important;
+      backdrop-filter: blur(30px) saturate(135%) !important;
+      -webkit-backdrop-filter: blur(30px) saturate(135%) !important;
+    }
+
+html[data-theme="dark"] .mis-sidebar,
+    html[data-theme="dark"] .auth-glass {
+      background:
+        linear-gradient(160deg, rgba(15, 30, 49, .82), rgba(7, 18, 32, .70) 74%, rgba(9, 23, 39, .78)) !important;
+      border-color: rgba(255, 255, 255, .14) !important;
+      box-shadow:
+        inset 1px 0 0 rgba(255, 255, 255, .065),
+        inset 0 1px 0 rgba(255, 255, 255, .11),
+        0 34px 96px rgba(0, 4, 13, .44),
+        0 0 56px rgba(28, 75, 118, .09) !important;
+      backdrop-filter: blur(36px) saturate(140%) !important;
+      -webkit-backdrop-filter: blur(36px) saturate(140%) !important;
+    }
+
+html[data-theme="dark"] .mis-sidebar::before,
+    html[data-theme="dark"] .mis-card::before,
+    html[data-theme="dark"] .project-context-compact::before,
+    html[data-theme="dark"] .project-workspace::before,
+    html[data-theme="dark"] .new-project-flow::before,
+    html[data-theme="dark"] .mis-profile-card::before,
+    html[data-theme="dark"] .project-module-menu::before,
+    html[data-theme="dark"] .auth-glass::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 4%;
+      right: 4%;
+      height: 1px;
+      border-radius: 999px;
+      pointer-events: none;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .32), transparent);
+      opacity: .72;
+    }
+
+html[data-theme="dark"] .mis-sidebar { border-radius: 26px !important; }
+
+html[data-theme="dark"] .mis-card,
+    html[data-theme="dark"] .project-workspace,
+    html[data-theme="dark"] .project-context-compact,
+    html[data-theme="dark"] .new-project-flow { border-radius: 26px !important; }
+
+html[data-theme="dark"] .project-workspace-group,
+    html[data-theme="dark"] .project-module-group,
+    html[data-theme="dark"] .mis-profile-card { border-radius: 20px !important; }
+
+html[data-theme="dark"] .project-module-menu,
+    html[data-theme="dark"] .auth-glass { border-radius: 28px !important; }
+
+/* Neutral inline surfaces rendered by the single-file React prototype. */
+    html[data-theme="dark"] [style*="background: rgb(255, 255, 255)"],
+    html[data-theme="dark"] [style*="background: #fff"],
+    html[data-theme="dark"] [style*="background: #FFF"],
+    html[data-theme="dark"] [style*="background: #ffffff"],
+    html[data-theme="dark"] [style*="background: #FFFFFF"] {
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .082), rgba(255, 255, 255, .047)) !important;
+      border-color: rgba(255, 255, 255, .115) !important;
+      backdrop-filter: blur(26px) saturate(130%);
+      -webkit-backdrop-filter: blur(26px) saturate(130%);

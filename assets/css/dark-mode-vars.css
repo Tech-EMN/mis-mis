@@ -1,0 +1,17 @@
+/* === DARK MODE: Variables === */
+
+html[data-theme="dark"] {
+      color-scheme: dark;
+      --mis-bg: #151f2e;
+      --mis-sidebar: #192536;
+      --mis-card: #202c3d;
+      --mis-surface-muted: #263447;
+      --mis-surface-soft: #233143;
+      --mis-border: rgba(177,199,224,.18);
+      --mis-text-strong: #f1f6fc;
+      --mis-text-secondary: #d7e1ed;
+      --mis-text-muted: #a9b7c8;
+      --mis-text-soft: #8292a6;
+      --mis-text-faint: #748395;
+      --mis-nav-active: #477de5;
+    }
