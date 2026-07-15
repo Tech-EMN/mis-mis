@@ -1,7 +1,6 @@
 /* === MIS API CONFIG === */
 window.MIS_API_URL = "http://localhost:8000/api/v1";
 // Produção: defina MIS_API_URL no Netlify (Site settings → Environment variables)
-// ou altere aqui para a URL de produção do mis-engine
 
 /* === CONFIG === */
 
