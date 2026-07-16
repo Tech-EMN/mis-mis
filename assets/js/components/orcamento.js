@@ -1,292 +1,253 @@
-/* === ORCAMENTO === */
+/* === ORCAMENTO SCREENS === */
 
-const QueroReformarScreen = ({ onNavigate }) => {
-  const [step, setStep] = useQ(1);
-  const [tipo, setTipo] = useQ(null);
-  const [imovel, setImovel] = useQ(null);
-  const [orcamento, setOrcamento] = useQ(null);
+// ─── HELPERS ────────────────────────────────────────────
+const QT_FORMAT = (v) => typeof v === 'number' ? v.toFixed(2) : '—';
+const QT_CONFIDENCE_COLOR = (v) => v >= 0.9 ? C.green500 : v >= 0.7 ? C.orange500 : C.red500;
 
-  const tipos = ['Banheiro','Cozinha','Sala / Quarto','Área externa','Fachada','Casa completa','Outro'];
-  const imoveis = ['Casa','Apartamento','Comercial','Outro'];
-  const budgets = ['Até R$ 5k','R$ 5k – 20k','R$ 20k – 50k','R$ 50k – 100k','Acima de R$ 100k','Não sei'];
+// ─── REGRAS SIMPLIFICADAS (P1=A) ──────────────────────
+const QT_PE_DIREITO = 2.8; // pé direito padrão
+const QT_CALC_RULES = [
+  { label: 'Piso',      un: 'm²', calc: (r) => r.area_m2 * 1.10, desc: 'Área + 10% perda' },
+  { label: 'Contrapiso', un: 'm²', calc: (r) => r.area_m2 * 1.05, desc: 'Área + 5% perda' },
+  { label: 'Parede (alvenaria)', un: 'm²', calc: (r) => r.perimeter_m * QT_PE_DIREITO, desc: 'Perímetro × pé direito 2.80m' },
+  { label: 'Reboco interno', un: 'm²', calc: (r) => r.perimeter_m * QT_PE_DIREITO * 2, desc: 'Parede × 2 faces' },
+  { label: 'Teto (laje)', un: 'm²', calc: (r) => r.area_m2, desc: 'Área do teto' },
+  { label: 'Rodapé', un: 'm', calc: (r) => r.perimeter_m * 0.85, desc: 'Perímetro − vãos (15%)' },
+];
 
-  const StepBar = () => (
-    <div style={{ display: 'flex', gap: 4, marginBottom: 28 }}>
-      {[1,2,3,4].map(i => (
-        <div key={i} style={{ flex: 1, height: 4, borderRadius: 4, background: i <= step ? C.navActive : C.border, transition: 'background 0.3s' }} />
-      ))}
-    </div>
+// ─── SCREENS EXISTENTES (stubs) ────────────────────────
+const QueroReformarScreen = ({ onNavigate }) =>
+  React.createElement('div', { style: { minHeight: '100vh', background: 'var(--mis-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 } },
+    React.createElement('h2', { style: { color: 'var(--mis-text-strong)' } }, 'Quero Reformar'),
+    React.createElement('p', { style: { color: 'var(--mis-text-muted)' } }, 'Em desenvolvimento'),
+    React.createElement('button', { onClick: () => onNavigate('feed'), style: { padding: '10px 20px', borderRadius: 8, background: '#2563eb', color: '#fff', border: 'none', cursor: 'pointer' } }, 'Voltar ao Feed')
   );
 
-  const wrap = (content) => (
-    <AppShell active="reformar" onNavigate={onNavigate}>
-      <div style={{ maxWidth: 680, margin: '0 auto' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24 }}>
-          <button onClick={() => step > 1 ? setStep(step - 1) : onNavigate('dashboard')} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6, color: C.t500, fontSize: 14, fontFamily: 'inherit' }}>
-            <Ic.ArrowLeft size={16} /> {step > 1 ? 'Voltar' : 'Dashboard'}
-          </button>
-          <span style={{ color: C.t300 }}>·</span>
-          <span style={{ fontSize: 13, color: C.t400 }}>Etapa {step} de 4</span>
-        </div>
-        <StepBar />
-        {content}
-      </div>
-    </AppShell>
+const QueroOrcamentoScreen = ({ onNavigate }) =>
+  React.createElement('div', { style: { minHeight: '100vh', background: 'var(--mis-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 } },
+    React.createElement('h2', { style: { color: 'var(--mis-text-strong)' } }, 'Quero Orçamento'),
+    React.createElement('p', { style: { color: 'var(--mis-text-muted)' } }, 'Em desenvolvimento'),
+    React.createElement('button', { onClick: () => onNavigate('upload'), style: { padding: '10px 20px', borderRadius: 8, background: '#2563eb', color: '#fff', border: 'none', cursor: 'pointer' } }, '↑ Upload de arquivos')
   );
 
-  if (step === 1) return wrap(
-    <div>
-      <h2 style={{ fontSize: 26, fontWeight: 700, color: C.t900, marginBottom: 6 }}>Quero Reformar</h2>
-      <p style={{ fontSize: 15, color: C.t500, marginBottom: 28 }}>Qual parte do imóvel você quer reformar?</p>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginBottom: 24 }}>
-        {tipos.map(t => (
-          <button key={t} className={`mis-select-btn${tipo === t ? ' active' : ''}`} aria-pressed={tipo === t} onClick={() => setTipo(t)} style={{
-            padding: '20px 16px', borderRadius: 14, textAlign: 'center',
-            border: `2px solid ${tipo === t ? C.navActive : C.border}`,
-            background: tipo === t ? '#F0FFF4' : C.card,
-            cursor: 'pointer', fontFamily: 'inherit',
-            fontSize: 14, fontWeight: tipo === t ? 600 : 400,
-            color: tipo === t ? C.navActive : C.t700, transition: 'all 0.15s',
-          }}>{t}</button>
-        ))}
-      </div>
-      <div style={{ marginBottom: 24 }}>
-        <label style={{ fontSize: 13, fontWeight: 500, color: C.t700, display: 'block', marginBottom: 8 }}>Ou descreva com suas palavras (opcional)</label>
-        <textarea placeholder="Ex: quero reformar o banheiro principal..." style={{ width: '100%', padding: '12px 14px', border: `1.5px solid ${C.border}`, borderRadius: 10, fontSize: 14, fontFamily: 'inherit', resize: 'vertical', minHeight: 80, outline: 'none' }} />
-      </div>
-      <Btn onClick={() => tipo && setStep(2)} disabled={!tipo} style={{ padding: '12px 40px', fontSize: 15 }}>Continuar →</Btn>
-    </div>
+const AnaliseArquivosScreen = ({ onNavigate }) =>
+  React.createElement('div', { style: { minHeight: '100vh', background: 'var(--mis-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 } },
+    React.createElement('h2', { style: { color: 'var(--mis-text-strong)' } }, 'Análise IA'),
+    React.createElement('p', { style: { color: 'var(--mis-text-muted)' } }, 'Processando arquivos com pipeline Draft C v2'),
+    React.createElement('button', { onClick: () => onNavigate('orcamento_quant'), style: { padding: '10px 20px', borderRadius: 8, background: '#2563eb', color: '#fff', border: 'none', cursor: 'pointer' } }, 'Ver Levantamento Quantitativo →')
   );
 
-  if (step === 2) return wrap(
-    <div>
-      <h2 style={{ fontSize: 26, fontWeight: 700, color: C.t900, marginBottom: 6 }}>Contexto do imóvel</h2>
-      <p style={{ fontSize: 15, color: C.t500, marginBottom: 28 }}>Nos conte um pouco sobre o local da reforma.</p>
-      <div style={{ marginBottom: 24 }}>
-        <div style={{ fontSize: 14, fontWeight: 500, color: C.t700, marginBottom: 10 }}>Tipo de imóvel</div>
-        <div style={{ display: 'flex', gap: 10 }}>
-          {imoveis.map(im => (
-            <button key={im} className={`mis-select-btn${imovel === im ? ' active' : ''}`} aria-pressed={imovel === im} onClick={() => setImovel(im)} style={{
-              padding: '10px 22px', borderRadius: 20, fontSize: 14, cursor: 'pointer', fontFamily: 'inherit',
-              border: `2px solid ${imovel === im ? C.navActive : C.border}`,
-              background: imovel === im ? '#F0FFF4' : C.card, color: imovel === im ? C.navActive : C.t700,
-              fontWeight: imovel === im ? 600 : 400, transition: 'all 0.15s',
-            }}>{im}</button>
-          ))}
-        </div>
-      </div>
-      <div style={{ marginBottom: 24 }}>
-        <div style={{ fontSize: 14, fontWeight: 500, color: C.t700, marginBottom: 10 }}>Área aproximada</div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          <input type="range" min={5} max={300} defaultValue={40} style={{ flex: 1, accentColor: C.navActive }} />
-          <div style={{ background: C.borderLight, padding: '6px 16px', borderRadius: 8, fontSize: 14, fontWeight: 600, color: C.t900, minWidth: 70, textAlign: 'center' }}>40 m²</div>
-        </div>
-      </div>
-      <Input label="CEP / Localização" placeholder="01310-100 ou cidade, estado" style={{ marginBottom: 24 }} />
-      <Btn onClick={() => imovel && setStep(3)} disabled={!imovel} style={{ padding: '12px 40px', fontSize: 15 }}>Continuar →</Btn>
-    </div>
-  );
-
-  if (step === 3) return wrap(
-    <div>
-      <h2 style={{ fontSize: 26, fontWeight: 700, color: C.t900, marginBottom: 6 }}>Orçamento e prazo</h2>
-      <p style={{ fontSize: 15, color: C.t500, marginBottom: 28 }}>Nos ajude a encontrar a melhor solução para o seu bolso.</p>
-      <div style={{ marginBottom: 24 }}>
-        <div style={{ fontSize: 14, fontWeight: 500, color: C.t700, marginBottom: 10 }}>Orçamento disponível</div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
-          {budgets.map(b => (
-            <button key={b} className={`mis-select-btn${orcamento === b ? ' active' : ''}`} aria-pressed={orcamento === b} onClick={() => setOrcamento(b)} style={{
-              padding: '12px', borderRadius: 12, fontSize: 13, cursor: 'pointer', fontFamily: 'inherit',
-              border: `2px solid ${orcamento === b ? C.navActive : C.border}`,
-              background: orcamento === b ? '#F0FFF4' : C.card, color: orcamento === b ? C.navActive : C.t700,
-              fontWeight: orcamento === b ? 600 : 400, transition: 'all 0.15s',
-            }}>{b}</button>
-          ))}
-        </div>
-      </div>
-      <div style={{ marginBottom: 24 }}>
-        <div style={{ fontSize: 14, fontWeight: 500, color: C.t700, marginBottom: 10 }}>Urgência</div>
-        <div style={{ display: 'flex', gap: 10 }}>
-          {['Sem pressa','Moderada','Urgente'].map(u => (
-            <button key={u} style={{ padding: '10px 20px', borderRadius: 20, border: `1.5px solid ${C.border}`, background: C.card, fontSize: 14, cursor: 'pointer', fontFamily: 'inherit', color: C.t700 }}>{u}</button>
-          ))}
-        </div>
-      </div>
-      <Btn onClick={() => orcamento && setStep(4)} disabled={!orcamento} style={{ padding: '12px 40px', fontSize: 15 }}>Continuar →</Btn>
-    </div>
-  );
-
-  return wrap(
-    <div>
-      <h2 style={{ fontSize: 26, fontWeight: 700, color: C.t900, marginBottom: 6 }}>Diagnóstico MIS</h2>
-      <p style={{ fontSize: 15, color: C.t500, marginBottom: 24 }}>O Oráculo analisou seu projeto. Veja o resultado:</p>
-      <Card style={{ padding: '20px', background: 'linear-gradient(135deg, #1C3A2A 0%, #1d4ed8 100%)', marginBottom: 20 }}>
-        <div style={{ display: 'flex', gap: 12 }}>
-          <div style={{ width: 40, height: 40, background: 'rgba(255,255,255,0.15)', borderRadius: 20, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-            <Ic.Sparkles size={18} color="#fff" />
-          </div>
-          <div>
-            <div style={{ fontSize: 14, fontWeight: 600, color: '#fff', marginBottom: 6 }}>Diagnóstico do Oráculo MIS</div>
-            <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.8)', lineHeight: 1.6 }}>
-              Para uma reforma de <strong style={{ color: '#fff' }}>{tipo?.toLowerCase()}</strong> em {imovel?.toLowerCase()} com {orcamento?.toLowerCase()}, identifiquei as melhores opções da região. Prazo estimado: <strong style={{ color: '#fff' }}>30 a 45 dias</strong>.
-            </div>
-          </div>
-        </div>
-      </Card>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 14, marginBottom: 24 }}>
-        {[{ l: 'Estimativa', v: 'R$ 12k – 18k', c: C.blue600 }, { l: 'Prazo típico', v: '30–45 dias', c: C.t900 }, { l: 'Profissionais', v: '4 disponíveis', c: C.green600 }].map(k => (
-          <Card key={k.l} style={{ padding: '16px', textAlign: 'center' }}>
-            <div style={{ fontSize: 18, fontWeight: 700, color: k.c }}>{k.v}</div>
-            <div style={{ fontSize: 12, color: C.t500, marginTop: 4 }}>{k.l}</div>
-          </Card>
-        ))}
-      </div>
-      <div style={{ display: 'flex', gap: 12 }}>
-        <Btn onClick={() => onNavigate('orcamento_quant')} style={{ flex: 1, justifyContent: 'center', padding: '12px' }}>Gerar orçamento completo</Btn>
-        <Btn variant="secondary" onClick={() => onNavigate('chat')} style={{ flex: 1, justifyContent: 'center', padding: '12px' }}>Falar com o Oráculo</Btn>
-      </div>
-    </div>
-  );
-};
-
-// ─── QUERO ORÇAMENTO (entry) ────────────────────────────
-const QueroOrcamentoScreen = ({ onNavigate }) => (
-  <AppShell active="orcamento" onNavigate={onNavigate}>
-    <SectionHeader title="Pedir Orçamento" subtitle="Escolha como quer começar o seu orçamento." />
-    <div style={{ maxWidth: 700, margin: '0 auto' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 40 }}>
-        {[
-          { icon: Ic.FileText, title: 'Tenho um arquivo', sub: 'Envie sua planta, PDF ou DWG e a IA extrai automaticamente tudo que precisa.', color: C.blue100, iconColor: C.blue600, screen: 'upload' },
-          { icon: Ic.Message, title: 'Quero descrever o que preciso', sub: 'Converse com o Oráculo e receba o orçamento personalizado em minutos.', color: C.purple100, iconColor: C.purple600, screen: 'chat' },
-          { icon: Ic.Camera, title: 'Vou enviar fotos', sub: 'Tire fotos do ambiente e deixe a IA identificar os serviços necessários.', color: C.green100, iconColor: C.green600, screen: 'analise' },
-        ].map(op => (
-          <Card key={op.title} onClick={() => onNavigate(op.screen)} style={{ padding: '24px', cursor: 'pointer', display: 'flex', gap: 20, alignItems: 'center', transition: 'box-shadow 0.15s' }}>
-            <div style={{ width: 56, height: 56, background: op.color, borderRadius: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-              <op.icon size={26} color={op.iconColor} />
-            </div>
-            <div style={{ flex: 1 }}>
-              <div style={{ fontSize: 16, fontWeight: 600, color: C.t900, marginBottom: 4 }}>{op.title}</div>
-              <div style={{ fontSize: 14, color: C.t500, lineHeight: 1.5 }}>{op.sub}</div>
-            </div>
-            <Ic.ChevronRight size={20} color={C.t300} />
-          </Card>
-        ))}
-      </div>
-      <Card style={{ padding: '18px 20px' }}>
-        <div style={{ fontSize: 14, fontWeight: 600, color: C.t900, marginBottom: 14 }}>Últimos orçamentos</div>
-        {[{ name: 'Residência Jardins — Etapa 02', status: 'aprovado', val: 'R$ 48.200', data: 'Mai 2025' }, { name: 'Torre Central — Elétrica', status: 'aguardando', val: 'R$ 127.600', data: 'Jun 2025' }].map(o => (
-          <div key={o.name} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 0', borderBottom: `1px solid ${C.borderLight}` }}>
-            <Ic.FileText size={18} color={C.t300} />
-            <div style={{ flex: 1 }}><div style={{ fontSize: 14, fontWeight: 500, color: C.t900 }}>{o.name}</div><div style={{ fontSize: 12, color: C.t500 }}>{o.data}</div></div>
-            <Badge color={o.status === 'aprovado' ? 'green' : 'orange'}>{o.status === 'aprovado' ? 'Aprovado' : 'Aguardando'}</Badge>
-            <span style={{ fontSize: 14, fontWeight: 700, color: C.t900 }}>{o.val}</span>
-          </div>
-        ))}
-      </Card>
-    </div>
-  </AppShell>
-);
-
-// ─── ANÁLISE DE ARQUIVOS ───────────────────────────────
-const AnaliseArquivosScreen = ({ onNavigate }) => {
-  const disciplinas = [
-    { name: 'Estrutura', items: 14, exp: false, atividades: ['Fundação em radier e50','Pilares C30 – 12 und.','Lajes maciças 20cm','Vigas baldrame'] },
-    { name: 'Civil / Vedações', items: 8, exp: false, atividades: ['Alvenaria bloco cerâmico 14cm','Revestimento argamassado interno','Chapisco e reboco ext.'] },
-    { name: 'Hidráulica', items: 11, exp: false, atividades: ['Tubulação PVC soldável','Instalação registros e metais','Aquecimento solar'] },
-    { name: 'Elétrica', items: 9, exp: false, atividades: ['Eletroduto corrugado','Quadro de distribuição','Tomadas e interruptores'] },
-    { name: 'Acabamentos', items: 17, exp: false, atividades: ['Piso porcelanato 90×90','Pintura acrílica','Forros de gesso'] },
-  ];
-  const [expanded, setExpanded] = useQ({});
-  return (
-    <AppShell active="analise" onNavigate={onNavigate}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 }}>
-        <button onClick={() => onNavigate('upload')} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6, color: C.t500, fontSize: 14, fontFamily: 'inherit' }}>
-          <Ic.ArrowLeft size={16} /> Upload
-        </button>
-        <span style={{ color: C.t300 }}>/</span>
-        <span style={{ fontSize: 14, fontWeight: 500, color: C.t900 }}>Análise técnica — {readProjectDraft().name || 'Novo projeto'}</span>
-      </div>
-
-      <div style={{ display: 'flex', gap: 16 }}>
-        <div style={{ flex: 1 }}>
-          <Card style={{ padding: '16px 20px', marginBottom: 16, background: C.green50, borderLeft: `4px solid ${C.green500}` }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              <Ic.Check size={20} color={C.green600} />
-              <div><div style={{ fontSize: 14, fontWeight: 600, color: C.green600 }}>Análise concluída em 3min 42s</div><div style={{ fontSize: 13, color: C.green600 }}>3 arquivos processados · 47 atividades identificadas em 5 disciplinas</div></div>
-            </div>
-          </Card>
-
-          <Card style={{ padding: '18px 20px', marginBottom: 16 }}>
-            <div style={{ fontSize: 14, fontWeight: 600, color: C.t900, marginBottom: 14 }}>Resumo do Projeto (IA)</div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 14 }}>
-              {[{ l: 'Tipo', v: 'Residencial' }, { l: 'Área total', v: '342 m²' }, { l: 'Ambientes', v: '12' }, { l: 'Arquivos', v: '3 / 3 ✓' }].map(k => (
-                <div key={k.l}><div style={{ fontSize: 12, color: C.t400 }}>{k.l}</div><div style={{ fontSize: 15, fontWeight: 700, color: C.t900, marginTop: 2 }}>{k.v}</div></div>
-              ))}
-            </div>
-          </Card>
-
-          <div style={{ fontSize: 14, fontWeight: 600, color: C.t900, marginBottom: 12 }}>Levantamento de Atividades</div>
-          {disciplinas.map((d, i) => (
-            <Card key={d.name} style={{ marginBottom: 10, overflow: 'hidden' }}>
-              <button onClick={() => setExpanded(e => ({ ...e, [i]: !e[i] }))} style={{
-                width: '100%', padding: '14px 18px', display: 'flex', alignItems: 'center', gap: 12,
-                background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', textAlign: 'left',
-              }}>
-                <div style={{ width: 10, height: 10, borderRadius: 5, background: [C.blue500,C.t500,C.blue600,C.orange500,C.purple600][i] }} />
-                <span style={{ flex: 1, fontSize: 14, fontWeight: 600, color: C.t900 }}>{d.name}</span>
-                <Badge color="gray">{d.items} atividades</Badge>
-                {expanded[i] ? <Ic.ChevronUp size={16} color={C.t400} /> : <Ic.ChevronDown size={16} color={C.t400} />}
-              </button>
-              {expanded[i] && (
-                <div style={{ borderTop: `1px solid ${C.border}`, padding: '12px 18px' }}>
-                  {d.atividades.map(a => (
-                    <div key={a} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 0', borderBottom: `1px solid ${C.borderLight}` }}>
-                      <Ic.Check size={13} color={C.green500} />
-                      <span style={{ flex: 1, fontSize: 13, color: C.t700 }}>{a}</span>
-                      <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: C.t300, display: 'flex' }}><Ic.Edit size={14} /></button>
-                    </div>
-                  ))}
-                  <button style={{ marginTop: 8, background: 'none', border: `1px dashed ${C.border}`, borderRadius: 8, padding: '6px 12px', fontSize: 12, color: C.t500, cursor: 'pointer', fontFamily: 'inherit' }}>+ Adicionar atividade</button>
-                </div>
-              )}
-            </Card>
-          ))}
-        </div>
-
-        <div style={{ width: 260, flexShrink: 0, display: 'flex', flexDirection: 'column', gap: 14 }}>
-          <Card style={{ padding: '18px 20px' }}>
-            <div style={{ fontSize: 14, fontWeight: 600, color: C.t900, marginBottom: 12 }}>Alertas da IA</div>
-            {[{ t: 'Banheiro sem janela', d: 'Avaliar ventilação forçada', c: C.orange500 }, { t: 'Estrutura metálica não compatibilizada', d: 'Verificar interferências com hidráulica', c: C.red500 }].map((a, i) => (
-              <div key={i} style={{ display: 'flex', gap: 8, marginBottom: 12, padding: '10px', background: C.orange100, borderRadius: 8 }}>
-                <Ic.AlertTriangle size={16} color={a.c} style={{ flexShrink: 0, marginTop: 1 }} />
-                <div><div style={{ fontSize: 13, fontWeight: 500, color: C.t900 }}>{a.t}</div><div style={{ fontSize: 12, color: C.t500, marginTop: 2 }}>{a.d}</div></div>
-              </div>
-            ))}
-          </Card>
-          <Card style={{ padding: '18px 20px' }}>
-            <div style={{ fontSize: 14, fontWeight: 600, color: C.t900, marginBottom: 14 }}>Próximos passos</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <Btn onClick={() => onNavigate('orcamento_qual')} style={{ width: '100%', justifyContent: 'center', padding: '11px' }}>Definir escopo qualitativo</Btn>
-              <Btn variant="secondary" onClick={() => onNavigate('orcamento_quant')} style={{ width: '100%', justifyContent: 'center', padding: '11px' }}>Ir direto ao orçamento quantitativo</Btn>
-              <Btn variant="ghost" style={{ width: '100%', justifyContent: 'center', padding: '11px' }}>Editar lista de atividades</Btn>
-            </div>
-          </Card>
-        </div>
-      </div>
-    </AppShell>
-  );
-};
-
-// ─── ORÇAMENTO QUANTITATIVO ────────────────────────────
+// ─── ORÇAMENTO QUANTITATIVO (FUNCIONAL — Demo) ─────────
 const OrcamentoQuantScreen = ({ onNavigate }) => {
-  const [tab, setTab] = useQ('disciplina');
-  const itens = [
-    { cod: 'EST-001', desc: 'Fundação em radier e=15cm', un: 'm²', qt: 342, pu: 185, orig: 'IA' },
-    { cod: 'EST-002', desc: 'Pilar concreto C30 fck', un: 'm³', qt: 18.4, pu: 1250, orig: 'IA' },
-    { cod: 'EST-003', desc: 'Laje maciça h=20cm', un: 'm²', qt: 284, pu: 210, orig: 'IA' },
-    { cod: 'HID-001', desc: 'Tubulação PVC soldável 40mm', un: 'm', qt: 186, pu: 28, orig: 'IA' },
-  ];
-  return null;
+  const [project, setProject] = React.useState(null);
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(null);
+  const [loadedFrom, setLoadedFrom] = React.useState('');
+
+  // Buscar dados do pipeline ao montar
+  React.useEffect(() => {
+    const load = async () => {
+      try {
+        setLoading(true);
+        // Tenta carregar do último projeto processado (Supabase via API)
+        if (window.MISApi) {
+          try {
+            const projects = await window.MISApi.listProjects({ limit: 5 });
+            if (projects?.projects?.length) {
+              // Pega o último projeto com status "done"
+              const done = projects.projects.find(p => p.status === 'done');
+              if (done) {
+                const detail = await window.MISApi.getProject(done.id);
+                if (detail?.project) {
+                  setProject(detail.project);
+                  setLoadedFrom('API Railway (último projeto processado)');
+                  setLoading(false);
+                  return;
+                }
+              }
+            }
+          } catch (e) { /* fallback */ }
+        }
+
+        // Fallback: dados mockados do pipeline (sample real)
+        setProject({
+          name: 'Projeto Amostra — Pipeline Draft C v2',
+          source_type: 'dxf',
+          status: 'done',
+          total_rooms: 4,
+          rooms: [
+            { name: 'Quadrado 5x5', area_m2: 25.0, perimeter_m: 20.0, width_m: 5.0, length_m: 5.0, shape: 'rectangle', confidence_geometry: 1.0, confidence_name: 0.95, faces: [{ label: 'piso', area_m2: 25.0 }, { label: 'teto', area_m2: 25.0 }, { label: 'paredes', area_m2: 56.0 }] },
+            { name: 'Retangulo 20x10', area_m2: 200.0, perimeter_m: 60.0, width_m: 20.0, length_m: 10.0, shape: 'rectangle', confidence_geometry: 1.0, confidence_name: 0.95, faces: [{ label: 'piso', area_m2: 200.0 }, { label: 'teto', area_m2: 200.0 }, { label: 'paredes', area_m2: 168.0 }] },
+            { name: 'Ambiente Externo', area_m2: 200.0, perimeter_m: 72.0, width_m: 36.0, length_m: 5.56, shape: 'irregular', confidence_geometry: 0.88, confidence_name: 0.70, faces: [{ label: 'piso', area_m2: 200.0 }, { label: 'teto', area_m2: 200.0 }, { label: 'paredes', area_m2: 201.6 }] },
+            { name: 'Retangulo 9x5', area_m2: 45.0, perimeter_m: 28.0, width_m: 9.0, length_m: 5.0, shape: 'rectangle', confidence_geometry: 1.0, confidence_name: 0.95, faces: [{ label: 'piso', area_m2: 45.0 }, { label: 'teto', area_m2: 45.0 }, { label: 'paredes', area_m2: 78.4 }] },
+          ],
+          warnings: ['Face detection limitada a entidades LINE/LWPOLYLINE', 'Qualificadores de material (azulejo/drywall) requerem PDF + Claude Vision'],
+          fragilities: [],
+          elapsed_ms: 3500,
+          created_at: new Date().toISOString(),
+        });
+        setLoadedFrom('Dados de amostra (Pipeline Draft C v2)');
+      } catch (err) {
+        setError('Falha ao carregar dados: ' + (err.message || 'Erro desconhecido'));
+      } finally {
+        setLoading(false);
+      }
+    };
+    load();
+  }, []);
+
+  // Gerar linhas da tabela quantitativa
+  const rows = React.useMemo(() => {
+    if (!project?.rooms) return [];
+    const items = [];
+    project.rooms.forEach((room, ri) => {
+      QT_CALC_RULES.forEach(rule => {
+        const qty = rule.calc(room);
+        if (qty > 0) {
+          items.push({
+            id: `${ri}-${rule.label}`,
+            ambiente: room.name,
+            item: rule.label,
+            un: rule.un,
+            quantidade: qty,
+            formula: rule.desc,
+            conf: room.confidence_geometry || 0.9,
+            area_ref: room.area_m2,
+          });
+        }
+      });
+    });
+    return items;
+  }, [project]);
+
+  // Estatísticas
+  const stats = React.useMemo(() => {
+    if (!project?.rooms?.length) return {};
+    const totalArea = project.rooms.reduce((s, r) => s + r.area_m2, 0);
+    const avgConf = project.rooms.reduce((s, r) => s + (r.confidence_geometry || 0), 0) / project.rooms.length;
+    return { totalArea, avgConf, roomCount: project.rooms.length, warningCount: (project.warnings || []).length };
+  }, [project]);
+
+  // CSV export
+  const exportCSV = () => {
+    if (!rows.length) return;
+    const header = 'Ambiente;Item;Unidade;Quantidade;Fórmula;Confiança\n';
+    const body = rows.map(r => `${r.ambiente};${r.item};${r.un};${QT_FORMAT(r.quantidade)};${r.formula};${(r.conf * 100).toFixed(0)}%`).join('\n');
+    const blob = new Blob(['\uFEFF' + header + body], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = 'levantamento_quantitativo.csv'; a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  if (loading) {
+    return React.createElement('div', { style: { minHeight: '100vh', background: 'var(--mis-bg)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 } },
+      React.createElement('div', { style: { width: 40, height: 40, borderRadius: 20, border: '3px solid var(--mis-border)', borderTopColor: '#2563eb', animation: 'mis-spin 0.8s linear infinite' } }),
+      React.createElement('p', { style: { color: 'var(--mis-text-muted)', fontSize: 14 } }, 'Carregando dados do pipeline...')
+    );
+  }
+
+  if (error) {
+    return React.createElement('div', { style: { minHeight: '100vh', background: 'var(--mis-bg)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, padding: 40 } },
+      React.createElement('div', { style: { fontSize: 48, marginBottom: 8 } }, '⚠️'),
+      React.createElement('h2', { style: { color: C.red600 } }, 'Erro ao carregar dados'),
+      React.createElement('p', { style: { color: 'var(--mis-text-muted)' } }, error),
+      React.createElement('button', { onClick: () => onNavigate('upload'), style: { marginTop: 16, padding: '10px 24px', borderRadius: 10, background: '#2563eb', color: '#fff', border: 'none', cursor: 'pointer', fontSize: 14 } }, '↑ Tentar novo upload')
+    );
+  }
+
+  return React.createElement('div', { className: 'mis-page-scroll', style: { minHeight: '100vh', background: 'var(--mis-bg)' } },
+    // Header
+    React.createElement('div', { style: { background: 'var(--mis-card)', borderBottom: '1px solid var(--mis-border)', padding: '16px 24px', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' } },
+      React.createElement('button', { onClick: () => onNavigate('feed'), style: { padding: '6px 12px', borderRadius: 6, background: 'var(--mis-surface-muted)', border: '1px solid var(--mis-border)', cursor: 'pointer', fontSize: 13, color: 'var(--mis-text-secondary)' } }, '← Voltar'),
+      React.createElement('span', { style: { color: 'var(--mis-text-muted)', fontSize: 12 } }, 'Upload → Análise IA →'),
+      React.createElement('span', { style: { color: 'var(--mis-text-strong)', fontSize: 14, fontWeight: 700 } }, 'Levantamento Quantitativo'),
+    ),
+
+    // Main content
+    React.createElement('div', { style: { maxWidth: 1100, margin: '0 auto', padding: '24px' } },
+      // Project info
+      React.createElement('div', { style: { marginBottom: 20 } },
+        React.createElement('h1', { style: { fontSize: 24, fontWeight: 800, color: 'var(--mis-text-strong)', marginBottom: 4 } }, project.name || 'Levantamento Quantitativo'),
+        React.createElement('p', { style: { fontSize: 13, color: 'var(--mis-text-muted)' } }, `Fonte: ${loadedFrom} · ${new Date(project.created_at).toLocaleDateString('pt-BR')}`),
+      ),
+
+      // Summary cards
+      React.createElement('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 14, marginBottom: 24 } },
+        React.createElement('div', { style: { background: 'var(--mis-card)', borderRadius: 12, border: '1px solid var(--mis-border)', padding: 18 } },
+          React.createElement('div', { style: { fontSize: 11, color: 'var(--mis-text-muted)', marginBottom: 4 } }, 'AMBIENTES'),
+          React.createElement('div', { style: { fontSize: 32, fontWeight: 800, color: 'var(--mis-text-strong)' } }, stats.roomCount),
+        ),
+        React.createElement('div', { style: { background: 'var(--mis-card)', borderRadius: 12, border: '1px solid var(--mis-border)', padding: 18 } },
+          React.createElement('div', { style: { fontSize: 11, color: 'var(--mis-text-muted)', marginBottom: 4 } }, 'ÁREA TOTAL'),
+          React.createElement('div', { style: { fontSize: 32, fontWeight: 800, color: '#2563eb' } }, `${QT_FORMAT(stats.totalArea)} m²`),
+        ),
+        React.createElement('div', { style: { background: 'var(--mis-card)', borderRadius: 12, border: '1px solid var(--mis-border)', padding: 18 } },
+          React.createElement('div', { style: { fontSize: 11, color: 'var(--mis-text-muted)', marginBottom: 4 } }, 'CONFIANÇA MÉDIA'),
+          React.createElement('div', { style: { fontSize: 32, fontWeight: 800, color: QT_CONFIDENCE_COLOR(stats.avgConf) } }, `${((stats.avgConf || 0) * 100).toFixed(0)}%`),
+        ),
+        React.createElement('div', { style: { background: 'var(--mis-card)', borderRadius: 12, border: '1px solid var(--mis-border)', padding: 18 } },
+          React.createElement('div', { style: { fontSize: 11, color: 'var(--mis-text-muted)', marginBottom: 4 } }, 'ITENS QUANTITATIVOS'),
+          React.createElement('div', { style: { fontSize: 32, fontWeight: 800, color: 'var(--mis-text-strong)' } }, rows.length),
+        ),
+      ),
+
+      // Pipeline info banner
+      React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 10, padding: '10px 16px', borderRadius: 8, background: stats.warningCount ? '#FFF8E1' : '#F0FDF4', border: `1px solid ${stats.warningCount ? '#FCD34D' : '#BBF7D0'}`, marginBottom: 20, fontSize: 12 } },
+        React.createElement('span', null, stats.warningCount ? '⚠️' : '✅'),
+        React.createElement('span', { style: { color: 'var(--mis-text-secondary)' } },
+          `Pipeline Draft C v2 · ${stats.warningCount ? stats.warningCount + ' ressalvas técnicas' : 'Sem ressalvas'} · Tempo de extração: ${project.elapsed_ms ? (project.elapsed_ms / 1000).toFixed(1) + 's' : 'N/A'}`
+        ),
+      ),
+
+      // Table header + export button
+      React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 } },
+        React.createElement('h2', { style: { fontSize: 16, fontWeight: 700, color: 'var(--mis-text-strong)' } }, '📊 Tabela de Quantitativos'),
+        React.createElement('div', { style: { display: 'flex', gap: 8 } },
+          React.createElement('button', { onClick: exportCSV, style: { padding: '8px 16px', borderRadius: 8, background: '#059669', color: '#fff', border: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 600 } }, '📥 Exportar CSV'),
+        ),
+      ),
+
+      // Quantitative table
+      React.createElement('div', { style: { background: 'var(--mis-card)', borderRadius: 12, border: '1px solid var(--mis-border)', overflow: 'hidden' } },
+        React.createElement('table', { style: { width: '100%', borderCollapse: 'collapse' } },
+          React.createElement('thead', null,
+            React.createElement('tr', { style: { background: 'var(--mis-surface-muted)', borderBottom: '1px solid var(--mis-border)' } },
+              ['Ambiente', 'Item', 'Un.', 'Quantidade', 'Fórmula', 'Conf.'].map(h =>
+                React.createElement('th', { key: h, style: { textAlign: 'left', padding: '12px 14px', fontSize: 12, fontWeight: 600, color: 'var(--mis-text-muted)', letterSpacing: 0.3 } }, h)
+              )
+            )
+          ),
+          React.createElement('tbody', null,
+            rows.map((r, i) =>
+              React.createElement('tr', { key: r.id, style: { borderBottom: '1px solid var(--mis-border)', background: i % 2 === 0 ? 'transparent' : 'var(--mis-surface-soft)' } },
+                React.createElement('td', { style: { padding: '10px 14px', fontSize: 13, fontWeight: 600, color: 'var(--mis-text-strong)' } }, r.ambiente),
+                React.createElement('td', { style: { padding: '10px 14px', fontSize: 13, color: 'var(--mis-text-secondary)' } }, r.item),
+                React.createElement('td', { style: { padding: '10px 14px', fontSize: 13, color: 'var(--mis-text-muted)' } }, r.un),
+                React.createElement('td', { style: { padding: '10px 14px', fontSize: 14, fontWeight: 700, color: 'var(--mis-text-strong)' } }, QT_FORMAT(r.quantidade)),
+                React.createElement('td', { style: { padding: '10px 14px', fontSize: 11, color: 'var(--mis-text-muted)', maxWidth: 200 } }, r.formula),
+                React.createElement('td', { style: { padding: '10px 14px', fontSize: 13, fontWeight: 600 } },
+                  React.createElement('span', { style: { color: QT_CONFIDENCE_COLOR(r.conf), background: r.conf >= 0.9 ? '#DCFCE7' : r.conf >= 0.7 ? '#FFF7ED' : '#FEE2E2', padding: '2px 8px', borderRadius: 10, fontSize: 12 } }, `${(r.conf * 100).toFixed(0)}%`)
+                ),
+              )
+            )
+          )
+        ),
+      ),
+
+      // Warnings section
+      project.warnings?.length > 0 && React.createElement('div', { style: { marginTop: 20, padding: 16, borderRadius: 10, background: '#FFFBEB', border: '1px solid #FDE68A' } },
+        React.createElement('div', { style: { fontSize: 13, fontWeight: 600, color: '#92400E', marginBottom: 6 } }, '⚠️ Ressalvas técnicas do pipeline'),
+        ...project.warnings.map((w, i) => React.createElement('div', { key: i, style: { fontSize: 12, color: '#78350F', marginBottom: 3 } }, `• ${w}`))
+      ),
+
+      // Action buttons
+      React.createElement('div', { style: { display: 'flex', gap: 10, marginTop: 24, flexWrap: 'wrap' } },
+        React.createElement('button', { onClick: () => onNavigate('upload'), style: { padding: '12px 24px', borderRadius: 10, background: '#2563eb', color: '#fff', border: 'none', cursor: 'pointer', fontSize: 14, fontWeight: 600 } }, '↑ Fazer novo upload'),
+        React.createElement('button', { onClick: () => onNavigate('proposta'), style: { padding: '12px 24px', borderRadius: 10, background: 'var(--mis-card)', color: 'var(--mis-text-strong)', border: '1px solid var(--mis-border)', cursor: 'pointer', fontSize: 14, fontWeight: 600 } }, '📋 Gerar Proposta'),
+        React.createElement('button', { onClick: exportCSV, style: { padding: '12px 24px', borderRadius: 10, background: 'var(--mis-card)', color: '#059669', border: '1px solid #059669', cursor: 'pointer', fontSize: 14, fontWeight: 600 } }, '📥 Exportar CSV'),
+      ),
+    ),
+  );
 };
 
-Object.assign(window, { QueroReformarScreen,QueroOrcamentoScreen,AnaliseArquivosScreen,OrcamentoQuantScreen });
+Object.assign(window, { QueroReformarScreen, QueroOrcamentoScreen, AnaliseArquivosScreen, OrcamentoQuantScreen });
