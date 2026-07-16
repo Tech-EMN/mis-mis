@@ -46,9 +46,17 @@ const OrcamentoQuantScreen = ({ onNavigate }) => {
 
   // Buscar dados do pipeline ao montar
   React.useEffect(() => {
+    let cancelled = false;
     const load = async () => {
       try {
         setLoading(true);
+        // Timeout: force fallback after 8s
+        const timeout = setTimeout(() => {
+          if (!cancelled) {
+            setLoading(false);
+            console.warn('API timeout — usando dados de demonstração');
+          }
+        }, 8000);
         // Tenta carregar do último projeto processado (Supabase via API)
         if (window.MISApi) {
           try {
@@ -93,7 +101,7 @@ const OrcamentoQuantScreen = ({ onNavigate }) => {
         setLoading(false);
       }
     };
-    load();
+    load(); return () => { cancelled = true; clearTimeout(timeout); };
   }, []);
 
   // Gerar linhas da tabela quantitativa
@@ -165,6 +173,13 @@ const OrcamentoQuantScreen = ({ onNavigate }) => {
 
     // Main content
     React.createElement('div', { style: { maxWidth: 1100, margin: '0 auto', padding: '24px' } },
+      React.createElement('div', { style: { background: '#FEF2F2', border: '1px solid #FECACA', borderRadius: 10, padding: '10px 16px', marginBottom: 16, display: 'flex', gap: 10, alignItems: 'center' } },
+        React.createElement('span', { style: { fontSize: 18 } }, '⚠️'),
+        React.createElement('div', null,
+          React.createElement('strong', { style: { color: '#991B1B', fontSize: 13 } }, 'DADOS DE DEMONSTRAÇÃO'),
+          React.createElement('div', { style: { color: '#7F1D1D', fontSize: 11, marginTop: 2 } }, 'Walking Skeleton — Sprint 1. Motor funcional, regras de negócio (BDI, SINAPI, memorial descritivo) no Sprint 4.')
+        )
+      ),
       // Project info
       React.createElement('div', { style: { marginBottom: 20 } },
         React.createElement('h1', { style: { fontSize: 24, fontWeight: 800, color: 'var(--mis-text-strong)', marginBottom: 4 } }, project.name || 'Levantamento Quantitativo'),
