@@ -31,6 +31,26 @@
           integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
           crossorigin="anonymous"></script>
 
+  <!-- Fix: React 18 createRoot() polyfill for UMD development build -->
+  <script>
+    (function() {
+      var testDiv = document.createElement('div');
+      try {
+        var testRoot = ReactDOM.createRoot(testDiv);
+        testRoot.render(React.createElement('div', null, 'polyfill-test'));
+        if (testDiv.innerHTML.indexOf('polyfill-test') !== -1) return;
+      } catch(e) {}
+      ReactDOM.createRoot = function(container) {
+        return {
+          render: function(el) { ReactDOM.render(el, container); },
+          unmount: function() { ReactDOM.unmountComponentAtNode(container); },
+          _internalRoot: null
+        };
+      };
+    })();
+  </script>
+
+
   <!-- === Tema inicial (antes do primeiro render, evita flash) === -->
   <script>
     try {
