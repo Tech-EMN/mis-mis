@@ -383,3 +383,16 @@ const writeProjectDraft = draft => {
 // ─── State hooks aliases ─────────────────────────────────────────────
 const useOp = React.useState;
 const useQ  = React.useState;
+
+// ─── Circular Progress ─────────────────────────────────────
+const CircProg = ({ value = 0, size = 48, stroke = 3.5, color = '#2563eb', bg = '#E5E7EB' }) => {
+  const r = (size - stroke) / 2;
+  const c = 2 * Math.PI * r;
+  const pct = Math.min(100, Math.max(0, value));
+  const offset = c - (pct / 100) * c;
+  return React.createElement('svg', { width: size, height: size, style: { flexShrink: 0 } },
+    React.createElement('circle', { cx: size / 2, cy: size / 2, r, fill: 'none', stroke: bg, strokeWidth: stroke }),
+    React.createElement('circle', { cx: size / 2, cy: size / 2, r, fill: 'none', stroke: color, strokeWidth: stroke, strokeLinecap: 'round', strokeDasharray: c, strokeDashoffset: offset, transform: `rotate(-90 ${size / 2} ${size / 2})`, style: { transition: 'stroke-dashoffset 0.5s ease' } }),
+    React.createElement('text', { x: '50%', y: '50%', textAnchor: 'middle', dominantBaseline: 'central', fontSize: size * 0.24, fontWeight: 700, fill: '#1a1a2e' }, Math.round(pct) + '%')
+  );
+};
