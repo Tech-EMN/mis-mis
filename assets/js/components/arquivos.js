@@ -12,8 +12,21 @@ const UploadScreen = ({ onNavigate }) => {
   const [arquivos, setArquivos] = useOp(initial.files || []);
   const update = (key, value) => setDraft(prev => ({ ...prev, [key]: value }));
   const addFiles = list => {
-    const added = Array.from(list || []).map(file => ({ nome: file.name, tipo: (file.name.split('.').pop() || 'ARQ').toUpperCase(), tam: `${Math.max(.1, file.size / 1024 / 1024).toFixed(1)} MB`, status: 'Pronto' }));
+    const supported = ['DXF', 'DWG', 'PDF'];
+    const added = Array.from(list || []).map(file => {
+      const ext = (file.name.split('.').pop() || 'ARQ').toUpperCase();
+      return { nome: file.name, tipo: ext, tam: `${Math.max(.1, file.size / 1024 / 1024).toFixed(1)} MB`, status: supported.includes(ext) ? 'Enviando...' : 'Pronto', file };
+    });
     if (added.length) setArquivos(v => [...v, ...added]);
+    added.forEach(f => {
+      if (supported.includes(f.tipo) && window.MISApi) {
+        window.MISApi.extract(f.file, f.nome).then(res => {
+          setArquivos(v => v.map(a => a.nome === f.nome ? { ...a, status: '✅ Extraído', taskId: res.task_id } : a));
+        }).catch(err => {
+          setArquivos(v => v.map(a => a.nome === f.nome ? { ...a, status: '✗ ' + (err.message || 'Erro') } : a));
+        });
+      }
+    });
   };
   const save = () => writeProjectDraft({ ...draft, files: arquivos });
   const continueFlow = () => { save(); onNavigate('analise'); };
@@ -63,8 +76,21 @@ const ProjectFilesScreen = ({ onNavigate }) => {
     { nome:'Memorial descritivo.docx', tipo:'DOCX', tam:'1.2 MB', status:'Pronto' },
   ]);
   const addFiles = list => {
-    const added = Array.from(list || []).map(file => ({ nome: file.name, tipo: (file.name.split('.').pop() || 'ARQ').toUpperCase(), tam: `${Math.max(.1, file.size / 1024 / 1024).toFixed(1)} MB`, status: 'Pronto' }));
+    const supported = ['DXF', 'DWG', 'PDF'];
+    const added = Array.from(list || []).map(file => {
+      const ext = (file.name.split('.').pop() || 'ARQ').toUpperCase();
+      return { nome: file.name, tipo: ext, tam: `${Math.max(.1, file.size / 1024 / 1024).toFixed(1)} MB`, status: supported.includes(ext) ? 'Enviando...' : 'Pronto', file };
+    });
     if (added.length) setArquivos(v => [...v, ...added]);
+    added.forEach(f => {
+      if (supported.includes(f.tipo) && window.MISApi) {
+        window.MISApi.extract(f.file, f.nome).then(res => {
+          setArquivos(v => v.map(a => a.nome === f.nome ? { ...a, status: '✅ Extraído', taskId: res.task_id } : a));
+        }).catch(err => {
+          setArquivos(v => v.map(a => a.nome === f.nome ? { ...a, status: '✗ ' + (err.message || 'Erro') } : a));
+        });
+      }
+    });
   };
   const downloadFolderModel = () => {
     const content = '01_Arquitetura\n02_Estrutura\n03_Instalacoes\n04_Orcamentos\n05_Relatorios\n06_Fotos';
