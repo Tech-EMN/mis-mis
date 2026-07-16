@@ -378,3 +378,8 @@ const writeProjectDraft = draft => {
   return next;
 };
 
+
+
+// ─── State hooks aliases ─────────────────────────────────────────────
+const useOp = React.useState;
+const useQ  = React.useState;
