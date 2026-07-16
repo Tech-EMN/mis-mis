@@ -216,3 +216,5 @@ const reactRoot = ReactDOM.createRoot(rootEl);
 reactRoot.render(<Root />);
 
   
+
+Object.assign(window, { Root, App, SCREEN_MAP, FullPageScreens: FULLPAGE_SCREENS });
