@@ -400,3 +400,5 @@ const CotacoesScreen = ({ onNavigate }) => {
                   <td style={{ padding: '12px', color: C.t700 }}>{r.aco}</td>
                   <td style={{ padding: '12px', color: C.t700 }}>{r.perf}</td>
                   <td style={{ padding: '12px', color: C.t700 }}>{r.prazo}</td>
+
+Object.assign(window, { MarketplaceScreen,FornecedorScreen,CotacoesScreen });

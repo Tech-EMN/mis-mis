@@ -285,3 +285,5 @@ const OrcamentoQuantScreen = ({ onNavigate }) => {
     { cod: 'EST-002', desc: 'Pilar concreto C30 fck', un: 'm³', qt: 18.4, pu: 1250, orig: 'IA' },
     { cod: 'EST-003', desc: 'Laje maciça h=20cm', un: 'm²', qt: 284, pu: 210, orig: 'IA' },
     { cod: 'HID-001', desc: 'Tubulação PVC soldável 40mm', un: 'm', qt: 186, pu: 28, orig: 'IA' },
+
+Object.assign(window, { QueroReformarScreen,QueroOrcamentoScreen,AnaliseArquivosScreen,OrcamentoQuantScreen });

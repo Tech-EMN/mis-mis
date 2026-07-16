@@ -210,3 +210,5 @@ const AtualizacoesScreen = ({ onNavigate }) => {
   );
 };
 
+
+Object.assign(window, { AtualizacoesScreen });

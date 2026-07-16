@@ -166,3 +166,5 @@ const MisFeedScreen = ({ onNavigate }) => {
 };
 
 // ─── SUPRIMENTOS ──────────────────────────────────────────────────────────────
+
+Object.assign(window, { MisFeedScreen });

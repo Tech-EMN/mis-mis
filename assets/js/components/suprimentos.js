@@ -186,3 +186,5 @@ const SuprimentosScreen = ({ onNavigate }) => {
 };
 
 // ─── PENDÊNCIAS ───────────────────────────────────────────────────────────────
+
+Object.assign(window, { SuprimentosScreen });

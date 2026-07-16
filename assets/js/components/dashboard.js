@@ -229,3 +229,5 @@ const DashboardScreen = ({ onNavigate }) => {
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, color: C.t500 }}>
               <span>Consumido<br /><strong style={{ color: C.t900 }}>R$ 3,3M</strong></span>
               <span style={{ textAlign: 'right' }}>Restante<br /><strong style={{ color: C.t900 }}>R$ 0,9M</strong></span>
+
+Object.assign(window, { DashboardScreen });

@@ -82,3 +82,5 @@ const NotificacoesScreen = ({ onNavigate }) => {
 };
 
 // ─── CONFIGURAÇÕES ─────────────────────────────────────
+
+Object.assign(window, { NotificacoesScreen });

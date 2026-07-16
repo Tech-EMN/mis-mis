@@ -318,3 +318,5 @@ const AlertasScreen = ({ onNavigate }) => {
 };
 
 // ─── ATUALIZAÇÕES ─────────────────────────────────────────────────────────────
+
+Object.assign(window, { PendenciasScreen,AlertasScreen });
