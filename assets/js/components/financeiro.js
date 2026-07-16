@@ -392,5 +392,8 @@ const FluxoCaixaScreen = ({ onNavigate }) => {
           </svg>
         </div>
       </Card>
+    </AppShell>
+  );
+};
 
 Object.assign(window, { FinanceiroScreen,ContasReceberScreen,ContasPagarScreen,FluxoCaixaScreen });
