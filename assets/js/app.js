@@ -59,7 +59,7 @@ const SCREEN_MAP = {
 };
 
 // Screens that don't use AppShell (full-page)
-const FULLPAGE_SCREENS = new Set(['login', 'cadastro', 'onboarding', 'dashboard_uc', 'aprovacao']);
+const FULLPAGE_SCREENS = new Set(['login', 'cadastro', 'onboarding', 'dashboard_uc', 'aprovacao', 'orcamento_quant', 'analise']);
 
 const App = () => {
   const [screen, setScreen] = useApp(() => {
@@ -95,7 +95,7 @@ const QuickNav = ({ onNavigate }) => {
     { label: 'Projeto selecionado', screens: [['dashboard','Visão geral'],['dashboard_uc','Dashboard do cliente'],['chat','Chat Oráculo']] },
     { label: 'Projetos', screens: [['projetos','Projetos'],['detalhe_projeto','Detalhe Projeto'],['cronograma','Cronograma']] },
     { label: 'Obra', screens: [['execucao','Execução'],['atividades','Atividades Diárias'],['relatorio_foto','Rel. Fotográfico']] },
-    { label: 'Novo projeto', screens: [['upload','Dados e arquivos'],['reformar','Quero Reformar'],['orcamento','Quero Orçamento'],['analise','Análise IA'],['orcamento_quant','Orçamento Quant.'],['proposta','Proposta'],['aprovacao','Aprovação']] },
+    { label: 'Novo projeto', screens: [['upload','Dados e arquivos'],['reformar','Quero Reformar'],['orcamento','Quero Orçamento'],['analise','Análise IA'],['orcamento_quant','Orçamento Quant.'],['proposta','Proposta'],['aprovacao', 'orcamento_quant', 'analise','Aprovação']] },
     { label: 'Ops', screens: [['feed','MIS Feed'],['suprimentos','Suprimentos'],['pendencias','Pendências'],['alertas','Alertas'],['atualizacoes','Atualizações'],['arquivos_projeto','Arquivos do projeto']] },
     { label: 'Sistema', screens: [['notificacoes','Notificações'],['configuracoes','Configurações'],['perfil_op','Perfil OP'],['feed_op','Feed Oportunidades']] },
     { label: 'Financeiro', screens: [['financeiro_geral','Financeiro Geral'],['financeiro','Painel Financeiro'],['contas_receber','Contas a Receber'],['contas_pagar','Contas a Pagar'],['fluxo_caixa','Fluxo de Caixa'],['medicoes','Medições']] },
@@ -197,7 +197,7 @@ const Root = () => {
     if (!SCREEN_MAP[s]) return;
     if (PROJECT_SCOPED_SCREENS.has(s) && !readActiveProject()) s = 'feed';
     setScreen(s);
-    const nonPersistentScreens = new Set(['atividades', 'dashboard_uc', 'aprovacao']);
+    const nonPersistentScreens = new Set(['atividades', 'dashboard_uc', 'aprovacao', 'orcamento_quant', 'analise']);
     localStorage.setItem('mis_screen', nonPersistentScreens.has(s) ? 'feed' : s);
     if (window.location.hash !== `#${s}`) window.location.hash = s;
     const scroller = document.querySelector('.mis-page-scroll');
