@@ -1,6 +1,6 @@
 /* === MIS API CONFIG === */
-window.MIS_API_URL = "http://localhost:8000/api/v1";
-// Produção: defina MIS_API_URL no Netlify (Site settings → Environment variables)
+window.MIS_API_URL = "https://mis-engine-production-208d.up.railway.app/api/v1";
+// Produção: Railway deploy (S1.10 resolved 2026-07-16). Fallback: Netlify env var.
 
 /* === CONFIG === */
 
