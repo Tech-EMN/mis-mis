@@ -63,7 +63,7 @@ const FULLPAGE_SCREENS = new Set(['login', 'cadastro', 'onboarding', 'dashboard_
 
 const App = () => {
   const [screen, setScreen] = useApp(() => {
-    const stored = localStorage.getItem('mis_screen') || 'feed'; return PROJECT_SCOPED_SCREENS.has(stored) && !readActiveProject() ? 'feed' : stored;
+    const stored = localStorage.getItem('mis_screen') || 'login'; return PROJECT_SCOPED_SCREENS.has(stored) && !readActiveProject() ? 'feed' : stored;
   });
   const [history, setHistory] = useApp([]);
 
@@ -167,7 +167,7 @@ const Root = () => {
     // A rota explícita na URL continua funcionando. Sem rota, o protótipo sempre
     // abre no MIS Feed, evitando restaurar uma tela operacional isolada
     // salva por uma execução anterior no localStorage.
-    const candidate = hash && SCREEN_MAP[hash] ? hash : 'feed';
+    const candidate = hash && SCREEN_MAP[hash] ? hash : 'login';
     const next = PROJECT_SCOPED_SCREENS.has(candidate) && !readActiveProject() ? 'feed' : candidate;
 
     if (!hash) {
