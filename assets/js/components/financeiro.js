@@ -392,16 +392,5 @@ const FluxoCaixaScreen = ({ onNavigate }) => {
           </svg>
         </div>
       </Card>
-    </AppShell>
-  );
-};
-
-const ContasReceberScreen = ({ onNavigate }) => {
-  return React.createElement('div', null, 'Contas a Receber');
-};
-
-const FluxoCaixaScreen = ({ onNavigate }) => {
-  return React.createElement('div', null, 'Fluxo de Caixa');
-};
 
 Object.assign(window, { FinanceiroScreen,ContasReceberScreen,ContasPagarScreen,FluxoCaixaScreen });
