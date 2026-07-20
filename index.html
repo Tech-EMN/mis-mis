@@ -20,33 +20,6 @@
   <link rel="stylesheet" href="assets/css/dark-mode-part3c.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 
-  <!-- === Dependências (React 18 — sem Babel: bundle pré-compilado) === -->
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
-          integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
-          crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
-          integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
-          crossorigin="anonymous"></script>
-
-  <!-- Fix: React 18 createRoot() polyfill for UMD development build -->
-  <script>
-    (function() {
-      var testDiv = document.createElement('div');
-      try {
-        var testRoot = ReactDOM.createRoot(testDiv);
-        testRoot.render(React.createElement('div', null, 'polyfill-test'));
-        if (testDiv.innerHTML.indexOf('polyfill-test') !== -1) return;
-      } catch(e) {}
-      ReactDOM.createRoot = function(container) {
-        return {
-          render: function(el) { ReactDOM.render(el, container); },
-          unmount: function() { ReactDOM.unmountComponentAtNode(container); },
-          _internalRoot: null
-        };
-      };
-    })();
-  </script>
-
   <!-- === Tema inicial (antes do primeiro render, evita flash) === -->
   <script>
     try {
@@ -57,13 +30,21 @@
     }
   </script>
 
-  <!-- === BUNDLE (pré-compilado com Babel CLI — sem dependência de Babel no browser) === -->
-  <!-- Fix S1.12: bundle único substitui 24 scripts JSX (lição OrthoX F1.4, L34-41) -->
-  <script src="assets/js/bundle.js"></script>
-  <script src="assets/js/api.js"></script>
-
 </head>
 <body>
   <div id="root"></div>
+
+  <!-- === Dependências (React 18) === -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+          integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+          crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+          integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+          crossorigin="anonymous"></script>
+
+  <!-- === BUNDLE (pré-compilado Babel runtime:classic — 24 arquivos JSX) === -->
+  <script src="assets/js/bundle.js"></script>
+  <script src="assets/js/api.js"></script>
+
 </body>
 </html>

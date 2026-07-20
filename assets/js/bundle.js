@@ -11668,22 +11668,3 @@ Object.assign(window, {
   SCREEN_MAP,
   FullPageScreens: FULLPAGE_SCREENS
 });
-
-/* === RENDER BOOTSTRAP === */
-(function() {
-  if (typeof App === 'undefined') {
-    console.error('MIS: App component not found. Bundle may be incomplete.');
-    return;
-  }
-  var container = document.getElementById('root');
-  if (!container) {
-    console.error('MIS: #root element not found.');
-    return;
-  }
-  if (!window.location.hash || window.location.hash === '#' || window.location.hash === '#feed') {
-    window.location.hash = '#login';
-  }
-  var root = ReactDOM.createRoot(container);
-  root.render(React.createElement(App));
-  console.log('MIS v1.0.0 — bundle loaded, screen=' + window.location.hash);
-})();
