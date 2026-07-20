@@ -1,4 +1,3 @@
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === MIS API CONFIG === */
 window.MIS_API_URL = "https://mis-engine-production-208d.up.railway.app/api/v1";
 // Produção: Railway deploy (S1.10 resolved 2026-07-16). Fallback: Netlify env var.
@@ -11,7 +10,7 @@ const MisBrand = ({
   style = {},
   className = '',
   alt = 'MIS'
-}) => /*#__PURE__*/_jsxDEV("img", {
+}) => /*#__PURE__*/React.createElement("img", {
   src: MIS_LOGO,
   alt: alt,
   className: className,
@@ -25,7 +24,7 @@ const MisBrand = ({
     userSelect: 'none',
     ...style
   }
-}, void 0, false);
+});
 
 // mis-ui.jsx — MIS Design System: tokens, icons, shared components
 
@@ -63,7 +62,7 @@ const Svg = ({
   children,
   style,
   ...p
-}) => /*#__PURE__*/_jsxDEV("svg", {
+}) => /*#__PURE__*/React.createElement("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: size,
   height: size,
@@ -77,632 +76,469 @@ const Svg = ({
     flexShrink: 0,
     ...style
   },
-  ...p,
-  children: children
-}, void 0, false);
+  ...p
+}, children);
 const Ic = {
-  Dashboard: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("rect", {
-      width: "7",
-      height: "9",
-      x: "3",
-      y: "3",
-      rx: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("rect", {
-      width: "7",
-      height: "5",
-      x: "14",
-      y: "3",
-      rx: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("rect", {
-      width: "7",
-      height: "9",
-      x: "14",
-      y: "12",
-      rx: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("rect", {
-      width: "7",
-      height: "5",
-      x: "3",
-      y: "16",
-      rx: "1"
-    }, void 0, false)]
-  }, void 0, true),
-  Feed: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M18 14h-8"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M15 18h-5"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M10 6h8v4h-8V6Z"
-    }, void 0, false)]
-  }, void 0, true),
-  Building: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M10 6h4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M10 10h4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M10 14h4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M10 18h4"
-    }, void 0, false)]
-  }, void 0, true),
-  Package: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "m7.5 4.27 9 5.15"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "m3.3 7 8.7 5 8.7-5"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 22V12"
-    }, void 0, false)]
-  }, void 0, true),
-  Clipboard: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("rect", {
-      width: "8",
-      height: "4",
-      x: "8",
-      y: "2",
-      rx: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 11h4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 16h4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M8 11h.01"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M8 16h.01"
-    }, void 0, false)]
-  }, void 0, true),
-  Bell: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M10.3 21a1.94 1.94 0 0 0 3.4 0"
-    }, void 0, false)]
-  }, void 0, true),
-  Refresh: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M21 3v5h-5"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M8 16H3v5"
-    }, void 0, false)]
-  }, void 0, true),
-  Upload: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("polyline", {
-      points: "17 8 12 3 7 8"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "12",
-      x2: "12",
-      y1: "3",
-      y2: "15"
-    }, void 0, false)]
-  }, void 0, true),
-  Search: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("circle", {
-      cx: "11",
-      cy: "11",
-      r: "8"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "m21 21-4.3-4.3"
-    }, void 0, false)]
-  }, void 0, true),
-  Settings: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M20 7h-9"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M14 17H5"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "17",
-      cy: "17",
-      r: "3"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "7",
-      cy: "7",
-      r: "3"
-    }, void 0, false)]
-  }, void 0, true),
-  Moon: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
-    }, void 0, false)
-  }, void 0, false),
-  Plus: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M5 12h14"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 5v14"
-    }, void 0, false)]
-  }, void 0, true),
-  ArrowLeft: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "m12 19-7-7 7-7"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M19 12H5"
-    }, void 0, false)]
-  }, void 0, true),
-  ChevronDown: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "m6 9 6 6 6-6"
-    }, void 0, false)
-  }, void 0, false),
-  ChevronRight: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "m9 18 6-6-6-6"
-    }, void 0, false)
-  }, void 0, false),
-  ChevronUp: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "m18 15-6-6-6 6"
-    }, void 0, false)
-  }, void 0, false),
-  Check: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "M20 6 9 17l-5-5"
-    }, void 0, false)
-  }, void 0, false),
-  X: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M18 6 6 18"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "m6 6 12 12"
-    }, void 0, false)]
-  }, void 0, true),
-  AlertTriangle: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 9v4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 17h.01"
-    }, void 0, false)]
-  }, void 0, true),
-  AlertCircle: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("circle", {
-      cx: "12",
-      cy: "12",
-      r: "10"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "12",
-      x2: "12",
-      y1: "8",
-      y2: "12"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "12",
-      x2: "12.01",
-      y1: "16",
-      y2: "16"
-    }, void 0, false)]
-  }, void 0, true),
-  Info: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("circle", {
-      cx: "12",
-      cy: "12",
-      r: "10"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 16v-4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M12 8h.01"
-    }, void 0, false)]
-  }, void 0, true),
-  Camera: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "12",
-      cy: "13",
-      r: "3"
-    }, void 0, false)]
-  }, void 0, true),
-  MoreH: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("circle", {
-      cx: "12",
-      cy: "12",
-      r: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "19",
-      cy: "12",
-      r: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "5",
-      cy: "12",
-      r: "1"
-    }, void 0, false)]
-  }, void 0, true),
-  User: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "12",
-      cy: "7",
-      r: "4"
-    }, void 0, false)]
-  }, void 0, true),
-  Message: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z"
-    }, void 0, false)
-  }, void 0, false),
-  Sparkles: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M5 3v4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M19 17v4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M3 5h4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M17 19h4"
-    }, void 0, false)]
-  }, void 0, true),
-  TrendUp: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("polyline", {
-      points: "22 7 13.5 15.5 8.5 10.5 2 17"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("polyline", {
-      points: "16 7 22 7 22 13"
-    }, void 0, false)]
-  }, void 0, true),
-  Calendar: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M8 2v4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M16 2v4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("rect", {
-      width: "18",
-      height: "18",
-      x: "3",
-      y: "4",
-      rx: "2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M3 10h18"
-    }, void 0, false)]
-  }, void 0, true),
-  FileText: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M14 2v4a2 2 0 0 0 2 2h4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M10 9H8"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M16 13H8"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M16 17H8"
-    }, void 0, false)]
-  }, void 0, true),
-  MapPin: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "12",
-      cy: "10",
-      r: "3"
-    }, void 0, false)]
-  }, void 0, true),
-  Star: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("polygon", {
-      points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-    }, void 0, false)
-  }, void 0, false),
-  Dollar: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("line", {
-      x1: "12",
-      x2: "12",
-      y1: "2",
-      y2: "22"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
-    }, void 0, false)]
-  }, void 0, true),
-  BarChart: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("line", {
-      x1: "18",
-      x2: "18",
-      y1: "20",
-      y2: "10"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "12",
-      x2: "12",
-      y1: "20",
-      y2: "4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "6",
-      x2: "6",
-      y1: "20",
-      y2: "14"
-    }, void 0, false)]
-  }, void 0, true),
-  Clock: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("circle", {
-      cx: "12",
-      cy: "12",
-      r: "10"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("polyline", {
-      points: "12 6 12 12 16 14"
-    }, void 0, false)]
-  }, void 0, true),
-  Filter: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("polygon", {
-      points: "22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
-    }, void 0, false)
-  }, void 0, false),
-  Grid: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("rect", {
-      width: "7",
-      height: "7",
-      x: "3",
-      y: "3",
-      rx: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("rect", {
-      width: "7",
-      height: "7",
-      x: "14",
-      y: "3",
-      rx: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("rect", {
-      width: "7",
-      height: "7",
-      x: "14",
-      y: "14",
-      rx: "1"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("rect", {
-      width: "7",
-      height: "7",
-      x: "3",
-      y: "14",
-      rx: "1"
-    }, void 0, false)]
-  }, void 0, true),
-  List: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("line", {
-      x1: "8",
-      x2: "21",
-      y1: "6",
-      y2: "6"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "8",
-      x2: "21",
-      y1: "12",
-      y2: "12"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "8",
-      x2: "21",
-      y1: "18",
-      y2: "18"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "3",
-      x2: "3.01",
-      y1: "6",
-      y2: "6"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "3",
-      x2: "3.01",
-      y1: "12",
-      y2: "12"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "3",
-      x2: "3.01",
-      y1: "18",
-      y2: "18"
-    }, void 0, false)]
-  }, void 0, true),
-  Send: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "m22 2-7 20-4-9-9-4Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M22 2 11 13"
-    }, void 0, false)]
-  }, void 0, true),
-  Heart: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-    }, void 0, false)
-  }, void 0, false),
-  Eye: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "12",
-      cy: "12",
-      r: "3"
-    }, void 0, false)]
-  }, void 0, true),
-  Lock: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("rect", {
-      width: "18",
-      height: "11",
-      x: "3",
-      y: "11",
-      rx: "2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M7 11V7a5 5 0 0 1 10 0v4"
-    }, void 0, false)]
-  }, void 0, true),
-  Mail: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("rect", {
-      width: "20",
-      height: "16",
-      x: "2",
-      y: "4",
-      rx: "2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
-    }, void 0, false)]
-  }, void 0, true),
-  Phone: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 15a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 4.34h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
-    }, void 0, false)
-  }, void 0, false),
-  Zap: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
-    }, void 0, false)
-  }, void 0, false),
-  Mic: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M19 10v2a7 7 0 0 1-14 0v-2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "12",
-      x2: "12",
-      y1: "19",
-      y2: "22"
-    }, void 0, false)]
-  }, void 0, true),
-  Paperclip: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("path", {
-      d: "m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"
-    }, void 0, false)
-  }, void 0, false),
-  Home: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("polyline", {
-      points: "9 22 9 12 15 12 15 22"
-    }, void 0, false)]
-  }, void 0, true),
-  Share: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("polyline", {
-      points: "16 6 12 2 8 6"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "12",
-      x2: "12",
-      y1: "2",
-      y2: "15"
-    }, void 0, false)]
-  }, void 0, true),
-  Layers: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"
-    }, void 0, false)]
-  }, void 0, true),
-  Trash: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M3 6h18"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
-    }, void 0, false)]
-  }, void 0, true),
-  Edit: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
-    }, void 0, false)]
-  }, void 0, true),
-  Download: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("polyline", {
-      points: "7 10 12 15 17 10"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("line", {
-      x1: "12",
-      x2: "12",
-      y1: "15",
-      y2: "3"
-    }, void 0, false)]
-  }, void 0, true),
-  Users: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: [/*#__PURE__*/_jsxDEV("path", {
-      d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("circle", {
-      cx: "9",
-      cy: "7",
-      r: "4"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M22 21v-2a4 4 0 0 0-3-3.87"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("path", {
-      d: "M16 3.13a4 4 0 0 1 0 7.75"
-    }, void 0, false)]
-  }, void 0, true),
-  Activity: p => /*#__PURE__*/_jsxDEV(Svg, {
-    ...p,
-    children: /*#__PURE__*/_jsxDEV("polyline", {
-      points: "22 12 18 12 15 21 9 3 6 12 2 12"
-    }, void 0, false)
-  }, void 0, false)
+  Dashboard: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("rect", {
+    width: "7",
+    height: "9",
+    x: "3",
+    y: "3",
+    rx: "1"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: "7",
+    height: "5",
+    x: "14",
+    y: "3",
+    rx: "1"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: "7",
+    height: "9",
+    x: "14",
+    y: "12",
+    rx: "1"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: "7",
+    height: "5",
+    x: "3",
+    y: "16",
+    rx: "1"
+  })),
+  Feed: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M18 14h-8"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M15 18h-5"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M10 6h8v4h-8V6Z"
+  })),
+  Building: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M10 6h4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M10 10h4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M10 14h4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M10 18h4"
+  })),
+  Package: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m7.5 4.27 9 5.15"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "m3.3 7 8.7 5 8.7-5"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12 22V12"
+  })),
+  Clipboard: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("rect", {
+    width: "8",
+    height: "4",
+    x: "8",
+    y: "2",
+    rx: "1"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12 11h4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12 16h4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M8 11h.01"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M8 16h.01"
+  })),
+  Bell: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M10.3 21a1.94 1.94 0 0 0 3.4 0"
+  })),
+  Refresh: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M21 3v5h-5"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M8 16H3v5"
+  })),
+  Upload: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+  }), /*#__PURE__*/React.createElement("polyline", {
+    points: "17 8 12 3 7 8"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "12",
+    x2: "12",
+    y1: "3",
+    y2: "15"
+  })),
+  Search: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("circle", {
+    cx: "11",
+    cy: "11",
+    r: "8"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "m21 21-4.3-4.3"
+  })),
+  Settings: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M20 7h-9"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M14 17H5"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "17",
+    cy: "17",
+    r: "3"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "7",
+    cy: "7",
+    r: "3"
+  })),
+  Moon: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+  })),
+  Plus: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M5 12h14"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12 5v14"
+  })),
+  ArrowLeft: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m12 19-7-7 7-7"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M19 12H5"
+  })),
+  ChevronDown: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m6 9 6 6 6-6"
+  })),
+  ChevronRight: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m9 18 6-6-6-6"
+  })),
+  ChevronUp: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m18 15-6-6-6 6"
+  })),
+  Check: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M20 6 9 17l-5-5"
+  })),
+  X: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M18 6 6 18"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "m6 6 12 12"
+  })),
+  AlertTriangle: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12 9v4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12 17h.01"
+  })),
+  AlertCircle: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "10"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "12",
+    x2: "12",
+    y1: "8",
+    y2: "12"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "12",
+    x2: "12.01",
+    y1: "16",
+    y2: "16"
+  })),
+  Info: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "10"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12 16v-4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12 8h.01"
+  })),
+  Camera: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "13",
+    r: "3"
+  })),
+  MoreH: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "1"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "19",
+    cy: "12",
+    r: "1"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "5",
+    cy: "12",
+    r: "1"
+  })),
+  User: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "7",
+    r: "4"
+  })),
+  Message: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z"
+  })),
+  Sparkles: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M5 3v4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M19 17v4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M3 5h4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M17 19h4"
+  })),
+  TrendUp: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("polyline", {
+    points: "22 7 13.5 15.5 8.5 10.5 2 17"
+  }), /*#__PURE__*/React.createElement("polyline", {
+    points: "16 7 22 7 22 13"
+  })),
+  Calendar: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M8 2v4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M16 2v4"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: "18",
+    height: "18",
+    x: "3",
+    y: "4",
+    rx: "2"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M3 10h18"
+  })),
+  FileText: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M14 2v4a2 2 0 0 0 2 2h4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M10 9H8"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M16 13H8"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M16 17H8"
+  })),
+  MapPin: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "10",
+    r: "3"
+  })),
+  Star: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("polygon", {
+    points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+  })),
+  Dollar: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("line", {
+    x1: "12",
+    x2: "12",
+    y1: "2",
+    y2: "22"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+  })),
+  BarChart: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("line", {
+    x1: "18",
+    x2: "18",
+    y1: "20",
+    y2: "10"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "12",
+    x2: "12",
+    y1: "20",
+    y2: "4"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "6",
+    x2: "6",
+    y1: "20",
+    y2: "14"
+  })),
+  Clock: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "10"
+  }), /*#__PURE__*/React.createElement("polyline", {
+    points: "12 6 12 12 16 14"
+  })),
+  Filter: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("polygon", {
+    points: "22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+  })),
+  Grid: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("rect", {
+    width: "7",
+    height: "7",
+    x: "3",
+    y: "3",
+    rx: "1"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: "7",
+    height: "7",
+    x: "14",
+    y: "3",
+    rx: "1"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: "7",
+    height: "7",
+    x: "14",
+    y: "14",
+    rx: "1"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: "7",
+    height: "7",
+    x: "3",
+    y: "14",
+    rx: "1"
+  })),
+  List: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("line", {
+    x1: "8",
+    x2: "21",
+    y1: "6",
+    y2: "6"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "8",
+    x2: "21",
+    y1: "12",
+    y2: "12"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "8",
+    x2: "21",
+    y1: "18",
+    y2: "18"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "3",
+    x2: "3.01",
+    y1: "6",
+    y2: "6"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "3",
+    x2: "3.01",
+    y1: "12",
+    y2: "12"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "3",
+    x2: "3.01",
+    y1: "18",
+    y2: "18"
+  })),
+  Send: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m22 2-7 20-4-9-9-4Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M22 2 11 13"
+  })),
+  Heart: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+  })),
+  Eye: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "3"
+  })),
+  Lock: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("rect", {
+    width: "18",
+    height: "11",
+    x: "3",
+    y: "11",
+    rx: "2"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M7 11V7a5 5 0 0 1 10 0v4"
+  })),
+  Mail: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("rect", {
+    width: "20",
+    height: "16",
+    x: "2",
+    y: "4",
+    rx: "2"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+  })),
+  Phone: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 15a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 4.34h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+  })),
+  Zap: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+  })),
+  Mic: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M19 10v2a7 7 0 0 1-14 0v-2"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "12",
+    x2: "12",
+    y1: "19",
+    y2: "22"
+  })),
+  Paperclip: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"
+  })),
+  Home: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+  }), /*#__PURE__*/React.createElement("polyline", {
+    points: "9 22 9 12 15 12 15 22"
+  })),
+  Share: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"
+  }), /*#__PURE__*/React.createElement("polyline", {
+    points: "16 6 12 2 8 6"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "12",
+    x2: "12",
+    y1: "2",
+    y2: "15"
+  })),
+  Layers: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"
+  })),
+  Trash: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M3 6h18"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+  })),
+  Edit: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+  })),
+  Download: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+  }), /*#__PURE__*/React.createElement("polyline", {
+    points: "7 10 12 15 17 10"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "12",
+    x2: "12",
+    y1: "15",
+    y2: "3"
+  })),
+  Users: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
+    d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "9",
+    cy: "7",
+    r: "4"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M22 21v-2a4 4 0 0 0-3-3.87"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M16 3.13a4 4 0 0 1 0 7.75"
+  })),
+  Activity: p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("polyline", {
+    points: "22 12 18 12 15 21 9 3 6 12 2 12"
+  }))
 };
 
 // ─── Shared Components ───────────────────────────────────────────────────────
@@ -744,7 +580,7 @@ const Badge = ({
     }
   };
   const cs = map[color] || map.gray;
-  return /*#__PURE__*/_jsxDEV("span", {
+  return /*#__PURE__*/React.createElement("span", {
     style: {
       display: 'inline-flex',
       alignItems: 'center',
@@ -756,17 +592,16 @@ const Badge = ({
       background: cs.bg,
       color: cs.txt,
       ...style
-    },
-    children: [dot && /*#__PURE__*/_jsxDEV("span", {
-      style: {
-        width: 6,
-        height: 6,
-        borderRadius: 3,
-        background: cs.txt,
-        display: 'inline-block'
-      }
-    }, void 0, false), children]
-  }, void 0, true);
+    }
+  }, dot && /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 6,
+      height: 6,
+      borderRadius: 3,
+      background: cs.txt,
+      display: 'inline-block'
+    }
+  }), children);
 };
 const Card = ({
   children,
@@ -774,7 +609,7 @@ const Card = ({
   onClick,
   className = '',
   ...p
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   className: `mis-card${className ? ` ${className}` : ''}`,
   onClick: onClick,
   style: {
@@ -786,9 +621,8 @@ const Card = ({
     transition: onClick ? 'transform .15s ease, box-shadow .15s ease' : undefined,
     ...style
   },
-  ...p,
-  children: children
-}, void 0, false);
+  ...p
+}, children);
 const ProgressBar = ({
   value = 0,
   color,
@@ -796,24 +630,23 @@ const ProgressBar = ({
   style
 }) => {
   const col = color || (value >= 80 ? C.green500 : value >= 50 ? C.blue500 : value >= 30 ? C.orange500 : C.red500);
-  return /*#__PURE__*/_jsxDEV("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       background: '#E5E7EB',
       borderRadius: height,
       height,
       overflow: 'hidden',
       ...style
-    },
-    children: /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        width: `${Math.min(100, Math.max(0, value))}%`,
-        height: '100%',
-        background: col,
-        borderRadius: height,
-        transition: 'width 0.4s ease'
-      }
-    }, void 0, false)
-  }, void 0, false);
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: `${Math.min(100, Math.max(0, value))}%`,
+      height: '100%',
+      background: col,
+      borderRadius: height,
+      transition: 'width 0.4s ease'
+    }
+  }));
 };
 const StatCard = ({
   label,
@@ -822,47 +655,39 @@ const StatCard = ({
   subColor,
   icon,
   style
-}) => /*#__PURE__*/_jsxDEV(Card, {
+}) => /*#__PURE__*/React.createElement(Card, {
   style: {
     padding: '20px 24px',
     ...style
-  },
-  children: /*#__PURE__*/_jsxDEV("div", {
-    style: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'flex-start'
-    },
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          fontSize: 13,
-          color: C.t500,
-          marginBottom: 8
-        },
-        children: label
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          fontSize: 34,
-          fontWeight: 700,
-          color: C.t900,
-          lineHeight: 1
-        },
-        children: value
-      }, void 0, false), sub && /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          marginTop: 10
-        },
-        children: sub
-      }, void 0, false)]
-    }, void 0, true), icon && /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        color: C.t300
-      },
-      children: icon
-    }, void 0, false)]
-  }, void 0, true)
-}, void 0, false);
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start'
+  }
+}, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+  style: {
+    fontSize: 13,
+    color: C.t500,
+    marginBottom: 8
+  }
+}, label), /*#__PURE__*/React.createElement("div", {
+  style: {
+    fontSize: 34,
+    fontWeight: 700,
+    color: C.t900,
+    lineHeight: 1
+  }
+}, value), sub && /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginTop: 10
+  }
+}, sub)), icon && /*#__PURE__*/React.createElement("div", {
+  style: {
+    color: C.t300
+  }
+}, icon)));
 const Avatar = ({
   name = '',
   size = 36,
@@ -872,7 +697,7 @@ const Avatar = ({
   const initials = name.trim().split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase();
   const colors = ['#1C3A2A', '#1e40af', '#7c3aed', '#b45309', '#0f766e', '#9f1239', '#374151'];
   const autoBg = colors[name.charCodeAt(0) % colors.length];
-  return /*#__PURE__*/_jsxDEV("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       width: size,
       height: size,
@@ -886,9 +711,8 @@ const Avatar = ({
       fontWeight: 700,
       flexShrink: 0,
       ...style
-    },
-    children: initials || '?'
-  }, void 0, false);
+    }
+  }, initials || '?');
 };
 const Btn = ({
   children,
@@ -946,7 +770,7 @@ const Btn = ({
       fontSize: 15
     }
   };
-  return /*#__PURE__*/_jsxDEV("button", {
+  return /*#__PURE__*/React.createElement("button", {
     type: type,
     onClick: onClick,
     disabled: disabled,
@@ -964,9 +788,8 @@ const Btn = ({
       ...v[variant],
       ...sz[size],
       ...style
-    },
-    children: [icon, children]
-  }, void 0, true);
+    }
+  }, icon, children);
 };
 const Input = ({
   label,
@@ -978,108 +801,100 @@ const Input = ({
   iconL,
   iconR,
   hint
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   style: {
     display: 'flex',
     flexDirection: 'column',
     gap: 5,
     ...style
-  },
-  children: [label && /*#__PURE__*/_jsxDEV("label", {
-    style: {
-      fontSize: 13,
-      fontWeight: 500,
-      color: C.t700
-    },
-    children: label
-  }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-    style: {
-      position: 'relative',
-      display: 'flex',
-      alignItems: 'center'
-    },
-    children: [iconL && /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        position: 'absolute',
-        left: 12,
-        color: C.t400,
-        display: 'flex'
-      },
-      children: iconL
-    }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-      className: "mis-input",
-      type: type,
-      placeholder: placeholder,
-      value: value,
-      onChange: onChange,
-      style: {
-        width: '100%',
-        padding: `10px ${iconR ? '38px' : '14px'} 10px ${iconL ? '38px' : '14px'}`,
-        border: `1.5px solid ${C.border}`,
-        borderRadius: 10,
-        fontSize: 14,
-        color: C.t900,
-        background: '#fff',
-        outline: 'none',
-        fontFamily: 'inherit'
-      }
-    }, void 0, false), iconR && /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        position: 'absolute',
-        right: 12,
-        color: C.t400,
-        display: 'flex',
-        cursor: 'pointer'
-      },
-      children: iconR
-    }, void 0, false)]
-  }, void 0, true), hint && /*#__PURE__*/_jsxDEV("div", {
-    style: {
-      fontSize: 12,
-      color: C.t400
-    },
-    children: hint
-  }, void 0, false)]
-}, void 0, true);
+  }
+}, label && /*#__PURE__*/React.createElement("label", {
+  style: {
+    fontSize: 13,
+    fontWeight: 500,
+    color: C.t700
+  }
+}, label), /*#__PURE__*/React.createElement("div", {
+  style: {
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center'
+  }
+}, iconL && /*#__PURE__*/React.createElement("div", {
+  style: {
+    position: 'absolute',
+    left: 12,
+    color: C.t400,
+    display: 'flex'
+  }
+}, iconL), /*#__PURE__*/React.createElement("input", {
+  className: "mis-input",
+  type: type,
+  placeholder: placeholder,
+  value: value,
+  onChange: onChange,
+  style: {
+    width: '100%',
+    padding: `10px ${iconR ? '38px' : '14px'} 10px ${iconL ? '38px' : '14px'}`,
+    border: `1.5px solid ${C.border}`,
+    borderRadius: 10,
+    fontSize: 14,
+    color: C.t900,
+    background: '#fff',
+    outline: 'none',
+    fontFamily: 'inherit'
+  }
+}), iconR && /*#__PURE__*/React.createElement("div", {
+  style: {
+    position: 'absolute',
+    right: 12,
+    color: C.t400,
+    display: 'flex',
+    cursor: 'pointer'
+  }
+}, iconR)), hint && /*#__PURE__*/React.createElement("div", {
+  style: {
+    fontSize: 12,
+    color: C.t400
+  }
+}, hint));
 const Divider = ({
   label,
   style
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   className: "mis-divider",
   style: {
     display: 'flex',
     alignItems: 'center',
     gap: 12,
     ...style
-  },
-  children: [/*#__PURE__*/_jsxDEV("div", {
-    className: "mis-divider-line",
-    style: {
-      flex: 1,
-      height: 1,
-      background: C.border
-    }
-  }, void 0, false), label && /*#__PURE__*/_jsxDEV("span", {
-    className: "mis-divider-label",
-    style: {
-      fontSize: 12,
-      color: C.t400,
-      whiteSpace: 'nowrap'
-    },
-    children: label
-  }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-    className: "mis-divider-line",
-    style: {
-      flex: 1,
-      height: 1,
-      background: C.border
-    }
-  }, void 0, false)]
-}, void 0, true);
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  className: "mis-divider-line",
+  style: {
+    flex: 1,
+    height: 1,
+    background: C.border
+  }
+}), label && /*#__PURE__*/React.createElement("span", {
+  className: "mis-divider-label",
+  style: {
+    fontSize: 12,
+    color: C.t400,
+    whiteSpace: 'nowrap'
+  }
+}, label), /*#__PURE__*/React.createElement("div", {
+  className: "mis-divider-line",
+  style: {
+    flex: 1,
+    height: 1,
+    background: C.border
+  }
+}));
 const StatusDot = ({
   color = C.green500,
   size = 8
-}) => /*#__PURE__*/_jsxDEV("span", {
+}) => /*#__PURE__*/React.createElement("span", {
   style: {
     width: size,
     height: size,
@@ -1088,7 +903,7 @@ const StatusDot = ({
     display: 'inline-block',
     flexShrink: 0
   }
-}, void 0, false);
+});
 const OBRA_IMGS = {
   villa: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80',
   jardins: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80',
@@ -1110,7 +925,7 @@ const ObraImg = ({
   obra = 'nordica',
   style,
   children
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   style: {
     backgroundImage: `url(${OBRA_IMGS[obra] || OBRA_IMGS.nordica})`,
     backgroundSize: 'cover',
@@ -1119,13 +934,12 @@ const ObraImg = ({
     position: 'relative',
     overflow: 'hidden',
     ...style
-  },
-  children: children
-}, void 0, false);
+  }
+}, children);
 const ImgPlaceholder = ({
   label,
   style
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   style: {
     background: '#D8DCE1',
     borderRadius: 10,
@@ -1135,113 +949,105 @@ const ImgPlaceholder = ({
     color: '#9CA3AF',
     fontSize: 11,
     ...style
-  },
-  children: label
-}, void 0, false);
+  }
+}, label);
 const SectionHeader = ({
   title,
   subtitle,
   action,
   style
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   style: {
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     marginBottom: 22,
     ...style
-  },
-  children: [/*#__PURE__*/_jsxDEV("div", {
-    children: [/*#__PURE__*/_jsxDEV("h1", {
-      style: {
-        fontSize: 38,
-        fontWeight: 800,
-        color: C.t900,
-        lineHeight: 1.08,
-        letterSpacing: '-1.2px'
-      },
-      children: title
-    }, void 0, false), subtitle && /*#__PURE__*/_jsxDEV("p", {
-      style: {
-        fontSize: 13,
-        color: C.t500,
-        marginTop: 8
-      },
-      children: subtitle
-    }, void 0, false)]
-  }, void 0, true), action]
-}, void 0, true);
+  }
+}, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
+  style: {
+    fontSize: 38,
+    fontWeight: 800,
+    color: C.t900,
+    lineHeight: 1.08,
+    letterSpacing: '-1.2px'
+  }
+}, title), subtitle && /*#__PURE__*/React.createElement("p", {
+  style: {
+    fontSize: 13,
+    color: C.t500,
+    marginTop: 8
+  }
+}, subtitle)), action);
 const TabBar = ({
   tabs,
   active,
   onChange,
   style
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   style: {
     display: 'flex',
     gap: 4,
     ...style
-  },
-  children: tabs.map(t => {
-    const id = t.id || t;
-    const lbl = t.label || t;
-    const isA = active === id;
-    return /*#__PURE__*/_jsxDEV("button", {
-      className: `mis-select-btn${isA ? ' active' : ''}`,
-      "aria-pressed": isA,
-      onClick: () => onChange(id),
-      style: {
-        padding: '7px 16px',
-        borderRadius: 8,
-        fontSize: 14,
-        fontWeight: 500,
-        cursor: 'pointer',
-        border: 'none',
-        fontFamily: 'inherit',
-        background: isA ? C.t900 : 'transparent',
-        color: isA ? '#fff' : C.t500,
-        transition: 'all 0.15s'
-      },
-      children: lbl
-    }, id, false);
-  })
-}, void 0, false);
+  }
+}, tabs.map(t => {
+  const id = t.id || t;
+  const lbl = t.label || t;
+  const isA = active === id;
+  return /*#__PURE__*/React.createElement("button", {
+    key: id,
+    className: `mis-select-btn${isA ? ' active' : ''}`,
+    "aria-pressed": isA,
+    onClick: () => onChange(id),
+    style: {
+      padding: '7px 16px',
+      borderRadius: 8,
+      fontSize: 14,
+      fontWeight: 500,
+      cursor: 'pointer',
+      border: 'none',
+      fontFamily: 'inherit',
+      background: isA ? C.t900 : 'transparent',
+      color: isA ? '#fff' : C.t500,
+      transition: 'all 0.15s'
+    }
+  }, lbl);
+}));
 const ChipBar = ({
   chips,
   active,
   onChange,
   style
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   style: {
     display: 'flex',
     gap: 8,
     flexWrap: 'wrap',
     ...style
-  },
-  children: chips.map(c => {
-    const id = c.id || c;
-    const lbl = c.label || c;
-    const isA = active === id;
-    return /*#__PURE__*/_jsxDEV("button", {
-      className: `mis-select-btn${isA ? ' active' : ''}`,
-      "aria-pressed": isA,
-      onClick: () => onChange(id),
-      style: {
-        padding: '5px 14px',
-        borderRadius: 20,
-        fontSize: 13,
-        fontWeight: 500,
-        cursor: 'pointer',
-        fontFamily: 'inherit',
-        border: isA ? 'none' : `1.5px solid ${C.border}`,
-        background: isA ? C.t900 : C.card,
-        color: isA ? '#fff' : C.t700,
-        transition: 'all 0.15s'
-      },
-      children: lbl
-    }, id, false);
-  })
-}, void 0, false);
+  }
+}, chips.map(c => {
+  const id = c.id || c;
+  const lbl = c.label || c;
+  const isA = active === id;
+  return /*#__PURE__*/React.createElement("button", {
+    key: id,
+    className: `mis-select-btn${isA ? ' active' : ''}`,
+    "aria-pressed": isA,
+    onClick: () => onChange(id),
+    style: {
+      padding: '5px 14px',
+      borderRadius: 20,
+      fontSize: 13,
+      fontWeight: 500,
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      border: isA ? 'none' : `1.5px solid ${C.border}`,
+      background: isA ? C.t900 : C.card,
+      color: isA ? '#fff' : C.t700,
+      transition: 'all 0.15s'
+    }
+  }, lbl);
+}));
 Object.assign(window, {
   C,
   Ic,
@@ -1563,7 +1369,6 @@ const CircProg = ({
     fill: '#1a1a2e'
   }, Math.round(pct) + '%'));
 };
-import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
 /* === UI === */
 
 const PROJECT_WORKSPACE_GROUPS = [{
@@ -1689,119 +1494,91 @@ const ProjectWorkspaceDropdown = ({
   })));
   const current = allItems.find(item => item.id === active) || allItems[0];
   const CurrentIcon = Ic[current.icon] || Ic.Grid;
-  return /*#__PURE__*/_jsxDEV("section", {
+  return /*#__PURE__*/React.createElement("section", {
     className: "project-context-compact",
     "aria-label": "Navegação do projeto selecionado",
-    ref: ref,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      className: "project-context-identity",
-      children: [/*#__PURE__*/_jsxDEV("button", {
-        className: "project-workspace-back",
-        onClick: () => onNavigate('projetos'),
-        children: [/*#__PURE__*/_jsxDEV(Ic.ArrowLeft, {
-          size: 14
-        }, void 0, false), "Todos os projetos"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-        className: "project-context-divider",
-        children: "/"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        className: "project-context-project",
-        children: [/*#__PURE__*/_jsxDEV(Ic.Building, {
-          size: 15,
-          color: C.navActive
-        }, void 0, false), /*#__PURE__*/_jsxDEV("strong", {
-          children: project.name
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV(Badge, {
-        color: "green",
-        children: "Projeto selecionado"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "project-module-picker",
-      children: [/*#__PURE__*/_jsxDEV("span", {
-        className: "project-module-caption",
-        children: "Visualizando"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-        className: `project-module-trigger${open ? ' open' : ''}`,
-        onClick: () => setOpen(v => !v),
-        "aria-expanded": open,
-        children: [/*#__PURE__*/_jsxDEV(CurrentIcon, {
-          size: 16
-        }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-          children: current.label
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Ic.ChevronDown, {
-          size: 14
-        }, void 0, false)]
-      }, void 0, true), open && /*#__PURE__*/_jsxDEV("div", {
-        className: "project-module-menu",
-        children: PROJECT_WORKSPACE_GROUPS.map(group => /*#__PURE__*/_jsxDEV("div", {
-          className: "project-module-group",
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            className: "project-module-group-title",
-            children: group.label
-          }, void 0, false), group.items.map(item => {
-            const Icon = Ic[item.icon];
-            return /*#__PURE__*/_jsxDEV("button", {
-              className: `project-module-option mis-select-btn${active === item.id ? ' active' : ''}`,
-              onClick: () => {
-                setOpen(false);
-                onNavigate(item.id);
-              },
-              children: [Icon && /*#__PURE__*/_jsxDEV(Icon, {
-                size: 15
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                children: item.label
-              }, void 0, false), active === item.id && /*#__PURE__*/_jsxDEV(Ic.Check, {
-                size: 14
-              }, void 0, false)]
-            }, item.id, true);
-          })]
-        }, group.label, true))
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-      className: "project-change-btn",
-      onClick: () => onNavigate('projetos'),
-      children: "Trocar projeto"
-    }, void 0, false)]
-  }, void 0, true);
+    ref: ref
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "project-context-identity"
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "project-workspace-back",
+    onClick: () => onNavigate('projetos')
+  }, /*#__PURE__*/React.createElement(Ic.ArrowLeft, {
+    size: 14
+  }), "Todos os projetos"), /*#__PURE__*/React.createElement("span", {
+    className: "project-context-divider"
+  }, "/"), /*#__PURE__*/React.createElement("div", {
+    className: "project-context-project"
+  }, /*#__PURE__*/React.createElement(Ic.Building, {
+    size: 15,
+    color: C.navActive
+  }), /*#__PURE__*/React.createElement("strong", null, project.name)), /*#__PURE__*/React.createElement(Badge, {
+    color: "green"
+  }, "Projeto selecionado")), /*#__PURE__*/React.createElement("div", {
+    className: "project-module-picker"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "project-module-caption"
+  }, "Visualizando"), /*#__PURE__*/React.createElement("button", {
+    className: `project-module-trigger${open ? ' open' : ''}`,
+    onClick: () => setOpen(v => !v),
+    "aria-expanded": open
+  }, /*#__PURE__*/React.createElement(CurrentIcon, {
+    size: 16
+  }), /*#__PURE__*/React.createElement("span", null, current.label), /*#__PURE__*/React.createElement(Ic.ChevronDown, {
+    size: 14
+  })), open && /*#__PURE__*/React.createElement("div", {
+    className: "project-module-menu"
+  }, PROJECT_WORKSPACE_GROUPS.map(group => /*#__PURE__*/React.createElement("div", {
+    className: "project-module-group",
+    key: group.label
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "project-module-group-title"
+  }, group.label), group.items.map(item => {
+    const Icon = Ic[item.icon];
+    return /*#__PURE__*/React.createElement("button", {
+      key: item.id,
+      className: `project-module-option mis-select-btn${active === item.id ? ' active' : ''}`,
+      onClick: () => {
+        setOpen(false);
+        onNavigate(item.id);
+      }
+    }, Icon && /*#__PURE__*/React.createElement(Icon, {
+      size: 15
+    }), /*#__PURE__*/React.createElement("span", null, item.label), active === item.id && /*#__PURE__*/React.createElement(Ic.Check, {
+      size: 14
+    }));
+  }))))), /*#__PURE__*/React.createElement("button", {
+    className: "project-change-btn",
+    onClick: () => onNavigate('projetos')
+  }, "Trocar projeto"));
 };
 const NewProjectFlowNav = ({
   active,
   onNavigate
 }) => {
   const currentIndex = Math.max(0, NEW_PROJECT_FLOW.findIndex(step => step.id === active));
-  return /*#__PURE__*/_jsxDEV("section", {
+  return /*#__PURE__*/React.createElement("section", {
     className: "new-project-flow",
-    "aria-label": "Etapas de inclusão do novo projeto",
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      className: "new-project-flow-copy",
-      children: [/*#__PURE__*/_jsxDEV("span", {
-        children: "Novo projeto"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("strong", {
-        children: "Inclusão, orçamento e proposta"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "new-project-flow-steps",
-      children: NEW_PROJECT_FLOW.map((step, index) => {
-        const Icon = Ic[step.icon];
-        const state = index < currentIndex ? 'done' : index === currentIndex ? 'active' : '';
-        return /*#__PURE__*/_jsxDEV("button", {
-          className: `new-project-step mis-select-btn ${state}`,
-          onClick: () => onNavigate(step.id),
-          children: [/*#__PURE__*/_jsxDEV("span", {
-            className: "new-project-step-index",
-            children: state === 'done' ? /*#__PURE__*/_jsxDEV(Ic.Check, {
-              size: 12
-            }, void 0, false) : index + 1
-          }, void 0, false), Icon && /*#__PURE__*/_jsxDEV(Icon, {
-            size: 14
-          }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-            children: step.label
-          }, void 0, false)]
-        }, step.id, true);
-      })
-    }, void 0, false)]
-  }, void 0, true);
+    "aria-label": "Etapas de inclusão do novo projeto"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "new-project-flow-copy"
+  }, /*#__PURE__*/React.createElement("span", null, "Novo projeto"), /*#__PURE__*/React.createElement("strong", null, "Inclusão, orçamento e proposta")), /*#__PURE__*/React.createElement("div", {
+    className: "new-project-flow-steps"
+  }, NEW_PROJECT_FLOW.map((step, index) => {
+    const Icon = Ic[step.icon];
+    const state = index < currentIndex ? 'done' : index === currentIndex ? 'active' : '';
+    return /*#__PURE__*/React.createElement("button", {
+      key: step.id,
+      className: `new-project-step mis-select-btn ${state}`,
+      onClick: () => onNavigate(step.id)
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "new-project-step-index"
+    }, state === 'done' ? /*#__PURE__*/React.createElement(Ic.Check, {
+      size: 12
+    }) : index + 1), Icon && /*#__PURE__*/React.createElement(Icon, {
+      size: 14
+    }), /*#__PURE__*/React.createElement("span", null, step.label));
+  })));
 };
 const PAGE_CATALOG = [{
   id: 'dashboard',
@@ -1976,7 +1753,7 @@ const ModalFrame = ({
   children,
   onClose,
   width = 560
-}) => /*#__PURE__*/_jsxDEV("div", {
+}) => /*#__PURE__*/React.createElement("div", {
   onMouseDown: e => e.target === e.currentTarget && onClose(),
   style: {
     position: 'fixed',
@@ -1988,22 +1765,20 @@ const ModalFrame = ({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 24
-  },
-  children: /*#__PURE__*/_jsxDEV("div", {
-    style: {
-      width: '100%',
-      maxWidth: width,
-      maxHeight: '86vh',
-      overflowY: 'auto',
-      background: '#fff',
-      borderRadius: 22,
-      border: `1px solid ${C.border}`,
-      boxShadow: '0 28px 80px rgba(15,23,42,.22)',
-      padding: 22
-    },
-    children: children
-  }, void 0, false)
-}, void 0, false);
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    width: '100%',
+    maxWidth: width,
+    maxHeight: '86vh',
+    overflowY: 'auto',
+    background: '#fff',
+    borderRadius: 22,
+    border: `1px solid ${C.border}`,
+    boxShadow: '0 28px 80px rgba(15,23,42,.22)',
+    padding: 22
+  }
+}, children));
 const SearchPalette = ({
   onClose,
   onNavigate
@@ -2012,110 +1787,102 @@ const SearchPalette = ({
   const normalized = query.trim().toLowerCase();
   const results = PAGE_CATALOG.filter(p => !normalized || `${p.label} ${p.group}`.toLowerCase().includes(normalized));
   const grouped = results.reduce((acc, item) => ((acc[item.group] ||= []).push(item), acc), {});
-  return /*#__PURE__*/_jsxDEV(ModalFrame, {
+  return /*#__PURE__*/React.createElement(ModalFrame, {
     onClose: onClose,
-    width: 680,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: 12,
-        padding: '4px 4px 16px',
-        borderBottom: `1px solid ${C.border}`
-      },
-      children: [/*#__PURE__*/_jsxDEV(Ic.Search, {
-        size: 20,
-        color: C.t400
-      }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-        autoFocus: true,
-        value: query,
-        onChange: e => setQuery(e.target.value),
-        placeholder: "Buscar páginas, obras, tarefas ou recursos...",
-        style: {
-          flex: 1,
-          border: 'none',
-          outline: 'none',
-          fontSize: 16,
-          color: C.t900,
-          background: 'transparent'
-        }
-      }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-        onClick: onClose,
-        style: {
-          border: `1px solid ${C.border}`,
-          background: C.borderLight,
-          color: C.t500,
-          borderRadius: 8,
-          padding: '5px 9px',
-          cursor: 'pointer'
-        },
-        children: "Esc"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        paddingTop: 12,
-        maxHeight: '62vh',
-        overflowY: 'auto'
-      },
-      children: [Object.entries(grouped).map(([group, items]) => /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          marginBottom: 16
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 11,
-            fontWeight: 800,
-            letterSpacing: '.08em',
-            color: C.t400,
-            textTransform: 'uppercase',
-            padding: '0 8px 6px'
-          },
-          children: group
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 7
-          },
-          children: items.map(item => /*#__PURE__*/_jsxDEV("button", {
-            onClick: () => {
-              onNavigate(item.id);
-              onClose();
-            },
-            style: {
-              border: `1px solid ${C.border}`,
-              background: '#fff',
-              borderRadius: 12,
-              padding: '12px 14px',
-              cursor: 'pointer',
-              textAlign: 'left',
-              color: C.t900,
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center'
-            },
-            children: [/*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 13,
-                fontWeight: 600
-              },
-              children: item.label
-            }, void 0, false), /*#__PURE__*/_jsxDEV(Ic.ChevronRight, {
-              size: 14,
-              color: C.t400
-            }, void 0, false)]
-          }, item.id, true))
-        }, void 0, false)]
-      }, group, true)), !results.length && /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          padding: 28,
-          textAlign: 'center',
-          color: C.t500
-        },
-        children: "Nenhuma página encontrada."
-      }, void 0, false)]
-    }, void 0, true)]
-  }, void 0, true);
+    width: 680
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      padding: '4px 4px 16px',
+      borderBottom: `1px solid ${C.border}`
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Search, {
+    size: 20,
+    color: C.t400
+  }), /*#__PURE__*/React.createElement("input", {
+    autoFocus: true,
+    value: query,
+    onChange: e => setQuery(e.target.value),
+    placeholder: "Buscar páginas, obras, tarefas ou recursos...",
+    style: {
+      flex: 1,
+      border: 'none',
+      outline: 'none',
+      fontSize: 16,
+      color: C.t900,
+      background: 'transparent'
+    }
+  }), /*#__PURE__*/React.createElement("button", {
+    onClick: onClose,
+    style: {
+      border: `1px solid ${C.border}`,
+      background: C.borderLight,
+      color: C.t500,
+      borderRadius: 8,
+      padding: '5px 9px',
+      cursor: 'pointer'
+    }
+  }, "Esc")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      paddingTop: 12,
+      maxHeight: '62vh',
+      overflowY: 'auto'
+    }
+  }, Object.entries(grouped).map(([group, items]) => /*#__PURE__*/React.createElement("div", {
+    key: group,
+    style: {
+      marginBottom: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 800,
+      letterSpacing: '.08em',
+      color: C.t400,
+      textTransform: 'uppercase',
+      padding: '0 8px 6px'
+    }
+  }, group), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 7
+    }
+  }, items.map(item => /*#__PURE__*/React.createElement("button", {
+    key: item.id,
+    onClick: () => {
+      onNavigate(item.id);
+      onClose();
+    },
+    style: {
+      border: `1px solid ${C.border}`,
+      background: '#fff',
+      borderRadius: 12,
+      padding: '12px 14px',
+      cursor: 'pointer',
+      textAlign: 'left',
+      color: C.t900,
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600
+    }
+  }, item.label), /*#__PURE__*/React.createElement(Ic.ChevronRight, {
+    size: 14,
+    color: C.t400
+  })))))), !results.length && /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: 28,
+      textAlign: 'center',
+      color: C.t500
+    }
+  }, "Nenhuma página encontrada.")));
 };
 const ActionDialog = ({
   active,
@@ -2132,155 +1899,135 @@ const ActionDialog = ({
     setSaved(true);
     setTimeout(onClose, 900);
   };
-  return /*#__PURE__*/_jsxDEV(ModalFrame, {
+  return /*#__PURE__*/React.createElement(ModalFrame, {
     onClose: onClose,
-    width: 520,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'flex-start',
-        gap: 16,
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 11,
-            color: C.t400,
-            fontWeight: 800,
-            letterSpacing: '.08em',
-            textTransform: 'uppercase'
-          },
-          children: "Ação rápida"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("h3", {
-          style: {
-            fontSize: 22,
-            color: C.t900,
-            marginTop: 5
-          },
-          children: label.replace(/^\+\s*/, '')
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-        onClick: onClose,
-        style: {
-          width: 34,
-          height: 34,
-          borderRadius: 17,
-          border: `1px solid ${C.border}`,
-          background: '#fff',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        },
-        children: /*#__PURE__*/_jsxDEV(Ic.X, {
-          size: 16
-        }, void 0, false)
-      }, void 0, false)]
-    }, void 0, true), saved ? /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        minHeight: 180,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        textAlign: 'center'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 54,
-          height: 54,
-          borderRadius: 27,
-          background: C.green100,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginBottom: 12
-        },
-        children: /*#__PURE__*/_jsxDEV(Ic.Check, {
-          size: 26,
-          color: C.green600
-        }, void 0, false)
-      }, void 0, false), /*#__PURE__*/_jsxDEV("strong", {
-        style: {
-          color: C.t900
-        },
-        children: "Ação concluída"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-        style: {
-          color: C.t500,
-          fontSize: 13,
-          marginTop: 5
-        },
-        children: "O protótipo registrou a operação com sucesso."
-      }, void 0, false)]
-    }, void 0, true) : /*#__PURE__*/_jsxDEV(_Fragment, {
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: 12
-        },
-        children: [/*#__PURE__*/_jsxDEV(Input, {
-          label: "Título",
-          placeholder: isExport ? 'Relatório financeiro' : 'Informe um título',
-          style: {
-            gridColumn: '1 / -1'
-          }
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Input, {
-          label: "Responsável",
-          placeholder: "Eduardo Nunes"
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Input, {
-          label: "Prazo",
-          placeholder: "dd/mm/aaaa"
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          marginTop: 12
-        },
-        children: [/*#__PURE__*/_jsxDEV("label", {
-          style: {
-            fontSize: 13,
-            fontWeight: 600,
-            color: C.t700,
-            display: 'block',
-            marginBottom: 6
-          },
-          children: "Descrição"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("textarea", {
-          placeholder: "Inclua as informações necessárias para esta ação.",
-          style: {
-            width: '100%',
-            minHeight: 100,
-            resize: 'vertical',
-            padding: 12,
-            border: `1.5px solid ${C.border}`,
-            borderRadius: 12,
-            outline: 'none',
-            fontSize: 14
-          }
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          justifyContent: 'flex-end',
-          gap: 10,
-          marginTop: 20
-        },
-        children: [/*#__PURE__*/_jsxDEV(Btn, {
-          variant: "secondary",
-          onClick: onClose,
-          children: "Cancelar"
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-          onClick: submit,
-          children: isExport ? 'Gerar arquivo' : 'Confirmar'
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+    width: 520
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'flex-start',
+      gap: 16,
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t400,
+      fontWeight: 800,
+      letterSpacing: '.08em',
+      textTransform: 'uppercase'
+    }
+  }, "Ação rápida"), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontSize: 22,
+      color: C.t900,
+      marginTop: 5
+    }
+  }, label.replace(/^\+\s*/, ''))), /*#__PURE__*/React.createElement("button", {
+    onClick: onClose,
+    style: {
+      width: 34,
+      height: 34,
+      borderRadius: 17,
+      border: `1px solid ${C.border}`,
+      background: '#fff',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.X, {
+    size: 16
+  }))), saved ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      minHeight: 180,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 54,
+      height: 54,
+      borderRadius: 27,
+      background: C.green100,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Check, {
+    size: 26,
+    color: C.green600
+  })), /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: C.t900
+    }
+  }, "Ação concluída"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t500,
+      fontSize: 13,
+      marginTop: 5
+    }
+  }, "O protótipo registrou a operação com sucesso.")) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement(Input, {
+    label: "Título",
+    placeholder: isExport ? 'Relatório financeiro' : 'Informe um título',
+    style: {
+      gridColumn: '1 / -1'
+    }
+  }), /*#__PURE__*/React.createElement(Input, {
+    label: "Responsável",
+    placeholder: "Eduardo Nunes"
+  }), /*#__PURE__*/React.createElement(Input, {
+    label: "Prazo",
+    placeholder: "dd/mm/aaaa"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 12
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t700,
+      display: 'block',
+      marginBottom: 6
+    }
+  }, "Descrição"), /*#__PURE__*/React.createElement("textarea", {
+    placeholder: "Inclua as informações necessárias para esta ação.",
+    style: {
+      width: '100%',
+      minHeight: 100,
+      resize: 'vertical',
+      padding: 12,
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 12,
+      outline: 'none',
+      fontSize: 14
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      gap: 10,
+      marginTop: 20
+    }
+  }, /*#__PURE__*/React.createElement(Btn, {
+    variant: "secondary",
+    onClick: onClose
+  }, "Cancelar"), /*#__PURE__*/React.createElement(Btn, {
+    onClick: submit
+  }, isExport ? 'Gerar arquivo' : 'Confirmar'))));
 };
-import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
 /* === SIDEBAR === */
 
 const Sidebar = ({
@@ -2288,125 +2035,111 @@ const Sidebar = ({
   onNavigate
 }) => {
   const [profileOpen, setProfileOpen] = React.useState(false);
-  return /*#__PURE__*/_jsxDEV("aside", {
-    className: "mis-sidebar",
-    children: [/*#__PURE__*/_jsxDEV("button", {
-      className: "mis-logo",
-      onClick: () => onNavigate('feed'),
-      "aria-label": "Ir para o MIS Feed",
-      children: /*#__PURE__*/_jsxDEV(MisBrand, {
-        size: 48,
-        className: "mis-logo-image"
-      }, void 0, false)
-    }, void 0, false), /*#__PURE__*/_jsxDEV("nav", {
-      className: "mis-nav",
-      children: NAV_ITEMS.map((item, index) => {
-        if (item.section) return /*#__PURE__*/_jsxDEV("div", {
-          className: "mis-nav-section",
-          children: item.section
-        }, `section-${item.section}-${index}`, false);
-        const sidebarActive = ['financeiro', 'contas_receber', 'contas_pagar', 'fluxo_caixa', 'medicoes'].includes(active) ? 'financeiro_geral' : ['contrato'].includes(active) ? 'contratos_geral' : active;
-        const isActive = sidebarActive === item.id;
-        const Icon = Ic[item.icon];
-        return /*#__PURE__*/_jsxDEV("button", {
-          onClick: () => onNavigate(item.id),
-          className: `mis-nav-item${isActive ? ' active' : ''}`,
-          title: item.label,
-          "aria-label": item.label,
-          children: [Icon && /*#__PURE__*/_jsxDEV(Icon, {
-            size: 17
-          }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-            className: "mis-sidebar-label",
-            style: {
-              flex: 1
-            },
-            children: item.label
-          }, void 0, false), item.badge && /*#__PURE__*/_jsxDEV("span", {
-            className: `mis-nav-badge${isActive ? ' active' : ''}`,
-            children: item.badge
-          }, void 0, false)]
-        }, item.id, true);
-      })
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
+  return /*#__PURE__*/React.createElement("aside", {
+    className: "mis-sidebar"
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "mis-logo",
+    onClick: () => onNavigate('feed'),
+    "aria-label": "Ir para o MIS Feed"
+  }, /*#__PURE__*/React.createElement(MisBrand, {
+    size: 48,
+    className: "mis-logo-image"
+  })), /*#__PURE__*/React.createElement("nav", {
+    className: "mis-nav"
+  }, NAV_ITEMS.map((item, index) => {
+    if (item.section) return /*#__PURE__*/React.createElement("div", {
+      key: `section-${item.section}-${index}`,
+      className: "mis-nav-section"
+    }, item.section);
+    const sidebarActive = ['financeiro', 'contas_receber', 'contas_pagar', 'fluxo_caixa', 'medicoes'].includes(active) ? 'financeiro_geral' : ['contrato'].includes(active) ? 'contratos_geral' : active;
+    const isActive = sidebarActive === item.id;
+    const Icon = Ic[item.icon];
+    return /*#__PURE__*/React.createElement("button", {
+      key: item.id,
+      onClick: () => onNavigate(item.id),
+      className: `mis-nav-item${isActive ? ' active' : ''}`,
+      title: item.label,
+      "aria-label": item.label
+    }, Icon && /*#__PURE__*/React.createElement(Icon, {
+      size: 17
+    }), /*#__PURE__*/React.createElement("span", {
+      className: "mis-sidebar-label",
       style: {
-        position: 'relative'
-      },
-      children: [profileOpen && /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          position: 'absolute',
-          left: 0,
-          right: 0,
-          bottom: 'calc(100% + 8px)',
-          background: '#fff',
-          border: `1px solid ${C.border}`,
-          borderRadius: 14,
-          padding: 7,
-          boxShadow: '0 14px 36px rgba(15,23,42,.16)',
-          zIndex: 30
-        },
-        children: [/*#__PURE__*/_jsxDEV("button", {
-          onClick: () => onNavigate('perfil_op'),
-          className: "mis-profile-menu-item",
-          children: [/*#__PURE__*/_jsxDEV(Ic.User, {
-            size: 15
-          }, void 0, false), "Meu perfil"]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-          onClick: () => onNavigate('configuracoes'),
-          className: "mis-profile-menu-item",
-          children: [/*#__PURE__*/_jsxDEV(Ic.Settings, {
-            size: 15
-          }, void 0, false), "Configurações"]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-          onClick: () => {
-            clearActiveProject();
-            onNavigate('login');
-          },
-          className: "mis-profile-menu-item",
-          style: {
-            color: C.red600
-          },
-          children: [/*#__PURE__*/_jsxDEV(Ic.ArrowLeft, {
-            size: 15
-          }, void 0, false), "Sair"]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-        onClick: () => setProfileOpen(v => !v),
-        className: "mis-profile-card",
-        children: [/*#__PURE__*/_jsxDEV(Avatar, {
-          name: "Eduardo Nunes",
-          size: 36,
-          bg: "#3F3F3F"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          className: "mis-sidebar-label",
-          style: {
-            flex: 1,
-            minWidth: 0,
-            textAlign: 'left'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 12.5,
-              fontWeight: 700,
-              color: C.t900,
-              lineHeight: 1.1
-            },
-            children: ["Eduardo", /*#__PURE__*/_jsxDEV("br", {}, void 0, false), "Nunes"]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 10.5,
-              color: C.t500,
-              marginTop: 3
-            },
-            children: "Gestor MIS"
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Ic.ChevronDown, {
-          className: "mis-sidebar-label",
-          size: 14,
-          color: C.t400
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+        flex: 1
+      }
+    }, item.label), item.badge && /*#__PURE__*/React.createElement("span", {
+      className: `mis-nav-badge${isActive ? ' active' : ''}`
+    }, item.badge));
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, profileOpen && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      bottom: 'calc(100% + 8px)',
+      background: '#fff',
+      border: `1px solid ${C.border}`,
+      borderRadius: 14,
+      padding: 7,
+      boxShadow: '0 14px 36px rgba(15,23,42,.16)',
+      zIndex: 30
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => onNavigate('perfil_op'),
+    className: "mis-profile-menu-item"
+  }, /*#__PURE__*/React.createElement(Ic.User, {
+    size: 15
+  }), "Meu perfil"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => onNavigate('configuracoes'),
+    className: "mis-profile-menu-item"
+  }, /*#__PURE__*/React.createElement(Ic.Settings, {
+    size: 15
+  }), "Configurações"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => {
+      clearActiveProject();
+      onNavigate('login');
+    },
+    className: "mis-profile-menu-item",
+    style: {
+      color: C.red600
+    }
+  }, /*#__PURE__*/React.createElement(Ic.ArrowLeft, {
+    size: 15
+  }), "Sair")), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setProfileOpen(v => !v),
+    className: "mis-profile-card"
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: "Eduardo Nunes",
+    size: 36,
+    bg: "#3F3F3F"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "mis-sidebar-label",
+    style: {
+      flex: 1,
+      minWidth: 0,
+      textAlign: 'left'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12.5,
+      fontWeight: 700,
+      color: C.t900,
+      lineHeight: 1.1
+    }
+  }, "Eduardo", /*#__PURE__*/React.createElement("br", null), "Nunes"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10.5,
+      color: C.t500,
+      marginTop: 3
+    }
+  }, "Gestor MIS")), /*#__PURE__*/React.createElement(Ic.ChevronDown, {
+    className: "mis-sidebar-label",
+    size: 14,
+    color: C.t400
+  }))));
 };
 const cta_labels = {
   dashboard: 'Novo registro',
@@ -2480,76 +2213,61 @@ const TopBar = ({
       window.removeEventListener('mis:action', onAction);
     };
   }, []);
-  return /*#__PURE__*/_jsxDEV(_Fragment, {
-    children: [/*#__PURE__*/_jsxDEV("header", {
-      className: "mis-topbar",
-      children: [/*#__PURE__*/_jsxDEV("button", {
-        className: "mis-search-trigger",
-        onClick: () => setSearchOpen(true),
-        children: [/*#__PURE__*/_jsxDEV(Ic.Search, {
-          size: 17,
-          color: C.t700
-        }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-          children: "Buscar obras, tarefas, alertas..."
-        }, void 0, false), /*#__PURE__*/_jsxDEV("kbd", {
-          children: "Ctrl K"
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1
-        }
-      }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-        className: "mis-main-cta",
-        onClick: () => setActionOpen(true),
-        children: [/*#__PURE__*/_jsxDEV(Ic.Plus, {
-          size: 15
-        }, void 0, false), label]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          position: 'relative'
-        },
-        children: [/*#__PURE__*/_jsxDEV("button", {
-          className: "mis-icon-btn",
-          onClick: () => onNavigate('notificacoes'),
-          "aria-label": "Notificações",
-          children: /*#__PURE__*/_jsxDEV(Ic.Bell, {
-            size: 19
-          }, void 0, false)
-        }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-          className: "mis-notification-dot",
-          children: "4"
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-        className: "mis-icon-btn",
-        onClick: () => onNavigate('configuracoes'),
-        "aria-label": "Configurações",
-        children: /*#__PURE__*/_jsxDEV(Ic.Settings, {
-          size: 19
-        }, void 0, false)
-      }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-        className: `mis-icon-btn${dimmed ? ' theme-active' : ''}`,
-        onClick: onToggleDim,
-        "aria-label": dimmed ? 'Ativar modo claro' : 'Ativar modo escuro',
-        title: dimmed ? 'Modo claro' : 'Modo escuro',
-        children: /*#__PURE__*/_jsxDEV(Ic.Moon, {
-          size: 19
-        }, void 0, false)
-      }, void 0, false)]
-    }, void 0, true), searchOpen && /*#__PURE__*/_jsxDEV(SearchPalette, {
-      onClose: () => setSearchOpen(false),
-      onNavigate: onNavigate
-    }, void 0, false), actionOpen && /*#__PURE__*/_jsxDEV(ActionDialog, {
-      active: active,
-      label: label,
-      onClose: () => setActionOpen(false),
-      onNavigate: s => {
-        setActionOpen(false);
-        onNavigate(s);
-      }
-    }, void 0, false)]
-  }, void 0, true);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("header", {
+    className: "mis-topbar"
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "mis-search-trigger",
+    onClick: () => setSearchOpen(true)
+  }, /*#__PURE__*/React.createElement(Ic.Search, {
+    size: 17,
+    color: C.t700
+  }), /*#__PURE__*/React.createElement("span", null, "Buscar obras, tarefas, alertas..."), /*#__PURE__*/React.createElement("kbd", null, "Ctrl K")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }), /*#__PURE__*/React.createElement("button", {
+    className: "mis-main-cta",
+    onClick: () => setActionOpen(true)
+  }, /*#__PURE__*/React.createElement(Ic.Plus, {
+    size: 15
+  }), label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "mis-icon-btn",
+    onClick: () => onNavigate('notificacoes'),
+    "aria-label": "Notificações"
+  }, /*#__PURE__*/React.createElement(Ic.Bell, {
+    size: 19
+  })), /*#__PURE__*/React.createElement("span", {
+    className: "mis-notification-dot"
+  }, "4")), /*#__PURE__*/React.createElement("button", {
+    className: "mis-icon-btn",
+    onClick: () => onNavigate('configuracoes'),
+    "aria-label": "Configurações"
+  }, /*#__PURE__*/React.createElement(Ic.Settings, {
+    size: 19
+  })), /*#__PURE__*/React.createElement("button", {
+    className: `mis-icon-btn${dimmed ? ' theme-active' : ''}`,
+    onClick: onToggleDim,
+    "aria-label": dimmed ? 'Ativar modo claro' : 'Ativar modo escuro',
+    title: dimmed ? 'Modo claro' : 'Modo escuro'
+  }, /*#__PURE__*/React.createElement(Ic.Moon, {
+    size: 19
+  }))), searchOpen && /*#__PURE__*/React.createElement(SearchPalette, {
+    onClose: () => setSearchOpen(false),
+    onNavigate: onNavigate
+  }), actionOpen && /*#__PURE__*/React.createElement(ActionDialog, {
+    active: active,
+    label: label,
+    onClose: () => setActionOpen(false),
+    onNavigate: s => {
+      setActionOpen(false);
+      onNavigate(s);
+    }
+  }));
 };
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === APP SHELL === */
 
 const AppShell = ({
@@ -2580,34 +2298,30 @@ const AppShell = ({
   }, [darkMode]);
   const showProjectWorkspace = !!activeProject && PROJECT_CONTEXTUAL_SCREENS.has(active);
   const showNewProjectFlow = NEW_PROJECT_FLOW_SCREENS.has(active);
-  return /*#__PURE__*/_jsxDEV("div", {
-    className: `mis-app${darkMode ? ' dark-mode' : ''}`,
-    children: [/*#__PURE__*/_jsxDEV(Sidebar, {
-      active: active,
-      onNavigate: onNavigate
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      className: "mis-main-shell",
-      children: [/*#__PURE__*/_jsxDEV(TopBar, {
-        active: active,
-        onNavigate: onNavigate,
-        dimmed: darkMode,
-        onToggleDim: () => setDarkMode(v => !v)
-      }, void 0, false), /*#__PURE__*/_jsxDEV("main", {
-        className: `mis-page-scroll${noPad ? ' no-pad' : ''} page-${active}`,
-        children: [showProjectWorkspace && /*#__PURE__*/_jsxDEV("div", {
-          className: "project-context-wrap",
-          children: /*#__PURE__*/_jsxDEV(ProjectWorkspaceDropdown, {
-            active: active,
-            project: activeProject,
-            onNavigate: onNavigate
-          }, void 0, false)
-        }, void 0, false), showNewProjectFlow && /*#__PURE__*/_jsxDEV(NewProjectFlowNav, {
-          active: active,
-          onNavigate: onNavigate
-        }, void 0, false), children]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+  return /*#__PURE__*/React.createElement("div", {
+    className: `mis-app${darkMode ? ' dark-mode' : ''}`
+  }, /*#__PURE__*/React.createElement(Sidebar, {
+    active: active,
+    onNavigate: onNavigate
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "mis-main-shell"
+  }, /*#__PURE__*/React.createElement(TopBar, {
+    active: active,
+    onNavigate: onNavigate,
+    dimmed: darkMode,
+    onToggleDim: () => setDarkMode(v => !v)
+  }), /*#__PURE__*/React.createElement("main", {
+    className: `mis-page-scroll${noPad ? ' no-pad' : ''} page-${active}`
+  }, showProjectWorkspace && /*#__PURE__*/React.createElement("div", {
+    className: "project-context-wrap"
+  }, /*#__PURE__*/React.createElement(ProjectWorkspaceDropdown, {
+    active: active,
+    project: activeProject,
+    onNavigate: onNavigate
+  })), showNewProjectFlow && /*#__PURE__*/React.createElement(NewProjectFlowNav, {
+    active: active,
+    onNavigate: onNavigate
+  }), children)));
 };
 Object.assign(window, {
   NAV_ITEMS,
@@ -2627,40 +2341,40 @@ const {
 const ArchitecturalBackdrop = () => {
   const floors = [0, 1, 2, 3];
   const cols = [0, 1, 2, 3, 4, 5];
-  return /*#__PURE__*/_jsxDEV("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: "auth-architecture",
-    "aria-hidden": "true",
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      className: "auth-blueprint-grid"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-building",
-      children: [floors.map(f => /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-floor",
-        style: {
-          transform: `translate(${f * 18}px, ${-f * 92}px)`,
-          opacity: .9 - f * .08
-        }
-      }, f, false)), cols.map(c => /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-column",
-        style: {
-          left: `${8 + c * 16}%`,
-          height: `${290 + c % 2 * 80}px`
-        }
-      }, c, false)), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-core"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-glass auth-glass-a"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-glass auth-glass-b"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-plan-line line-a"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-plan-line line-b"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-plan-line line-c"
-    }, void 0, false)]
-  }, void 0, true);
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "auth-blueprint-grid"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "auth-building"
+  }, floors.map(f => /*#__PURE__*/React.createElement("div", {
+    key: f,
+    className: "auth-floor",
+    style: {
+      transform: `translate(${f * 18}px, ${-f * 92}px)`,
+      opacity: .9 - f * .08
+    }
+  })), cols.map(c => /*#__PURE__*/React.createElement("div", {
+    key: c,
+    className: "auth-column",
+    style: {
+      left: `${8 + c * 16}%`,
+      height: `${290 + c % 2 * 80}px`
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "auth-core"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "auth-glass auth-glass-a"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "auth-glass auth-glass-b"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "auth-plan-line line-a"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "auth-plan-line line-b"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "auth-plan-line line-c"
+  }));
 };
 const AuthThemeToggle = () => {
   const [dark, setDark] = React.useState(() => document.documentElement.dataset.theme === 'dark');
@@ -2671,40 +2385,34 @@ const AuthThemeToggle = () => {
       localStorage.setItem('mis_theme', theme);
     } catch (_) {}
   }, [dark]);
-  return /*#__PURE__*/_jsxDEV("button", {
+  return /*#__PURE__*/React.createElement("button", {
     type: "button",
     className: `auth-theme-toggle${dark ? ' active' : ''}`,
     onClick: () => setDark(v => !v),
     "aria-label": dark ? 'Ativar modo claro' : 'Ativar modo escuro',
-    title: dark ? 'Ativar modo claro' : 'Ativar modo escuro',
-    children: dark ? /*#__PURE__*/_jsxDEV("span", {
-      className: "auth-theme-sun",
-      children: "☀"
-    }, void 0, false) : /*#__PURE__*/_jsxDEV(Ic.Moon, {
-      size: 21
-    }, void 0, false)
-  }, void 0, false);
+    title: dark ? 'Ativar modo claro' : 'Ativar modo escuro'
+  }, dark ? /*#__PURE__*/React.createElement("span", {
+    className: "auth-theme-sun"
+  }, "☀") : /*#__PURE__*/React.createElement(Ic.Moon, {
+    size: 21
+  }));
 };
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === AUTH === */
 
 const AuthStage = ({
   children,
   size = 'login'
-}) => /*#__PURE__*/_jsxDEV("div", {
-  className: "auth-stage",
-  children: [/*#__PURE__*/_jsxDEV(ArchitecturalBackdrop, {}, void 0, false), /*#__PURE__*/_jsxDEV(AuthThemeToggle, {}, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-    className: `auth-card auth-card-${size}`,
-    children: children
-  }, void 0, false)]
-}, void 0, true);
-const MisOrb = () => /*#__PURE__*/_jsxDEV("div", {
-  className: "mis-orb",
-  children: /*#__PURE__*/_jsxDEV(MisBrand, {
-    size: 68,
-    className: "mis-orb-image"
-  }, void 0, false)
-}, void 0, false);
+}) => /*#__PURE__*/React.createElement("div", {
+  className: "auth-stage"
+}, /*#__PURE__*/React.createElement(ArchitecturalBackdrop, null), /*#__PURE__*/React.createElement(AuthThemeToggle, null), /*#__PURE__*/React.createElement("div", {
+  className: `auth-card auth-card-${size}`
+}, children));
+const MisOrb = () => /*#__PURE__*/React.createElement("div", {
+  className: "mis-orb"
+}, /*#__PURE__*/React.createElement(MisBrand, {
+  size: 68,
+  className: "mis-orb-image"
+}));
 const LoginScreen = ({
   onNavigate
 }) => {
@@ -2719,116 +2427,91 @@ const LoginScreen = ({
     }
     onNavigate('feed');
   };
-  return /*#__PURE__*/_jsxDEV(AuthStage, {
-    size: "login",
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        textAlign: 'center',
-        marginBottom: 28
-      },
-      children: [/*#__PURE__*/_jsxDEV(MisOrb, {}, void 0, false), /*#__PURE__*/_jsxDEV("h1", {
-        className: "auth-brand-title",
-        children: "M Group Intelligence System"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-        className: "auth-brand-subtitle",
-        children: "A Inteligência das Soluções Construtivas"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-field",
-      children: [/*#__PURE__*/_jsxDEV("label", {
-        children: "E-mail"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-input-wrap",
-        children: [/*#__PURE__*/_jsxDEV(Ic.Mail, {
-          size: 17
-        }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-          type: "email",
-          value: email,
-          onChange: e => setEmail(e.target.value),
-          placeholder: "seu@email.com",
-          onKeyDown: e => e.key === 'Enter' && login()
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-field",
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center'
-        },
-        children: [/*#__PURE__*/_jsxDEV("label", {
-          children: "Senha"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-          className: "auth-link-btn",
-          onClick: () => setMessage('Enviaremos as instruções de recuperação para o seu e-mail.'),
-          children: "Esqueci minha senha"
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-input-wrap",
-        children: [/*#__PURE__*/_jsxDEV(Ic.Lock, {
-          size: 17
-        }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-          type: show ? 'text' : 'password',
-          value: pass,
-          onChange: e => setPass(e.target.value),
-          placeholder: "••••••••",
-          onKeyDown: e => e.key === 'Enter' && login()
-        }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-          className: "auth-eye",
-          onClick: () => setShow(v => !v),
-          children: /*#__PURE__*/_jsxDEV(Ic.Eye, {
-            size: 17
-          }, void 0, false)
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true), message && /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-inline-message",
-      children: message
-    }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-      className: "auth-primary",
-      onClick: login,
-      children: "Entrar com MIS"
-    }, void 0, false), /*#__PURE__*/_jsxDEV(Divider, {
-      label: "ou continue com",
-      style: {
-        margin: '22px 0 16px'
-      }
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: 12
-      },
-      children: [/*#__PURE__*/_jsxDEV("button", {
-        className: "auth-social",
-        onClick: () => setMessage('Login com Google disponível na integração final.'),
-        children: [/*#__PURE__*/_jsxDEV("span", {
-          className: "google-mark",
-          children: "G"
-        }, void 0, false), "Google"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-        className: "auth-social",
-        onClick: () => setMessage('Login com Apple disponível na integração final.'),
-        children: [/*#__PURE__*/_jsxDEV("span", {
-          style: {
-            fontSize: 21
-          },
-          children: "●"
-        }, void 0, false), "Apple"]
-      }, void 0, true)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("p", {
-      className: "auth-account-text",
-      children: ["Ainda não tem conta? ", /*#__PURE__*/_jsxDEV("button", {
-        className: "auth-create-link",
-        onClick: () => onNavigate('cadastro'),
-        children: "Criar conta gratuita"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("p", {
-      className: "auth-version",
-      children: "v1.0 – MVP"
-    }, void 0, false)]
-  }, void 0, true);
+  return /*#__PURE__*/React.createElement(AuthStage, {
+    size: "login"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'center',
+      marginBottom: 28
+    }
+  }, /*#__PURE__*/React.createElement(MisOrb, null), /*#__PURE__*/React.createElement("h1", {
+    className: "auth-brand-title"
+  }, "M Group Intelligence System"), /*#__PURE__*/React.createElement("p", {
+    className: "auth-brand-subtitle"
+  }, "A Inteligência das Soluções Construtivas")), /*#__PURE__*/React.createElement("div", {
+    className: "auth-field"
+  }, /*#__PURE__*/React.createElement("label", null, "E-mail"), /*#__PURE__*/React.createElement("div", {
+    className: "auth-input-wrap"
+  }, /*#__PURE__*/React.createElement(Ic.Mail, {
+    size: 17
+  }), /*#__PURE__*/React.createElement("input", {
+    type: "email",
+    value: email,
+    onChange: e => setEmail(e.target.value),
+    placeholder: "seu@email.com",
+    onKeyDown: e => e.key === 'Enter' && login()
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "auth-field"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("label", null, "Senha"), /*#__PURE__*/React.createElement("button", {
+    className: "auth-link-btn",
+    onClick: () => setMessage('Enviaremos as instruções de recuperação para o seu e-mail.')
+  }, "Esqueci minha senha")), /*#__PURE__*/React.createElement("div", {
+    className: "auth-input-wrap"
+  }, /*#__PURE__*/React.createElement(Ic.Lock, {
+    size: 17
+  }), /*#__PURE__*/React.createElement("input", {
+    type: show ? 'text' : 'password',
+    value: pass,
+    onChange: e => setPass(e.target.value),
+    placeholder: "••••••••",
+    onKeyDown: e => e.key === 'Enter' && login()
+  }), /*#__PURE__*/React.createElement("button", {
+    className: "auth-eye",
+    onClick: () => setShow(v => !v)
+  }, /*#__PURE__*/React.createElement(Ic.Eye, {
+    size: 17
+  })))), message && /*#__PURE__*/React.createElement("div", {
+    className: "auth-inline-message"
+  }, message), /*#__PURE__*/React.createElement("button", {
+    className: "auth-primary",
+    onClick: login
+  }, "Entrar com MIS"), /*#__PURE__*/React.createElement(Divider, {
+    label: "ou continue com",
+    style: {
+      margin: '22px 0 16px'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "auth-social",
+    onClick: () => setMessage('Login com Google disponível na integração final.')
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "google-mark"
+  }, "G"), "Google"), /*#__PURE__*/React.createElement("button", {
+    className: "auth-social",
+    onClick: () => setMessage('Login com Apple disponível na integração final.')
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 21
+    }
+  }, "●"), "Apple")), /*#__PURE__*/React.createElement("p", {
+    className: "auth-account-text"
+  }, "Ainda não tem conta? ", /*#__PURE__*/React.createElement("button", {
+    className: "auth-create-link",
+    onClick: () => onNavigate('cadastro')
+  }, "Criar conta gratuita")), /*#__PURE__*/React.createElement("p", {
+    className: "auth-version"
+  }, "v1.0 – MVP"));
 };
 const CadastroScreen = ({
   onNavigate
@@ -2854,180 +2537,130 @@ const CadastroScreen = ({
     setError('');
     setStep(2);
   };
-  if (step === 2) return /*#__PURE__*/_jsxDEV(AuthStage, {
-    size: "verify",
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      className: "auth-progress",
-      children: [/*#__PURE__*/_jsxDEV("span", {
-        className: "done"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("span", {}, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "verify-icon",
-      children: /*#__PURE__*/_jsxDEV(Ic.Mail, {
-        size: 29,
-        color: "#0b4d8c"
-      }, void 0, false)
-    }, void 0, false), /*#__PURE__*/_jsxDEV("h2", {
-      className: "verify-title",
-      children: "Verifique seu e-mail"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-      className: "verify-subtitle",
-      children: ["Enviamos um código de 6 dígitos para", /*#__PURE__*/_jsxDEV("br", {}, void 0, false), /*#__PURE__*/_jsxDEV("strong", {
-        children: form.email || 'seu@email.com'
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "otp-row",
-      children: [0, 1, 2, 3, 4, 5].map(i => /*#__PURE__*/_jsxDEV("input", {
-        maxLength: 1,
-        autoFocus: i === 0,
-        defaultValue: i === 0 ? '3' : '',
-        onInput: e => {
-          if (e.currentTarget.value && e.currentTarget.nextElementSibling) e.currentTarget.nextElementSibling.focus();
-        }
-      }, i, false))
-    }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-      className: "auth-primary",
-      onClick: () => onNavigate('onboarding'),
-      children: "Verificar e continuar"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-      className: "verify-resend",
-      children: ["Não recebeu? ", /*#__PURE__*/_jsxDEV("button", {
-        children: "Reenviar código"
-      }, void 0, false), " ", /*#__PURE__*/_jsxDEV("span", {
-        children: "· 54s"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-      className: "verify-change",
-      onClick: () => setStep(1),
-      children: "← Alterar e-mail"
-    }, void 0, false)]
-  }, void 0, true);
-  return /*#__PURE__*/_jsxDEV(AuthStage, {
-    size: "register",
-    children: [/*#__PURE__*/_jsxDEV("button", {
-      className: "auth-back",
-      onClick: () => onNavigate('login'),
-      children: [/*#__PURE__*/_jsxDEV(Ic.ArrowLeft, {
-        size: 17
-      }, void 0, false), " Voltar ao login"]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-progress",
-      children: [/*#__PURE__*/_jsxDEV("span", {
-        className: "done"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("span", {}, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "register-step",
-      children: "Etapa 1 de 2"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("h2", {
-      className: "register-title",
-      children: "Criar conta"
-    }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-      className: "register-subtitle",
-      children: "Preencha seus dados para começar."
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      className: "register-grid",
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        className: "auth-field",
-        children: [/*#__PURE__*/_jsxDEV("label", {
-          children: "Nome completo"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          className: "auth-input-wrap",
-          children: [/*#__PURE__*/_jsxDEV(Ic.User, {
-            size: 18
-          }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-            value: form.nome,
-            onChange: e => update('nome', e.target.value),
-            placeholder: "Eduardo Nunes"
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-field",
-        children: [/*#__PURE__*/_jsxDEV("label", {
-          children: "E-mail"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          className: "auth-input-wrap",
-          children: [/*#__PURE__*/_jsxDEV(Ic.Mail, {
-            size: 18
-          }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-            type: "email",
-            value: form.email,
-            onChange: e => update('email', e.target.value),
-            placeholder: "seu@email.com"
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-field",
-        children: [/*#__PURE__*/_jsxDEV("label", {
-          children: "Telefone"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          className: "auth-input-wrap",
-          children: [/*#__PURE__*/_jsxDEV(Ic.Phone, {
-            size: 18
-          }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-            value: form.telefone,
-            onChange: e => update('telefone', e.target.value),
-            placeholder: "(11) 99999-9999"
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-field",
-        children: [/*#__PURE__*/_jsxDEV("label", {
-          children: "Senha"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          className: "auth-input-wrap",
-          children: [/*#__PURE__*/_jsxDEV(Ic.Lock, {
-            size: 18
-          }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-            type: "password",
-            value: form.senha,
-            onChange: e => update('senha', e.target.value),
-            placeholder: "Mínimo 8 caracteres"
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("small", {
-          children: "Inclua letras, números e um símbolo."
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        className: "auth-field",
-        children: [/*#__PURE__*/_jsxDEV("label", {
-          children: "Confirmar senha"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          className: "auth-input-wrap",
-          children: [/*#__PURE__*/_jsxDEV(Ic.Lock, {
-            size: 18
-          }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-            type: "password",
-            value: form.confirma,
-            onChange: e => update('confirma', e.target.value),
-            placeholder: "Repita a senha"
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("label", {
-      className: "auth-terms",
-      children: [/*#__PURE__*/_jsxDEV("input", {
-        type: "checkbox",
-        checked: accepted,
-        onChange: e => setAccepted(e.target.checked)
-      }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-        children: ["Aceito os ", /*#__PURE__*/_jsxDEV("a", {
-          href: "#",
-          onClick: e => e.preventDefault(),
-          children: "Termos de Uso"
-        }, void 0, false), " e ", /*#__PURE__*/_jsxDEV("a", {
-          href: "#",
-          onClick: e => e.preventDefault(),
-          children: "Política de Privacidade"
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true), error && /*#__PURE__*/_jsxDEV("div", {
-      className: "auth-inline-message",
-      children: error
-    }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-      className: "auth-primary",
-      onClick: continueRegister,
-      children: "Continuar"
-    }, void 0, false)]
-  }, void 0, true);
+  if (step === 2) return /*#__PURE__*/React.createElement(AuthStage, {
+    size: "verify"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "auth-progress"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "done"
+  }), /*#__PURE__*/React.createElement("span", null)), /*#__PURE__*/React.createElement("div", {
+    className: "verify-icon"
+  }, /*#__PURE__*/React.createElement(Ic.Mail, {
+    size: 29,
+    color: "#0b4d8c"
+  })), /*#__PURE__*/React.createElement("h2", {
+    className: "verify-title"
+  }, "Verifique seu e-mail"), /*#__PURE__*/React.createElement("p", {
+    className: "verify-subtitle"
+  }, "Enviamos um código de 6 dígitos para", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", null, form.email || 'seu@email.com')), /*#__PURE__*/React.createElement("div", {
+    className: "otp-row"
+  }, [0, 1, 2, 3, 4, 5].map(i => /*#__PURE__*/React.createElement("input", {
+    key: i,
+    maxLength: 1,
+    autoFocus: i === 0,
+    defaultValue: i === 0 ? '3' : '',
+    onInput: e => {
+      if (e.currentTarget.value && e.currentTarget.nextElementSibling) e.currentTarget.nextElementSibling.focus();
+    }
+  }))), /*#__PURE__*/React.createElement("button", {
+    className: "auth-primary",
+    onClick: () => onNavigate('onboarding')
+  }, "Verificar e continuar"), /*#__PURE__*/React.createElement("p", {
+    className: "verify-resend"
+  }, "Não recebeu? ", /*#__PURE__*/React.createElement("button", null, "Reenviar código"), " ", /*#__PURE__*/React.createElement("span", null, "· 54s")), /*#__PURE__*/React.createElement("button", {
+    className: "verify-change",
+    onClick: () => setStep(1)
+  }, "← Alterar e-mail"));
+  return /*#__PURE__*/React.createElement(AuthStage, {
+    size: "register"
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "auth-back",
+    onClick: () => onNavigate('login')
+  }, /*#__PURE__*/React.createElement(Ic.ArrowLeft, {
+    size: 17
+  }), " Voltar ao login"), /*#__PURE__*/React.createElement("div", {
+    className: "auth-progress"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "done"
+  }), /*#__PURE__*/React.createElement("span", null)), /*#__PURE__*/React.createElement("div", {
+    className: "register-step"
+  }, "Etapa 1 de 2"), /*#__PURE__*/React.createElement("h2", {
+    className: "register-title"
+  }, "Criar conta"), /*#__PURE__*/React.createElement("p", {
+    className: "register-subtitle"
+  }, "Preencha seus dados para começar."), /*#__PURE__*/React.createElement("div", {
+    className: "register-grid"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "auth-field"
+  }, /*#__PURE__*/React.createElement("label", null, "Nome completo"), /*#__PURE__*/React.createElement("div", {
+    className: "auth-input-wrap"
+  }, /*#__PURE__*/React.createElement(Ic.User, {
+    size: 18
+  }), /*#__PURE__*/React.createElement("input", {
+    value: form.nome,
+    onChange: e => update('nome', e.target.value),
+    placeholder: "Eduardo Nunes"
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "auth-field"
+  }, /*#__PURE__*/React.createElement("label", null, "E-mail"), /*#__PURE__*/React.createElement("div", {
+    className: "auth-input-wrap"
+  }, /*#__PURE__*/React.createElement(Ic.Mail, {
+    size: 18
+  }), /*#__PURE__*/React.createElement("input", {
+    type: "email",
+    value: form.email,
+    onChange: e => update('email', e.target.value),
+    placeholder: "seu@email.com"
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "auth-field"
+  }, /*#__PURE__*/React.createElement("label", null, "Telefone"), /*#__PURE__*/React.createElement("div", {
+    className: "auth-input-wrap"
+  }, /*#__PURE__*/React.createElement(Ic.Phone, {
+    size: 18
+  }), /*#__PURE__*/React.createElement("input", {
+    value: form.telefone,
+    onChange: e => update('telefone', e.target.value),
+    placeholder: "(11) 99999-9999"
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "auth-field"
+  }, /*#__PURE__*/React.createElement("label", null, "Senha"), /*#__PURE__*/React.createElement("div", {
+    className: "auth-input-wrap"
+  }, /*#__PURE__*/React.createElement(Ic.Lock, {
+    size: 18
+  }), /*#__PURE__*/React.createElement("input", {
+    type: "password",
+    value: form.senha,
+    onChange: e => update('senha', e.target.value),
+    placeholder: "Mínimo 8 caracteres"
+  })), /*#__PURE__*/React.createElement("small", null, "Inclua letras, números e um símbolo.")), /*#__PURE__*/React.createElement("div", {
+    className: "auth-field"
+  }, /*#__PURE__*/React.createElement("label", null, "Confirmar senha"), /*#__PURE__*/React.createElement("div", {
+    className: "auth-input-wrap"
+  }, /*#__PURE__*/React.createElement(Ic.Lock, {
+    size: 18
+  }), /*#__PURE__*/React.createElement("input", {
+    type: "password",
+    value: form.confirma,
+    onChange: e => update('confirma', e.target.value),
+    placeholder: "Repita a senha"
+  })))), /*#__PURE__*/React.createElement("label", {
+    className: "auth-terms"
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "checkbox",
+    checked: accepted,
+    onChange: e => setAccepted(e.target.checked)
+  }), /*#__PURE__*/React.createElement("span", null, "Aceito os ", /*#__PURE__*/React.createElement("a", {
+    href: "#",
+    onClick: e => e.preventDefault()
+  }, "Termos de Uso"), " e ", /*#__PURE__*/React.createElement("a", {
+    href: "#",
+    onClick: e => e.preventDefault()
+  }, "Política de Privacidade"))), error && /*#__PURE__*/React.createElement("div", {
+    className: "auth-inline-message"
+  }, error), /*#__PURE__*/React.createElement("button", {
+    className: "auth-primary",
+    onClick: continueRegister
+  }, "Continuar"));
 };
 const OnboardingScreen = ({
   onNavigate
@@ -3062,24 +2695,24 @@ const OnboardingScreen = ({
     title: 'Empresa de arq. ou engenharia',
     desc: 'Acesso corporativo e multi-projeto'
   }];
-  const StepIndicator = () => /*#__PURE__*/_jsxDEV("div", {
+  const StepIndicator = () => /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
       gap: 6,
       justifyContent: 'center',
       marginBottom: 32
-    },
-    children: [1, 2, 3].map(i => /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        height: 4,
-        width: 40,
-        borderRadius: 4,
-        background: i <= step ? C.navActive : C.border,
-        transition: 'background 0.3s'
-      }
-    }, i, false))
-  }, void 0, false);
-  if (step === 1) return /*#__PURE__*/_jsxDEV("div", {
+    }
+  }, [1, 2, 3].map(i => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      height: 4,
+      width: 40,
+      borderRadius: 4,
+      background: i <= step ? C.navActive : C.border,
+      transition: 'background 0.3s'
+    }
+  })));
+  if (step === 1) return /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh',
       background: C.bg,
@@ -3087,104 +2720,93 @@ const OnboardingScreen = ({
       alignItems: 'center',
       justifyContent: 'center',
       padding: 24
-    },
-    children: /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        maxWidth: 600,
-        width: '100%'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          textAlign: 'center',
-          marginBottom: 32
-        },
-        children: [/*#__PURE__*/_jsxDEV(MisBrand, {
-          size: 50,
-          style: {
-            margin: '0 auto 16px',
-            boxShadow: '0 10px 28px rgba(5,25,43,.22)'
-          }
-        }, void 0, false), /*#__PURE__*/_jsxDEV(StepIndicator, {}, void 0, false), /*#__PURE__*/_jsxDEV("h2", {
-          style: {
-            fontSize: 26,
-            fontWeight: 700,
-            color: C.t900
-          },
-          children: "Vamos configurar sua conta"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-          style: {
-            fontSize: 15,
-            color: C.t500,
-            marginTop: 6
-          },
-          children: "Como você vai usar o MIS?"
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 10
-        },
-        children: profiles.map(p => /*#__PURE__*/_jsxDEV("button", {
-          className: `mis-select-btn${profile === p.id ? ' active' : ''}`,
-          "aria-pressed": profile === p.id,
-          onClick: () => setProfile(p.id),
-          style: {
-            display: 'flex',
-            alignItems: 'center',
-            gap: 16,
-            padding: '16px 20px',
-            borderRadius: 14,
-            background: profile === p.id ? '#F0FFF4' : '#fff',
-            border: `2px solid ${profile === p.id ? C.navActive : C.border}`,
-            cursor: 'pointer',
-            textAlign: 'left',
-            fontFamily: 'inherit',
-            transition: 'all 0.15s'
-          },
-          children: [/*#__PURE__*/_jsxDEV("span", {
-            style: {
-              fontSize: 26
-            },
-            children: p.icon
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              flex: 1
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 15,
-                fontWeight: 600,
-                color: C.t900
-              },
-              children: p.title
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 13,
-                color: C.t500,
-                marginTop: 2
-              },
-              children: p.desc
-            }, void 0, false)]
-          }, void 0, true), profile === p.id && /*#__PURE__*/_jsxDEV(Ic.Check, {
-            size: 18,
-            color: C.navActive
-          }, void 0, false)]
-        }, p.id, true))
-      }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-        onClick: () => profile && setStep(2),
-        disabled: !profile,
-        style: {
-          width: '100%',
-          justifyContent: 'center',
-          marginTop: 24,
-          padding: '12px'
-        },
-        children: "Continuar"
-      }, void 0, false)]
-    }, void 0, true)
-  }, void 0, false);
-  if (step === 2) return /*#__PURE__*/_jsxDEV("div", {
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 600,
+      width: '100%'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'center',
+      marginBottom: 32
+    }
+  }, /*#__PURE__*/React.createElement(MisBrand, {
+    size: 50,
+    style: {
+      margin: '0 auto 16px',
+      boxShadow: '0 10px 28px rgba(5,25,43,.22)'
+    }
+  }), /*#__PURE__*/React.createElement(StepIndicator, null), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontSize: 26,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, "Vamos configurar sua conta"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 15,
+      color: C.t500,
+      marginTop: 6
+    }
+  }, "Como você vai usar o MIS?")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10
+    }
+  }, profiles.map(p => /*#__PURE__*/React.createElement("button", {
+    key: p.id,
+    className: `mis-select-btn${profile === p.id ? ' active' : ''}`,
+    "aria-pressed": profile === p.id,
+    onClick: () => setProfile(p.id),
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      padding: '16px 20px',
+      borderRadius: 14,
+      background: profile === p.id ? '#F0FFF4' : '#fff',
+      border: `2px solid ${profile === p.id ? C.navActive : C.border}`,
+      cursor: 'pointer',
+      textAlign: 'left',
+      fontFamily: 'inherit',
+      transition: 'all 0.15s'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 26
+    }
+  }, p.icon), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, p.title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t500,
+      marginTop: 2
+    }
+  }, p.desc)), profile === p.id && /*#__PURE__*/React.createElement(Ic.Check, {
+    size: 18,
+    color: C.navActive
+  })))), /*#__PURE__*/React.createElement(Btn, {
+    onClick: () => profile && setStep(2),
+    disabled: !profile,
+    style: {
+      width: '100%',
+      justifyContent: 'center',
+      marginTop: 24,
+      padding: '12px'
+    }
+  }, "Continuar")));
+  if (step === 2) return /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh',
       background: C.bg,
@@ -3192,113 +2814,104 @@ const OnboardingScreen = ({
       alignItems: 'center',
       justifyContent: 'center',
       padding: 24
-    },
-    children: /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        maxWidth: 560,
-        width: '100%'
-      },
-      children: [/*#__PURE__*/_jsxDEV("button", {
-        onClick: () => setStep(1),
-        style: {
-          background: 'none',
-          border: 'none',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 6,
-          color: C.t500,
-          fontSize: 14,
-          marginBottom: 24,
-          fontFamily: 'inherit'
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.ArrowLeft, {
-          size: 16
-        }, void 0, false), " Voltar"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV(StepIndicator, {}, void 0, false), /*#__PURE__*/_jsxDEV("h2", {
-        style: {
-          fontSize: 24,
-          fontWeight: 700,
-          color: C.t900,
-          marginBottom: 4
-        },
-        children: "Um pouco mais sobre você"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-        style: {
-          fontSize: 14,
-          color: C.t500,
-          marginBottom: 28
-        },
-        children: "Isso personaliza toda a sua experiência MIS."
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 24
-        },
-        children: [{
-          label: 'Obras ativas simultaneamente',
-          opts: ['1–3', '4–10', '11–30', '30+'],
-          state: obras,
-          set: setObras
-        }, {
-          label: 'Tipo de obra principal',
-          opts: ['Residencial', 'Comercial', 'Industrial', 'Misto'],
-          state: tipo,
-          set: setTipo
-        }].map(({
-          label,
-          opts,
-          state,
-          set
-        }) => /*#__PURE__*/_jsxDEV("div", {
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 500,
-              color: C.t700,
-              marginBottom: 10
-            },
-            children: label
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 8,
-              flexWrap: 'wrap'
-            },
-            children: opts.map(o => /*#__PURE__*/_jsxDEV("button", {
-              className: `mis-select-btn${state === o ? ' active' : ''}`,
-              "aria-pressed": state === o,
-              onClick: () => set(o),
-              style: {
-                padding: '7px 18px',
-                borderRadius: 20,
-                fontSize: 14,
-                cursor: 'pointer',
-                fontFamily: 'inherit',
-                border: `2px solid ${state === o ? C.navActive : C.border}`,
-                background: state === o ? '#F0FFF4' : '#fff',
-                color: state === o ? C.navActive : C.t700,
-                fontWeight: state === o ? 600 : 400,
-                transition: 'all 0.15s'
-              },
-              children: o
-            }, o, false))
-          }, void 0, false)]
-        }, label, true))
-      }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-        onClick: () => setStep(3),
-        style: {
-          width: '100%',
-          justifyContent: 'center',
-          marginTop: 32,
-          padding: '12px'
-        },
-        children: "Continuar"
-      }, void 0, false)]
-    }, void 0, true)
-  }, void 0, false);
-  return /*#__PURE__*/_jsxDEV("div", {
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 560,
+      width: '100%'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setStep(1),
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6,
+      color: C.t500,
+      fontSize: 14,
+      marginBottom: 24,
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.ArrowLeft, {
+    size: 16
+  }), " Voltar"), /*#__PURE__*/React.createElement(StepIndicator, null), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontSize: 24,
+      fontWeight: 700,
+      color: C.t900,
+      marginBottom: 4
+    }
+  }, "Um pouco mais sobre você"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 14,
+      color: C.t500,
+      marginBottom: 28
+    }
+  }, "Isso personaliza toda a sua experiência MIS."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 24
+    }
+  }, [{
+    label: 'Obras ativas simultaneamente',
+    opts: ['1–3', '4–10', '11–30', '30+'],
+    state: obras,
+    set: setObras
+  }, {
+    label: 'Tipo de obra principal',
+    opts: ['Residencial', 'Comercial', 'Industrial', 'Misto'],
+    state: tipo,
+    set: setTipo
+  }].map(({
+    label,
+    opts,
+    state,
+    set
+  }) => /*#__PURE__*/React.createElement("div", {
+    key: label
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 500,
+      color: C.t700,
+      marginBottom: 10
+    }
+  }, label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      flexWrap: 'wrap'
+    }
+  }, opts.map(o => /*#__PURE__*/React.createElement("button", {
+    key: o,
+    className: `mis-select-btn${state === o ? ' active' : ''}`,
+    "aria-pressed": state === o,
+    onClick: () => set(o),
+    style: {
+      padding: '7px 18px',
+      borderRadius: 20,
+      fontSize: 14,
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      border: `2px solid ${state === o ? C.navActive : C.border}`,
+      background: state === o ? '#F0FFF4' : '#fff',
+      color: state === o ? C.navActive : C.t700,
+      fontWeight: state === o ? 600 : 400,
+      transition: 'all 0.15s'
+    }
+  }, o)))))), /*#__PURE__*/React.createElement(Btn, {
+    onClick: () => setStep(3),
+    style: {
+      width: '100%',
+      justifyContent: 'center',
+      marginTop: 32,
+      padding: '12px'
+    }
+  }, "Continuar")));
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh',
       background: C.bg,
@@ -3306,118 +2919,108 @@ const OnboardingScreen = ({
       alignItems: 'center',
       justifyContent: 'center',
       padding: 24
-    },
-    children: /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        maxWidth: 540,
-        width: '100%',
-        textAlign: 'center'
-      },
-      children: [/*#__PURE__*/_jsxDEV(StepIndicator, {}, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 80,
-          height: 80,
-          margin: '0 auto 20px',
-          background: 'linear-gradient(135deg, #1C3A2A 0%, #1d4ed8 100%)',
-          borderRadius: 40,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        },
-        children: /*#__PURE__*/_jsxDEV(Ic.Sparkles, {
-          size: 34,
-          color: "#fff"
-        }, void 0, false)
-      }, void 0, false), /*#__PURE__*/_jsxDEV("h2", {
-        style: {
-          fontSize: 28,
-          fontWeight: 700,
-          color: C.t900,
-          marginBottom: 10
-        },
-        children: "Bem-vindo ao MIS, Eduardo!"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-        style: {
-          fontSize: 15,
-          color: C.t500,
-          lineHeight: 1.65,
-          maxWidth: 420,
-          margin: '0 auto 32px'
-        },
-        children: ["Sou o ", /*#__PURE__*/_jsxDEV("strong", {
-          style: {
-            color: C.t900
-          },
-          children: "Oráculo MIS"
-        }, void 0, false), ". Estou aqui para ajudar você a gerenciar suas obras com inteligência preditiva. Vamos começar?"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          gap: 14,
-          marginBottom: 36
-        },
-        children: [{
-          icon: Ic.Building,
-          label: 'Gestão de projetos',
-          bg: C.blue100,
-          ic: C.blue600
-        }, {
-          icon: Ic.AlertTriangle,
-          label: 'Alertas preditivos',
-          bg: C.orange100,
-          ic: C.orange600
-        }, {
-          icon: Ic.Sparkles,
-          label: 'Oráculo IA',
-          bg: C.green100,
-          ic: C.green600
-        }].map(({
-          icon: Icon,
-          label,
-          bg,
-          ic
-        }) => /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            padding: '18px 12px',
-            borderRadius: 14,
-            background: '#fff',
-            textAlign: 'center'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              width: 44,
-              height: 44,
-              borderRadius: 22,
-              background: bg,
-              margin: '0 auto 10px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            },
-            children: /*#__PURE__*/_jsxDEV(Icon, {
-              size: 20,
-              color: ic
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 500,
-              color: C.t700
-            },
-            children: label
-          }, void 0, false)]
-        }, label, true))
-      }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-        onClick: () => onNavigate('feed'),
-        style: {
-          padding: '13px 48px',
-          fontSize: 15
-        },
-        children: "Acessar MIS Feed →"
-      }, void 0, false)]
-    }, void 0, true)
-  }, void 0, false);
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 540,
+      width: '100%',
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(StepIndicator, null), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 80,
+      height: 80,
+      margin: '0 auto 20px',
+      background: 'linear-gradient(135deg, #1C3A2A 0%, #1d4ed8 100%)',
+      borderRadius: 40,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Sparkles, {
+    size: 34,
+    color: "#fff"
+  })), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontSize: 28,
+      fontWeight: 700,
+      color: C.t900,
+      marginBottom: 10
+    }
+  }, "Bem-vindo ao MIS, Eduardo!"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 15,
+      color: C.t500,
+      lineHeight: 1.65,
+      maxWidth: 420,
+      margin: '0 auto 32px'
+    }
+  }, "Sou o ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: C.t900
+    }
+  }, "Oráculo MIS"), ". Estou aqui para ajudar você a gerenciar suas obras com inteligência preditiva. Vamos começar?"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr 1fr',
+      gap: 14,
+      marginBottom: 36
+    }
+  }, [{
+    icon: Ic.Building,
+    label: 'Gestão de projetos',
+    bg: C.blue100,
+    ic: C.blue600
+  }, {
+    icon: Ic.AlertTriangle,
+    label: 'Alertas preditivos',
+    bg: C.orange100,
+    ic: C.orange600
+  }, {
+    icon: Ic.Sparkles,
+    label: 'Oráculo IA',
+    bg: C.green100,
+    ic: C.green600
+  }].map(({
+    icon: Icon,
+    label,
+    bg,
+    ic
+  }) => /*#__PURE__*/React.createElement("div", {
+    key: label,
+    style: {
+      padding: '18px 12px',
+      borderRadius: 14,
+      background: '#fff',
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 44,
+      height: 44,
+      borderRadius: 22,
+      background: bg,
+      margin: '0 auto 10px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    size: 20,
+    color: ic
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 500,
+      color: C.t700
+    }
+  }, label)))), /*#__PURE__*/React.createElement(Btn, {
+    onClick: () => onNavigate('feed'),
+    style: {
+      padding: '13px 48px',
+      fontSize: 15
+    }
+  }, "Acessar MIS Feed →")));
 };
 Object.assign(window, {
   LoginScreen,
@@ -4522,7 +4125,6 @@ Object.assign(window, {
   PropostaOrcamentoScreen,
   AprovacaoPropostaScreen
 });
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === FEED === */
 
 const MisFeedScreen = ({
@@ -4734,478 +4336,434 @@ const MisFeedScreen = ({
       resp: card.resp
     }, onNavigate);
   };
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "feed",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV(Card, {
-      className: "mis-feed-stories",
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement(Card, {
+    className: "mis-feed-stories",
+    style: {
+      padding: '18px 20px',
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 14
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, "Stories de obras"), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: 13,
+      color: C.blue600,
+      fontFamily: 'inherit'
+    }
+  }, "Ver todos")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 20,
+      overflowX: 'auto',
+      paddingBottom: 4
+    }
+  }, stories.map((s, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 6,
+      cursor: 'pointer',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 64,
+      height: 64,
+      borderRadius: 32,
+      border: `3px solid ${s.isOwn ? C.t300 : s.ring}`,
+      padding: 2,
+      boxSizing: 'border-box'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: '100%',
+      height: '100%',
+      borderRadius: '50%',
+      backgroundImage: `url(${s.img})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }
+  })), s.isOwn && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      bottom: 0,
+      right: 0,
+      width: 20,
+      height: 20,
+      borderRadius: 10,
+      background: C.blue500,
+      border: '2px solid #fff',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Plus, {
+    size: 10,
+    color: "#fff"
+  }))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: C.t700,
+      textAlign: 'center',
+      maxWidth: 64,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, s.name))))), /*#__PURE__*/React.createElement("div", {
+    className: "mis-feed-toolbar",
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mis-feed-filters",
+    style: {
+      display: 'flex',
+      gap: 2
+    }
+  }, [{
+    id: 'todos',
+    label: 'Todos'
+  }, {
+    id: 'seguindo',
+    label: 'Seguindo'
+  }, {
+    id: 'andamento',
+    label: 'Em andamento'
+  }, {
+    id: 'concluidos',
+    label: 'Concluídos'
+  }].map(t => {
+    const isA = tab === t.id;
+    return /*#__PURE__*/React.createElement("button", {
+      key: t.id,
+      className: `mis-select-btn${isA ? ' active' : ''}`,
+      "aria-pressed": isA,
+      onClick: () => setTab(t.id),
       style: {
-        padding: '18px 20px',
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV("span", {
-          style: {
-            fontSize: 15,
-            fontWeight: 600,
-            color: C.t900
-          },
-          children: "Stories de obras"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-          style: {
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: 13,
-            color: C.blue600,
-            fontFamily: 'inherit'
-          },
-          children: "Ver todos"
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          gap: 20,
-          overflowX: 'auto',
-          paddingBottom: 4
-        },
-        children: stories.map((s, i) => /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: 6,
-            cursor: 'pointer',
-            flexShrink: 0
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              position: 'relative'
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                width: 64,
-                height: 64,
-                borderRadius: 32,
-                border: `3px solid ${s.isOwn ? C.t300 : s.ring}`,
-                padding: 2,
-                boxSizing: 'border-box'
-              },
-              children: /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '50%',
-                  backgroundImage: `url(${s.img})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center'
-                }
-              }, void 0, false)
-            }, void 0, false), s.isOwn && /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                position: 'absolute',
-                bottom: 0,
-                right: 0,
-                width: 20,
-                height: 20,
-                borderRadius: 10,
-                background: C.blue500,
-                border: '2px solid #fff',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              },
-              children: /*#__PURE__*/_jsxDEV(Ic.Plus, {
-                size: 10,
-                color: "#fff"
-              }, void 0, false)
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-            style: {
-              fontSize: 11,
-              color: C.t700,
-              textAlign: 'center',
-              maxWidth: 64,
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-              whiteSpace: 'nowrap'
-            },
-            children: s.name
-          }, void 0, false)]
-        }, i, true))
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "mis-feed-toolbar",
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        className: "mis-feed-filters",
-        style: {
-          display: 'flex',
-          gap: 2
-        },
-        children: [{
-          id: 'todos',
-          label: 'Todos'
-        }, {
-          id: 'seguindo',
-          label: 'Seguindo'
-        }, {
-          id: 'andamento',
-          label: 'Em andamento'
-        }, {
-          id: 'concluidos',
-          label: 'Concluídos'
-        }].map(t => {
-          const isA = tab === t.id;
-          return /*#__PURE__*/_jsxDEV("button", {
-            className: `mis-select-btn${isA ? ' active' : ''}`,
-            "aria-pressed": isA,
-            onClick: () => setTab(t.id),
-            style: {
-              padding: '8px 18px',
-              borderRadius: 20,
-              fontSize: 14,
-              fontWeight: isA ? 600 : 400,
-              cursor: 'pointer',
-              border: 'none',
-              fontFamily: 'inherit',
-              background: isA ? C.t900 : 'transparent',
-              color: isA ? '#fff' : C.t500,
-              transition: 'all 0.15s'
-            },
-            children: t.label
-          }, t.id, false);
-        })
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        className: "mis-feed-view-controls",
-        style: {
-          display: 'flex',
-          gap: 10,
-          alignItems: 'center'
-        },
-        children: [/*#__PURE__*/_jsxDEV("button", {
-          style: {
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: 13,
-            color: C.t500,
-            display: 'flex',
-            alignItems: 'center',
-            gap: 4,
-            fontFamily: 'inherit'
-          },
-          children: ["Mais recentes ", /*#__PURE__*/_jsxDEV(Ic.ChevronDown, {
-            size: 13
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            border: `1px solid ${C.border}`,
-            borderRadius: 8,
-            overflow: 'hidden'
-          },
-          children: ['grid', 'list'].map(v => /*#__PURE__*/_jsxDEV("button", {
-            className: `mis-select-btn${view === v ? ' active' : ''}`,
-            "aria-pressed": view === v,
-            onClick: () => setView(v),
-            style: {
-              padding: '6px 10px',
-              background: view === v ? C.t900 : '#fff',
-              border: 'none',
-              cursor: 'pointer',
-              display: 'flex',
-              color: view === v ? '#fff' : C.t500
-            },
-            children: v === 'grid' ? /*#__PURE__*/_jsxDEV(Ic.Grid, {
-              size: 15
-            }, void 0, false) : /*#__PURE__*/_jsxDEV(Ic.List, {
-              size: 15
-            }, void 0, false)
-          }, v, false))
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      className: "mis-feed-grid",
-      style: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3,1fr)',
-        gap: 18
-      },
-      children: cards.map((c, i) => /*#__PURE__*/_jsxDEV(Card, {
-        className: "mis-feed-project-card",
-        role: "button",
-        tabIndex: 0,
-        "aria-label": `Abrir projeto ${c.name}`,
-        onClick: () => openFeedProject(c),
-        onKeyDown: e => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            openFeedProject(c);
-          }
-        },
-        style: {
-          padding: 0,
-          overflow: 'hidden',
-          cursor: 'pointer'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            alignItems: 'center',
-            gap: 10,
-            padding: '12px 14px 10px'
-          },
-          children: [/*#__PURE__*/_jsxDEV(ObraImg, {
-            obra: c.img,
-            style: {
-              width: 32,
-              height: 32,
-              borderRadius: 6,
-              flexShrink: 0
-            }
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              flex: 1,
-              minWidth: 0
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 13,
-                fontWeight: 600,
-                color: C.t900,
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
-                whiteSpace: 'nowrap'
-              },
-              children: c.name
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 11,
-                color: C.t500
-              },
-              children: c.loc
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-            onClick: e => e.stopPropagation(),
-            style: {
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              color: C.t400,
-              padding: 2
-            },
-            children: /*#__PURE__*/_jsxDEV(Ic.MoreH, {
-              size: 16
-            }, void 0, false)
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            position: 'relative'
-          },
-          children: /*#__PURE__*/_jsxDEV(ObraImg, {
-            obra: c.img,
-            style: {
-              height: 180
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                position: 'absolute',
-                inset: 0,
-                background: 'linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 50%)'
-              }
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                position: 'absolute',
-                bottom: 12,
-                left: 12
-              },
-              children: /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  background: c.tagBg,
-                  color: c.tagTx,
-                  borderRadius: 20,
-                  padding: '3px 10px',
-                  fontSize: 11,
-                  fontWeight: 600
-                },
-                children: c.tag
-              }, void 0, false)
-            }, void 0, false)]
-          }, void 0, true)
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            padding: '14px 16px 10px'
-          },
-          children: /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 12,
-              alignItems: 'center',
-              marginBottom: 8
-            },
-            children: [/*#__PURE__*/_jsxDEV(CircProg, {
-              value: c.pct,
-              size: 52
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1,
-                minWidth: 0
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 13,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: c.fase
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  color: C.t500,
-                  marginTop: 2
-                },
-                children: [c.pct, "% concluído"]
-              }, void 0, true), /*#__PURE__*/_jsxDEV(ProgressBar, {
-                value: c.pct,
-                height: 3,
-                style: {
-                  marginTop: 6
-                }
-              }, void 0, false)]
-            }, void 0, true)]
-          }, void 0, true)
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            alignItems: 'center',
-            gap: 8,
-            padding: '8px 16px',
-            borderTop: `1px solid ${C.borderLight}`
-          },
-          children: [/*#__PURE__*/_jsxDEV(Avatar, {
-            name: c.resp,
-            size: 28
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              flex: 1,
-              minWidth: 0
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 12,
-                fontWeight: 500,
-                color: C.t900,
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
-                whiteSpace: 'nowrap'
-              },
-              children: c.resp
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 11,
-                color: C.t500
-              },
-              children: c.role
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-            style: {
-              fontSize: 11,
-              color: C.t400,
-              whiteSpace: 'nowrap'
-            },
-            children: c.time
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            alignItems: 'center',
-            gap: 16,
-            padding: '8px 16px',
-            borderTop: `1px solid ${C.borderLight}`
-          },
-          children: [/*#__PURE__*/_jsxDEV("button", {
-            onClick: e => e.stopPropagation(),
-            style: {
-              background: 'none',
-              border: `1px solid ${C.border}`,
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: 28,
-              height: 28,
-              borderRadius: 14,
-              color: C.t500
-            },
-            children: /*#__PURE__*/_jsxDEV(Ic.Plus, {
-              size: 13
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-            onClick: e => e.stopPropagation(),
-            style: {
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: 4,
-              color: C.t500,
-              fontFamily: 'inherit',
-              fontSize: 13
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.Heart, {
-              size: 15,
-              color: "#EF4444"
-            }, void 0, false), " ", /*#__PURE__*/_jsxDEV("span", {
-              children: c.likes
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-            onClick: e => e.stopPropagation(),
-            style: {
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: 4,
-              color: C.t500,
-              fontFamily: 'inherit',
-              fontSize: 13
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.Message, {
-              size: 15
-            }, void 0, false), " ", /*#__PURE__*/_jsxDEV("span", {
-              children: c.comments
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-            onClick: e => e.stopPropagation(),
-            style: {
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              marginLeft: 'auto',
-              color: C.t500
-            },
-            children: /*#__PURE__*/_jsxDEV(Ic.Share, {
-              size: 15
-            }, void 0, false)
-          }, void 0, false)]
-        }, void 0, true)]
-      }, i, true))
-    }, void 0, false)]
-  }, void 0, true);
+        padding: '8px 18px',
+        borderRadius: 20,
+        fontSize: 14,
+        fontWeight: isA ? 600 : 400,
+        cursor: 'pointer',
+        border: 'none',
+        fontFamily: 'inherit',
+        background: isA ? C.t900 : 'transparent',
+        color: isA ? '#fff' : C.t500,
+        transition: 'all 0.15s'
+      }
+    }, t.label);
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "mis-feed-view-controls",
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: 13,
+      color: C.t500,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4,
+      fontFamily: 'inherit'
+    }
+  }, "Mais recentes ", /*#__PURE__*/React.createElement(Ic.ChevronDown, {
+    size: 13
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      border: `1px solid ${C.border}`,
+      borderRadius: 8,
+      overflow: 'hidden'
+    }
+  }, ['grid', 'list'].map(v => /*#__PURE__*/React.createElement("button", {
+    key: v,
+    className: `mis-select-btn${view === v ? ' active' : ''}`,
+    "aria-pressed": view === v,
+    onClick: () => setView(v),
+    style: {
+      padding: '6px 10px',
+      background: view === v ? C.t900 : '#fff',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      color: view === v ? '#fff' : C.t500
+    }
+  }, v === 'grid' ? /*#__PURE__*/React.createElement(Ic.Grid, {
+    size: 15
+  }) : /*#__PURE__*/React.createElement(Ic.List, {
+    size: 15
+  })))))), /*#__PURE__*/React.createElement("div", {
+    className: "mis-feed-grid",
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3,1fr)',
+      gap: 18
+    }
+  }, cards.map((c, i) => /*#__PURE__*/React.createElement(Card, {
+    key: i,
+    className: "mis-feed-project-card",
+    role: "button",
+    tabIndex: 0,
+    "aria-label": `Abrir projeto ${c.name}`,
+    onClick: () => openFeedProject(c),
+    onKeyDown: e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openFeedProject(c);
+      }
+    },
+    style: {
+      padding: 0,
+      overflow: 'hidden',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      padding: '12px 14px 10px'
+    }
+  }, /*#__PURE__*/React.createElement(ObraImg, {
+    obra: c.img,
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 6,
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, c.name), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500
+    }
+  }, c.loc)), /*#__PURE__*/React.createElement("button", {
+    onClick: e => e.stopPropagation(),
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      color: C.t400,
+      padding: 2
+    }
+  }, /*#__PURE__*/React.createElement(Ic.MoreH, {
+    size: 16
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement(ObraImg, {
+    obra: c.img,
+    style: {
+      height: 180
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: 'linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 50%)'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      bottom: 12,
+      left: 12
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      background: c.tagBg,
+      color: c.tagTx,
+      borderRadius: 20,
+      padding: '3px 10px',
+      fontSize: 11,
+      fontWeight: 600
+    }
+  }, c.tag)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '14px 16px 10px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 12,
+      alignItems: 'center',
+      marginBottom: 8
+    }
+  }, /*#__PURE__*/React.createElement(CircProg, {
+    value: c.pct,
+    size: 52
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, c.fase), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginTop: 2
+    }
+  }, c.pct, "% concluído"), /*#__PURE__*/React.createElement(ProgressBar, {
+    value: c.pct,
+    height: 3,
+    style: {
+      marginTop: 6
+    }
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      padding: '8px 16px',
+      borderTop: `1px solid ${C.borderLight}`
+    }
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: c.resp,
+    size: 28
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 500,
+      color: C.t900,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, c.resp), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500
+    }
+  }, c.role)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: C.t400,
+      whiteSpace: 'nowrap'
+    }
+  }, c.time)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      padding: '8px 16px',
+      borderTop: `1px solid ${C.borderLight}`
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: e => e.stopPropagation(),
+    style: {
+      background: 'none',
+      border: `1px solid ${C.border}`,
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: 28,
+      height: 28,
+      borderRadius: 14,
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Plus, {
+    size: 13
+  })), /*#__PURE__*/React.createElement("button", {
+    onClick: e => e.stopPropagation(),
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4,
+      color: C.t500,
+      fontFamily: 'inherit',
+      fontSize: 13
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Heart, {
+    size: 15,
+    color: "#EF4444"
+  }), " ", /*#__PURE__*/React.createElement("span", null, c.likes)), /*#__PURE__*/React.createElement("button", {
+    onClick: e => e.stopPropagation(),
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4,
+      color: C.t500,
+      fontFamily: 'inherit',
+      fontSize: 13
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Message, {
+    size: 15
+  }), " ", /*#__PURE__*/React.createElement("span", null, c.comments)), /*#__PURE__*/React.createElement("button", {
+    onClick: e => e.stopPropagation(),
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      marginLeft: 'auto',
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Share, {
+    size: 15
+  })))))));
 };
 
 // ─── SUPRIMENTOS ──────────────────────────────────────────────────────────────
@@ -5213,7 +4771,6 @@ const MisFeedScreen = ({
 Object.assign(window, {
   MisFeedScreen
 });
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === FEED UPDATES === */
 
 const AtualizacoesScreen = ({
@@ -5315,815 +4872,736 @@ const AtualizacoesScreen = ({
     type: 'vistoria',
     caption: 'Verificação concluída no setor estrutural. Sem não conformidades críticas.'
   }];
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "atualizacoes",
     onNavigate: onNavigate,
-    noPad: true,
-    children: /*#__PURE__*/_jsxDEV("div", {
-      className: "updates-workspace",
+    noPad: true
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "updates-workspace",
+    style: {
+      display: 'flex',
+      height: '100%',
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 260,
+      borderRight: `1px solid ${isDark ? C.border : lightBorder}`,
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden',
+      background: isDark ? '#fff' : lightPanelBg,
+      boxShadow: isDark ? 'none' : lightShadow
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '18px 16px 12px',
+      borderBottom: `1px solid ${isDark ? C.border : lightBorder}`
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 16,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, "Atualizações ", /*#__PURE__*/React.createElement("span", {
+    style: {
+      background: C.blue500,
+      color: '#fff',
+      borderRadius: 10,
+      padding: '2px 7px',
+      fontSize: 11,
+      fontWeight: 700
+    }
+  }, "24")), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Plus, {
+    size: 18
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6,
+      background: isDark ? C.bg : lightFieldBg,
+      border: `1px solid ${isDark ? C.border : lightBorder}`,
+      borderRadius: 8,
+      padding: '7px 10px',
+      marginBottom: 10,
+      boxShadow: isDark ? 'none' : 'inset 0 1px 0 rgba(255,255,255,.22)'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Search, {
+    size: 13,
+    color: C.t400
+  }), /*#__PURE__*/React.createElement("input", {
+    placeholder: "Buscar obra...",
+    style: {
+      flex: 1,
+      border: 'none',
+      outline: 'none',
+      fontSize: 13,
+      color: C.t900,
+      fontFamily: 'inherit',
+      background: 'transparent'
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 2
+    }
+  }, ['Todas', 'Com novidades'].map(t => /*#__PURE__*/React.createElement("button", {
+    key: t,
+    className: `mis-select-btn${t === 'Todas' ? ' active' : ''}`,
+    "aria-pressed": t === 'Todas',
+    style: {
+      padding: '5px 8px',
+      borderRadius: 6,
+      fontSize: 11,
+      cursor: 'pointer',
+      border: 'none',
+      fontFamily: 'inherit',
+      background: t === 'Todas' ? C.t900 : 'transparent',
+      color: t === 'Todas' ? '#fff' : C.t500,
+      fontWeight: t === 'Todas' ? 600 : 400
+    }
+  }, t)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      overflowY: 'hidden',
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '10px 16px',
+      fontSize: 10,
+      fontWeight: 700,
+      color: C.t400,
+      letterSpacing: 0.5
+    }
+  }, "SUAS OBRAS"), obrasList.map(o => /*#__PURE__*/React.createElement("button", {
+    key: o.id,
+    className: `mis-select-btn${selObra === o.id ? ' active' : ''}`,
+    "aria-pressed": selObra === o.id,
+    onClick: () => setSelObra(o.id),
+    style: {
+      width: '100%',
+      padding: '10px 16px',
+      display: 'flex',
+      gap: 10,
+      alignItems: 'center',
+      background: selObra === o.id ? isDark ? C.borderLight : 'linear-gradient(180deg, rgba(2,3,59,.10), rgba(2,3,59,.03)), rgba(255,255,255,.12)' : 'transparent',
+      border: 'none',
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      textAlign: 'left'
+    }
+  }, /*#__PURE__*/React.createElement(ObraImg, {
+    obra: o.img,
+    style: {
+      width: 40,
+      height: 40,
+      borderRadius: 8,
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 6,
+      alignItems: 'center',
+      marginBottom: 2
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, o.name), o.badge && /*#__PURE__*/React.createElement("span", {
+    style: {
+      background: o.badgeColor,
+      color: '#fff',
+      fontSize: 9,
+      fontWeight: 700,
+      borderRadius: 3,
+      padding: '1px 5px',
+      whiteSpace: 'nowrap'
+    }
+  }, o.badge)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, o.last)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flexShrink: 0,
+      textAlign: 'right'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      color: C.t400,
+      marginBottom: 2
+    }
+  }, o.time), o.notif > 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.red500,
+      color: '#fff',
+      borderRadius: 10,
+      padding: '1px 6px',
+      fontSize: 10,
+      fontWeight: 700,
+      display: 'inline-block'
+    }
+  }, o.notif)))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '12px 18px',
+      borderBottom: `1px solid ${isDark ? C.border : lightBorder}`,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      background: isDark ? '#fff' : lightPanelBg,
+      boxShadow: isDark ? 'none' : lightShadow
+    }
+  }, /*#__PURE__*/React.createElement(ObraImg, {
+    obra: "aurora",
+    style: {
+      width: 36,
+      height: 36,
+      borderRadius: 8
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 15,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, "Villa Aurora"), /*#__PURE__*/React.createElement(StatusDot, {
+    color: C.green500,
+    size: 7
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, "Estrutura - Fundação · 72% · Florianópolis, SC"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    style: {
+      padding: '6px 14px',
+      borderRadius: 8,
+      background: 'transparent',
+      border: `1px solid ${C.border}`,
+      fontSize: 13,
+      color: C.t700,
+      cursor: 'pointer',
+      fontFamily: 'inherit'
+    }
+  }, "Acompanhando"), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Calendar, {
+    size: 18
+  })), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Bell, {
+    size: 18
+  })), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Ic.MoreH, {
+    size: 18
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '10px 18px',
+      borderBottom: `1px solid ${isDark ? C.border : lightBorder}`,
+      background: isDark ? '#fff' : lightPanelBg,
+      boxShadow: isDark ? 'none' : lightShadow
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      background: isDark ? C.bg : lightFieldBg,
+      border: `1px solid ${isDark ? C.border : lightBorder}`,
+      borderRadius: 8,
+      padding: '7px 12px',
+      marginBottom: 10,
+      boxShadow: isDark ? 'none' : 'inset 0 1px 0 rgba(255,255,255,.22)'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Search, {
+    size: 13,
+    color: C.t400
+  }), /*#__PURE__*/React.createElement("input", {
+    placeholder: "Buscar em Villa Aurora...",
+    style: {
+      flex: 1,
+      border: 'none',
+      outline: 'none',
+      fontSize: 13,
+      fontFamily: 'inherit',
+      background: 'transparent',
+      color: C.t900
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 2,
+      overflowX: 'auto'
+    }
+  }, tabsFeed.map(t => {
+    const isA = tabFeed === t;
+    return /*#__PURE__*/React.createElement("button", {
+      key: t,
+      className: `mis-select-btn${isA ? ' active' : ''}`,
+      "aria-pressed": isA,
+      onClick: () => setTabFeed(t),
       style: {
-        display: 'flex',
-        height: '100%',
-        overflow: 'hidden'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 260,
-          borderRight: `1px solid ${isDark ? C.border : lightBorder}`,
-          display: 'flex',
-          flexDirection: 'column',
-          overflow: 'hidden',
-          background: isDark ? '#fff' : lightPanelBg,
-          boxShadow: isDark ? 'none' : lightShadow
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            padding: '18px 16px 12px',
-            borderBottom: `1px solid ${isDark ? C.border : lightBorder}`
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginBottom: 12
-            },
-            children: [/*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 16,
-                fontWeight: 700,
-                color: C.t900
-              },
-              children: ["Atualizações ", /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  background: C.blue500,
-                  color: '#fff',
-                  borderRadius: 10,
-                  padding: '2px 7px',
-                  fontSize: 11,
-                  fontWeight: 700
-                },
-                children: "24"
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-              style: {
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                color: C.t500
-              },
-              children: /*#__PURE__*/_jsxDEV(Ic.Plus, {
-                size: 18
-              }, void 0, false)
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              alignItems: 'center',
-              gap: 6,
-              background: isDark ? C.bg : lightFieldBg,
-              border: `1px solid ${isDark ? C.border : lightBorder}`,
-              borderRadius: 8,
-              padding: '7px 10px',
-              marginBottom: 10,
-              boxShadow: isDark ? 'none' : 'inset 0 1px 0 rgba(255,255,255,.22)'
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.Search, {
-              size: 13,
-              color: C.t400
-            }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-              placeholder: "Buscar obra...",
-              style: {
-                flex: 1,
-                border: 'none',
-                outline: 'none',
-                fontSize: 13,
-                color: C.t900,
-                fontFamily: 'inherit',
-                background: 'transparent'
-              }
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 2
-            },
-            children: ['Todas', 'Com novidades'].map(t => /*#__PURE__*/_jsxDEV("button", {
-              className: `mis-select-btn${t === 'Todas' ? ' active' : ''}`,
-              "aria-pressed": t === 'Todas',
-              style: {
-                padding: '5px 8px',
-                borderRadius: 6,
-                fontSize: 11,
-                cursor: 'pointer',
-                border: 'none',
-                fontFamily: 'inherit',
-                background: t === 'Todas' ? C.t900 : 'transparent',
-                color: t === 'Todas' ? '#fff' : C.t500,
-                fontWeight: t === 'Todas' ? 600 : 400
-              },
-              children: t
-            }, t, false))
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            overflowY: 'hidden',
-            flex: 1
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              padding: '10px 16px',
-              fontSize: 10,
-              fontWeight: 700,
-              color: C.t400,
-              letterSpacing: 0.5
-            },
-            children: "SUAS OBRAS"
-          }, void 0, false), obrasList.map(o => /*#__PURE__*/_jsxDEV("button", {
-            className: `mis-select-btn${selObra === o.id ? ' active' : ''}`,
-            "aria-pressed": selObra === o.id,
-            onClick: () => setSelObra(o.id),
-            style: {
-              width: '100%',
-              padding: '10px 16px',
-              display: 'flex',
-              gap: 10,
-              alignItems: 'center',
-              background: selObra === o.id ? isDark ? C.borderLight : 'linear-gradient(180deg, rgba(2,3,59,.10), rgba(2,3,59,.03)), rgba(255,255,255,.12)' : 'transparent',
-              border: 'none',
-              cursor: 'pointer',
-              fontFamily: 'inherit',
-              textAlign: 'left'
-            },
-            children: [/*#__PURE__*/_jsxDEV(ObraImg, {
-              obra: o.img,
-              style: {
-                width: 40,
-                height: 40,
-                borderRadius: 8,
-                flexShrink: 0
-              }
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1,
-                minWidth: 0
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  display: 'flex',
-                  gap: 6,
-                  alignItems: 'center',
-                  marginBottom: 2
-                },
-                children: [/*#__PURE__*/_jsxDEV("span", {
-                  style: {
-                    fontSize: 13,
-                    fontWeight: 600,
-                    color: C.t900,
-                    overflow: 'hidden',
-                    textOverflow: 'ellipsis',
-                    whiteSpace: 'nowrap'
-                  },
-                  children: o.name
-                }, void 0, false), o.badge && /*#__PURE__*/_jsxDEV("span", {
-                  style: {
-                    background: o.badgeColor,
-                    color: '#fff',
-                    fontSize: 9,
-                    fontWeight: 700,
-                    borderRadius: 3,
-                    padding: '1px 5px',
-                    whiteSpace: 'nowrap'
-                  },
-                  children: o.badge
-                }, void 0, false)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t500,
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  whiteSpace: 'nowrap'
-                },
-                children: o.last
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flexShrink: 0,
-                textAlign: 'right'
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 10,
-                  color: C.t400,
-                  marginBottom: 2
-                },
-                children: o.time
-              }, void 0, false), o.notif > 0 && /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  background: C.red500,
-                  color: '#fff',
-                  borderRadius: 10,
-                  padding: '1px 6px',
-                  fontSize: 10,
-                  fontWeight: 700,
-                  display: 'inline-block'
-                },
-                children: o.notif
-              }, void 0, false)]
-            }, void 0, true)]
-          }, o.id, true))]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          overflow: 'hidden'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            padding: '12px 18px',
-            borderBottom: `1px solid ${isDark ? C.border : lightBorder}`,
-            display: 'flex',
-            alignItems: 'center',
-            gap: 12,
-            background: isDark ? '#fff' : lightPanelBg,
-            boxShadow: isDark ? 'none' : lightShadow
-          },
-          children: [/*#__PURE__*/_jsxDEV(ObraImg, {
-            obra: "aurora",
-            style: {
-              width: 36,
-              height: 36,
-              borderRadius: 8
-            }
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              flex: 1
-            },
-            children: /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                alignItems: 'center',
-                gap: 8
-              },
-              children: [/*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 15,
-                  fontWeight: 700,
-                  color: C.t900
-                },
-                children: "Villa Aurora"
-              }, void 0, false), /*#__PURE__*/_jsxDEV(StatusDot, {
-                color: C.green500,
-                size: 7
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 12,
-                  color: C.t500
-                },
-                children: "Estrutura - Fundação · 72% · Florianópolis, SC"
-              }, void 0, false)]
-            }, void 0, true)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 8,
-              alignItems: 'center'
-            },
-            children: [/*#__PURE__*/_jsxDEV("button", {
-              style: {
-                padding: '6px 14px',
-                borderRadius: 8,
-                background: 'transparent',
-                border: `1px solid ${C.border}`,
-                fontSize: 13,
-                color: C.t700,
-                cursor: 'pointer',
-                fontFamily: 'inherit'
-              },
-              children: "Acompanhando"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-              style: {
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                color: C.t500
-              },
-              children: /*#__PURE__*/_jsxDEV(Ic.Calendar, {
-                size: 18
-              }, void 0, false)
-            }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-              style: {
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                color: C.t500
-              },
-              children: /*#__PURE__*/_jsxDEV(Ic.Bell, {
-                size: 18
-              }, void 0, false)
-            }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-              style: {
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                color: C.t500
-              },
-              children: /*#__PURE__*/_jsxDEV(Ic.MoreH, {
-                size: 18
-              }, void 0, false)
-            }, void 0, false)]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            padding: '10px 18px',
-            borderBottom: `1px solid ${isDark ? C.border : lightBorder}`,
-            background: isDark ? '#fff' : lightPanelBg,
-            boxShadow: isDark ? 'none' : lightShadow
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              alignItems: 'center',
-              gap: 8,
-              background: isDark ? C.bg : lightFieldBg,
-              border: `1px solid ${isDark ? C.border : lightBorder}`,
-              borderRadius: 8,
-              padding: '7px 12px',
-              marginBottom: 10,
-              boxShadow: isDark ? 'none' : 'inset 0 1px 0 rgba(255,255,255,.22)'
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.Search, {
-              size: 13,
-              color: C.t400
-            }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-              placeholder: "Buscar em Villa Aurora...",
-              style: {
-                flex: 1,
-                border: 'none',
-                outline: 'none',
-                fontSize: 13,
-                fontFamily: 'inherit',
-                background: 'transparent',
-                color: C.t900
-              }
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 2,
-              overflowX: 'auto'
-            },
-            children: tabsFeed.map(t => {
-              const isA = tabFeed === t;
-              return /*#__PURE__*/_jsxDEV("button", {
-                className: `mis-select-btn${isA ? ' active' : ''}`,
-                "aria-pressed": isA,
-                onClick: () => setTabFeed(t),
-                style: {
-                  padding: '5px 12px',
-                  borderRadius: 6,
-                  fontSize: 12,
-                  cursor: 'pointer',
-                  border: 'none',
-                  fontFamily: 'inherit',
-                  background: isA ? C.t900 : 'transparent',
-                  color: isA ? '#fff' : C.t500,
-                  fontWeight: isA ? 600 : 400,
-                  whiteSpace: 'nowrap'
-                },
-                children: t
-              }, t, false);
-            })
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            position: 'relative',
-            flex: 1,
-            minHeight: 0
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              flex: 1,
-              height: '100%',
-              overflowY: 'auto',
-              padding: '16px 18px 54px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 16
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 11,
-                fontWeight: 700,
-                color: C.t400,
-                letterSpacing: 0.5
-              },
-              children: "HOJE"
-            }, void 0, false), feed.map((f, i) => /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 12
-              },
-              children: [/*#__PURE__*/_jsxDEV(Avatar, {
-                name: f.avatar,
-                size: 34
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flex: 1
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    gap: 8,
-                    alignItems: 'center',
-                    marginBottom: 6
-                  },
-                  children: [/*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      fontSize: 13,
-                      fontWeight: 600,
-                      color: C.t900
-                    },
-                    children: f.name
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      fontSize: 12,
-                      color: C.t500
-                    },
-                    children: f.action
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      background: f.badgeColor,
-                      color: '#fff',
-                      fontSize: 10,
-                      fontWeight: 700,
-                      borderRadius: 4,
-                      padding: '2px 7px'
-                    },
-                    children: f.badge
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      marginLeft: 'auto',
-                      fontSize: 11,
-                      color: C.t400
-                    },
-                    children: f.time
-                  }, void 0, false)]
-                }, void 0, true), f.type === 'avanco' && /*#__PURE__*/_jsxDEV(Card, {
-                  style: {
-                    padding: '14px 16px'
-                  },
-                  children: [/*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      display: 'flex',
-                      gap: 12,
-                      alignItems: 'center',
-                      marginBottom: 8
-                    },
-                    children: [/*#__PURE__*/_jsxDEV("span", {
-                      style: {
-                        fontSize: 22,
-                        fontWeight: 800,
-                        color: C.green600
-                      },
-                      children: [f.pct, "%"]
-                    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                      children: [/*#__PURE__*/_jsxDEV("div", {
-                        style: {
-                          fontSize: 14,
-                          fontWeight: 600,
-                          color: C.t900
-                        },
-                        children: f.desc
-                      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                        style: {
-                          fontSize: 12,
-                          color: C.green600
-                        },
-                        children: f.delta
-                      }, void 0, false)]
-                    }, void 0, true)]
-                  }, void 0, true), /*#__PURE__*/_jsxDEV(ProgressBar, {
-                    value: f.pct,
-                    color: C.green500,
-                    height: 6
-                  }, void 0, false)]
-                }, void 0, true), f.type === 'foto' && /*#__PURE__*/_jsxDEV(Card, {
-                  style: {
-                    padding: 0,
-                    overflow: 'hidden'
-                  },
-                  children: [/*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      padding: '12px 14px 8px',
-                      fontSize: 13,
-                      color: C.t700
-                    },
-                    children: f.caption
-                  }, void 0, false), /*#__PURE__*/_jsxDEV(ObraImg, {
-                    obra: "torre",
-                    style: {
-                      height: 180
-                    }
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      padding: '8px 14px',
-                      display: 'flex',
-                      gap: 12
-                    },
-                    children: [/*#__PURE__*/_jsxDEV("button", {
-                      style: {
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 4,
-                        fontSize: 13,
-                        color: C.t500,
-                        fontFamily: 'inherit'
-                      },
-                      children: [/*#__PURE__*/_jsxDEV(Ic.Heart, {
-                        size: 14
-                      }, void 0, false), " ", f.likes]
-                    }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-                      style: {
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 4,
-                        fontSize: 13,
-                        color: C.t500,
-                        fontFamily: 'inherit'
-                      },
-                      children: [/*#__PURE__*/_jsxDEV(Ic.Message, {
-                        size: 14
-                      }, void 0, false), " ", f.comments]
-                    }, void 0, true)]
-                  }, void 0, true)]
-                }, void 0, true), f.type === 'vistoria' && /*#__PURE__*/_jsxDEV(Card, {
-                  style: {
-                    padding: '12px 16px',
-                    display: 'flex',
-                    gap: 10,
-                    alignItems: 'flex-start'
-                  },
-                  children: [/*#__PURE__*/_jsxDEV(Ic.Check, {
-                    size: 16,
-                    color: C.green600,
-                    style: {
-                      marginTop: 2,
-                      flexShrink: 0
-                    }
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      fontSize: 13,
-                      color: C.t700,
-                      lineHeight: 1.5
-                    },
-                    children: f.caption
-                  }, void 0, false)]
-                }, void 0, true)]
-              }, void 0, true)]
-            }, i, true))]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              position: 'absolute',
-              left: 0,
-              right: 0,
-              bottom: 0,
-              height: 40,
-              pointerEvents: 'none',
-              background: isDark ? 'linear-gradient(180deg, rgba(9,18,31,0) 0%, rgba(9,18,31,.95) 100%)' : 'linear-gradient(180deg, rgba(195,195,195,0) 0%, rgba(195,195,195,.96) 100%)',
-              borderTop: `1px solid ${isDark ? 'rgba(255,255,255,.08)' : 'rgba(255,255,255,.38)'}`,
-              boxShadow: isDark ? '0 -10px 24px rgba(0,0,0,.12)' : '0 -10px 24px rgba(138,138,138,.10)'
-            }
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 200,
-          borderLeft: `1px solid ${isDark ? C.border : lightBorder}`,
-          background: isDark ? '#fff' : lightPanelBg,
-          overflowY: 'hidden',
-          flexShrink: 0,
-          boxShadow: isDark ? 'none' : lightShadow
-        },
-        children: [/*#__PURE__*/_jsxDEV(ObraImg, {
-          obra: "aurora",
-          style: {
-            height: 100,
-            position: 'relative'
-          },
-          children: /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              position: 'absolute',
-              top: 8,
-              left: 8
-            },
-            children: /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                background: C.green500,
-                color: '#fff',
-                fontSize: 9,
-                fontWeight: 700,
-                borderRadius: 4,
-                padding: '2px 6px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 4
-              },
-              children: [/*#__PURE__*/_jsxDEV(StatusDot, {
-                color: "#fff",
-                size: 5
-              }, void 0, false), " Ao vivo"]
-            }, void 0, true)
-          }, void 0, false)
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            padding: '14px 14px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 700,
-              color: C.t900,
-              marginBottom: 2
-            },
-            children: "Villa Aurora"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 12,
-              color: C.t500,
-              marginBottom: 14,
-              display: 'flex',
-              alignItems: 'center',
-              gap: 4
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.MapPin, {
-              size: 12
-            }, void 0, false), " Florianópolis, SC"]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: 8,
-              marginBottom: 14
-            },
-            children: [{
-              icon: Ic.Calendar,
-              label: 'Agenda'
-            }, {
-              icon: Ic.Package,
-              label: 'Suprimentos'
-            }, {
-              icon: Ic.Users,
-              label: 'Equipe'
-            }, {
-              icon: Ic.Bell,
-              label: 'Notificar'
-            }].map(a => /*#__PURE__*/_jsxDEV("button", {
-              style: {
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: 4,
-                padding: '10px 6px',
-                borderRadius: 10,
-                border: `1px solid ${C.border}`,
-                background: '#fff',
-                cursor: 'pointer',
-                fontFamily: 'inherit'
-              },
-              children: [/*#__PURE__*/_jsxDEV(a.icon, {
-                size: 18,
-                color: C.t500
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 11,
-                  color: C.t700,
-                  fontWeight: 500
-                },
-                children: a.label
-              }, void 0, false)]
-            }, a.label, true))
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 10,
-              fontWeight: 700,
-              color: C.t400,
-              letterSpacing: 0.5,
-              marginBottom: 8
-            },
-            children: "STATUS ATUAL"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              marginBottom: 14
-            },
-            children: [[['Etapa', 'Estrutura - Fundação'], ['Avanço', '72%']].map(([k, v]) => /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                justifyContent: 'space-between',
-                marginBottom: 5
-              },
-              children: [/*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 12,
-                  color: C.t500
-                },
-                children: k
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 12,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: v
-              }, void 0, false)]
-            }, k, true)), /*#__PURE__*/_jsxDEV(ProgressBar, {
-              value: 72,
-              color: C.green500,
-              height: 5
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 10,
-              fontWeight: 700,
-              color: C.t400,
-              letterSpacing: 0.5,
-              marginBottom: 8
-            },
-            children: "RESUMO DE HOJE"
-          }, void 0, false), [['Atualizações', '8'], ['Fotos publicadas', '2'], ['Documentos', '1'], ['Vistorias', '1']].map(([k, v]) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              justifyContent: 'space-between',
-              marginBottom: 6
-            },
-            children: [/*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 12,
-                color: C.t500
-              },
-              children: k
-            }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 12,
-                fontWeight: 700,
-                color: C.t900
-              },
-              children: v
-            }, void 0, false)]
-          }, k, true)), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 10,
-              fontWeight: 700,
-              color: C.t400,
-              letterSpacing: 0.5,
-              margin: '14px 0 8px'
-            },
-            children: "EQUIPE"
-          }, void 0, false), [['Mariana Costa', 'Eng. Responsável'], ['Rafael Souza', 'Mestre de obras'], ['João Pedro', 'Arquiteto']].map(([n, r]) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 8,
-              alignItems: 'center',
-              marginBottom: 8
-            },
-            children: [/*#__PURE__*/_jsxDEV(Avatar, {
-              name: n,
-              size: 28
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: n
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 10,
-                  color: C.t500
-                },
-                children: r
-              }, void 0, false)]
-            }, void 0, true)]
-          }, n, true))]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)
-  }, void 0, false);
+        padding: '5px 12px',
+        borderRadius: 6,
+        fontSize: 12,
+        cursor: 'pointer',
+        border: 'none',
+        fontFamily: 'inherit',
+        background: isA ? C.t900 : 'transparent',
+        color: isA ? '#fff' : C.t500,
+        fontWeight: isA ? 600 : 400,
+        whiteSpace: 'nowrap'
+      }
+    }, t);
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      flex: 1,
+      minHeight: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      height: '100%',
+      overflowY: 'auto',
+      padding: '16px 18px 54px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 700,
+      color: C.t400,
+      letterSpacing: 0.5
+    }
+  }, "HOJE"), feed.map((f, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: f.avatar,
+    size: 34
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      alignItems: 'center',
+      marginBottom: 6
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, f.name), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, f.action), /*#__PURE__*/React.createElement("span", {
+    style: {
+      background: f.badgeColor,
+      color: '#fff',
+      fontSize: 10,
+      fontWeight: 700,
+      borderRadius: 4,
+      padding: '2px 7px'
+    }
+  }, f.badge), /*#__PURE__*/React.createElement("span", {
+    style: {
+      marginLeft: 'auto',
+      fontSize: 11,
+      color: C.t400
+    }
+  }, f.time)), f.type === 'avanco' && /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '14px 16px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 12,
+      alignItems: 'center',
+      marginBottom: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 22,
+      fontWeight: 800,
+      color: C.green600
+    }
+  }, f.pct, "%"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, f.desc), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.green600
+    }
+  }, f.delta))), /*#__PURE__*/React.createElement(ProgressBar, {
+    value: f.pct,
+    color: C.green500,
+    height: 6
+  })), f.type === 'foto' && /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: 0,
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '12px 14px 8px',
+      fontSize: 13,
+      color: C.t700
+    }
+  }, f.caption), /*#__PURE__*/React.createElement(ObraImg, {
+    obra: "torre",
+    style: {
+      height: 180
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '8px 14px',
+      display: 'flex',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4,
+      fontSize: 13,
+      color: C.t500,
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Heart, {
+    size: 14
+  }), " ", f.likes), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4,
+      fontSize: 13,
+      color: C.t500,
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Message, {
+    size: 14
+  }), " ", f.comments))), f.type === 'vistoria' && /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '12px 16px',
+      display: 'flex',
+      gap: 10,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Check, {
+    size: 16,
+    color: C.green600,
+    style: {
+      marginTop: 2,
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t700,
+      lineHeight: 1.5
+    }
+  }, f.caption)))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      bottom: 0,
+      height: 40,
+      pointerEvents: 'none',
+      background: isDark ? 'linear-gradient(180deg, rgba(9,18,31,0) 0%, rgba(9,18,31,.95) 100%)' : 'linear-gradient(180deg, rgba(195,195,195,0) 0%, rgba(195,195,195,.96) 100%)',
+      borderTop: `1px solid ${isDark ? 'rgba(255,255,255,.08)' : 'rgba(255,255,255,.38)'}`,
+      boxShadow: isDark ? '0 -10px 24px rgba(0,0,0,.12)' : '0 -10px 24px rgba(138,138,138,.10)'
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 200,
+      borderLeft: `1px solid ${isDark ? C.border : lightBorder}`,
+      background: isDark ? '#fff' : lightPanelBg,
+      overflowY: 'hidden',
+      flexShrink: 0,
+      boxShadow: isDark ? 'none' : lightShadow
+    }
+  }, /*#__PURE__*/React.createElement(ObraImg, {
+    obra: "aurora",
+    style: {
+      height: 100,
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      top: 8,
+      left: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      background: C.green500,
+      color: '#fff',
+      fontSize: 9,
+      fontWeight: 700,
+      borderRadius: 4,
+      padding: '2px 6px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4
+    }
+  }, /*#__PURE__*/React.createElement(StatusDot, {
+    color: "#fff",
+    size: 5
+  }), " Ao vivo"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '14px 14px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 700,
+      color: C.t900,
+      marginBottom: 2
+    }
+  }, "Villa Aurora"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginBottom: 14,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4
+    }
+  }, /*#__PURE__*/React.createElement(Ic.MapPin, {
+    size: 12
+  }), " Florianópolis, SC"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 8,
+      marginBottom: 14
+    }
+  }, [{
+    icon: Ic.Calendar,
+    label: 'Agenda'
+  }, {
+    icon: Ic.Package,
+    label: 'Suprimentos'
+  }, {
+    icon: Ic.Users,
+    label: 'Equipe'
+  }, {
+    icon: Ic.Bell,
+    label: 'Notificar'
+  }].map(a => /*#__PURE__*/React.createElement("button", {
+    key: a.label,
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 4,
+      padding: '10px 6px',
+      borderRadius: 10,
+      border: `1px solid ${C.border}`,
+      background: '#fff',
+      cursor: 'pointer',
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(a.icon, {
+    size: 18,
+    color: C.t500
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: C.t700,
+      fontWeight: 500
+    }
+  }, a.label)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      fontWeight: 700,
+      color: C.t400,
+      letterSpacing: 0.5,
+      marginBottom: 8
+    }
+  }, "STATUS ATUAL"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 14
+    }
+  }, [['Etapa', 'Estrutura - Fundação'], ['Avanço', '72%']].map(([k, v]) => /*#__PURE__*/React.createElement("div", {
+    key: k,
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      marginBottom: 5
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, k), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, v))), /*#__PURE__*/React.createElement(ProgressBar, {
+    value: 72,
+    color: C.green500,
+    height: 5
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      fontWeight: 700,
+      color: C.t400,
+      letterSpacing: 0.5,
+      marginBottom: 8
+    }
+  }, "RESUMO DE HOJE"), [['Atualizações', '8'], ['Fotos publicadas', '2'], ['Documentos', '1'], ['Vistorias', '1']].map(([k, v]) => /*#__PURE__*/React.createElement("div", {
+    key: k,
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      marginBottom: 6
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, k), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, v))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      fontWeight: 700,
+      color: C.t400,
+      letterSpacing: 0.5,
+      margin: '14px 0 8px'
+    }
+  }, "EQUIPE"), [['Mariana Costa', 'Eng. Responsável'], ['Rafael Souza', 'Mestre de obras'], ['João Pedro', 'Arquiteto']].map(([n, r]) => /*#__PURE__*/React.createElement("div", {
+    key: n,
+    style: {
+      display: 'flex',
+      gap: 8,
+      alignItems: 'center',
+      marginBottom: 8
+    }
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: n,
+    size: 28
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, n), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      color: C.t500
+    }
+  }, r))))))));
 };
 Object.assign(window, {
   AtualizacoesScreen
 });
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === SUPRIMENTOS === */
 
 const SuprimentosScreen = ({
@@ -6288,443 +5766,392 @@ const SuprimentosScreen = ({
     if (filtro === 'normal') return o.itens.every(i => i.status === 'Normal');
     return true;
   });
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "suprimentos",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV(SectionHeader, {
-      title: "Suprimentos",
-      subtitle: `Monitore materiais, estoque mínimo, entregas e riscos de abastecimento de ${project.name}.`,
-      action: /*#__PURE__*/_jsxDEV(Btn, {
-        onClick: () => window.dispatchEvent(new CustomEvent('mis:action')),
-        variant: "primary",
-        size: "sm",
-        icon: /*#__PURE__*/_jsxDEV(Ic.Plus, {
-          size: 14
-        }, void 0, false),
-        children: "Novo pedido"
-      }, void 0, false)
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4,1fr)',
-        gap: 14,
-        marginBottom: 20
-      },
-      children: [{
-        label: 'Projeto monitorado',
-        value: '1',
-        sub: /*#__PURE__*/_jsxDEV(Badge, {
-          color: "blue",
-          children: project.name
-        }, void 0, false)
-      }, {
-        label: 'Itens monitorados',
-        value: String(obras[0].itens.length),
-        sub: /*#__PURE__*/_jsxDEV(Badge, {
-          color: "green",
-          children: "Projeto selecionado"
-        }, void 0, false)
-      }, {
-        label: 'Itens críticos',
-        value: String(obras[0].criticos),
-        sub: /*#__PURE__*/_jsxDEV(Badge, {
-          color: "red",
-          children: "Exigem ação"
-        }, void 0, false)
-      }, {
-        label: 'Pedidos pendentes',
-        value: '6',
-        sub: /*#__PURE__*/_jsxDEV(Badge, {
-          color: "orange",
-          children: "Aguardando retorno"
-        }, void 0, false)
-      }].map(k => /*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '18px 20px'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 13,
-            color: C.t500,
-            marginBottom: 8
-          },
-          children: k.label
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 36,
-            fontWeight: 700,
-            color: C.t900,
-            lineHeight: 1,
-            marginBottom: 10
-          },
-          children: k.value
-        }, void 0, false), k.sub]
-      }, k.label, true))
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 12,
-        alignItems: 'center',
-        marginBottom: 18
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          flex: 1,
-          alignItems: 'center',
-          gap: 8,
-          background: '#fff',
-          border: `1.5px solid ${C.border}`,
-          borderRadius: 10,
-          padding: '9px 14px'
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.Search, {
-          size: 15,
-          color: C.t400
-        }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-          placeholder: "Buscar por obra, material, fornecedor, categoria ou responsável...",
-          style: {
-            flex: 1,
-            border: 'none',
-            outline: 'none',
-            fontSize: 14,
-            color: C.t900,
-            fontFamily: 'inherit',
-            background: 'transparent'
-          }
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-        style: {
-          background: 'none',
-          border: `1.5px solid ${C.border}`,
-          borderRadius: 10,
-          padding: '9px 14px',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 6,
-          fontSize: 13,
-          color: C.t700,
-          fontFamily: 'inherit'
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.Filter, {
-          size: 14
-        }, void 0, false), " Filtrar"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV(ChipBar, {
-        chips: [{
-          id: 'todos',
-          label: 'Todos'
-        }, {
-          id: 'criticos',
-          label: 'Críticos'
-        }, {
-          id: 'atencao',
-          label: 'Atenção'
-        }, {
-          id: 'normal',
-          label: 'Normal'
-        }],
-        active: filtro,
-        onChange: setFiltro
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 16,
-        alignItems: 'flex-start'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 14,
-            fontWeight: 600,
-            color: C.t700,
-            marginBottom: 14
-          },
-          children: "Controle do projeto"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 12
-          },
-          children: filtrados.map(o => /*#__PURE__*/_jsxDEV(Card, {
-            style: {
-              padding: 0,
-              overflow: 'hidden'
-            },
-            children: [/*#__PURE__*/_jsxDEV("button", {
-              onClick: () => toggle(o.id),
-              style: {
-                width: '100%',
-                padding: '14px 18px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 14,
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                fontFamily: 'inherit',
-                borderBottom: abertos.includes(o.id) ? `1px solid ${C.border}` : 'none'
-              },
-              children: [/*#__PURE__*/_jsxDEV(ObraImg, {
-                obra: o.img,
-                style: {
-                  width: 44,
-                  height: 44,
-                  borderRadius: 8,
-                  flexShrink: 0
-                }
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flex: 1,
-                  textAlign: 'left'
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 14,
-                    fontWeight: 600,
-                    color: C.t900
-                  },
-                  children: o.name
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t500
-                  },
-                  children: [o.loc, " · ", o.itens.length, " itens"]
-                }, void 0, true)]
-              }, void 0, true), o.criticos > 0 && /*#__PURE__*/_jsxDEV(Badge, {
-                color: "red",
-                dot: true,
-                children: [o.criticos, " críticos"]
-              }, void 0, true), abertos.includes(o.id) ? /*#__PURE__*/_jsxDEV(Ic.ChevronUp, {
-                size: 16,
-                color: C.t400
-              }, void 0, false) : /*#__PURE__*/_jsxDEV(Ic.ChevronDown, {
-                size: 16,
-                color: C.t400
-              }, void 0, false)]
-            }, void 0, true), abertos.includes(o.id) && /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                padding: '4px 0 4px'
-              },
-              children: o.itens.map((it, i) => /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  padding: '12px 18px',
-                  borderBottom: i < o.itens.length - 1 ? `1px solid ${C.borderLight}` : 'none'
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    gap: 10,
-                    alignItems: 'center',
-                    marginBottom: 4
-                  },
-                  children: [/*#__PURE__*/_jsxDEV(StatusDot, {
-                    color: it.dot,
-                    size: 9
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      flex: 1,
-                      fontSize: 14,
-                      fontWeight: 600,
-                      color: C.t900
-                    },
-                    children: it.nome
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      fontSize: 13,
-                      color: C.t500
-                    },
-                    children: it.qtd
-                  }, void 0, false), /*#__PURE__*/_jsxDEV(Badge, {
-                    color: statusColor[it.status],
-                    children: it.status
-                  }, void 0, false), it.alerta && /*#__PURE__*/_jsxDEV(Ic.AlertTriangle, {
-                    size: 16,
-                    color: C.orange500
-                  }, void 0, false)]
-                }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t500,
-                    lineHeight: 1.5,
-                    paddingLeft: 19
-                  },
-                  children: it.desc
-                }, void 0, false)]
-              }, i, true))
-            }, void 0, false)]
-          }, o.id, true))
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 240,
-          flexShrink: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 12
-            },
-            children: "Resumo crítico"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 10
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 10,
-                alignItems: 'flex-start'
-              },
-              children: [/*#__PURE__*/_jsxDEV(StatusDot, {
-                color: C.red500,
-                size: 8,
-                style: {
-                  marginTop: 4
-                }
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 13,
-                    fontWeight: 600,
-                    color: C.t900
-                  },
-                  children: "5 itens críticos"
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t500
-                  },
-                  children: "Materiais abaixo do mínimo ou sem confirmação de entrega."
-                }, void 0, false)]
-              }, void 0, true)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 10,
-                alignItems: 'flex-start'
-              },
-              children: [/*#__PURE__*/_jsxDEV(StatusDot, {
-                color: C.orange500,
-                size: 8,
-                style: {
-                  marginTop: 4
-                }
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 13,
-                    fontWeight: 600,
-                    color: C.t900
-                  },
-                  children: "5 em atenção"
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t500
-                  },
-                  children: "Itens próximos ao limite ou com previsão sensível."
-                }, void 0, false)]
-              }, void 0, true)]
-            }, void 0, true)]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 12
-            },
-            children: "Itens críticos"
-          }, void 0, false), itensCriticos.map((ic, i) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'flex-start',
-              marginBottom: 10,
-              paddingBottom: 10,
-              borderBottom: i < itensCriticos.length - 1 ? `1px solid ${C.borderLight}` : 'none'
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  fontWeight: 500,
-                  color: C.t900
-                },
-                children: ic.nome
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t500
-                },
-                children: ic.proj
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 11,
-                color: C.t400,
-                whiteSpace: 'nowrap'
-              },
-              children: ic.data
-            }, void 0, false)]
-          }, i, true))]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 10
-            },
-            children: "Categorias"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 6,
-              flexWrap: 'wrap'
-            },
-            children: categorias.map(c => /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                padding: '4px 10px',
-                borderRadius: 20,
-                background: C.blue100,
-                color: C.blue600,
-                fontSize: 11,
-                fontWeight: 500,
-                cursor: 'pointer'
-              },
-              children: c
-            }, c, false))
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    title: "Suprimentos",
+    subtitle: `Monitore materiais, estoque mínimo, entregas e riscos de abastecimento de ${project.name}.`,
+    action: /*#__PURE__*/React.createElement(Btn, {
+      onClick: () => window.dispatchEvent(new CustomEvent('mis:action')),
+      variant: "primary",
+      size: "sm",
+      icon: /*#__PURE__*/React.createElement(Ic.Plus, {
+        size: 14
+      })
+    }, "Novo pedido")
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4,1fr)',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, [{
+    label: 'Projeto monitorado',
+    value: '1',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "blue"
+    }, project.name)
+  }, {
+    label: 'Itens monitorados',
+    value: String(obras[0].itens.length),
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "green"
+    }, "Projeto selecionado")
+  }, {
+    label: 'Itens críticos',
+    value: String(obras[0].criticos),
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "red"
+    }, "Exigem ação")
+  }, {
+    label: 'Pedidos pendentes',
+    value: '6',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "orange"
+    }, "Aguardando retorno")
+  }].map(k => /*#__PURE__*/React.createElement(Card, {
+    key: k.label,
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t500,
+      marginBottom: 8
+    }
+  }, k.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 36,
+      fontWeight: 700,
+      color: C.t900,
+      lineHeight: 1,
+      marginBottom: 10
+    }
+  }, k.value), k.sub))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 12,
+      alignItems: 'center',
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flex: 1,
+      alignItems: 'center',
+      gap: 8,
+      background: '#fff',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      padding: '9px 14px'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Search, {
+    size: 15,
+    color: C.t400
+  }), /*#__PURE__*/React.createElement("input", {
+    placeholder: "Buscar por obra, material, fornecedor, categoria ou responsável...",
+    style: {
+      flex: 1,
+      border: 'none',
+      outline: 'none',
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      background: 'transparent'
+    }
+  })), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      padding: '9px 14px',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6,
+      fontSize: 13,
+      color: C.t700,
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Filter, {
+    size: 14
+  }), " Filtrar"), /*#__PURE__*/React.createElement(ChipBar, {
+    chips: [{
+      id: 'todos',
+      label: 'Todos'
+    }, {
+      id: 'criticos',
+      label: 'Críticos'
+    }, {
+      id: 'atencao',
+      label: 'Atenção'
+    }, {
+      id: 'normal',
+      label: 'Normal'
+    }],
+    active: filtro,
+    onChange: setFiltro
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t700,
+      marginBottom: 14
+    }
+  }, "Controle do projeto"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12
+    }
+  }, filtrados.map(o => /*#__PURE__*/React.createElement(Card, {
+    key: o.id,
+    style: {
+      padding: 0,
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => toggle(o.id),
+    style: {
+      width: '100%',
+      padding: '14px 18px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 14,
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      borderBottom: abertos.includes(o.id) ? `1px solid ${C.border}` : 'none'
+    }
+  }, /*#__PURE__*/React.createElement(ObraImg, {
+    obra: o.img,
+    style: {
+      width: 44,
+      height: 44,
+      borderRadius: 8,
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      textAlign: 'left'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, o.name), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, o.loc, " · ", o.itens.length, " itens")), o.criticos > 0 && /*#__PURE__*/React.createElement(Badge, {
+    color: "red",
+    dot: true
+  }, o.criticos, " críticos"), abertos.includes(o.id) ? /*#__PURE__*/React.createElement(Ic.ChevronUp, {
+    size: 16,
+    color: C.t400
+  }) : /*#__PURE__*/React.createElement(Ic.ChevronDown, {
+    size: 16,
+    color: C.t400
+  })), abertos.includes(o.id) && /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '4px 0 4px'
+    }
+  }, o.itens.map((it, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      padding: '12px 18px',
+      borderBottom: i < o.itens.length - 1 ? `1px solid ${C.borderLight}` : 'none'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'center',
+      marginBottom: 4
+    }
+  }, /*#__PURE__*/React.createElement(StatusDot, {
+    color: it.dot,
+    size: 9
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      flex: 1,
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, it.nome), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 13,
+      color: C.t500
+    }
+  }, it.qtd), /*#__PURE__*/React.createElement(Badge, {
+    color: statusColor[it.status]
+  }, it.status), it.alerta && /*#__PURE__*/React.createElement(Ic.AlertTriangle, {
+    size: 16,
+    color: C.orange500
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      lineHeight: 1.5,
+      paddingLeft: 19
+    }
+  }, it.desc)))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 240,
+      flexShrink: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 12
+    }
+  }, "Resumo crítico"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement(StatusDot, {
+    color: C.red500,
+    size: 8,
+    style: {
+      marginTop: 4
+    }
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, "5 itens críticos"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, "Materiais abaixo do mínimo ou sem confirmação de entrega."))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement(StatusDot, {
+    color: C.orange500,
+    size: 8,
+    style: {
+      marginTop: 4
+    }
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, "5 em atenção"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, "Itens próximos ao limite ou com previsão sensível."))))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 12
+    }
+  }, "Itens críticos"), itensCriticos.map((ic, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'flex-start',
+      marginBottom: 10,
+      paddingBottom: 10,
+      borderBottom: i < itensCriticos.length - 1 ? `1px solid ${C.borderLight}` : 'none'
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 500,
+      color: C.t900
+    }
+  }, ic.nome), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500
+    }
+  }, ic.proj)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: C.t400,
+      whiteSpace: 'nowrap'
+    }
+  }, ic.data)))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 10
+    }
+  }, "Categorias"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 6,
+      flexWrap: 'wrap'
+    }
+  }, categorias.map(c => /*#__PURE__*/React.createElement("span", {
+    key: c,
+    style: {
+      padding: '4px 10px',
+      borderRadius: 20,
+      background: C.blue100,
+      color: C.blue600,
+      fontSize: 11,
+      fontWeight: 500,
+      cursor: 'pointer'
+    }
+  }, c)))))));
 };
 
 // ─── PENDÊNCIAS ───────────────────────────────────────────────────────────────
@@ -6732,7 +6159,6 @@ const SuprimentosScreen = ({
 Object.assign(window, {
   SuprimentosScreen
 });
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === PENDENCIAS === */
 
 const PendenciasScreen = ({
@@ -6848,490 +6274,436 @@ const PendenciasScreen = ({
     if (filtro === 'concluidas') return p.pct === 100;
     return true;
   });
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "pendencias",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV(SectionHeader, {
-      title: "Pendências",
-      subtitle: /*#__PURE__*/_jsxDEV("span", {
-        children: ["Controle tarefas ", /*#__PURE__*/_jsxDEV("span", {
-          style: {
-            color: C.orange600
-          },
-          children: "abertas"
-        }, void 0, false), ", responsáveis, prazos e bloqueios de ", project.name, "."]
-      }, void 0, true),
-      action: /*#__PURE__*/_jsxDEV(Btn, {
-        onClick: () => window.dispatchEvent(new CustomEvent('mis:action')),
-        variant: "primary",
-        size: "sm",
-        icon: /*#__PURE__*/_jsxDEV(Ic.Plus, {
-          size: 14
-        }, void 0, false),
-        children: "Nova pendência"
-      }, void 0, false)
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    title: "Pendências",
+    subtitle: /*#__PURE__*/React.createElement("span", null, "Controle tarefas ", /*#__PURE__*/React.createElement("span", {
       style: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4,1fr)',
-        gap: 14,
-        marginBottom: 20
-      },
-      children: [{
-        label: 'Total de pendências',
-        value: '8',
-        sub: /*#__PURE__*/_jsxDEV(Badge, {
-          color: "gray",
-          children: project.name
-        }, void 0, false)
-      }, {
-        label: 'Pendentes',
-        value: '4',
-        sub: /*#__PURE__*/_jsxDEV(Badge, {
-          color: "orange",
-          children: "Aguardando ação"
-        }, void 0, false)
-      }, {
-        label: 'Críticas',
-        value: '2',
-        sub: /*#__PURE__*/_jsxDEV(Badge, {
-          color: "red",
-          children: "Alta urgência"
-        }, void 0, false)
-      }, {
-        label: 'Concluídas',
-        value: '1',
-        sub: /*#__PURE__*/_jsxDEV(Badge, {
-          color: "green",
-          children: "Hoje / recentes"
-        }, void 0, false)
-      }].map(k => /*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '18px 20px'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 13,
-            color: C.t500,
-            marginBottom: 8
-          },
-          children: k.label
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 36,
-            fontWeight: 700,
-            color: C.t900,
-            lineHeight: 1,
-            marginBottom: 10
-          },
-          children: k.value
-        }, void 0, false), k.sub]
-      }, k.label, true))
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 12,
-        alignItems: 'center',
-        marginBottom: 18
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          flex: '0 0 340px',
-          alignItems: 'center',
-          gap: 8,
-          background: '#fff',
-          border: `1.5px solid ${C.border}`,
-          borderRadius: 10,
-          padding: '9px 14px'
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.Search, {
-          size: 15,
-          color: C.t400
-        }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-          placeholder: "Buscar por tarefa, obra, responsável ou categoria...",
-          style: {
-            flex: 1,
-            border: 'none',
-            outline: 'none',
-            fontSize: 14,
-            color: C.t900,
-            fontFamily: 'inherit',
-            background: 'transparent'
-          }
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-        style: {
-          background: 'none',
-          border: `1.5px solid ${C.border}`,
-          borderRadius: 10,
-          padding: '9px 12px',
-          cursor: 'pointer',
-          display: 'flex',
-          color: C.t500
-        },
-        children: /*#__PURE__*/_jsxDEV(Ic.Filter, {
-          size: 15
-        }, void 0, false)
-      }, void 0, false), /*#__PURE__*/_jsxDEV(TabBar, {
-        tabs: [{
-          id: 'todas',
-          label: 'Todas'
-        }, {
-          id: 'pendentes',
-          label: 'Pendentes'
-        }, {
-          id: 'andamento',
-          label: 'Em andamento'
-        }, {
-          id: 'revisao',
-          label: 'Em revisão'
-        }, {
-          id: 'concluidas',
-          label: 'Concluídas'
-        }],
-        active: filtro,
-        onChange: setFiltro
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          marginLeft: 'auto',
-          display: 'flex',
-          border: `1px solid ${C.border}`,
-          borderRadius: 8,
-          overflow: 'hidden'
-        },
-        children: ['Lista', 'Kanban'].map(v => /*#__PURE__*/_jsxDEV("button", {
-          className: `mis-select-btn${view === v ? ' active' : ''}`,
-          "aria-pressed": view === v,
-          onClick: () => setView(v),
-          style: {
-            padding: '6px 12px',
-            background: view === v ? C.blue600 : '#fff',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: 12,
-            color: view === v ? '#fff' : C.t500,
-            fontFamily: 'inherit',
-            fontWeight: 600
-          },
-          children: v
-        }, v, false))
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 16,
-        alignItems: 'flex-start'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 13,
-            fontWeight: 600,
-            color: C.t700,
-            marginBottom: 12
-          },
-          children: [view === 'Kanban' ? 'Kanban de pendências' : 'Lista de pendências', " ", /*#__PURE__*/_jsxDEV("span", {
-            style: {
-              color: C.t400,
-              fontWeight: 400
-            },
-            children: ["· ", filtradas.length, " pendências encontradas"]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 8
-          },
-          children: filtradas.map(p => /*#__PURE__*/_jsxDEV(Card, {
-            style: {
-              padding: '14px 20px'
-            },
-            children: /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 14,
-                alignItems: 'center'
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: 22,
-                  height: 22,
-                  borderRadius: 11,
-                  border: `2px solid ${p.pct === 100 ? C.green500 : C.border}`,
-                  background: p.pct === 100 ? C.green500 : 'transparent',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
-                  cursor: 'pointer'
-                },
-                children: p.pct === 100 && /*#__PURE__*/_jsxDEV(Ic.Check, {
-                  size: 12,
-                  color: "#fff"
-                }, void 0, false)
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flex: 1,
-                  minWidth: 0
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 14,
-                    fontWeight: 500,
-                    color: p.pct === 100 ? C.t400 : C.t900,
-                    textDecoration: p.pct === 100 ? 'line-through' : 'none'
-                  },
-                  children: p.tarefa
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 5,
-                    marginTop: 2
-                  },
-                  children: [/*#__PURE__*/_jsxDEV(StatusDot, {
-                    color: p.obraColor,
-                    size: 7
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      fontSize: 12,
-                      color: C.t500
-                    },
-                    children: p.obra
-                  }, void 0, false)]
-                }, void 0, true)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV(Badge, {
-                color: p.pB,
-                style: {
-                  flexShrink: 0
-                },
-                children: p.prio
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 8,
-                  flexShrink: 0,
-                  width: 160
-                },
-                children: [/*#__PURE__*/_jsxDEV(Avatar, {
-                  name: p.resp,
-                  size: 32
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  children: [/*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      fontSize: 12,
-                      fontWeight: 600,
-                      color: C.t900,
-                      whiteSpace: 'nowrap'
-                    },
-                    children: p.resp
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      fontSize: 11,
-                      color: C.t500
-                    },
-                    children: p.role
-                  }, void 0, false)]
-                }, void 0, true)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flexShrink: 0,
-                  width: 90,
-                  textAlign: 'right'
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 12,
-                    fontWeight: 600,
-                    color: p.ontime ? C.t700 : C.orange600
-                  },
-                  children: p.date
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 11,
-                    color: p.ontime ? C.t400 : C.orange600
-                  },
-                  children: p.ontime ? 'no prazo' : 'ação necessária'
-                }, void 0, false)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flexShrink: 0,
-                  width: 100,
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 8
-                },
-                children: [/*#__PURE__*/_jsxDEV(ProgressBar, {
-                  value: p.pct,
-                  color: C.blue500,
-                  height: 4,
-                  style: {
-                    flex: 1
-                  }
-                }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t500,
-                    width: 32,
-                    textAlign: 'right'
-                  },
-                  children: [p.pct, "%"]
-                }, void 0, true)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-                style: {
-                  background: 'none',
-                  border: 'none',
-                  cursor: 'pointer',
-                  color: C.t400,
-                  padding: 4,
-                  flexShrink: 0
-                },
-                children: /*#__PURE__*/_jsxDEV(Ic.MoreH, {
-                  size: 16
-                }, void 0, false)
-              }, void 0, false)]
-            }, void 0, true)
-          }, p.id, false))
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 220,
-          flexShrink: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 4
-            },
-            children: "Resumo operacional"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 12,
-              color: C.t500,
-              marginBottom: 14
-            },
-            children: "Pendências que exigem acompanhamento."
-          }, void 0, false), [{
-            n: '4 urgentes hoje',
-            d: 'Tarefas críticas ou de alta prioridade com vencimento imediato.',
-            dot: C.red500
-          }, {
-            n: '2 críticas',
-            d: 'Devem ser tratadas antes das demais pendências.',
-            dot: C.orange500
-          }, {
-            n: '7 abertas',
-            d: 'Ainda não foram concluídas pela operação.',
-            dot: C.blue500
-          }].map((item, i) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10,
-              marginBottom: 12
-            },
-            children: [/*#__PURE__*/_jsxDEV(StatusDot, {
-              color: item.dot,
-              size: 8,
-              style: {
-                marginTop: 4,
-                flexShrink: 0
-              }
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 13,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: item.n
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t500,
-                  lineHeight: 1.4
-                },
-                children: item.d
-              }, void 0, false)]
-            }, void 0, true)]
-          }, i, true))]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 12
-            },
-            children: "Prioridade"
-          }, void 0, false), [{
-            nome: 'Validar entrega de concreto',
-            obra: 'Residencial Aurora',
-            color: C.red500
-          }, {
-            nome: 'Revisar impacto do atraso...',
-            obra: 'Hospital São Lucas',
-            color: C.orange500
-          }].map((p, i) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10,
-              alignItems: 'flex-start',
-              marginBottom: 10
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.AlertTriangle, {
-              size: 16,
-              color: p.color,
-              style: {
-                flexShrink: 0,
-                marginTop: 1
-              }
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  fontWeight: 500,
-                  color: C.t900
-                },
-                children: p.nome
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t500
-                },
-                children: p.obra
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                marginLeft: 'auto',
-                fontSize: 11,
-                color: C.t400,
-                whiteSpace: 'nowrap'
-              },
-              children: "Hoje"
-            }, void 0, false)]
-          }, i, true))]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+        color: C.orange600
+      }
+    }, "abertas"), ", responsáveis, prazos e bloqueios de ", project.name, "."),
+    action: /*#__PURE__*/React.createElement(Btn, {
+      onClick: () => window.dispatchEvent(new CustomEvent('mis:action')),
+      variant: "primary",
+      size: "sm",
+      icon: /*#__PURE__*/React.createElement(Ic.Plus, {
+        size: 14
+      })
+    }, "Nova pendência")
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4,1fr)',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, [{
+    label: 'Total de pendências',
+    value: '8',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "gray"
+    }, project.name)
+  }, {
+    label: 'Pendentes',
+    value: '4',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "orange"
+    }, "Aguardando ação")
+  }, {
+    label: 'Críticas',
+    value: '2',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "red"
+    }, "Alta urgência")
+  }, {
+    label: 'Concluídas',
+    value: '1',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "green"
+    }, "Hoje / recentes")
+  }].map(k => /*#__PURE__*/React.createElement(Card, {
+    key: k.label,
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t500,
+      marginBottom: 8
+    }
+  }, k.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 36,
+      fontWeight: 700,
+      color: C.t900,
+      lineHeight: 1,
+      marginBottom: 10
+    }
+  }, k.value), k.sub))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 12,
+      alignItems: 'center',
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flex: '0 0 340px',
+      alignItems: 'center',
+      gap: 8,
+      background: '#fff',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      padding: '9px 14px'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Search, {
+    size: 15,
+    color: C.t400
+  }), /*#__PURE__*/React.createElement("input", {
+    placeholder: "Buscar por tarefa, obra, responsável ou categoria...",
+    style: {
+      flex: 1,
+      border: 'none',
+      outline: 'none',
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      background: 'transparent'
+    }
+  })), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      padding: '9px 12px',
+      cursor: 'pointer',
+      display: 'flex',
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Filter, {
+    size: 15
+  })), /*#__PURE__*/React.createElement(TabBar, {
+    tabs: [{
+      id: 'todas',
+      label: 'Todas'
+    }, {
+      id: 'pendentes',
+      label: 'Pendentes'
+    }, {
+      id: 'andamento',
+      label: 'Em andamento'
+    }, {
+      id: 'revisao',
+      label: 'Em revisão'
+    }, {
+      id: 'concluidas',
+      label: 'Concluídas'
+    }],
+    active: filtro,
+    onChange: setFiltro
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      border: `1px solid ${C.border}`,
+      borderRadius: 8,
+      overflow: 'hidden'
+    }
+  }, ['Lista', 'Kanban'].map(v => /*#__PURE__*/React.createElement("button", {
+    key: v,
+    className: `mis-select-btn${view === v ? ' active' : ''}`,
+    "aria-pressed": view === v,
+    onClick: () => setView(v),
+    style: {
+      padding: '6px 12px',
+      background: view === v ? C.blue600 : '#fff',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: 12,
+      color: view === v ? '#fff' : C.t500,
+      fontFamily: 'inherit',
+      fontWeight: 600
+    }
+  }, v)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t700,
+      marginBottom: 12
+    }
+  }, view === 'Kanban' ? 'Kanban de pendências' : 'Lista de pendências', " ", /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t400,
+      fontWeight: 400
+    }
+  }, "· ", filtradas.length, " pendências encontradas")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8
+    }
+  }, filtradas.map(p => /*#__PURE__*/React.createElement(Card, {
+    key: p.id,
+    style: {
+      padding: '14px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 14,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 22,
+      height: 22,
+      borderRadius: 11,
+      border: `2px solid ${p.pct === 100 ? C.green500 : C.border}`,
+      background: p.pct === 100 ? C.green500 : 'transparent',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0,
+      cursor: 'pointer'
+    }
+  }, p.pct === 100 && /*#__PURE__*/React.createElement(Ic.Check, {
+    size: 12,
+    color: "#fff"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 500,
+      color: p.pct === 100 ? C.t400 : C.t900,
+      textDecoration: p.pct === 100 ? 'line-through' : 'none'
+    }
+  }, p.tarefa), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 5,
+      marginTop: 2
+    }
+  }, /*#__PURE__*/React.createElement(StatusDot, {
+    color: p.obraColor,
+    size: 7
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, p.obra))), /*#__PURE__*/React.createElement(Badge, {
+    color: p.pB,
+    style: {
+      flexShrink: 0
+    }
+  }, p.prio), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      flexShrink: 0,
+      width: 160
+    }
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: p.resp,
+    size: 32
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t900,
+      whiteSpace: 'nowrap'
+    }
+  }, p.resp), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500
+    }
+  }, p.role))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flexShrink: 0,
+      width: 90,
+      textAlign: 'right'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      color: p.ontime ? C.t700 : C.orange600
+    }
+  }, p.date), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: p.ontime ? C.t400 : C.orange600
+    }
+  }, p.ontime ? 'no prazo' : 'ação necessária')), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flexShrink: 0,
+      width: 100,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(ProgressBar, {
+    value: p.pct,
+    color: C.blue500,
+    height: 4,
+    style: {
+      flex: 1
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      width: 32,
+      textAlign: 'right'
+    }
+  }, p.pct, "%")), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      color: C.t400,
+      padding: 4,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(Ic.MoreH, {
+    size: 16
+  }))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 220,
+      flexShrink: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 4
+    }
+  }, "Resumo operacional"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginBottom: 14
+    }
+  }, "Pendências que exigem acompanhamento."), [{
+    n: '4 urgentes hoje',
+    d: 'Tarefas críticas ou de alta prioridade com vencimento imediato.',
+    dot: C.red500
+  }, {
+    n: '2 críticas',
+    d: 'Devem ser tratadas antes das demais pendências.',
+    dot: C.orange500
+  }, {
+    n: '7 abertas',
+    d: 'Ainda não foram concluídas pela operação.',
+    dot: C.blue500
+  }].map((item, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 10,
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement(StatusDot, {
+    color: item.dot,
+    size: 8,
+    style: {
+      marginTop: 4,
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, item.n), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500,
+      lineHeight: 1.4
+    }
+  }, item.d))))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 12
+    }
+  }, "Prioridade"), [{
+    nome: 'Validar entrega de concreto',
+    obra: 'Residencial Aurora',
+    color: C.red500
+  }, {
+    nome: 'Revisar impacto do atraso...',
+    obra: 'Hospital São Lucas',
+    color: C.orange500
+  }].map((p, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'flex-start',
+      marginBottom: 10
+    }
+  }, /*#__PURE__*/React.createElement(Ic.AlertTriangle, {
+    size: 16,
+    color: p.color,
+    style: {
+      flexShrink: 0,
+      marginTop: 1
+    }
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 500,
+      color: C.t900
+    }
+  }, p.nome), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500
+    }
+  }, p.obra)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      marginLeft: 'auto',
+      fontSize: 11,
+      color: C.t400,
+      whiteSpace: 'nowrap'
+    }
+  }, "Hoje")))))));
 };
 
 // ─── ALERTAS ──────────────────────────────────────────────────────────────────
@@ -7472,555 +6844,498 @@ const AlertasScreen = ({
     if (filtro === 'nao_lidos') return !a.lido;
     return true;
   });
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "alertas",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV(SectionHeader, {
-      title: "Alertas",
-      subtitle: `Monitore riscos, atrasos e eventos operacionais de ${project.name}.`,
-      action: /*#__PURE__*/_jsxDEV(Btn, {
-        onClick: () => window.dispatchEvent(new CustomEvent('mis:action')),
-        variant: "primary",
-        size: "sm",
-        icon: /*#__PURE__*/_jsxDEV(Ic.Plus, {
-          size: 14
-        }, void 0, false),
-        children: "Novo alerta"
-      }, void 0, false)
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 14,
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3,1fr)',
-          gap: 14,
-          flex: 1
-        },
-        children: [{
-          label: 'Total de alertas',
-          value: '8',
-          sub: /*#__PURE__*/_jsxDEV(Badge, {
-            color: "gray",
-            children: "+12%"
-          }, void 0, false)
-        }, {
-          label: 'Alertas críticos',
-          value: '3',
-          sub: /*#__PURE__*/_jsxDEV(Badge, {
-            color: "red",
-            children: "Alta prioridade"
-          }, void 0, false)
-        }, {
-          label: 'Não lidos',
-          value: '4',
-          sub: /*#__PURE__*/_jsxDEV(Badge, {
-            color: "orange",
-            children: "Exigem análise"
-          }, void 0, false)
-        }].map(k => /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              color: C.t500,
-              marginBottom: 8
-            },
-            children: k.label
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 36,
-              fontWeight: 700,
-              color: C.t900,
-              lineHeight: 1,
-              marginBottom: 10
-            },
-            children: k.value
-          }, void 0, false), k.sub]
-        }, k.label, true))
-      }, void 0, false), /*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '18px 20px',
-          width: 180,
-          flexShrink: 0
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            gap: 8,
-            alignItems: 'center',
-            marginBottom: 6
-          },
-          children: [/*#__PURE__*/_jsxDEV(Ic.Clock, {
-            size: 16,
-            color: C.orange500
-          }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-            style: {
-              fontSize: 12,
-              color: C.t500
-            },
-            children: "Tempo médio resolução"
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 34,
-            fontWeight: 800,
-            color: C.t900,
-            lineHeight: 1,
-            marginBottom: 8
-          },
-          children: "3,4h"
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Badge, {
-          color: "green",
-          children: "−22% vs mês passado"
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 10,
-        alignItems: 'center',
-        marginBottom: 18
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          flex: '0 0 300px',
-          alignItems: 'center',
-          gap: 8,
-          background: '#fff',
-          border: `1.5px solid ${C.border}`,
-          borderRadius: 10,
-          padding: '9px 14px'
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.Search, {
-          size: 15,
-          color: C.t400
-        }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-          placeholder: "Buscar por alerta, obra ou categoria...",
-          style: {
-            flex: 1,
-            border: 'none',
-            outline: 'none',
-            fontSize: 14,
-            color: C.t900,
-            fontFamily: 'inherit',
-            background: 'transparent'
-          }
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-        style: {
-          background: 'none',
-          border: `1.5px solid ${C.border}`,
-          borderRadius: 10,
-          padding: '9px 12px',
-          cursor: 'pointer',
-          display: 'flex',
-          color: C.t500
-        },
-        children: /*#__PURE__*/_jsxDEV(Ic.Filter, {
-          size: 15
-        }, void 0, false)
-      }, void 0, false), /*#__PURE__*/_jsxDEV(TabBar, {
-        tabs: [{
-          id: 'todos',
-          label: 'Todos'
-        }, {
-          id: 'criticos',
-          label: 'Críticos'
-        }, {
-          id: 'atencao',
-          label: 'Atenção'
-        }, {
-          id: 'nao_lidos',
-          label: 'Não lidos'
-        }],
-        active: filtro,
-        onChange: setFiltro
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          marginLeft: 'auto',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 6
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.Clock, {
-          size: 14,
-          color: C.t400
-        }, void 0, false), [{
-          id: 'tudo',
-          label: 'Todo período'
-        }, {
-          id: 'hoje',
-          label: 'Hoje'
-        }, {
-          id: '7d',
-          label: '7 dias'
-        }, {
-          id: '30d',
-          label: '30 dias'
-        }].map(p => /*#__PURE__*/_jsxDEV("button", {
-          className: `mis-select-btn${periodo === p.id ? ' active' : ''}`,
-          "aria-pressed": periodo === p.id,
-          onClick: () => setPeriodo(p.id),
-          style: {
-            padding: '5px 12px',
-            borderRadius: 6,
-            fontSize: 12,
-            fontWeight: 500,
-            cursor: 'pointer',
-            border: 'none',
-            fontFamily: 'inherit',
-            background: periodo === p.id ? C.t900 : 'transparent',
-            color: periodo === p.id ? '#fff' : C.t500
-          },
-          children: p.label
-        }, p.id, false))]
-      }, void 0, true)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 16,
-        alignItems: 'flex-start'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 13,
-            fontWeight: 600,
-            color: C.t700,
-            marginBottom: 12
-          },
-          children: ["Lista de alertas ", /*#__PURE__*/_jsxDEV("span", {
-            style: {
-              color: C.t400,
-              fontWeight: 400
-            },
-            children: ["· ", filtrados.length, " alertas encontrados"]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 10
-          },
-          children: filtrados.map((a, i) => /*#__PURE__*/_jsxDEV(Card, {
-            style: {
-              padding: '16px 20px'
-            },
-            children: /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 14,
-                alignItems: 'flex-start'
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: 38,
-                  height: 38,
-                  borderRadius: 19,
-                  background: `${iconColors[a.icon]}18`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                },
-                children: a.tipo === 'critico' ? /*#__PURE__*/_jsxDEV(Ic.AlertCircle, {
-                  size: 18,
-                  color: iconColors[a.icon]
-                }, void 0, false) : /*#__PURE__*/_jsxDEV(Ic.AlertTriangle, {
-                  size: 18,
-                  color: iconColors[a.icon]
-                }, void 0, false)
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flex: 1,
-                  minWidth: 0
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 8,
-                    marginBottom: 6
-                  },
-                  children: [/*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      fontSize: 14,
-                      fontWeight: 600,
-                      color: C.t900
-                    },
-                    children: a.title
-                  }, void 0, false), a.novo && /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      background: C.blue500,
-                      color: '#fff',
-                      fontSize: 10,
-                      fontWeight: 700,
-                      borderRadius: 4,
-                      padding: '1px 6px'
-                    },
-                    children: "Novo"
-                  }, void 0, false), /*#__PURE__*/_jsxDEV(Badge, {
-                    color: a.tipo === 'critico' ? 'red' : a.tipo === 'atencao' ? 'orange' : 'blue',
-                    style: {
-                      marginLeft: 'auto'
-                    },
-                    children: a.badge
-                  }, void 0, false)]
-                }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 13,
-                    color: C.t700,
-                    lineHeight: 1.55,
-                    marginBottom: 8
-                  },
-                  children: a.descricao
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    gap: 16,
-                    marginBottom: 8,
-                    flexWrap: 'wrap'
-                  },
-                  children: [[Ic.Building, a.obra], [Ic.MapPin, a.loc], [Ic.User, a.resp], [Ic.Calendar, a.data]].map(([Icon, text], j) => /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: 4,
-                      fontSize: 12,
-                      color: C.t500
-                    },
-                    children: [/*#__PURE__*/_jsxDEV(Icon, {
-                      size: 13,
-                      color: C.t400
-                    }, void 0, false), " ", text]
-                  }, j, true))
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 8
-                  },
-                  children: [a.tags.map(t => /*#__PURE__*/_jsxDEV(Badge, {
-                    color: tagColors[t] || 'gray',
-                    children: t
-                  }, t, false)), /*#__PURE__*/_jsxDEV(Badge, {
-                    color: a.lido ? 'gray' : 'blue',
-                    children: a.lido ? 'Lido' : 'Não lido'
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      marginLeft: 'auto',
-                      display: 'flex',
-                      gap: 8
-                    },
-                    children: [/*#__PURE__*/_jsxDEV("button", {
-                      onClick: () => setRemovedAlerts(v => [...v, a.title]),
-                      style: {
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 5,
-                        padding: '5px 12px',
-                        borderRadius: 6,
-                        background: C.navActive,
-                        border: 'none',
-                        cursor: 'pointer',
-                        fontSize: 12,
-                        fontWeight: 600,
-                        color: '#fff',
-                        fontFamily: 'inherit',
-                        boxShadow: '0 7px 14px rgba(2,3,59,.16)'
-                      },
-                      children: [/*#__PURE__*/_jsxDEV(Ic.Check, {
-                        size: 13
-                      }, void 0, false), " Resolver"]
-                    }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-                      onClick: () => setRemovedAlerts(v => [...v, a.title]),
-                      style: {
-                        padding: '5px 12px',
-                        borderRadius: 6,
-                        background: 'transparent',
-                        border: `1px solid ${C.border}`,
-                        cursor: 'pointer',
-                        fontSize: 12,
-                        color: C.t500,
-                        fontFamily: 'inherit'
-                      },
-                      children: "Ignorar"
-                    }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-                      onClick: () => onNavigate('detalhe_projeto'),
-                      style: {
-                        padding: '5px 12px',
-                        borderRadius: 6,
-                        background: 'transparent',
-                        border: `1px solid ${C.border}`,
-                        cursor: 'pointer',
-                        fontSize: 12,
-                        color: C.t700,
-                        fontFamily: 'inherit'
-                      },
-                      children: "Ver detalhes"
-                    }, void 0, false)]
-                  }, void 0, true)]
-                }, void 0, true)]
-              }, void 0, true)]
-            }, void 0, true)
-          }, i, false))
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 220,
-          flexShrink: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 12
-            },
-            children: "Resumo crítico"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10,
-              marginBottom: 12
-            },
-            children: [/*#__PURE__*/_jsxDEV(StatusDot, {
-              color: C.red500,
-              size: 8,
-              style: {
-                marginTop: 4,
-                flexShrink: 0
-              }
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 13,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: "3 alertas críticos"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t500,
-                  lineHeight: 1.4
-                },
-                children: "Devem ser tratados antes do próximo ciclo de obra."
-              }, void 0, false)]
-            }, void 0, true)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.Bell, {
-              size: 14,
-              color: C.orange500,
-              style: {
-                flexShrink: 0,
-                marginTop: 2
-              }
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 13,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: "4 não lidos"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t500,
-                  lineHeight: 1.4
-                },
-                children: "Ainda aguardam primeira análise da equipe."
-              }, void 0, false)]
-            }, void 0, true)]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 12
-            },
-            children: "Prioridade"
-          }, void 0, false), [{
-            title: 'Atraso crítico na entrega d...',
-            obra: 'Residencial Aurora'
-          }, {
-            title: 'Risco de conflito entre eta...',
-            obra: 'Torre Central'
-          }, {
-            title: 'Risco de segurança identifi...',
-            obra: 'Villa Aurora'
-          }].map((p, i) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10,
-              alignItems: 'flex-start',
-              marginBottom: 10
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.AlertTriangle, {
-              size: 16,
-              color: C.orange500,
-              style: {
-                flexShrink: 0
-              }
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1,
-                minWidth: 0
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  fontWeight: 500,
-                  color: C.t900
-                },
-                children: p.title
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t500
-                },
-                children: p.obra
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 11,
-                color: C.t400,
-                whiteSpace: 'nowrap'
-              },
-              children: "Hoje"
-            }, void 0, false)]
-          }, i, true))]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    title: "Alertas",
+    subtitle: `Monitore riscos, atrasos e eventos operacionais de ${project.name}.`,
+    action: /*#__PURE__*/React.createElement(Btn, {
+      onClick: () => window.dispatchEvent(new CustomEvent('mis:action')),
+      variant: "primary",
+      size: "sm",
+      icon: /*#__PURE__*/React.createElement(Ic.Plus, {
+        size: 14
+      })
+    }, "Novo alerta")
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3,1fr)',
+      gap: 14,
+      flex: 1
+    }
+  }, [{
+    label: 'Total de alertas',
+    value: '8',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "gray"
+    }, "+12%")
+  }, {
+    label: 'Alertas críticos',
+    value: '3',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "red"
+    }, "Alta prioridade")
+  }, {
+    label: 'Não lidos',
+    value: '4',
+    sub: /*#__PURE__*/React.createElement(Badge, {
+      color: "orange"
+    }, "Exigem análise")
+  }].map(k => /*#__PURE__*/React.createElement(Card, {
+    key: k.label,
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t500,
+      marginBottom: 8
+    }
+  }, k.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 36,
+      fontWeight: 700,
+      color: C.t900,
+      lineHeight: 1,
+      marginBottom: 10
+    }
+  }, k.value), k.sub))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '18px 20px',
+      width: 180,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      alignItems: 'center',
+      marginBottom: 6
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Clock, {
+    size: 16,
+    color: C.orange500
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, "Tempo médio resolução")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 34,
+      fontWeight: 800,
+      color: C.t900,
+      lineHeight: 1,
+      marginBottom: 8
+    }
+  }, "3,4h"), /*#__PURE__*/React.createElement(Badge, {
+    color: "green"
+  }, "−22% vs mês passado"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'center',
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flex: '0 0 300px',
+      alignItems: 'center',
+      gap: 8,
+      background: '#fff',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      padding: '9px 14px'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Search, {
+    size: 15,
+    color: C.t400
+  }), /*#__PURE__*/React.createElement("input", {
+    placeholder: "Buscar por alerta, obra ou categoria...",
+    style: {
+      flex: 1,
+      border: 'none',
+      outline: 'none',
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      background: 'transparent'
+    }
+  })), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      padding: '9px 12px',
+      cursor: 'pointer',
+      display: 'flex',
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Filter, {
+    size: 15
+  })), /*#__PURE__*/React.createElement(TabBar, {
+    tabs: [{
+      id: 'todos',
+      label: 'Todos'
+    }, {
+      id: 'criticos',
+      label: 'Críticos'
+    }, {
+      id: 'atencao',
+      label: 'Atenção'
+    }, {
+      id: 'nao_lidos',
+      label: 'Não lidos'
+    }],
+    active: filtro,
+    onChange: setFiltro
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Clock, {
+    size: 14,
+    color: C.t400
+  }), [{
+    id: 'tudo',
+    label: 'Todo período'
+  }, {
+    id: 'hoje',
+    label: 'Hoje'
+  }, {
+    id: '7d',
+    label: '7 dias'
+  }, {
+    id: '30d',
+    label: '30 dias'
+  }].map(p => /*#__PURE__*/React.createElement("button", {
+    key: p.id,
+    className: `mis-select-btn${periodo === p.id ? ' active' : ''}`,
+    "aria-pressed": periodo === p.id,
+    onClick: () => setPeriodo(p.id),
+    style: {
+      padding: '5px 12px',
+      borderRadius: 6,
+      fontSize: 12,
+      fontWeight: 500,
+      cursor: 'pointer',
+      border: 'none',
+      fontFamily: 'inherit',
+      background: periodo === p.id ? C.t900 : 'transparent',
+      color: periodo === p.id ? '#fff' : C.t500
+    }
+  }, p.label)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t700,
+      marginBottom: 12
+    }
+  }, "Lista de alertas ", /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t400,
+      fontWeight: 400
+    }
+  }, "· ", filtrados.length, " alertas encontrados")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10
+    }
+  }, filtrados.map((a, i) => /*#__PURE__*/React.createElement(Card, {
+    key: i,
+    style: {
+      padding: '16px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 14,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 38,
+      height: 38,
+      borderRadius: 19,
+      background: `${iconColors[a.icon]}18`,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0
+    }
+  }, a.tipo === 'critico' ? /*#__PURE__*/React.createElement(Ic.AlertCircle, {
+    size: 18,
+    color: iconColors[a.icon]
+  }) : /*#__PURE__*/React.createElement(Ic.AlertTriangle, {
+    size: 18,
+    color: iconColors[a.icon]
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      marginBottom: 6
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, a.title), a.novo && /*#__PURE__*/React.createElement("span", {
+    style: {
+      background: C.blue500,
+      color: '#fff',
+      fontSize: 10,
+      fontWeight: 700,
+      borderRadius: 4,
+      padding: '1px 6px'
+    }
+  }, "Novo"), /*#__PURE__*/React.createElement(Badge, {
+    color: a.tipo === 'critico' ? 'red' : a.tipo === 'atencao' ? 'orange' : 'blue',
+    style: {
+      marginLeft: 'auto'
+    }
+  }, a.badge)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t700,
+      lineHeight: 1.55,
+      marginBottom: 8
+    }
+  }, a.descricao), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16,
+      marginBottom: 8,
+      flexWrap: 'wrap'
+    }
+  }, [[Ic.Building, a.obra], [Ic.MapPin, a.loc], [Ic.User, a.resp], [Ic.Calendar, a.data]].map(([Icon, text], j) => /*#__PURE__*/React.createElement("span", {
+    key: j,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4,
+      fontSize: 12,
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    size: 13,
+    color: C.t400
+  }), " ", text))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, a.tags.map(t => /*#__PURE__*/React.createElement(Badge, {
+    key: t,
+    color: tagColors[t] || 'gray'
+  }, t)), /*#__PURE__*/React.createElement(Badge, {
+    color: a.lido ? 'gray' : 'blue'
+  }, a.lido ? 'Lido' : 'Não lido'), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setRemovedAlerts(v => [...v, a.title]),
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 5,
+      padding: '5px 12px',
+      borderRadius: 6,
+      background: C.navActive,
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: 12,
+      fontWeight: 600,
+      color: '#fff',
+      fontFamily: 'inherit',
+      boxShadow: '0 7px 14px rgba(2,3,59,.16)'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Check, {
+    size: 13
+  }), " Resolver"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setRemovedAlerts(v => [...v, a.title]),
+    style: {
+      padding: '5px 12px',
+      borderRadius: 6,
+      background: 'transparent',
+      border: `1px solid ${C.border}`,
+      cursor: 'pointer',
+      fontSize: 12,
+      color: C.t500,
+      fontFamily: 'inherit'
+    }
+  }, "Ignorar"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => onNavigate('detalhe_projeto'),
+    style: {
+      padding: '5px 12px',
+      borderRadius: 6,
+      background: 'transparent',
+      border: `1px solid ${C.border}`,
+      cursor: 'pointer',
+      fontSize: 12,
+      color: C.t700,
+      fontFamily: 'inherit'
+    }
+  }, "Ver detalhes"))))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 220,
+      flexShrink: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 12
+    }
+  }, "Resumo crítico"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement(StatusDot, {
+    color: C.red500,
+    size: 8,
+    style: {
+      marginTop: 4,
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, "3 alertas críticos"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500,
+      lineHeight: 1.4
+    }
+  }, "Devem ser tratados antes do próximo ciclo de obra."))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Bell, {
+    size: 14,
+    color: C.orange500,
+    style: {
+      flexShrink: 0,
+      marginTop: 2
+    }
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, "4 não lidos"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500,
+      lineHeight: 1.4
+    }
+  }, "Ainda aguardam primeira análise da equipe.")))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 12
+    }
+  }, "Prioridade"), [{
+    title: 'Atraso crítico na entrega d...',
+    obra: 'Residencial Aurora'
+  }, {
+    title: 'Risco de conflito entre eta...',
+    obra: 'Torre Central'
+  }, {
+    title: 'Risco de segurança identifi...',
+    obra: 'Villa Aurora'
+  }].map((p, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'flex-start',
+      marginBottom: 10
+    }
+  }, /*#__PURE__*/React.createElement(Ic.AlertTriangle, {
+    size: 16,
+    color: C.orange500,
+    style: {
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 500,
+      color: C.t900
+    }
+  }, p.title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500
+    }
+  }, p.obra)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: C.t400,
+      whiteSpace: 'nowrap'
+    }
+  }, "Hoje")))))));
 };
 
 // ─── ATUALIZAÇÕES ─────────────────────────────────────────────────────────────
@@ -8029,7 +7344,6 @@ Object.assign(window, {
   PendenciasScreen,
   AlertasScreen
 });
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === ARQUIVOS === */
 
 const UploadScreen = ({
@@ -8100,465 +7414,394 @@ const UploadScreen = ({
     a.click();
     URL.revokeObjectURL(a.href);
   };
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "upload",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'flex-start',
-        marginBottom: 22
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        children: [/*#__PURE__*/_jsxDEV("h1", {
-          style: {
-            fontSize: 42,
-            fontWeight: 800,
-            color: C.t900,
-            lineHeight: 1,
-            marginBottom: 8,
-            letterSpacing: '-.7px'
-          },
-          children: "Novo projeto"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-          style: {
-            fontSize: 14,
-            color: C.t500
-          },
-          children: "Cadastre o briefing, envie os arquivos e avance para análise, orçamento e proposta antes de ativar a obra."
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          gap: 10
-        },
-        children: [/*#__PURE__*/_jsxDEV(Btn, {
-          variant: "secondary",
-          onClick: save,
-          children: "Salvar rascunho"
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-          variant: "secondary",
-          onClick: downloadFolderModel,
-          icon: /*#__PURE__*/_jsxDEV(Ic.Download, {
-            size: 14
-          }, void 0, false),
-          children: "Modelo de pasta"
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'grid',
-        gridTemplateColumns: 'minmax(0,1fr) 300px',
-        gap: 18,
-        alignItems: 'start'
-      },
-      children: [/*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '22px'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            marginBottom: 18
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 16,
-                fontWeight: 700,
-                color: C.t900
-              },
-              children: "Dados iniciais do projeto"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 12,
-                color: C.t500,
-                marginTop: 3
-              },
-              children: "Essas informações acompanharão orçamento, proposta e contrato."
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV(Badge, {
-            color: "blue",
-            children: "Etapa 1 de 5"
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 14
-          },
-          children: [/*#__PURE__*/_jsxDEV(Input, {
-            label: "Nome provisório do projeto",
-            placeholder: "Ex.: Residencial Primavera",
-            value: draft.name,
-            onChange: e => update('name', e.target.value),
-            style: {
-              gridColumn: '1 / -1'
-            },
-            iconL: /*#__PURE__*/_jsxDEV(Ic.Building, {
-              size: 15
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV(Input, {
-            label: "Cliente / empresa",
-            placeholder: "Nome do cliente",
-            value: draft.client,
-            onChange: e => update('client', e.target.value),
-            iconL: /*#__PURE__*/_jsxDEV(Ic.User, {
-              size: 15
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV(Input, {
-            label: "Responsável comercial",
-            placeholder: "Responsável pela inclusão",
-            value: draft.responsible,
-            onChange: e => update('responsible', e.target.value),
-            iconL: /*#__PURE__*/_jsxDEV(Ic.User, {
-              size: 15
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            children: [/*#__PURE__*/_jsxDEV("label", {
-              style: {
-                display: 'block',
-                fontSize: 13,
-                fontWeight: 500,
-                color: C.t700,
-                marginBottom: 5
-              },
-              children: "Tipo de obra"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("select", {
-              value: draft.type,
-              onChange: e => update('type', e.target.value),
-              style: {
-                width: '100%',
-                padding: '10px 13px',
-                border: `1.5px solid ${C.border}`,
-                borderRadius: 10,
-                background: '#fff',
-                fontSize: 14
-              },
-              children: [/*#__PURE__*/_jsxDEV("option", {
-                children: "Residencial"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                children: "Comercial"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                children: "Industrial"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                children: "Corporativo"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                children: "Saúde"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                children: "Misto"
-              }, void 0, false)]
-            }, void 0, true)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV(Input, {
-            label: "Cidade / UF",
-            placeholder: "Campinas, SP",
-            value: draft.city,
-            onChange: e => update('city', e.target.value),
-            iconL: /*#__PURE__*/_jsxDEV(Ic.MapPin, {
-              size: 15
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            children: [/*#__PURE__*/_jsxDEV("label", {
-              style: {
-                display: 'block',
-                fontSize: 13,
-                fontWeight: 500,
-                color: C.t700,
-                marginBottom: 5
-              },
-              children: "Prioridade"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("select", {
-              value: draft.priority,
-              onChange: e => update('priority', e.target.value),
-              style: {
-                width: '100%',
-                padding: '10px 13px',
-                border: `1.5px solid ${C.border}`,
-                borderRadius: 10,
-                background: '#fff',
-                fontSize: 14
-              },
-              children: [/*#__PURE__*/_jsxDEV("option", {
-                children: "Baixa"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                children: "Média"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                children: "Alta"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                children: "Crítica"
-              }, void 0, false)]
-            }, void 0, true)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              gridColumn: '1 / -1'
-            },
-            children: [/*#__PURE__*/_jsxDEV("label", {
-              style: {
-                display: 'block',
-                fontSize: 13,
-                fontWeight: 500,
-                color: C.t700,
-                marginBottom: 5
-              },
-              children: "Briefing inicial"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("textarea", {
-              value: draft.description,
-              onChange: e => update('description', e.target.value),
-              placeholder: "Objetivos, escopo inicial, restrições e informações comerciais...",
-              style: {
-                width: '100%',
-                minHeight: 92,
-                resize: 'vertical',
-                padding: 12,
-                border: `1.5px solid ${C.border}`,
-                borderRadius: 10,
-                outline: 'none',
-                fontSize: 14
-              }
-            }, void 0, false)]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          onClick: () => fileInputRef.current?.click(),
-          onDragOver: e => {
-            e.preventDefault();
-            setDrag(true);
-          },
-          onDragLeave: () => setDrag(false),
-          onDrop: e => {
-            e.preventDefault();
-            setDrag(false);
-            addFiles(e.dataTransfer.files);
-          },
-          style: {
-            marginTop: 18,
-            border: `2px dashed ${drag ? C.blue500 : C.border}`,
-            background: drag ? C.blue100 : '#fafbfb',
-            borderRadius: 15,
-            padding: '26px 18px',
-            textAlign: 'center',
-            cursor: 'pointer'
-          },
-          children: [/*#__PURE__*/_jsxDEV("input", {
-            ref: fileInputRef,
-            type: "file",
-            multiple: true,
-            style: {
-              display: 'none'
-            },
-            onChange: e => addFiles(e.target.files)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              width: 50,
-              height: 50,
-              borderRadius: 25,
-              background: C.blue100,
-              margin: '0 auto 10px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            },
-            children: /*#__PURE__*/_jsxDEV(Ic.Upload, {
-              size: 22,
-              color: C.blue600
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 15,
-              fontWeight: 700,
-              color: C.t900
-            },
-            children: "Envie os arquivos de entrada"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 12,
-              color: C.t500,
-              marginTop: 5
-            },
-            children: "Plantas, briefing, memoriais, planilhas, fotos e documentos comerciais."
-          }, void 0, false)]
-        }, void 0, true), arquivos.length > 0 && /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            marginTop: 14,
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 8
-          },
-          children: arquivos.map((file, index) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              alignItems: 'center',
-              gap: 10,
-              border: `1px solid ${C.border}`,
-              borderRadius: 10,
-              padding: '9px 11px'
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                width: 32,
-                height: 32,
-                borderRadius: 8,
-                background: C.blue100,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              },
-              children: /*#__PURE__*/_jsxDEV(Ic.FileText, {
-                size: 15,
-                color: C.blue600
-              }, void 0, false)
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1,
-                minWidth: 0
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  fontWeight: 600,
-                  color: C.t900,
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  whiteSpace: 'nowrap'
-                },
-                children: file.nome
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 10,
-                  color: C.t500
-                },
-                children: [file.tipo, " · ", file.tam]
-              }, void 0, true)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV(Badge, {
-              color: "green",
-              children: "Pronto"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-              onClick: e => {
-                e.stopPropagation();
-                setArquivos(files => files.filter((_, i) => i !== index));
-              },
-              style: {
-                border: 0,
-                background: 'transparent',
-                cursor: 'pointer',
-                display: 'flex'
-              },
-              children: /*#__PURE__*/_jsxDEV(Ic.X, {
-                size: 14,
-                color: C.t400
-              }, void 0, false)
-            }, void 0, false)]
-          }, `${file.nome}-${index}`, true))
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginTop: 22,
-            paddingTop: 18,
-            borderTop: `1px solid ${C.border}`
-          },
-          children: [/*#__PURE__*/_jsxDEV("span", {
-            style: {
-              fontSize: 12,
-              color: C.t500
-            },
-            children: "O projeto somente entra na carteira após a aprovação da proposta."
-          }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-            onClick: continueFlow,
-            icon: /*#__PURE__*/_jsxDEV(Ic.ChevronRight, {
-              size: 14
-            }, void 0, false),
-            children: "Analisar e continuar"
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 700,
-              color: C.t900,
-              marginBottom: 12
-            },
-            children: "Fluxo de inclusão"
-          }, void 0, false), NEW_PROJECT_FLOW.map((step, index) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              alignItems: 'center',
-              gap: 10,
-              padding: '8px 0',
-              borderBottom: index < NEW_PROJECT_FLOW.length - 1 ? `1px solid ${C.borderLight}` : 'none'
-            },
-            children: [/*#__PURE__*/_jsxDEV("span", {
-              style: {
-                width: 24,
-                height: 24,
-                borderRadius: 12,
-                background: index === 0 ? C.navActive : C.borderLight,
-                color: index === 0 ? '#fff' : C.t500,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: 11,
-                fontWeight: 700
-              },
-              children: index + 1
-            }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 12,
-                fontWeight: index === 0 ? 700 : 500,
-                color: index === 0 ? C.t900 : C.t500
-              },
-              children: step.label
-            }, void 0, false)]
-          }, step.id, true))]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 700,
-              color: C.t900,
-              marginBottom: 8
-            },
-            children: "Pré-cadastro"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 12,
-              color: C.t500,
-              lineHeight: 1.55
-            },
-            children: "Financeiro e contratos gerais poderão acompanhar orçamento, proposta e documentos antes da criação definitiva do projeto."
-          }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-            onClick: () => onNavigate('financeiro_geral'),
-            style: {
-              marginTop: 12,
-              border: 0,
-              background: 'transparent',
-              color: C.blue600,
-              cursor: 'pointer',
-              fontSize: 12,
-              fontWeight: 700
-            },
-            children: "Abrir financeiro geral →"
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'flex-start',
+      marginBottom: 22
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
+    style: {
+      fontSize: 42,
+      fontWeight: 800,
+      color: C.t900,
+      lineHeight: 1,
+      marginBottom: 8,
+      letterSpacing: '-.7px'
+    }
+  }, "Novo projeto"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 14,
+      color: C.t500
+    }
+  }, "Cadastre o briefing, envie os arquivos e avance para análise, orçamento e proposta antes de ativar a obra.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement(Btn, {
+    variant: "secondary",
+    onClick: save
+  }, "Salvar rascunho"), /*#__PURE__*/React.createElement(Btn, {
+    variant: "secondary",
+    onClick: downloadFolderModel,
+    icon: /*#__PURE__*/React.createElement(Ic.Download, {
+      size: 14
+    })
+  }, "Modelo de pasta"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'minmax(0,1fr) 300px',
+      gap: 18,
+      alignItems: 'start'
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '22px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 16,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, "Dados iniciais do projeto"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginTop: 3
+    }
+  }, "Essas informações acompanharão orçamento, proposta e contrato.")), /*#__PURE__*/React.createElement(Badge, {
+    color: "blue"
+  }, "Etapa 1 de 5")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Input, {
+    label: "Nome provisório do projeto",
+    placeholder: "Ex.: Residencial Primavera",
+    value: draft.name,
+    onChange: e => update('name', e.target.value),
+    style: {
+      gridColumn: '1 / -1'
+    },
+    iconL: /*#__PURE__*/React.createElement(Ic.Building, {
+      size: 15
+    })
+  }), /*#__PURE__*/React.createElement(Input, {
+    label: "Cliente / empresa",
+    placeholder: "Nome do cliente",
+    value: draft.client,
+    onChange: e => update('client', e.target.value),
+    iconL: /*#__PURE__*/React.createElement(Ic.User, {
+      size: 15
+    })
+  }), /*#__PURE__*/React.createElement(Input, {
+    label: "Responsável comercial",
+    placeholder: "Responsável pela inclusão",
+    value: draft.responsible,
+    onChange: e => update('responsible', e.target.value),
+    iconL: /*#__PURE__*/React.createElement(Ic.User, {
+      size: 15
+    })
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 13,
+      fontWeight: 500,
+      color: C.t700,
+      marginBottom: 5
+    }
+  }, "Tipo de obra"), /*#__PURE__*/React.createElement("select", {
+    value: draft.type,
+    onChange: e => update('type', e.target.value),
+    style: {
+      width: '100%',
+      padding: '10px 13px',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      background: '#fff',
+      fontSize: 14
+    }
+  }, /*#__PURE__*/React.createElement("option", null, "Residencial"), /*#__PURE__*/React.createElement("option", null, "Comercial"), /*#__PURE__*/React.createElement("option", null, "Industrial"), /*#__PURE__*/React.createElement("option", null, "Corporativo"), /*#__PURE__*/React.createElement("option", null, "Saúde"), /*#__PURE__*/React.createElement("option", null, "Misto"))), /*#__PURE__*/React.createElement(Input, {
+    label: "Cidade / UF",
+    placeholder: "Campinas, SP",
+    value: draft.city,
+    onChange: e => update('city', e.target.value),
+    iconL: /*#__PURE__*/React.createElement(Ic.MapPin, {
+      size: 15
+    })
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 13,
+      fontWeight: 500,
+      color: C.t700,
+      marginBottom: 5
+    }
+  }, "Prioridade"), /*#__PURE__*/React.createElement("select", {
+    value: draft.priority,
+    onChange: e => update('priority', e.target.value),
+    style: {
+      width: '100%',
+      padding: '10px 13px',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      background: '#fff',
+      fontSize: 14
+    }
+  }, /*#__PURE__*/React.createElement("option", null, "Baixa"), /*#__PURE__*/React.createElement("option", null, "Média"), /*#__PURE__*/React.createElement("option", null, "Alta"), /*#__PURE__*/React.createElement("option", null, "Crítica"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      gridColumn: '1 / -1'
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 13,
+      fontWeight: 500,
+      color: C.t700,
+      marginBottom: 5
+    }
+  }, "Briefing inicial"), /*#__PURE__*/React.createElement("textarea", {
+    value: draft.description,
+    onChange: e => update('description', e.target.value),
+    placeholder: "Objetivos, escopo inicial, restrições e informações comerciais...",
+    style: {
+      width: '100%',
+      minHeight: 92,
+      resize: 'vertical',
+      padding: 12,
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      outline: 'none',
+      fontSize: 14
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    onClick: () => fileInputRef.current?.click(),
+    onDragOver: e => {
+      e.preventDefault();
+      setDrag(true);
+    },
+    onDragLeave: () => setDrag(false),
+    onDrop: e => {
+      e.preventDefault();
+      setDrag(false);
+      addFiles(e.dataTransfer.files);
+    },
+    style: {
+      marginTop: 18,
+      border: `2px dashed ${drag ? C.blue500 : C.border}`,
+      background: drag ? C.blue100 : '#fafbfb',
+      borderRadius: 15,
+      padding: '26px 18px',
+      textAlign: 'center',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("input", {
+    ref: fileInputRef,
+    type: "file",
+    multiple: true,
+    style: {
+      display: 'none'
+    },
+    onChange: e => addFiles(e.target.files)
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 50,
+      height: 50,
+      borderRadius: 25,
+      background: C.blue100,
+      margin: '0 auto 10px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Upload, {
+    size: 22,
+    color: C.blue600
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 15,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, "Envie os arquivos de entrada"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginTop: 5
+    }
+  }, "Plantas, briefing, memoriais, planilhas, fotos e documentos comerciais.")), arquivos.length > 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 14,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8
+    }
+  }, arquivos.map((file, index) => /*#__PURE__*/React.createElement("div", {
+    key: `${file.nome}-${index}`,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      border: `1px solid ${C.border}`,
+      borderRadius: 10,
+      padding: '9px 11px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      background: C.blue100,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.FileText, {
+    size: 15,
+    color: C.blue600
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t900,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, file.nome), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      color: C.t500
+    }
+  }, file.tipo, " · ", file.tam)), /*#__PURE__*/React.createElement(Badge, {
+    color: "green"
+  }, "Pronto"), /*#__PURE__*/React.createElement("button", {
+    onClick: e => {
+      e.stopPropagation();
+      setArquivos(files => files.filter((_, i) => i !== index));
+    },
+    style: {
+      border: 0,
+      background: 'transparent',
+      cursor: 'pointer',
+      display: 'flex'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.X, {
+    size: 14,
+    color: C.t400
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginTop: 22,
+      paddingTop: 18,
+      borderTop: `1px solid ${C.border}`
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, "O projeto somente entra na carteira após a aprovação da proposta."), /*#__PURE__*/React.createElement(Btn, {
+    onClick: continueFlow,
+    icon: /*#__PURE__*/React.createElement(Ic.ChevronRight, {
+      size: 14
+    })
+  }, "Analisar e continuar"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 700,
+      color: C.t900,
+      marginBottom: 12
+    }
+  }, "Fluxo de inclusão"), NEW_PROJECT_FLOW.map((step, index) => /*#__PURE__*/React.createElement("div", {
+    key: step.id,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      padding: '8px 0',
+      borderBottom: index < NEW_PROJECT_FLOW.length - 1 ? `1px solid ${C.borderLight}` : 'none'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 24,
+      height: 24,
+      borderRadius: 12,
+      background: index === 0 ? C.navActive : C.borderLight,
+      color: index === 0 ? '#fff' : C.t500,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontSize: 11,
+      fontWeight: 700
+    }
+  }, index + 1), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      fontWeight: index === 0 ? 700 : 500,
+      color: index === 0 ? C.t900 : C.t500
+    }
+  }, step.label)))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 700,
+      color: C.t900,
+      marginBottom: 8
+    }
+  }, "Pré-cadastro"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      lineHeight: 1.55
+    }
+  }, "Financeiro e contratos gerais poderão acompanhar orçamento, proposta e documentos antes da criação definitiva do projeto."), /*#__PURE__*/React.createElement("button", {
+    onClick: () => onNavigate('financeiro_geral'),
+    style: {
+      marginTop: 12,
+      border: 0,
+      background: 'transparent',
+      color: C.blue600,
+      cursor: 'pointer',
+      fontSize: 12,
+      fontWeight: 700
+    }
+  }, "Abrir financeiro geral →")))));
 };
 const ProjectFilesScreen = ({
   onNavigate
@@ -8617,655 +7860,575 @@ const ProjectFilesScreen = ({
     a.click();
     URL.revokeObjectURL(a.href);
   };
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "arquivos_projeto",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'flex-start',
-        marginBottom: 24
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        children: [/*#__PURE__*/_jsxDEV("h1", {
-          style: {
-            fontSize: 44,
-            fontWeight: 800,
-            color: C.t900,
-            lineHeight: 1.0,
-            marginBottom: 8,
-            letterSpacing: '-0.5px'
-          },
-          children: "Arquivos do projeto"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("p", {
-          style: {
-            fontSize: 14,
-            color: C.t500
-          },
-          children: "Centralize plantas, documentos, imagens e arquivos técnicos vinculados ao projeto selecionado."
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          gap: 10
-        },
-        children: [/*#__PURE__*/_jsxDEV(Btn, {
-          onClick: () => document.getElementById('recent-files')?.scrollIntoView({
-            behavior: 'smooth'
-          }),
-          variant: "secondary",
-          size: "sm",
-          children: "Arquivos recentes"
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-          onClick: downloadFolderModel,
-          variant: "secondary",
-          size: "sm",
-          children: ["Modelo de pasta ", /*#__PURE__*/_jsxDEV(Ic.Download, {
-            size: 14
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 20,
-        alignItems: 'flex-start'
-      },
-      children: [/*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          flex: 1,
-          padding: '24px 28px'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginBottom: 20
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 16,
-                fontWeight: 700,
-                color: C.t900
-              },
-              children: "Novo pacote de projeto"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 13,
-                color: C.t500,
-                marginTop: 2
-              },
-              children: "Faça upload dos documentos da obra. Os arquivos serão classificados por tipo, etapa e prioridade."
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-            style: {
-              fontSize: 12,
-              color: C.green600,
-              fontWeight: 500,
-              display: 'flex',
-              alignItems: 'center',
-              gap: 4
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.Check, {
-              size: 13
-            }, void 0, false), "Rascunho salvo"]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          onDragOver: e => {
-            e.preventDefault();
-            setDrag(true);
-          },
-          onDragLeave: () => setDrag(false),
-          onDrop: e => {
-            e.preventDefault();
-            setDrag(false);
-            addFiles(e.dataTransfer.files);
-          },
-          onClick: () => fileInputRef.current?.click(),
-          style: {
-            border: `2px dashed ${drag ? C.blue500 : C.border}`,
-            borderRadius: 14,
-            padding: '40px 24px',
-            textAlign: 'center',
-            marginBottom: 24,
-            background: drag ? C.blue100 : 'transparent',
-            transition: 'all 0.2s',
-            cursor: 'pointer'
-          },
-          children: [/*#__PURE__*/_jsxDEV("input", {
-            ref: fileInputRef,
-            type: "file",
-            multiple: true,
-            style: {
-              display: 'none'
-            },
-            onChange: e => addFiles(e.target.files)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              width: 64,
-              height: 64,
-              background: C.blue100,
-              borderRadius: 32,
-              margin: '0 auto 14px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            },
-            children: /*#__PURE__*/_jsxDEV(Ic.Upload, {
-              size: 28,
-              color: C.blue500
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 18,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 6
-            },
-            children: "Arraste seus arquivos aqui"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              color: C.t500,
-              lineHeight: 1.6,
-              marginBottom: 10
-            },
-            children: ["Envie plantas, PDFs, planilhas, fotos de obra, memoriais descritivos ou documentos técnicos. ", /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                color: C.blue600,
-                cursor: 'pointer'
-              },
-              children: "Clique para selecionar."
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10,
-              justifyContent: 'center',
-              flexWrap: 'wrap'
-            },
-            children: ['PDF', 'DWG', 'XLSX', 'DOCX', 'PNG/JPG', 'ZIP'].map(f => /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                padding: '3px 10px',
-                borderRadius: 4,
-                background: C.bg,
-                border: `1px solid ${C.border}`,
-                fontSize: 12,
-                fontWeight: 600,
-                color: C.t500
-              },
-              children: f
-            }, f, false))
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 16
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            children: [/*#__PURE__*/_jsxDEV("label", {
-              style: {
-                display: 'block',
-                fontSize: 12,
-                fontWeight: 600,
-                color: C.t500,
-                marginBottom: 6
-              },
-              children: "Nome do projeto"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("input", {
-              defaultValue: `${project.name} — Pacote técnico`,
-              style: {
-                width: '100%',
-                padding: '10px 14px',
-                border: `1.5px solid ${C.border}`,
-                borderRadius: 10,
-                fontSize: 14,
-                color: C.t900,
-                fontFamily: 'inherit',
-                outline: 'none',
-                boxSizing: 'border-box'
-              }
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: 14
-            },
-            children: [{
-              label: 'Tipo de obra',
-              val: 'Residencial',
-              sel: true
-            }, {
-              label: 'Responsável técnico',
-              val: project.resp || 'Responsável técnico',
-              sel: false
-            }].map(f => /*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("label", {
-                style: {
-                  display: 'block',
-                  fontSize: 12,
-                  fontWeight: 600,
-                  color: C.t500,
-                  marginBottom: 6
-                },
-                children: f.label
-              }, void 0, false), f.sel ? /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  position: 'relative'
-                },
-                children: [/*#__PURE__*/_jsxDEV("select", {
-                  style: {
-                    width: '100%',
-                    padding: '10px 36px 10px 14px',
-                    border: `1.5px solid ${C.border}`,
-                    borderRadius: 10,
-                    fontSize: 14,
-                    color: C.t900,
-                    fontFamily: 'inherit',
-                    outline: 'none',
-                    appearance: 'none',
-                    background: '#fff',
-                    cursor: 'pointer'
-                  },
-                  children: [/*#__PURE__*/_jsxDEV("option", {
-                    children: "Residencial"
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                    children: "Comercial"
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                    children: "Industrial"
-                  }, void 0, false)]
-                }, void 0, true), /*#__PURE__*/_jsxDEV(Ic.ChevronDown, {
-                  size: 14,
-                  color: C.t400,
-                  style: {
-                    position: 'absolute',
-                    right: 12,
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    pointerEvents: 'none'
-                  }
-                }, void 0, false)]
-              }, void 0, true) : /*#__PURE__*/_jsxDEV("input", {
-                defaultValue: f.val,
-                style: {
-                  width: '100%',
-                  padding: '10px 14px',
-                  border: `1.5px solid ${C.border}`,
-                  borderRadius: 10,
-                  fontSize: 14,
-                  color: C.t900,
-                  fontFamily: 'inherit',
-                  outline: 'none',
-                  boxSizing: 'border-box'
-                }
-              }, void 0, false)]
-            }, f.label, true))
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: 14
-            },
-            children: [{
-              label: 'Categoria principal',
-              val: 'Arquitetura',
-              sel: true
-            }, {
-              label: 'Cidade / UF',
-              val: project.loc || 'Cidade / UF',
-              sel: false
-            }].map(f => /*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("label", {
-                style: {
-                  display: 'block',
-                  fontSize: 12,
-                  fontWeight: 600,
-                  color: C.t500,
-                  marginBottom: 6
-                },
-                children: f.label
-              }, void 0, false), f.sel ? /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  position: 'relative'
-                },
-                children: [/*#__PURE__*/_jsxDEV("select", {
-                  style: {
-                    width: '100%',
-                    padding: '10px 36px 10px 14px',
-                    border: `1.5px solid ${C.border}`,
-                    borderRadius: 10,
-                    fontSize: 14,
-                    color: C.t900,
-                    fontFamily: 'inherit',
-                    outline: 'none',
-                    appearance: 'none',
-                    background: '#fff',
-                    cursor: 'pointer'
-                  },
-                  children: [/*#__PURE__*/_jsxDEV("option", {
-                    children: "Arquitetura"
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                    children: "Engenharia"
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                    children: "Instalações"
-                  }, void 0, false)]
-                }, void 0, true), /*#__PURE__*/_jsxDEV(Ic.ChevronDown, {
-                  size: 14,
-                  color: C.t400,
-                  style: {
-                    position: 'absolute',
-                    right: 12,
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    pointerEvents: 'none'
-                  }
-                }, void 0, false)]
-              }, void 0, true) : /*#__PURE__*/_jsxDEV("input", {
-                defaultValue: f.val,
-                style: {
-                  width: '100%',
-                  padding: '10px 14px',
-                  border: `1.5px solid ${C.border}`,
-                  borderRadius: 10,
-                  fontSize: 14,
-                  color: C.t900,
-                  fontFamily: 'inherit',
-                  outline: 'none',
-                  boxSizing: 'border-box'
-                }
-              }, void 0, false)]
-            }, f.label, true))
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            children: [/*#__PURE__*/_jsxDEV("label", {
-              style: {
-                display: 'block',
-                fontSize: 12,
-                fontWeight: 600,
-                color: C.t500,
-                marginBottom: 6
-              },
-              children: "Prioridade"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                position: 'relative'
-              },
-              children: [/*#__PURE__*/_jsxDEV("select", {
-                style: {
-                  width: '100%',
-                  padding: '10px 36px 10px 14px',
-                  border: `1.5px solid ${C.border}`,
-                  borderRadius: 10,
-                  fontSize: 14,
-                  color: C.t900,
-                  fontFamily: 'inherit',
-                  outline: 'none',
-                  appearance: 'none',
-                  background: '#fff',
-                  cursor: 'pointer'
-                },
-                children: [/*#__PURE__*/_jsxDEV("option", {
-                  children: "Alta"
-                }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                  children: "Média"
-                }, void 0, false), /*#__PURE__*/_jsxDEV("option", {
-                  children: "Baixa"
-                }, void 0, false)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV(Ic.ChevronDown, {
-                size: 14,
-                color: C.t400,
-                style: {
-                  position: 'absolute',
-                  right: 12,
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  pointerEvents: 'none'
-                }
-              }, void 0, false)]
-            }, void 0, true)]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            justifyContent: 'flex-end',
-            gap: 12,
-            marginTop: 24,
-            paddingTop: 20,
-            borderTop: `1px solid ${C.border}`
-          },
-          children: [/*#__PURE__*/_jsxDEV(Btn, {
-            variant: "secondary",
-            onClick: () => onNavigate('dashboard'),
-            children: "Cancelar"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-            onClick: () => onNavigate('dashboard'),
-            style: {
-              padding: '11px 28px',
-              borderRadius: 24,
-              background: C.t900,
-              border: 'none',
-              color: '#fff',
-              fontSize: 14,
-              fontWeight: 600,
-              cursor: 'pointer',
-              fontFamily: 'inherit'
-            },
-            children: "Salvar arquivos"
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 260,
-          flexShrink: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 4
-            },
-            children: "Status do upload"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 12,
-              color: C.t500,
-              marginBottom: 16
-            },
-            children: "Resumo dos arquivos enviados nesta sessão."
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: 12,
-              marginBottom: 16
-            },
-            children: [{
-              label: 'Arquivos',
-              val: arquivos.length,
-              color: '#C8CDD4'
-            }, {
-              label: 'Validados',
-              val: arquivos.length,
-              color: '#A5B4FC'
-            }, {
-              label: 'Pendentes',
-              val: 0,
-              color: '#FCD34D'
-            }, {
-              label: 'Pastas',
-              val: 6,
-              color: '#C4B5FD'
-            }].map(s => /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                alignItems: 'center',
-                gap: 10
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: 36,
-                  height: 36,
-                  borderRadius: 18,
-                  background: `${s.color}40`,
-                  border: `3px solid ${s.color}`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                },
-                children: /*#__PURE__*/_jsxDEV("span", {
-                  style: {
-                    fontSize: 13,
-                    fontWeight: 700,
-                    color: C.t700
-                  },
-                  children: s.val
-                }, void 0, false)
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 12,
-                  color: C.t700
-                },
-                children: s.label
-              }, void 0, false)]
-            }, s.label, true))
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 8
-            },
-            children: [{
-              label: 'Estrutura de pastas criada',
-              done: true
-            }, {
-              label: 'Permissões configuradas',
-              done: true
-            }, {
-              label: 'Projeto vinculado à obra',
-              done: true
-            }, {
-              label: 'Arquivos técnicos recebidos',
-              done: arquivos.length > 0
-            }].map((item, i) => /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 8,
-                alignItems: 'center'
-              },
-              children: [item.done ? /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: 16,
-                  height: 16,
-                  borderRadius: 8,
-                  background: C.green500,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                },
-                children: /*#__PURE__*/_jsxDEV(Ic.Check, {
-                  size: 10,
-                  color: "#fff"
-                }, void 0, false)
-              }, void 0, false) : /*#__PURE__*/_jsxDEV(StatusDot, {
-                color: C.t300,
-                size: 8
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 12,
-                  color: item.done ? C.green600 : C.t500
-                },
-                children: item.label
-              }, void 0, false)]
-            }, i, true))
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          id: "recent-files",
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 4
-            },
-            children: "Arquivos adicionados"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 12,
-              color: C.t500,
-              marginBottom: 14
-            },
-            children: "Lista dinâmica dos documentos enviados."
-          }, void 0, false), arquivos.map((a, i) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10,
-              alignItems: 'center',
-              padding: '10px 0',
-              borderBottom: i < arquivos.length - 1 ? `1px solid ${C.borderLight}` : 'none'
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                width: 32,
-                height: 32,
-                borderRadius: 6,
-                background: C.blue100,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexShrink: 0
-              },
-              children: /*#__PURE__*/_jsxDEV(Ic.FileText, {
-                size: 16,
-                color: C.blue600
-              }, void 0, false)
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1,
-                minWidth: 0
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  fontWeight: 500,
-                  color: C.t900,
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  whiteSpace: 'nowrap'
-                },
-                children: a.nome
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t500
-                },
-                children: [a.tipo, " · ", a.tam]
-              }, void 0, true)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV(Badge, {
-              color: "green",
-              children: a.status
-            }, void 0, false)]
-          }, i, true))]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'flex-start',
+      marginBottom: 24
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
+    style: {
+      fontSize: 44,
+      fontWeight: 800,
+      color: C.t900,
+      lineHeight: 1.0,
+      marginBottom: 8,
+      letterSpacing: '-0.5px'
+    }
+  }, "Arquivos do projeto"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 14,
+      color: C.t500
+    }
+  }, "Centralize plantas, documentos, imagens e arquivos técnicos vinculados ao projeto selecionado.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement(Btn, {
+    onClick: () => document.getElementById('recent-files')?.scrollIntoView({
+      behavior: 'smooth'
+    }),
+    variant: "secondary",
+    size: "sm"
+  }, "Arquivos recentes"), /*#__PURE__*/React.createElement(Btn, {
+    onClick: downloadFolderModel,
+    variant: "secondary",
+    size: "sm"
+  }, "Modelo de pasta ", /*#__PURE__*/React.createElement(Ic.Download, {
+    size: 14
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 20,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      flex: 1,
+      padding: '24px 28px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 16,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, "Novo pacote de projeto"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t500,
+      marginTop: 2
+    }
+  }, "Faça upload dos documentos da obra. Os arquivos serão classificados por tipo, etapa e prioridade.")), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.green600,
+      fontWeight: 500,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 4
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Check, {
+    size: 13
+  }), "Rascunho salvo")), /*#__PURE__*/React.createElement("div", {
+    onDragOver: e => {
+      e.preventDefault();
+      setDrag(true);
+    },
+    onDragLeave: () => setDrag(false),
+    onDrop: e => {
+      e.preventDefault();
+      setDrag(false);
+      addFiles(e.dataTransfer.files);
+    },
+    onClick: () => fileInputRef.current?.click(),
+    style: {
+      border: `2px dashed ${drag ? C.blue500 : C.border}`,
+      borderRadius: 14,
+      padding: '40px 24px',
+      textAlign: 'center',
+      marginBottom: 24,
+      background: drag ? C.blue100 : 'transparent',
+      transition: 'all 0.2s',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("input", {
+    ref: fileInputRef,
+    type: "file",
+    multiple: true,
+    style: {
+      display: 'none'
+    },
+    onChange: e => addFiles(e.target.files)
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 64,
+      height: 64,
+      background: C.blue100,
+      borderRadius: 32,
+      margin: '0 auto 14px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Upload, {
+    size: 28,
+    color: C.blue500
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 18,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 6
+    }
+  }, "Arraste seus arquivos aqui"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t500,
+      lineHeight: 1.6,
+      marginBottom: 10
+    }
+  }, "Envie plantas, PDFs, planilhas, fotos de obra, memoriais descritivos ou documentos técnicos. ", /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.blue600,
+      cursor: 'pointer'
+    }
+  }, "Clique para selecionar.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      justifyContent: 'center',
+      flexWrap: 'wrap'
+    }
+  }, ['PDF', 'DWG', 'XLSX', 'DOCX', 'PNG/JPG', 'ZIP'].map(f => /*#__PURE__*/React.createElement("span", {
+    key: f,
+    style: {
+      padding: '3px 10px',
+      borderRadius: 4,
+      background: C.bg,
+      border: `1px solid ${C.border}`,
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t500
+    }
+  }, f)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t500,
+      marginBottom: 6
+    }
+  }, "Nome do projeto"), /*#__PURE__*/React.createElement("input", {
+    defaultValue: `${project.name} — Pacote técnico`,
+    style: {
+      width: '100%',
+      padding: '10px 14px',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      outline: 'none',
+      boxSizing: 'border-box'
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 14
+    }
+  }, [{
+    label: 'Tipo de obra',
+    val: 'Residencial',
+    sel: true
+  }, {
+    label: 'Responsável técnico',
+    val: project.resp || 'Responsável técnico',
+    sel: false
+  }].map(f => /*#__PURE__*/React.createElement("div", {
+    key: f.label
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t500,
+      marginBottom: 6
+    }
+  }, f.label), f.sel ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("select", {
+    style: {
+      width: '100%',
+      padding: '10px 36px 10px 14px',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      outline: 'none',
+      appearance: 'none',
+      background: '#fff',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("option", null, "Residencial"), /*#__PURE__*/React.createElement("option", null, "Comercial"), /*#__PURE__*/React.createElement("option", null, "Industrial")), /*#__PURE__*/React.createElement(Ic.ChevronDown, {
+    size: 14,
+    color: C.t400,
+    style: {
+      position: 'absolute',
+      right: 12,
+      top: '50%',
+      transform: 'translateY(-50%)',
+      pointerEvents: 'none'
+    }
+  })) : /*#__PURE__*/React.createElement("input", {
+    defaultValue: f.val,
+    style: {
+      width: '100%',
+      padding: '10px 14px',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      outline: 'none',
+      boxSizing: 'border-box'
+    }
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 14
+    }
+  }, [{
+    label: 'Categoria principal',
+    val: 'Arquitetura',
+    sel: true
+  }, {
+    label: 'Cidade / UF',
+    val: project.loc || 'Cidade / UF',
+    sel: false
+  }].map(f => /*#__PURE__*/React.createElement("div", {
+    key: f.label
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t500,
+      marginBottom: 6
+    }
+  }, f.label), f.sel ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("select", {
+    style: {
+      width: '100%',
+      padding: '10px 36px 10px 14px',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      outline: 'none',
+      appearance: 'none',
+      background: '#fff',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("option", null, "Arquitetura"), /*#__PURE__*/React.createElement("option", null, "Engenharia"), /*#__PURE__*/React.createElement("option", null, "Instalações")), /*#__PURE__*/React.createElement(Ic.ChevronDown, {
+    size: 14,
+    color: C.t400,
+    style: {
+      position: 'absolute',
+      right: 12,
+      top: '50%',
+      transform: 'translateY(-50%)',
+      pointerEvents: 'none'
+    }
+  })) : /*#__PURE__*/React.createElement("input", {
+    defaultValue: f.val,
+    style: {
+      width: '100%',
+      padding: '10px 14px',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      outline: 'none',
+      boxSizing: 'border-box'
+    }
+  })))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t500,
+      marginBottom: 6
+    }
+  }, "Prioridade"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("select", {
+    style: {
+      width: '100%',
+      padding: '10px 36px 10px 14px',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      fontSize: 14,
+      color: C.t900,
+      fontFamily: 'inherit',
+      outline: 'none',
+      appearance: 'none',
+      background: '#fff',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("option", null, "Alta"), /*#__PURE__*/React.createElement("option", null, "Média"), /*#__PURE__*/React.createElement("option", null, "Baixa")), /*#__PURE__*/React.createElement(Ic.ChevronDown, {
+    size: 14,
+    color: C.t400,
+    style: {
+      position: 'absolute',
+      right: 12,
+      top: '50%',
+      transform: 'translateY(-50%)',
+      pointerEvents: 'none'
+    }
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      gap: 12,
+      marginTop: 24,
+      paddingTop: 20,
+      borderTop: `1px solid ${C.border}`
+    }
+  }, /*#__PURE__*/React.createElement(Btn, {
+    variant: "secondary",
+    onClick: () => onNavigate('dashboard')
+  }, "Cancelar"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => onNavigate('dashboard'),
+    style: {
+      padding: '11px 28px',
+      borderRadius: 24,
+      background: C.t900,
+      border: 'none',
+      color: '#fff',
+      fontSize: 14,
+      fontWeight: 600,
+      cursor: 'pointer',
+      fontFamily: 'inherit'
+    }
+  }, "Salvar arquivos"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 260,
+      flexShrink: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 4
+    }
+  }, "Status do upload"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginBottom: 16
+    }
+  }, "Resumo dos arquivos enviados nesta sessão."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 12,
+      marginBottom: 16
+    }
+  }, [{
+    label: 'Arquivos',
+    val: arquivos.length,
+    color: '#C8CDD4'
+  }, {
+    label: 'Validados',
+    val: arquivos.length,
+    color: '#A5B4FC'
+  }, {
+    label: 'Pendentes',
+    val: 0,
+    color: '#FCD34D'
+  }, {
+    label: 'Pastas',
+    val: 6,
+    color: '#C4B5FD'
+  }].map(s => /*#__PURE__*/React.createElement("div", {
+    key: s.label,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 36,
+      height: 36,
+      borderRadius: 18,
+      background: `${s.color}40`,
+      border: `3px solid ${s.color}`,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 13,
+      fontWeight: 700,
+      color: C.t700
+    }
+  }, s.val)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t700
+    }
+  }, s.label)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8
+    }
+  }, [{
+    label: 'Estrutura de pastas criada',
+    done: true
+  }, {
+    label: 'Permissões configuradas',
+    done: true
+  }, {
+    label: 'Projeto vinculado à obra',
+    done: true
+  }, {
+    label: 'Arquivos técnicos recebidos',
+    done: arquivos.length > 0
+  }].map((item, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 8,
+      alignItems: 'center'
+    }
+  }, item.done ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 16,
+      height: 16,
+      borderRadius: 8,
+      background: C.green500,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Check, {
+    size: 10,
+    color: "#fff"
+  })) : /*#__PURE__*/React.createElement(StatusDot, {
+    color: C.t300,
+    size: 8
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: item.done ? C.green600 : C.t500
+    }
+  }, item.label))))), /*#__PURE__*/React.createElement(Card, {
+    id: "recent-files",
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 4
+    }
+  }, "Arquivos adicionados"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginBottom: 14
+    }
+  }, "Lista dinâmica dos documentos enviados."), arquivos.map((a, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'center',
+      padding: '10px 0',
+      borderBottom: i < arquivos.length - 1 ? `1px solid ${C.borderLight}` : 'none'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 6,
+      background: C.blue100,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(Ic.FileText, {
+    size: 16,
+    color: C.blue600
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 500,
+      color: C.t900,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, a.nome), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t500
+    }
+  }, a.tipo, " · ", a.tam)), /*#__PURE__*/React.createElement(Badge, {
+    color: "green"
+  }, a.status)))))));
 };
 Object.assign(window, {
   MisFeedScreen,
@@ -9284,7 +8447,6 @@ const {
 } = React;
 
 // ─── NOTIFICAÇÕES ─────────────────────────────────────
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === NOTIFICACOES === */
 
 const NotificacoesScreen = ({
@@ -9382,209 +8544,191 @@ const NotificacoesScreen = ({
     }]
   }];
   const filterTabs = ['todas', 'alertas', 'obras', 'financeiro', 'mensagens', 'sistema'];
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "notificacoes",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV(SectionHeader, {
-        title: "Notificações",
-        style: {
-          marginBottom: 0
-        }
-      }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-        style: {
-          background: 'none',
-          border: 'none',
-          cursor: 'pointer',
-          fontSize: 13,
-          color: C.blue600,
-          fontFamily: 'inherit',
-          fontWeight: 500
-        },
-        children: "Marcar todas como lidas"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 16
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1
-        },
-        children: [/*#__PURE__*/_jsxDEV(ChipBar, {
-          chips: filterTabs.map(f => ({
-            id: f,
-            label: f.charAt(0).toUpperCase() + f.slice(1)
-          })),
-          active: filter,
-          onChange: setFilter,
-          style: {
-            marginBottom: 20
-          }
-        }, void 0, false), groups.map(group => /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            marginBottom: 28
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 12,
-              fontWeight: 600,
-              color: C.t400,
-              letterSpacing: 0.5,
-              marginBottom: 12
-            },
-            children: group.label.toUpperCase()
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 6
-            },
-            children: group.items.map((item, i) => /*#__PURE__*/_jsxDEV("div", {
-              className: `notification-row ${item.unread ? 'is-unread' : ''}`,
-              onClick: () => onNavigate(item.screen),
-              style: {
-                display: 'flex',
-                gap: 12,
-                alignItems: 'flex-start',
-                padding: '14px 16px',
-                borderRadius: 12,
-                background: item.unread ? '#F8FFF8' : C.card,
-                border: `1px solid ${item.unread ? C.green100 : C.border}`,
-                cursor: 'pointer',
-                transition: 'all 0.15s'
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: 38,
-                  height: 38,
-                  background: item.iconBg,
-                  borderRadius: 10,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                },
-                children: /*#__PURE__*/_jsxDEV(item.icon, {
-                  size: 18,
-                  color: item.iconC
-                }, void 0, false)
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flex: 1,
-                  minWidth: 0
-                },
-                children: /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 14,
-                    color: C.t900,
-                    fontWeight: item.unread ? 500 : 400,
-                    lineHeight: 1.5
-                  },
-                  children: item.text
-                }, void 0, false)
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  display: 'flex',
-                  flex: 'column',
-                  align: 'flex-end',
-                  gap: 6
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t400,
-                    whiteSpace: 'nowrap'
-                  },
-                  children: item.time
-                }, void 0, false), item.unread && /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    width: 8,
-                    height: 8,
-                    borderRadius: 4,
-                    background: C.blue500,
-                    marginLeft: 'auto'
-                  }
-                }, void 0, false)]
-              }, void 0, true)]
-            }, i, true))
-          }, void 0, false)]
-        }, group.label, true))]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 240,
-          flexShrink: 0
-        },
-        children: /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 14
-            },
-            children: "Resumo"
-          }, void 0, false), [{
-            l: 'Não lidas',
-            v: 3,
-            c: C.blue600
-          }, {
-            l: 'Hoje',
-            v: 5,
-            c: C.t900
-          }, {
-            l: 'Esta semana',
-            v: 10,
-            c: C.t900
-          }].map(k => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              justifyContent: 'space-between',
-              padding: '8px 0',
-              borderBottom: `1px solid ${C.borderLight}`,
-              fontSize: 14
-            },
-            children: [/*#__PURE__*/_jsxDEV("span", {
-              style: {
-                color: C.t500
-              },
-              children: k.l
-            }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontWeight: 700,
-                color: k.c
-              },
-              children: k.v
-            }, void 0, false)]
-          }, k.l, true)), /*#__PURE__*/_jsxDEV("button", {
-            style: {
-              marginTop: 14,
-              width: '100%',
-              padding: '9px',
-              background: 'none',
-              border: `1.5px solid ${C.border}`,
-              borderRadius: 10,
-              fontSize: 13,
-              color: C.t500,
-              cursor: 'pointer',
-              fontFamily: 'inherit'
-            },
-            children: "Preferências de notificação"
-          }, void 0, false)]
-        }, void 0, true)
-      }, void 0, false)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    title: "Notificações",
+    style: {
+      marginBottom: 0
+    }
+  }), /*#__PURE__*/React.createElement("button", {
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: 13,
+      color: C.blue600,
+      fontFamily: 'inherit',
+      fontWeight: 500
+    }
+  }, "Marcar todas como lidas")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement(ChipBar, {
+    chips: filterTabs.map(f => ({
+      id: f,
+      label: f.charAt(0).toUpperCase() + f.slice(1)
+    })),
+    active: filter,
+    onChange: setFilter,
+    style: {
+      marginBottom: 20
+    }
+  }), groups.map(group => /*#__PURE__*/React.createElement("div", {
+    key: group.label,
+    style: {
+      marginBottom: 28
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t400,
+      letterSpacing: 0.5,
+      marginBottom: 12
+    }
+  }, group.label.toUpperCase()), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 6
+    }
+  }, group.items.map((item, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    className: `notification-row ${item.unread ? 'is-unread' : ''}`,
+    onClick: () => onNavigate(item.screen),
+    style: {
+      display: 'flex',
+      gap: 12,
+      alignItems: 'flex-start',
+      padding: '14px 16px',
+      borderRadius: 12,
+      background: item.unread ? '#F8FFF8' : C.card,
+      border: `1px solid ${item.unread ? C.green100 : C.border}`,
+      cursor: 'pointer',
+      transition: 'all 0.15s'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 38,
+      height: 38,
+      background: item.iconBg,
+      borderRadius: 10,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(item.icon, {
+    size: 18,
+    color: item.iconC
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      color: C.t900,
+      fontWeight: item.unread ? 500 : 400,
+      lineHeight: 1.5
+    }
+  }, item.text)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flex: 'column',
+      align: 'flex-end',
+      gap: 6
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t400,
+      whiteSpace: 'nowrap'
+    }
+  }, item.time), item.unread && /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 8,
+      height: 8,
+      borderRadius: 4,
+      background: C.blue500,
+      marginLeft: 'auto'
+    }
+  })))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 240,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 14
+    }
+  }, "Resumo"), [{
+    l: 'Não lidas',
+    v: 3,
+    c: C.blue600
+  }, {
+    l: 'Hoje',
+    v: 5,
+    c: C.t900
+  }, {
+    l: 'Esta semana',
+    v: 10,
+    c: C.t900
+  }].map(k => /*#__PURE__*/React.createElement("div", {
+    key: k.l,
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      padding: '8px 0',
+      borderBottom: `1px solid ${C.borderLight}`,
+      fontSize: 14
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t500
+    }
+  }, k.l), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 700,
+      color: k.c
+    }
+  }, k.v))), /*#__PURE__*/React.createElement("button", {
+    style: {
+      marginTop: 14,
+      width: '100%',
+      padding: '9px',
+      background: 'none',
+      border: `1.5px solid ${C.border}`,
+      borderRadius: 10,
+      fontSize: 13,
+      color: C.t500,
+      cursor: 'pointer',
+      fontFamily: 'inherit'
+    }
+  }, "Preferências de notificação")))));
 };
 
 // ─── CONFIGURAÇÕES ─────────────────────────────────────
@@ -9592,7 +8736,6 @@ const NotificacoesScreen = ({
 Object.assign(window, {
   NotificacoesScreen
 });
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === CONFIGURACOES === */
 
 const ConfiguracoesScreen = ({
@@ -9628,561 +8771,502 @@ const ConfiguracoesScreen = ({
     label: 'Sobre o MIS',
     icon: Ic.Sparkles
   }];
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "configuracoes",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV(SectionHeader, {
-      title: "Configurações",
-      subtitle: "Gerencie sua conta, preferências e integrações."
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 220,
-          flexShrink: 0
-        },
-        children: /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '8px'
-          },
-          children: [sections.map(s => /*#__PURE__*/_jsxDEV("button", {
-            className: `mis-select-btn${section === s.id ? ' active' : ''}`,
-            "aria-pressed": section === s.id,
-            onClick: () => setSection(s.id),
-            style: {
-              display: 'flex',
-              alignItems: 'center',
-              gap: 10,
-              width: '100%',
-              padding: '10px 12px',
-              borderRadius: 8,
-              border: 'none',
-              background: section === s.id ? C.navActive : 'transparent',
-              color: section === s.id ? '#fff' : C.t700,
-              cursor: 'pointer',
-              fontSize: 14,
-              fontFamily: 'inherit',
-              textAlign: 'left',
-              transition: 'all 0.15s'
-            },
-            children: [/*#__PURE__*/_jsxDEV(s.icon, {
-              size: 16
-            }, void 0, false), s.label]
-          }, s.id, true)), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              borderTop: `1px solid ${C.border}`,
-              margin: '8px 0',
-              paddingTop: 8
-            },
-            children: /*#__PURE__*/_jsxDEV("button", {
-              style: {
-                display: 'flex',
-                alignItems: 'center',
-                gap: 10,
-                width: '100%',
-                padding: '10px 12px',
-                borderRadius: 8,
-                border: 'none',
-                background: 'transparent',
-                color: C.red600,
-                cursor: 'pointer',
-                fontSize: 14,
-                fontFamily: 'inherit'
-              },
-              children: [/*#__PURE__*/_jsxDEV(Ic.X, {
-                size: 16
-              }, void 0, false), " Sair da conta"]
-            }, void 0, true)
-          }, void 0, false)]
-        }, void 0, true)
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1
-        },
-        children: [section === 'conta' && /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 16
-          },
-          children: [/*#__PURE__*/_jsxDEV(Card, {
-            style: {
-              padding: '24px'
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 15,
-                fontWeight: 600,
-                color: C.t900,
-                marginBottom: 20
-              },
-              children: "Informações pessoais"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 20,
-                alignItems: 'flex-start',
-                marginBottom: 24
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  position: 'relative'
-                },
-                children: [/*#__PURE__*/_jsxDEV(Avatar, {
-                  name: "Eduardo Nunes",
-                  size: 72
-                }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-                  style: {
-                    position: 'absolute',
-                    bottom: 0,
-                    right: 0,
-                    width: 24,
-                    height: 24,
-                    background: C.t900,
-                    border: '2px solid #fff',
-                    borderRadius: 12,
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  },
-                  children: /*#__PURE__*/_jsxDEV(Ic.Edit, {
-                    size: 12,
-                    color: "#fff"
-                  }, void 0, false)
-                }, void 0, false)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flex: 1
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 18,
-                    fontWeight: 700,
-                    color: C.t900
-                  },
-                  children: "Eduardo Nunes"
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 14,
-                    color: C.t500,
-                    marginTop: 2
-                  },
-                  children: "Gestor MIS · Plano Pro"
-                }, void 0, false), /*#__PURE__*/_jsxDEV(Badge, {
-                  color: "green",
-                  style: {
-                    marginTop: 8
-                  },
-                  children: "✓ Conta verificada"
-                }, void 0, false)]
-              }, void 0, true)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: 16
-              },
-              children: [/*#__PURE__*/_jsxDEV(Input, {
-                label: "Nome completo",
-                placeholder: "Eduardo Nunes"
-              }, void 0, false), /*#__PURE__*/_jsxDEV(Input, {
-                label: "E-mail",
-                placeholder: "eduardo@mgroup.com.br",
-                type: "email"
-              }, void 0, false), /*#__PURE__*/_jsxDEV(Input, {
-                label: "Telefone",
-                placeholder: "(11) 99999-0000",
-                type: "tel"
-              }, void 0, false), /*#__PURE__*/_jsxDEV(Input, {
-                label: "Cargo / Função",
-                placeholder: "Gestor de Obras"
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                justifyContent: 'flex-end',
-                marginTop: 20
-              },
-              children: /*#__PURE__*/_jsxDEV(Btn, {
-                children: "Salvar alterações"
-              }, void 0, false)
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-            style: {
-              padding: '24px'
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 15,
-                fontWeight: 600,
-                color: C.t900,
-                marginBottom: 20
-              },
-              children: "Segurança"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: 16
-              },
-              children: [/*#__PURE__*/_jsxDEV(Input, {
-                label: "Senha atual",
-                type: "password",
-                placeholder: "••••••••"
-              }, void 0, false), /*#__PURE__*/_jsxDEV(Input, {
-                label: "Nova senha",
-                type: "password",
-                placeholder: "••••••••"
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 20,
-                marginTop: 20,
-                alignItems: 'center'
-              },
-              children: [/*#__PURE__*/_jsxDEV("label", {
-                style: {
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 10,
-                  cursor: 'pointer',
-                  flex: 1
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    width: 44,
-                    height: 24,
-                    background: C.navActive,
-                    borderRadius: 12,
-                    position: 'relative'
-                  },
-                  children: /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      position: 'absolute',
-                      right: 3,
-                      top: 3,
-                      width: 18,
-                      height: 18,
-                      background: '#fff',
-                      borderRadius: 9
-                    }
-                  }, void 0, false)
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  children: [/*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      fontSize: 14,
-                      fontWeight: 500,
-                      color: C.t900
-                    },
-                    children: "Autenticação em 2 fatores"
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      fontSize: 12,
-                      color: C.t500
-                    },
-                    children: "Ativada via SMS"
-                  }, void 0, false)]
-                }, void 0, true)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("label", {
-                style: {
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 10,
-                  cursor: 'pointer'
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    width: 44,
-                    height: 24,
-                    background: C.navActive,
-                    borderRadius: 12,
-                    position: 'relative'
-                  },
-                  children: /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      position: 'absolute',
-                      right: 3,
-                      top: 3,
-                      width: 18,
-                      height: 18,
-                      background: '#fff',
-                      borderRadius: 9
-                    }
-                  }, void 0, false)
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  children: [/*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      fontSize: 14,
-                      fontWeight: 500,
-                      color: C.t900
-                    },
-                    children: "Biometria"
-                  }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      fontSize: 12,
-                      color: C.t500
-                    },
-                    children: "FaceID / TouchID"
-                  }, void 0, false)]
-                }, void 0, true)]
-              }, void 0, true)]
-            }, void 0, true)]
-          }, void 0, true)]
-        }, void 0, true), section === 'notificacoes' && /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '24px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 15,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 20
-            },
-            children: "Preferências de notificação"
-          }, void 0, false), [{
-            cat: 'Alertas críticos',
-            desc: 'Atrasos, riscos e bloqueios operacionais',
-            push: true,
-            email: true,
-            sms: true
-          }, {
-            cat: 'Pendências',
-            desc: 'Tarefas atribuídas e vencimentos',
-            push: true,
-            email: true,
-            sms: false
-          }, {
-            cat: 'Suprimentos',
-            desc: 'Estoque crítico e entregas',
-            push: true,
-            email: false,
-            sms: false
-          }, {
-            cat: 'Atualizações de obras',
-            desc: 'Novos registros e fotos',
-            push: true,
-            email: true,
-            sms: false
-          }, {
-            cat: 'Financeiro',
-            desc: 'Aprovações e pagamentos',
-            push: false,
-            email: true,
-            sms: true
-          }, {
-            cat: 'Oráculo MIS',
-            desc: 'Sugestões e análises da IA',
-            push: true,
-            email: false,
-            sms: false
-          }].map(n => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              alignItems: 'center',
-              gap: 16,
-              padding: '14px 0',
-              borderBottom: `1px solid ${C.borderLight}`
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 14,
-                  fontWeight: 500,
-                  color: C.t900
-                },
-                children: n.cat
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  color: C.t500,
-                  marginTop: 2
-                },
-                children: n.desc
-              }, void 0, false)]
-            }, void 0, true), [{
-              l: 'Push',
-              v: n.push
-            }, {
-              l: 'E-mail',
-              v: n.email
-            }, {
-              l: 'SMS',
-              v: n.sms
-            }].map(ch => /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                textAlign: 'center',
-                minWidth: 60
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t400,
-                  marginBottom: 6
-                },
-                children: ch.l
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: 36,
-                  height: 20,
-                  background: ch.v ? C.navActive : C.border,
-                  borderRadius: 10,
-                  margin: '0 auto',
-                  position: 'relative',
-                  cursor: 'pointer'
-                },
-                children: /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    position: 'absolute',
-                    top: 2,
-                    left: ch.v ? 18 : 2,
-                    width: 16,
-                    height: 16,
-                    background: '#fff',
-                    borderRadius: 8,
-                    transition: 'left 0.2s'
-                  }
-                }, void 0, false)
-              }, void 0, false)]
-            }, ch.l, true))]
-          }, n.cat, true))]
-        }, void 0, true), section === 'plano' && /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '24px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 15,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 20
-            },
-            children: "Meu Plano"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              background: 'linear-gradient(135deg, #1C3A2A 0%, #1d4ed8 100%)',
-              borderRadius: 16,
-              padding: '24px',
-              marginBottom: 20
-            },
-            children: [/*#__PURE__*/_jsxDEV(Badge, {
-              color: "gray",
-              style: {
-                background: 'rgba(255,255,255,0.2)',
-                color: '#fff',
-                marginBottom: 12
-              },
-              children: "Plano atual"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 28,
-                fontWeight: 800,
-                color: '#fff',
-                marginBottom: 4
-              },
-              children: "MIS Pro"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 14,
-                color: 'rgba(255,255,255,0.7)',
-                marginBottom: 16
-              },
-              children: "Gestão completa · Até 20 obras simultâneas · Oráculo ilimitado"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 22,
-                fontWeight: 700,
-                color: '#fff'
-              },
-              children: ["R$ 297", /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 14,
-                  fontWeight: 400
-                },
-                children: "/mês"
-              }, void 0, false)]
-            }, void 0, true)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr 1fr',
-              gap: 12,
-              marginBottom: 20
-            },
-            children: [{
-              l: 'Obras ativas',
-              v: '8 / 20',
-              c: C.blue600
-            }, {
-              l: 'Usuários',
-              v: '5 / 10',
-              c: C.t900
-            }, {
-              l: 'Storage',
-              v: '24GB / 100GB',
-              c: C.green600
-            }].map(k => /*#__PURE__*/_jsxDEV(Card, {
-              style: {
-                padding: '14px',
-                textAlign: 'center'
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 15,
-                  fontWeight: 700,
-                  color: k.c
-                },
-                children: k.v
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  color: C.t500,
-                  marginTop: 4
-                },
-                children: k.l
-              }, void 0, false)]
-            }, k.l, true))
-          }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-            style: {
-              width: '100%',
-              justifyContent: 'center',
-              padding: '12px'
-            },
-            children: "Fazer upgrade para Enterprise"
-          }, void 0, false)]
-        }, void 0, true), !['conta', 'notificacoes', 'plano'].includes(section) && /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '40px',
-            textAlign: 'center',
-            color: C.t400
-          },
-          children: [/*#__PURE__*/_jsxDEV(Ic.Settings, {
-            size: 32,
-            color: C.t300
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              marginTop: 12,
-              fontSize: 14
-            },
-            children: ["Seção ", /*#__PURE__*/_jsxDEV("strong", {
-              style: {
-                color: C.t700
-              },
-              children: section
-            }, void 0, false), " em construção"]
-          }, void 0, true)]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    title: "Configurações",
+    subtitle: "Gerencie sua conta, preferências e integrações."
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 220,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '8px'
+    }
+  }, sections.map(s => /*#__PURE__*/React.createElement("button", {
+    key: s.id,
+    className: `mis-select-btn${section === s.id ? ' active' : ''}`,
+    "aria-pressed": section === s.id,
+    onClick: () => setSection(s.id),
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      width: '100%',
+      padding: '10px 12px',
+      borderRadius: 8,
+      border: 'none',
+      background: section === s.id ? C.navActive : 'transparent',
+      color: section === s.id ? '#fff' : C.t700,
+      cursor: 'pointer',
+      fontSize: 14,
+      fontFamily: 'inherit',
+      textAlign: 'left',
+      transition: 'all 0.15s'
+    }
+  }, /*#__PURE__*/React.createElement(s.icon, {
+    size: 16
+  }), s.label)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      borderTop: `1px solid ${C.border}`,
+      margin: '8px 0',
+      paddingTop: 8
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      width: '100%',
+      padding: '10px 12px',
+      borderRadius: 8,
+      border: 'none',
+      background: 'transparent',
+      color: C.red600,
+      cursor: 'pointer',
+      fontSize: 14,
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.X, {
+    size: 16
+  }), " Sair da conta")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, section === 'conta' && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '24px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 20
+    }
+  }, "Informações pessoais"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 20,
+      alignItems: 'flex-start',
+      marginBottom: 24
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: "Eduardo Nunes",
+    size: 72
+  }), /*#__PURE__*/React.createElement("button", {
+    style: {
+      position: 'absolute',
+      bottom: 0,
+      right: 0,
+      width: 24,
+      height: 24,
+      background: C.t900,
+      border: '2px solid #fff',
+      borderRadius: 12,
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Edit, {
+    size: 12,
+    color: "#fff"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 18,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, "Eduardo Nunes"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      color: C.t500,
+      marginTop: 2
+    }
+  }, "Gestor MIS · Plano Pro"), /*#__PURE__*/React.createElement(Badge, {
+    color: "green",
+    style: {
+      marginTop: 8
+    }
+  }, "✓ Conta verificada"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement(Input, {
+    label: "Nome completo",
+    placeholder: "Eduardo Nunes"
+  }), /*#__PURE__*/React.createElement(Input, {
+    label: "E-mail",
+    placeholder: "eduardo@mgroup.com.br",
+    type: "email"
+  }), /*#__PURE__*/React.createElement(Input, {
+    label: "Telefone",
+    placeholder: "(11) 99999-0000",
+    type: "tel"
+  }), /*#__PURE__*/React.createElement(Input, {
+    label: "Cargo / Função",
+    placeholder: "Gestor de Obras"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      marginTop: 20
+    }
+  }, /*#__PURE__*/React.createElement(Btn, null, "Salvar alterações"))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '24px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 20
+    }
+  }, "Segurança"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement(Input, {
+    label: "Senha atual",
+    type: "password",
+    placeholder: "••••••••"
+  }), /*#__PURE__*/React.createElement(Input, {
+    label: "Nova senha",
+    type: "password",
+    placeholder: "••••••••"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 20,
+      marginTop: 20,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      cursor: 'pointer',
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 44,
+      height: 24,
+      background: C.navActive,
+      borderRadius: 12,
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      right: 3,
+      top: 3,
+      width: 18,
+      height: 18,
+      background: '#fff',
+      borderRadius: 9
+    }
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 500,
+      color: C.t900
+    }
+  }, "Autenticação em 2 fatores"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, "Ativada via SMS"))), /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 44,
+      height: 24,
+      background: C.navActive,
+      borderRadius: 12,
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      right: 3,
+      top: 3,
+      width: 18,
+      height: 18,
+      background: '#fff',
+      borderRadius: 9
+    }
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 500,
+      color: C.t900
+    }
+  }, "Biometria"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, "FaceID / TouchID")))))), section === 'notificacoes' && /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '24px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 20
+    }
+  }, "Preferências de notificação"), [{
+    cat: 'Alertas críticos',
+    desc: 'Atrasos, riscos e bloqueios operacionais',
+    push: true,
+    email: true,
+    sms: true
+  }, {
+    cat: 'Pendências',
+    desc: 'Tarefas atribuídas e vencimentos',
+    push: true,
+    email: true,
+    sms: false
+  }, {
+    cat: 'Suprimentos',
+    desc: 'Estoque crítico e entregas',
+    push: true,
+    email: false,
+    sms: false
+  }, {
+    cat: 'Atualizações de obras',
+    desc: 'Novos registros e fotos',
+    push: true,
+    email: true,
+    sms: false
+  }, {
+    cat: 'Financeiro',
+    desc: 'Aprovações e pagamentos',
+    push: false,
+    email: true,
+    sms: true
+  }, {
+    cat: 'Oráculo MIS',
+    desc: 'Sugestões e análises da IA',
+    push: true,
+    email: false,
+    sms: false
+  }].map(n => /*#__PURE__*/React.createElement("div", {
+    key: n.cat,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      padding: '14px 0',
+      borderBottom: `1px solid ${C.borderLight}`
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 500,
+      color: C.t900
+    }
+  }, n.cat), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginTop: 2
+    }
+  }, n.desc)), [{
+    l: 'Push',
+    v: n.push
+  }, {
+    l: 'E-mail',
+    v: n.email
+  }, {
+    l: 'SMS',
+    v: n.sms
+  }].map(ch => /*#__PURE__*/React.createElement("div", {
+    key: ch.l,
+    style: {
+      textAlign: 'center',
+      minWidth: 60
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t400,
+      marginBottom: 6
+    }
+  }, ch.l), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 36,
+      height: 20,
+      background: ch.v ? C.navActive : C.border,
+      borderRadius: 10,
+      margin: '0 auto',
+      position: 'relative',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      top: 2,
+      left: ch.v ? 18 : 2,
+      width: 16,
+      height: 16,
+      background: '#fff',
+      borderRadius: 8,
+      transition: 'left 0.2s'
+    }
+  }))))))), section === 'plano' && /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '24px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 20
+    }
+  }, "Meu Plano"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: 'linear-gradient(135deg, #1C3A2A 0%, #1d4ed8 100%)',
+      borderRadius: 16,
+      padding: '24px',
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement(Badge, {
+    color: "gray",
+    style: {
+      background: 'rgba(255,255,255,0.2)',
+      color: '#fff',
+      marginBottom: 12
+    }
+  }, "Plano atual"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 28,
+      fontWeight: 800,
+      color: '#fff',
+      marginBottom: 4
+    }
+  }, "MIS Pro"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      color: 'rgba(255,255,255,0.7)',
+      marginBottom: 16
+    }
+  }, "Gestão completa · Até 20 obras simultâneas · Oráculo ilimitado"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 22,
+      fontWeight: 700,
+      color: '#fff'
+    }
+  }, "R$ 297", /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      fontWeight: 400
+    }
+  }, "/mês"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr 1fr',
+      gap: 12,
+      marginBottom: 20
+    }
+  }, [{
+    l: 'Obras ativas',
+    v: '8 / 20',
+    c: C.blue600
+  }, {
+    l: 'Usuários',
+    v: '5 / 10',
+    c: C.t900
+  }, {
+    l: 'Storage',
+    v: '24GB / 100GB',
+    c: C.green600
+  }].map(k => /*#__PURE__*/React.createElement(Card, {
+    key: k.l,
+    style: {
+      padding: '14px',
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 15,
+      fontWeight: 700,
+      color: k.c
+    }
+  }, k.v), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginTop: 4
+    }
+  }, k.l)))), /*#__PURE__*/React.createElement(Btn, {
+    style: {
+      width: '100%',
+      justifyContent: 'center',
+      padding: '12px'
+    }
+  }, "Fazer upgrade para Enterprise")), !['conta', 'notificacoes', 'plano'].includes(section) && /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '40px',
+      textAlign: 'center',
+      color: C.t400
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Settings, {
+    size: 32,
+    color: C.t300
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 12,
+      fontSize: 14
+    }
+  }, "Seção ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: C.t700
+    }
+  }, section), " em construção")))));
 };
 
 // ─── PERFIL DO PROFISSIONAL (OP) ───────────────────────
@@ -10207,334 +9291,296 @@ const PerfilProfissionalScreen = ({
     text: 'Muito organizado e pontual. Ótima comunicação.',
     rating: 4
   }];
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "perfil_op",
-    onNavigate: onNavigate,
-    children: /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        maxWidth: 860,
-        margin: '0 auto'
-      },
-      children: [/*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '28px',
-          marginBottom: 20
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            gap: 24,
-            alignItems: 'flex-start'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              position: 'relative'
-            },
-            children: [/*#__PURE__*/_jsxDEV(Avatar, {
-              name: "Rafael Souza",
-              size: 88
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                position: 'absolute',
-                bottom: 4,
-                right: 4,
-                width: 20,
-                height: 20,
-                background: C.green500,
-                borderRadius: 10,
-                border: '2px solid #fff'
-              }
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              flex: 1
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                alignItems: 'flex-start',
-                justifyContent: 'space-between'
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                children: [/*#__PURE__*/_jsxDEV("h2", {
-                  style: {
-                    fontSize: 24,
-                    fontWeight: 700,
-                    color: C.t900
-                  },
-                  children: "Rafael Souza"
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    gap: 8,
-                    marginTop: 6,
-                    flexWrap: 'wrap'
-                  },
-                  children: skills.slice(0, 4).map(s => /*#__PURE__*/_jsxDEV(Badge, {
-                    color: "blue",
-                    children: s
-                  }, s, false))
-                }, void 0, false)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  display: 'flex',
-                  gap: 10
-                },
-                children: [/*#__PURE__*/_jsxDEV(Btn, {
-                  variant: "secondary",
-                  icon: /*#__PURE__*/_jsxDEV(Ic.Message, {
-                    size: 14
-                  }, void 0, false),
-                  children: "Mensagem"
-                }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-                  icon: /*#__PURE__*/_jsxDEV(Ic.Check, {
-                    size: 14
-                  }, void 0, false),
-                  children: "Contratar"
-                }, void 0, false)]
-              }, void 0, true)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'grid',
-                gridTemplateColumns: 'repeat(4,auto)',
-                gap: 24,
-                marginTop: 20
-              },
-              children: [{
-                l: 'Avaliação',
-                v: '4.9',
-                icon: Ic.Star,
-                c: C.orange500
-              }, {
-                l: 'Trabalhos',
-                v: '47',
-                icon: Ic.Layers,
-                c: C.blue600
-              }, {
-                l: 'No prazo',
-                v: '98%',
-                icon: Ic.Clock,
-                c: C.green600
-              }, {
-                l: 'Membro desde',
-                v: '2022',
-                icon: Ic.Calendar,
-                c: C.t500
-              }].map(k => /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  textAlign: 'center'
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: 5,
-                    fontSize: 20,
-                    fontWeight: 700,
-                    color: k.c
-                  },
-                  children: [/*#__PURE__*/_jsxDEV(k.icon, {
-                    size: 16,
-                    color: k.c
-                  }, void 0, false), k.v]
-                }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t400,
-                    marginTop: 2
-                  },
-                  children: k.l
-                }, void 0, false)]
-              }, k.l, true))
-            }, void 0, false)]
-          }, void 0, true)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            marginTop: 20,
-            padding: '16px',
-            background: C.borderLight,
-            borderRadius: 10
-          },
-          children: /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              color: C.t700,
-              lineHeight: 1.65
-            },
-            children: "Mestre de obras com 12 anos de experiência em construção civil residencial e comercial. Especialista em estruturas de concreto armado e gestão de equipes em canteiro. Certificação CREA-SP ativo."
-          }, void 0, false)
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            gap: 10,
-            marginTop: 14
-          },
-          children: [/*#__PURE__*/_jsxDEV(Badge, {
-            color: "green",
-            dot: true,
-            children: "Disponível para obras"
-          }, void 0, false), /*#__PURE__*/_jsxDEV(Badge, {
-            color: "blue",
-            children: [/*#__PURE__*/_jsxDEV(Ic.MapPin, {
-              size: 12,
-              color: C.blue600,
-              style: {
-                marginRight: 3
-              }
-            }, void 0, false), "São Paulo, SP · até 40km"]
-          }, void 0, true), /*#__PURE__*/_jsxDEV(Badge, {
-            color: "gray",
-            children: "✓ Verificado MIS"
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          borderBottom: `1px solid ${C.border}`,
-          marginBottom: 20
-        },
-        children: /*#__PURE__*/_jsxDEV(TabBar, {
-          tabs: [{
-            id: 'portfolio',
-            label: 'Portfólio'
-          }, {
-            id: 'avaliacoes',
-            label: 'Avaliações'
-          }, {
-            id: 'disponibilidade',
-            label: 'Disponibilidade'
-          }, {
-            id: 'precos',
-            label: 'Preços'
-          }],
-          active: tab,
-          onChange: setTab
-        }, void 0, false)
-      }, void 0, false), tab === 'portfolio' && /*#__PURE__*/_jsxDEV("div", {
-        children: /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr',
-            gap: 14,
-            marginBottom: 20
-          },
-          children: ['Fundação radier, Campinas', 'Estrutura metálica, Guarulhos', 'Concretagem laje, São Paulo', 'Alvenaria estrutural, Jundiaí', 'Impermeabilização, Santos', 'Piso industrial, Santo André'].map((p, i) => /*#__PURE__*/_jsxDEV(Card, {
-            style: {
-              overflow: 'hidden'
-            },
-            children: [/*#__PURE__*/_jsxDEV(ImgPlaceholder, {
-              style: {
-                height: 140,
-                borderRadius: 0
-              },
-              label: p
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                padding: '12px 14px'
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 13,
-                  fontWeight: 500,
-                  color: C.t900
-                },
-                children: p
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  display: 'flex',
-                  gap: 4,
-                  marginTop: 6
-                },
-                children: [...Array(5)].map((_, j) => /*#__PURE__*/_jsxDEV(Ic.Star, {
-                  size: 12,
-                  color: C.orange500,
-                  fill: C.orange500
-                }, j, false))
-              }, void 0, false)]
-            }, void 0, true)]
-          }, i, true))
-        }, void 0, false)
-      }, void 0, false), tab === 'avaliacoes' && /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: avalis.map((a, i) => /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 12,
-              marginBottom: 10
-            },
-            children: [/*#__PURE__*/_jsxDEV(Avatar, {
-              name: a.name,
-              size: 38
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 14,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: a.name
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  color: C.t500
-                },
-                children: a.role
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 3
-              },
-              children: [...Array(5)].map((_, j) => /*#__PURE__*/_jsxDEV(Ic.Star, {
-                size: 14,
-                color: j < a.rating ? C.orange500 : C.border
-              }, j, false))
-            }, void 0, false)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              color: C.t700,
-              lineHeight: 1.6,
-              fontStyle: 'italic'
-            },
-            children: ["\"", a.text, "\""]
-          }, void 0, true)]
-        }, i, true))
-      }, void 0, false), (tab === 'disponibilidade' || tab === 'precos') && /*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '32px',
-          textAlign: 'center',
-          color: C.t400
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.Calendar, {
-          size: 32,
-          color: C.t300
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            marginTop: 12,
-            fontSize: 14
-          },
-          children: ["Seção em construção: ", /*#__PURE__*/_jsxDEV("strong", {
-            style: {
-              color: C.t700
-            },
-            children: tab
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)
-  }, void 0, false);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 860,
+      margin: '0 auto'
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '28px',
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 24,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: "Rafael Souza",
+    size: 88
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      bottom: 4,
+      right: 4,
+      width: 20,
+      height: 20,
+      background: C.green500,
+      borderRadius: 10,
+      border: '2px solid #fff'
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'flex-start',
+      justifyContent: 'space-between'
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontSize: 24,
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, "Rafael Souza"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      marginTop: 6,
+      flexWrap: 'wrap'
+    }
+  }, skills.slice(0, 4).map(s => /*#__PURE__*/React.createElement(Badge, {
+    key: s,
+    color: "blue"
+  }, s)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement(Btn, {
+    variant: "secondary",
+    icon: /*#__PURE__*/React.createElement(Ic.Message, {
+      size: 14
+    })
+  }, "Mensagem"), /*#__PURE__*/React.createElement(Btn, {
+    icon: /*#__PURE__*/React.createElement(Ic.Check, {
+      size: 14
+    })
+  }, "Contratar"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4,auto)',
+      gap: 24,
+      marginTop: 20
+    }
+  }, [{
+    l: 'Avaliação',
+    v: '4.9',
+    icon: Ic.Star,
+    c: C.orange500
+  }, {
+    l: 'Trabalhos',
+    v: '47',
+    icon: Ic.Layers,
+    c: C.blue600
+  }, {
+    l: 'No prazo',
+    v: '98%',
+    icon: Ic.Clock,
+    c: C.green600
+  }, {
+    l: 'Membro desde',
+    v: '2022',
+    icon: Ic.Calendar,
+    c: C.t500
+  }].map(k => /*#__PURE__*/React.createElement("div", {
+    key: k.l,
+    style: {
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 5,
+      fontSize: 20,
+      fontWeight: 700,
+      color: k.c
+    }
+  }, /*#__PURE__*/React.createElement(k.icon, {
+    size: 16,
+    color: k.c
+  }), k.v), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t400,
+      marginTop: 2
+    }
+  }, k.l)))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 20,
+      padding: '16px',
+      background: C.borderLight,
+      borderRadius: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      color: C.t700,
+      lineHeight: 1.65
+    }
+  }, "Mestre de obras com 12 anos de experiência em construção civil residencial e comercial. Especialista em estruturas de concreto armado e gestão de equipes em canteiro. Certificação CREA-SP ativo.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      marginTop: 14
+    }
+  }, /*#__PURE__*/React.createElement(Badge, {
+    color: "green",
+    dot: true
+  }, "Disponível para obras"), /*#__PURE__*/React.createElement(Badge, {
+    color: "blue"
+  }, /*#__PURE__*/React.createElement(Ic.MapPin, {
+    size: 12,
+    color: C.blue600,
+    style: {
+      marginRight: 3
+    }
+  }), "São Paulo, SP · até 40km"), /*#__PURE__*/React.createElement(Badge, {
+    color: "gray"
+  }, "✓ Verificado MIS"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      borderBottom: `1px solid ${C.border}`,
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement(TabBar, {
+    tabs: [{
+      id: 'portfolio',
+      label: 'Portfólio'
+    }, {
+      id: 'avaliacoes',
+      label: 'Avaliações'
+    }, {
+      id: 'disponibilidade',
+      label: 'Disponibilidade'
+    }, {
+      id: 'precos',
+      label: 'Preços'
+    }],
+    active: tab,
+    onChange: setTab
+  })), tab === 'portfolio' && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr 1fr',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, ['Fundação radier, Campinas', 'Estrutura metálica, Guarulhos', 'Concretagem laje, São Paulo', 'Alvenaria estrutural, Jundiaí', 'Impermeabilização, Santos', 'Piso industrial, Santo André'].map((p, i) => /*#__PURE__*/React.createElement(Card, {
+    key: i,
+    style: {
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement(ImgPlaceholder, {
+    style: {
+      height: 140,
+      borderRadius: 0
+    },
+    label: p
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '12px 14px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 500,
+      color: C.t900
+    }
+  }, p), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 4,
+      marginTop: 6
+    }
+  }, [...Array(5)].map((_, j) => /*#__PURE__*/React.createElement(Ic.Star, {
+    key: j,
+    size: 12,
+    color: C.orange500,
+    fill: C.orange500
+  })))))))), tab === 'avaliacoes' && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, avalis.map((a, i) => /*#__PURE__*/React.createElement(Card, {
+    key: i,
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 12,
+      marginBottom: 10
+    }
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: a.name,
+    size: 38
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, a.name), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, a.role)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 3
+    }
+  }, [...Array(5)].map((_, j) => /*#__PURE__*/React.createElement(Ic.Star, {
+    key: j,
+    size: 14,
+    color: j < a.rating ? C.orange500 : C.border
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      color: C.t700,
+      lineHeight: 1.6,
+      fontStyle: 'italic'
+    }
+  }, "\"", a.text, "\"")))), (tab === 'disponibilidade' || tab === 'precos') && /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '32px',
+      textAlign: 'center',
+      color: C.t400
+    }
+  }, /*#__PURE__*/React.createElement(Ic.Calendar, {
+    size: 32,
+    color: C.t300
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 12,
+      fontSize: 14
+    }
+  }, "Seção em construção: ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: C.t700
+    }
+  }, tab)))));
 };
 
 // ─── FEED DE OPORTUNIDADES (OP) ────────────────────────
@@ -10608,380 +9654,329 @@ const FeedOportunidadesScreen = ({
       bg: C.red100
     }
   };
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "feed_op",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV("div", {
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    title: "Oportunidades",
+    subtitle: "Novos serviços disponíveis compatíveis com seu perfil.",
+    style: {
+      marginBottom: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 12,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 44,
+      height: 24,
+      background: avail ? C.navActive : C.border,
+      borderRadius: 12,
+      position: 'relative',
+      cursor: 'pointer'
+    },
+    onClick: () => setAvail(!avail)
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      top: 3,
+      left: avail ? 22 : 3,
+      width: 18,
+      height: 18,
+      background: '#fff',
+      borderRadius: 9,
+      transition: 'left 0.2s'
+    }
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      fontWeight: 500,
+      color: avail ? C.green600 : C.t500
+    }
+  }, avail ? 'Disponível para obras' : 'Indisponível')))), /*#__PURE__*/React.createElement(ChipBar, {
+    chips: ['todas', 'próximas', 'urgentes', 'estrutura', 'hidráulica', 'acabamento'].map(c => ({
+      id: c,
+      label: c.charAt(0).toUpperCase() + c.slice(1)
+    })),
+    active: filter,
+    onChange: setFilter,
+    style: {
+      marginBottom: 20
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, opps.map(op => {
+    const urg = urgColors[op.urgencia];
+    return /*#__PURE__*/React.createElement(Card, {
+      key: op.id,
       style: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV(SectionHeader, {
-        title: "Oportunidades",
-        subtitle: "Novos serviços disponíveis compatíveis com seu perfil.",
-        style: {
-          marginBottom: 0
-        }
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          gap: 12,
-          alignItems: 'center'
-        },
-        children: /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            alignItems: 'center',
-            gap: 10
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              width: 44,
-              height: 24,
-              background: avail ? C.navActive : C.border,
-              borderRadius: 12,
-              position: 'relative',
-              cursor: 'pointer'
-            },
-            onClick: () => setAvail(!avail),
-            children: /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                position: 'absolute',
-                top: 3,
-                left: avail ? 22 : 3,
-                width: 18,
-                height: 18,
-                background: '#fff',
-                borderRadius: 9,
-                transition: 'left 0.2s'
-              }
-            }, void 0, false)
-          }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-            style: {
-              fontSize: 14,
-              fontWeight: 500,
-              color: avail ? C.green600 : C.t500
-            },
-            children: avail ? 'Disponível para obras' : 'Indisponível'
-          }, void 0, false)]
-        }, void 0, true)
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV(ChipBar, {
-      chips: ['todas', 'próximas', 'urgentes', 'estrutura', 'hidráulica', 'acabamento'].map(c => ({
-        id: c,
-        label: c.charAt(0).toUpperCase() + c.slice(1)
-      })),
-      active: filter,
-      onChange: setFilter,
-      style: {
-        marginBottom: 20
+        padding: '18px 20px'
       }
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         gap: 16
+      }
+    }, op.foto && /*#__PURE__*/React.createElement(ImgPlaceholder, {
+      style: {
+        width: 100,
+        height: 80,
+        flexShrink: 0
       },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: opps.map(op => {
-          const urg = urgColors[op.urgencia];
-          return /*#__PURE__*/_jsxDEV(Card, {
-            style: {
-              padding: '18px 20px'
-            },
-            children: /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 16
-              },
-              children: [op.foto && /*#__PURE__*/_jsxDEV(ImgPlaceholder, {
-                style: {
-                  width: 100,
-                  height: 80,
-                  flexShrink: 0
-                },
-                label: "local"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flex: 1
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'flex-start',
-                    marginBottom: 8
-                  },
-                  children: [/*#__PURE__*/_jsxDEV("div", {
-                    children: [/*#__PURE__*/_jsxDEV("div", {
-                      style: {
-                        fontSize: 16,
-                        fontWeight: 600,
-                        color: C.t900
-                      },
-                      children: op.tipo
-                    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                      style: {
-                        display: 'flex',
-                        gap: 10,
-                        fontSize: 13,
-                        color: C.t500,
-                        marginTop: 4
-                      },
-                      children: [/*#__PURE__*/_jsxDEV("span", {
-                        style: {
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 4
-                        },
-                        children: [/*#__PURE__*/_jsxDEV(Ic.MapPin, {
-                          size: 13,
-                          color: C.t400
-                        }, void 0, false), op.loc]
-                      }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-                        style: {
-                          color: C.t300
-                        },
-                        children: "·"
-                      }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                        children: op.dist
-                      }, void 0, false)]
-                    }, void 0, true)]
-                  }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-                    style: {
-                      fontSize: 12,
-                      fontWeight: 600,
-                      padding: '4px 12px',
-                      borderRadius: 12,
-                      background: urg.bg,
-                      color: urg.c
-                    },
-                    children: op.urgencia.charAt(0).toUpperCase() + op.urgencia.slice(1)
-                  }, void 0, false)]
-                }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 13,
-                    color: C.t500,
-                    lineHeight: 1.5,
-                    marginBottom: 12
-                  },
-                  children: op.desc
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    display: 'flex',
-                    gap: 20,
-                    alignItems: 'center'
-                  },
-                  children: [/*#__PURE__*/_jsxDEV("div", {
-                    children: [/*#__PURE__*/_jsxDEV("div", {
-                      style: {
-                        fontSize: 12,
-                        color: C.t400
-                      },
-                      children: "Valor estimado"
-                    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                      style: {
-                        fontSize: 16,
-                        fontWeight: 700,
-                        color: C.t900
-                      },
-                      children: op.valor
-                    }, void 0, false)]
-                  }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                    children: [/*#__PURE__*/_jsxDEV("div", {
-                      style: {
-                        fontSize: 12,
-                        color: C.t400
-                      },
-                      children: "Prazo"
-                    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                      style: {
-                        fontSize: 14,
-                        fontWeight: 600,
-                        color: C.t900
-                      },
-                      children: op.prazo
-                    }, void 0, false)]
-                  }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-                    style: {
-                      marginLeft: 'auto',
-                      display: 'flex',
-                      gap: 8
-                    },
-                    children: [/*#__PURE__*/_jsxDEV(Btn, {
-                      variant: "secondary",
-                      size: "sm",
-                      children: "Ver detalhes"
-                    }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-                      variant: "green",
-                      size: "sm",
-                      icon: /*#__PURE__*/_jsxDEV(Ic.Check, {
-                        size: 13,
-                        color: "#fff"
-                      }, void 0, false),
-                      children: "Aceitar"
-                    }, void 0, false)]
-                  }, void 0, true)]
-                }, void 0, true)]
-              }, void 0, true)]
-            }, void 0, true)
-          }, op.id, false);
-        })
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 240,
-          flexShrink: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 14
-            },
-            children: "Seu perfil"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10,
-              alignItems: 'center',
-              marginBottom: 14
-            },
-            children: [/*#__PURE__*/_jsxDEV(Avatar, {
-              name: "Rafael Souza",
-              size: 44
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 14,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: "Rafael Souza"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  display: 'flex',
-                  gap: 3
-                },
-                children: [[...Array(5)].map((_, j) => /*#__PURE__*/_jsxDEV(Ic.Star, {
-                  size: 12,
-                  color: C.orange500
-                }, j, false)), /*#__PURE__*/_jsxDEV("span", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t500
-                  },
-                  children: "4.9"
-                }, void 0, false)]
-              }, void 0, true)]
-            }, void 0, true)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 8,
-              marginBottom: 16
-            },
-            children: [{
-              l: 'Obras concluídas',
-              v: '47'
-            }, {
-              l: 'No prazo',
-              v: '98%'
-            }, {
-              l: 'Avaliação média',
-              v: '4.9 ★'
-            }].map(k => /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                justifyContent: 'space-between',
-                fontSize: 13
-              },
-              children: [/*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  color: C.t500
-                },
-                children: k.l
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontWeight: 700,
-                  color: C.t900
-                },
-                children: k.v
-              }, void 0, false)]
-            }, k.l, true))
-          }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-            variant: "secondary",
-            onClick: () => onNavigate('perfil_op'),
-            style: {
-              width: '100%',
-              justifyContent: 'center'
-            },
-            children: "Ver perfil completo"
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '18px 20px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 14,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 12
-            },
-            children: "Compatibilidade IA"
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              color: C.t500,
-              marginBottom: 12
-            },
-            children: "Oportunidades alinhadas ao seu histórico e especialidades."
-          }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 8
-            },
-            children: [['Estrutura', 'Alta', C.green600], ['Concretagem', 'Alta', C.green600], ['Alvenaria', 'Média', C.orange600], ['Instalações', 'Baixa', C.red600]].map(([s, m, c]) => /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                justifyContent: 'space-between',
-                fontSize: 13
-              },
-              children: [/*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  color: C.t700
-                },
-                children: s
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontWeight: 600,
-                  color: c
-                },
-                children: m
-              }, void 0, false)]
-            }, s, true))
-          }, void 0, false)]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+      label: "local"
+    }), /*#__PURE__*/React.createElement("div", {
+      style: {
+        flex: 1
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'flex-start',
+        marginBottom: 8
+      }
+    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 16,
+        fontWeight: 600,
+        color: C.t900
+      }
+    }, op.tipo), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        gap: 10,
+        fontSize: 13,
+        color: C.t500,
+        marginTop: 4
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: 4
+      }
+    }, /*#__PURE__*/React.createElement(Ic.MapPin, {
+      size: 13,
+      color: C.t400
+    }), op.loc), /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: C.t300
+      }
+    }, "·"), /*#__PURE__*/React.createElement("span", null, op.dist))), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 12,
+        fontWeight: 600,
+        padding: '4px 12px',
+        borderRadius: 12,
+        background: urg.bg,
+        color: urg.c
+      }
+    }, op.urgencia.charAt(0).toUpperCase() + op.urgencia.slice(1))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 13,
+        color: C.t500,
+        lineHeight: 1.5,
+        marginBottom: 12
+      }
+    }, op.desc), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        gap: 20,
+        alignItems: 'center'
+      }
+    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        color: C.t400
+      }
+    }, "Valor estimado"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 16,
+        fontWeight: 700,
+        color: C.t900
+      }
+    }, op.valor)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        color: C.t400
+      }
+    }, "Prazo"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 14,
+        fontWeight: 600,
+        color: C.t900
+      }
+    }, op.prazo)), /*#__PURE__*/React.createElement("div", {
+      style: {
+        marginLeft: 'auto',
+        display: 'flex',
+        gap: 8
+      }
+    }, /*#__PURE__*/React.createElement(Btn, {
+      variant: "secondary",
+      size: "sm"
+    }, "Ver detalhes"), /*#__PURE__*/React.createElement(Btn, {
+      variant: "green",
+      size: "sm",
+      icon: /*#__PURE__*/React.createElement(Ic.Check, {
+        size: 13,
+        color: "#fff"
+      })
+    }, "Aceitar"))))));
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 240,
+      flexShrink: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 14
+    }
+  }, "Seu perfil"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'center',
+      marginBottom: 14
+    }
+  }, /*#__PURE__*/React.createElement(Avatar, {
+    name: "Rafael Souza",
+    size: 44
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, "Rafael Souza"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 3
+    }
+  }, [...Array(5)].map((_, j) => /*#__PURE__*/React.createElement(Ic.Star, {
+    key: j,
+    size: 12,
+    color: C.orange500
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t500
+    }
+  }, "4.9")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8,
+      marginBottom: 16
+    }
+  }, [{
+    l: 'Obras concluídas',
+    v: '47'
+  }, {
+    l: 'No prazo',
+    v: '98%'
+  }, {
+    l: 'Avaliação média',
+    v: '4.9 ★'
+  }].map(k => /*#__PURE__*/React.createElement("div", {
+    key: k.l,
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      fontSize: 13
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t500
+    }
+  }, k.l), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 700,
+      color: C.t900
+    }
+  }, k.v)))), /*#__PURE__*/React.createElement(Btn, {
+    variant: "secondary",
+    onClick: () => onNavigate('perfil_op'),
+    style: {
+      width: '100%',
+      justifyContent: 'center'
+    }
+  }, "Ver perfil completo")), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '18px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 12
+    }
+  }, "Compatibilidade IA"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t500,
+      marginBottom: 12
+    }
+  }, "Oportunidades alinhadas ao seu histórico e especialidades."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8
+    }
+  }, [['Estrutura', 'Alta', C.green600], ['Concretagem', 'Alta', C.green600], ['Alvenaria', 'Média', C.orange600], ['Instalações', 'Baixa', C.red600]].map(([s, m, c]) => /*#__PURE__*/React.createElement("div", {
+    key: s,
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      fontSize: 13
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t700
+    }
+  }, s), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 600,
+      color: c
+    }
+  }, m))))))));
 };
 Object.assign(window, {
   NotificacoesScreen,
@@ -10997,7 +9992,6 @@ const {
 } = React;
 
 // ─── FINANCEIRO (PAINEL GERAL) ───────────────────────────────────────────────
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === FINANCEIRO === */
 
 const FinanceiroScreen = ({
@@ -11058,411 +10052,372 @@ const FinanceiroScreen = ({
     color: C.green600,
     time: '3d atrás'
   }];
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "financeiro",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV(SectionHeader, {
-      title: "Financeiro",
-      subtitle: `Saúde financeira e execução orçamentária de ${project.name}`,
-      action: /*#__PURE__*/_jsxDEV(Btn, {
-        variant: "secondary",
-        size: "sm",
-        icon: /*#__PURE__*/_jsxDEV(Ic.Download, {
-          size: 14
-        }, void 0, false),
-        children: "Exportar"
-      }, void 0, false)
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    title: "Financeiro",
+    subtitle: `Saúde financeira e execução orçamentária de ${project.name}`,
+    action: /*#__PURE__*/React.createElement(Btn, {
+      variant: "secondary",
+      size: "sm",
+      icon: /*#__PURE__*/React.createElement(Ic.Download, {
+        size: 14
+      })
+    }, "Exportar")
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4,1fr)',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, [{
+    label: 'Saldo Atual',
+    value: 'R$ 312k',
+    sub: '+R$ 48k vs. mês anterior',
+    sc: C.green600,
+    icon: /*#__PURE__*/React.createElement(Ic.Dollar, {
+      size: 22,
+      color: C.t300
+    })
+  }, {
+    label: 'A Receber (30d)',
+    value: 'R$ 185k',
+    sub: '4 títulos pendentes',
+    sc: C.blue600,
+    icon: /*#__PURE__*/React.createElement(Ic.TrendUp, {
+      size: 22,
+      color: C.t300
+    })
+  }, {
+    label: 'A Pagar (30d)',
+    value: 'R$ 94k',
+    sub: '2 vencendo em 7 dias',
+    sc: C.orange600,
+    icon: /*#__PURE__*/React.createElement(Ic.Clipboard, {
+      size: 22,
+      color: C.t300
+    })
+  }, {
+    label: 'Margem Projetada',
+    value: '28%',
+    sub: 'Meta: 30% — atenção',
+    sc: C.orange600,
+    icon: /*#__PURE__*/React.createElement(Ic.BarChart, {
+      size: 22,
+      color: C.t300
+    })
+  }].map(k => /*#__PURE__*/React.createElement(StatCard, {
+    key: k.label,
+    label: k.label,
+    value: k.value,
+    icon: k.icon,
+    sub: /*#__PURE__*/React.createElement("span", {
       style: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4,1fr)',
-        gap: 14,
-        marginBottom: 20
-      },
-      children: [{
-        label: 'Saldo Atual',
-        value: 'R$ 312k',
-        sub: '+R$ 48k vs. mês anterior',
-        sc: C.green600,
-        icon: /*#__PURE__*/_jsxDEV(Ic.Dollar, {
-          size: 22,
-          color: C.t300
-        }, void 0, false)
-      }, {
-        label: 'A Receber (30d)',
-        value: 'R$ 185k',
-        sub: '4 títulos pendentes',
-        sc: C.blue600,
-        icon: /*#__PURE__*/_jsxDEV(Ic.TrendUp, {
-          size: 22,
-          color: C.t300
-        }, void 0, false)
-      }, {
-        label: 'A Pagar (30d)',
-        value: 'R$ 94k',
-        sub: '2 vencendo em 7 dias',
-        sc: C.orange600,
-        icon: /*#__PURE__*/_jsxDEV(Ic.Clipboard, {
-          size: 22,
-          color: C.t300
-        }, void 0, false)
-      }, {
-        label: 'Margem Projetada',
-        value: '28%',
-        sub: 'Meta: 30% — atenção',
-        sc: C.orange600,
-        icon: /*#__PURE__*/_jsxDEV(Ic.BarChart, {
-          size: 22,
-          color: C.t300
-        }, void 0, false)
-      }].map(k => /*#__PURE__*/_jsxDEV(StatCard, {
-        label: k.label,
-        value: k.value,
-        icon: k.icon,
-        sub: /*#__PURE__*/_jsxDEV("span", {
-          style: {
-            fontSize: 12,
-            color: k.sc
-          },
-          children: k.sub
-        }, void 0, false)
-      }, k.label, false))
-    }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        gap: 16,
-        alignItems: 'flex-start'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '20px 24px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginBottom: 18
-            },
-            children: [/*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 15,
-                fontWeight: 600,
-                color: C.t900
-              },
-              children: "Recebido vs. Pago — 2025"
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 16,
-                fontSize: 12,
-                color: C.t500
-              },
-              children: [/*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 5
-                },
-                children: [/*#__PURE__*/_jsxDEV("span", {
-                  style: {
-                    width: 10,
-                    height: 10,
-                    borderRadius: 2,
-                    background: C.blue500,
-                    display: 'inline-block'
-                  }
-                }, void 0, false), " Recebido"]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 5
-                },
-                children: [/*#__PURE__*/_jsxDEV("span", {
-                  style: {
-                    width: 10,
-                    height: 10,
-                    borderRadius: 2,
-                    background: C.orange500,
-                    display: 'inline-block'
-                  }
-                }, void 0, false), " Pago"]
-              }, void 0, true)]
-            }, void 0, true)]
-          }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 10,
-              alignItems: 'flex-end',
-              height: 150
-            },
-            children: meses.map((m, i) => /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: 4
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: '100%',
-                  display: 'flex',
-                  gap: 3,
-                  alignItems: 'flex-end',
-                  height: 130
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    flex: 1,
-                    background: C.blue500,
-                    borderRadius: '3px 3px 0 0',
-                    height: `${recebido[i] / maxVal * 100}%`
-                  }
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    flex: 1,
-                    background: C.orange500,
-                    borderRadius: '3px 3px 0 0',
-                    height: `${pagos[i] / maxVal * 100}%`,
-                    opacity: 0.75
-                  }
-                }, void 0, false)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 11,
-                  color: C.t400
-                },
-                children: m
-              }, void 0, false)]
-            }, m, true))
-          }, void 0, false)]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '14px 18px',
-            background: C.orange100,
-            border: `1px solid ${C.orange500}30`
-          },
-          children: /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 12,
-              alignItems: 'center'
-            },
-            children: [/*#__PURE__*/_jsxDEV(Ic.AlertTriangle, {
-              size: 20,
-              color: C.orange600
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 13,
-                  fontWeight: 600,
-                  color: C.orange600
-                },
-                children: "Alerta MIS Finance"
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 13,
-                  color: C.t700,
-                  marginTop: 1
-                },
-                children: "R$ 32.000 vence em 5 dias sem cobertura suficiente de saldo."
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV(Btn, {
-              variant: "ghost",
-              size: "sm",
-              onClick: () => onNavigate('fluxo_caixa'),
-              style: {
-                color: C.orange600,
-                border: `1px solid ${C.orange500}`,
-                borderRadius: 8,
-                padding: '5px 12px'
-              },
-              children: "Ver fluxo"
-            }, void 0, false)]
-          }, void 0, true)
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 12
-          },
-          children: subMods.map(s => /*#__PURE__*/_jsxDEV(Card, {
-            onClick: () => onNavigate(s.id),
-            style: {
-              padding: '18px 20px',
-              cursor: 'pointer'
-            },
-            children: /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                gap: 14,
-                alignItems: 'center'
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  width: 44,
-                  height: 44,
-                  borderRadius: 12,
-                  background: s.bg,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                },
-                children: /*#__PURE__*/_jsxDEV(s.icon, {
-                  size: 20,
-                  color: s.ic
-                }, void 0, false)
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  flex: 1
-                },
-                children: [/*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 14,
-                    fontWeight: 600,
-                    color: C.t900
-                  },
-                  children: s.label
-                }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t500,
-                    marginTop: 2
-                  },
-                  children: s.count
-                }, void 0, false)]
-              }, void 0, true), /*#__PURE__*/_jsxDEV(Ic.ChevronRight, {
-                size: 16,
-                color: C.t300
-              }, void 0, false)]
-            }, void 0, true)
-          }, s.id, false))
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          width: 220,
-          flexShrink: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 14
-            },
-            children: "Projeto atual"
-          }, void 0, false), [{
-            name: project.name,
-            valor: formatProjectBudget(project.budget),
-            pct: project.pct || 0,
-            color: (project.pct || 0) >= 70 ? C.green500 : C.blue500
-          }].map(p => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              marginBottom: 14
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                display: 'flex',
-                justifyContent: 'space-between',
-                marginBottom: 5
-              },
-              children: [/*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 12,
-                  color: C.t700
-                },
-                children: p.name
-              }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-                style: {
-                  fontSize: 12,
-                  fontWeight: 600,
-                  color: C.t900
-                },
-                children: p.valor
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV(ProgressBar, {
-              value: p.pct,
-              color: p.color,
-              height: 5
-            }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-              style: {
-                fontSize: 11,
-                color: C.t400,
-                marginTop: 2
-              },
-              children: [p.pct, "% executado"]
-            }, void 0, true)]
-          }, p.name, true))]
-        }, void 0, true), /*#__PURE__*/_jsxDEV(Card, {
-          style: {
-            padding: '16px 18px'
-          },
-          children: [/*#__PURE__*/_jsxDEV("div", {
-            style: {
-              fontSize: 13,
-              fontWeight: 600,
-              color: C.t900,
-              marginBottom: 12
-            },
-            children: "Movimentações Recentes"
-          }, void 0, false), movs.map((m, i) => /*#__PURE__*/_jsxDEV("div", {
-            style: {
-              display: 'flex',
-              gap: 8,
-              marginBottom: 12,
-              alignItems: 'flex-start'
-            },
-            children: [/*#__PURE__*/_jsxDEV("div", {
-              style: {
-                flex: 1
-              },
-              children: [/*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 12,
-                  color: C.t700
-                },
-                children: m.desc
-              }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  fontSize: 11,
-                  color: C.t400
-                },
-                children: m.time
-              }, void 0, false)]
-            }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-              style: {
-                fontSize: 12,
-                fontWeight: 600,
-                color: m.color,
-                whiteSpace: 'nowrap'
-              },
-              children: m.valor
-            }, void 0, false)]
-          }, i, true))]
-        }, void 0, true)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+        fontSize: 12,
+        color: k.sc
+      }
+    }, k.sub)
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '20px 24px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, "Recebido vs. Pago — 2025"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16,
+      fontSize: 12,
+      color: C.t500
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 5
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 10,
+      height: 10,
+      borderRadius: 2,
+      background: C.blue500,
+      display: 'inline-block'
+    }
+  }), " Recebido"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 5
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 10,
+      height: 10,
+      borderRadius: 2,
+      background: C.orange500,
+      display: 'inline-block'
+    }
+  }), " Pago"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'flex-end',
+      height: 150
+    }
+  }, meses.map((m, i) => /*#__PURE__*/React.createElement("div", {
+    key: m,
+    style: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 4
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: '100%',
+      display: 'flex',
+      gap: 3,
+      alignItems: 'flex-end',
+      height: 130
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      background: C.blue500,
+      borderRadius: '3px 3px 0 0',
+      height: `${recebido[i] / maxVal * 100}%`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      background: C.orange500,
+      borderRadius: '3px 3px 0 0',
+      height: `${pagos[i] / maxVal * 100}%`,
+      opacity: 0.75
+    }
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: C.t400
+    }
+  }, m))))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '14px 18px',
+      background: C.orange100,
+      border: `1px solid ${C.orange500}30`
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 12,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.AlertTriangle, {
+    size: 20,
+    color: C.orange600
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.orange600
+    }
+  }, "Alerta MIS Finance"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: C.t700,
+      marginTop: 1
+    }
+  }, "R$ 32.000 vence em 5 dias sem cobertura suficiente de saldo.")), /*#__PURE__*/React.createElement(Btn, {
+    variant: "ghost",
+    size: "sm",
+    onClick: () => onNavigate('fluxo_caixa'),
+    style: {
+      color: C.orange600,
+      border: `1px solid ${C.orange500}`,
+      borderRadius: 8,
+      padding: '5px 12px'
+    }
+  }, "Ver fluxo"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 12
+    }
+  }, subMods.map(s => /*#__PURE__*/React.createElement(Card, {
+    key: s.id,
+    onClick: () => onNavigate(s.id),
+    style: {
+      padding: '18px 20px',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 14,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 44,
+      height: 44,
+      borderRadius: 12,
+      background: s.bg,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(s.icon, {
+    size: 20,
+    color: s.ic
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 14,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, s.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginTop: 2
+    }
+  }, s.count)), /*#__PURE__*/React.createElement(Ic.ChevronRight, {
+    size: 16,
+    color: C.t300
+  })))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 220,
+      flexShrink: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 14
+    }
+  }, "Projeto atual"), [{
+    name: project.name,
+    valor: formatProjectBudget(project.budget),
+    pct: project.pct || 0,
+    color: (project.pct || 0) >= 70 ? C.green500 : C.blue500
+  }].map(p => /*#__PURE__*/React.createElement("div", {
+    key: p.name,
+    style: {
+      marginBottom: 14
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      marginBottom: 5
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: C.t700
+    }
+  }, p.name), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, p.valor)), /*#__PURE__*/React.createElement(ProgressBar, {
+    value: p.pct,
+    color: p.color,
+    height: 5
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t400,
+      marginTop: 2
+    }
+  }, p.pct, "% executado")))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '16px 18px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: C.t900,
+      marginBottom: 12
+    }
+  }, "Movimentações Recentes"), movs.map((m, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 8,
+      marginBottom: 12,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t700
+    }
+  }, m.desc), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.t400
+    }
+  }, m.time)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      color: m.color,
+      whiteSpace: 'nowrap'
+    }
+  }, m.valor)))))));
 };
 
 // ─── CONTAS A RECEBER ────────────────────────────────────────────────────────
@@ -11525,218 +10480,191 @@ const ContasReceberScreen = ({
   const totalReceber = 'R$ 121.600';
   const totalVencido = 'R$ 80.000';
   const totalRecebido = 'R$ 35.000';
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "contas_receber",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: 10,
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV("button", {
-        onClick: () => onNavigate('financeiro'),
-        style: {
-          background: 'none',
-          border: 'none',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 6,
-          color: C.t500,
-          fontSize: 14,
-          fontFamily: 'inherit'
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.ArrowLeft, {
-          size: 16
-        }, void 0, false), " Financeiro"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-        style: {
-          color: C.t300
-        },
-        children: "›"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-        style: {
-          fontSize: 14,
-          color: C.t900,
-          fontWeight: 500
-        },
-        children: "Contas a Receber"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3,1fr)',
-        gap: 14,
-        marginBottom: 20
-      },
-      children: [{
-        label: 'A Receber Total',
-        value: totalReceber,
-        color: C.blue600
-      }, {
-        label: 'Vencido',
-        value: totalVencido,
-        color: C.red600
-      }, {
-        label: 'Recebido no Mês',
-        value: totalRecebido,
-        color: C.green600
-      }].map(t => /*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '16px 20px'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 12,
-            color: C.t500,
-            marginBottom: 6
-          },
-          children: t.label
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 26,
-            fontWeight: 700,
-            color: t.color
-          },
-          children: t.value
-        }, void 0, false)]
-      }, t.label, true))
-    }, void 0, false), /*#__PURE__*/_jsxDEV(Card, {
-      style: {
-        padding: '20px 24px'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: 16
-        },
-        children: [/*#__PURE__*/_jsxDEV(TabBar, {
-          tabs: [{
-            id: 'todos',
-            label: 'Todos'
-          }, {
-            id: 'pendentes',
-            label: 'A Receber'
-          }, {
-            id: 'vencidos',
-            label: 'Vencidos'
-          }, {
-            id: 'recebidos',
-            label: 'Recebidos'
-          }],
-          active: filtro,
-          onChange: setFiltro
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-          variant: "primary",
-          size: "sm",
-          icon: /*#__PURE__*/_jsxDEV(Ic.Plus, {
-            size: 14
-          }, void 0, false),
-          children: "Novo título"
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("table", {
-        style: {
-          width: '100%',
-          fontSize: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV("thead", {
-          children: /*#__PURE__*/_jsxDEV("tr", {
-            style: {
-              borderBottom: `1px solid ${C.border}`
-            },
-            children: ['Descrição', 'Cliente', 'Vencimento', 'Valor', 'Status', 'Ações'].map(h => /*#__PURE__*/_jsxDEV("th", {
-              style: {
-                textAlign: 'left',
-                padding: '8px 12px',
-                fontSize: 12,
-                fontWeight: 600,
-                color: C.t500
-              },
-              children: h
-            }, h, false))
-          }, void 0, false)
-        }, void 0, false), /*#__PURE__*/_jsxDEV("tbody", {
-          children: filtrados.map(t => /*#__PURE__*/_jsxDEV("tr", {
-            style: {
-              borderBottom: `1px solid ${C.borderLight}`
-            },
-            children: [/*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px',
-                color: C.t900,
-                fontWeight: 500
-              },
-              children: t.desc
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px',
-                color: C.t700
-              },
-              children: t.cliente
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px',
-                color: t.status === 'vencido' ? C.red600 : C.t700
-              },
-              children: t.venc
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px',
-                fontWeight: 600,
-                color: C.t900
-              },
-              children: t.valor
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px'
-              },
-              children: /*#__PURE__*/_jsxDEV(Badge, {
-                color: colorMap[t.status],
-                dot: true,
-                children: t.statusLabel
-              }, void 0, false)
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px'
-              },
-              children: /*#__PURE__*/_jsxDEV("div", {
-                style: {
-                  display: 'flex',
-                  gap: 6
-                },
-                children: [t.status !== 'recebido' && /*#__PURE__*/_jsxDEV("button", {
-                  style: {
-                    fontSize: 12,
-                    color: C.navActive,
-                    border: 'none',
-                    background: 'none',
-                    cursor: 'pointer',
-                    fontFamily: 'inherit',
-                    fontWeight: 700
-                  },
-                  children: "Marcar recebido"
-                }, void 0, false), /*#__PURE__*/_jsxDEV("button", {
-                  style: {
-                    fontSize: 12,
-                    color: C.t500,
-                    border: 'none',
-                    background: 'none',
-                    cursor: 'pointer',
-                    fontFamily: 'inherit'
-                  },
-                  children: "Cobrança"
-                }, void 0, false)]
-              }, void 0, true)
-            }, void 0, false)]
-          }, t.id, true))
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => onNavigate('financeiro'),
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6,
+      color: C.t500,
+      fontSize: 14,
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.ArrowLeft, {
+    size: 16
+  }), " Financeiro"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t300
+    }
+  }, "›"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      color: C.t900,
+      fontWeight: 500
+    }
+  }, "Contas a Receber")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3,1fr)',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, [{
+    label: 'A Receber Total',
+    value: totalReceber,
+    color: C.blue600
+  }, {
+    label: 'Vencido',
+    value: totalVencido,
+    color: C.red600
+  }, {
+    label: 'Recebido no Mês',
+    value: totalRecebido,
+    color: C.green600
+  }].map(t => /*#__PURE__*/React.createElement(Card, {
+    key: t.label,
+    style: {
+      padding: '16px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginBottom: 6
+    }
+  }, t.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 26,
+      fontWeight: 700,
+      color: t.color
+    }
+  }, t.value)))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '20px 24px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 16
+    }
+  }, /*#__PURE__*/React.createElement(TabBar, {
+    tabs: [{
+      id: 'todos',
+      label: 'Todos'
+    }, {
+      id: 'pendentes',
+      label: 'A Receber'
+    }, {
+      id: 'vencidos',
+      label: 'Vencidos'
+    }, {
+      id: 'recebidos',
+      label: 'Recebidos'
+    }],
+    active: filtro,
+    onChange: setFiltro
+  }), /*#__PURE__*/React.createElement(Btn, {
+    variant: "primary",
+    size: "sm",
+    icon: /*#__PURE__*/React.createElement(Ic.Plus, {
+      size: 14
+    })
+  }, "Novo título")), /*#__PURE__*/React.createElement("table", {
+    style: {
+      width: '100%',
+      fontSize: 14
+    }
+  }, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", {
+    style: {
+      borderBottom: `1px solid ${C.border}`
+    }
+  }, ['Descrição', 'Cliente', 'Vencimento', 'Valor', 'Status', 'Ações'].map(h => /*#__PURE__*/React.createElement("th", {
+    key: h,
+    style: {
+      textAlign: 'left',
+      padding: '8px 12px',
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t500
+    }
+  }, h)))), /*#__PURE__*/React.createElement("tbody", null, filtrados.map(t => /*#__PURE__*/React.createElement("tr", {
+    key: t.id,
+    style: {
+      borderBottom: `1px solid ${C.borderLight}`
+    }
+  }, /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px',
+      color: C.t900,
+      fontWeight: 500
+    }
+  }, t.desc), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px',
+      color: C.t700
+    }
+  }, t.cliente), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px',
+      color: t.status === 'vencido' ? C.red600 : C.t700
+    }
+  }, t.venc), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px',
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, t.valor), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px'
+    }
+  }, /*#__PURE__*/React.createElement(Badge, {
+    color: colorMap[t.status],
+    dot: true
+  }, t.statusLabel)), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 6
+    }
+  }, t.status !== 'recebido' && /*#__PURE__*/React.createElement("button", {
+    style: {
+      fontSize: 12,
+      color: C.navActive,
+      border: 'none',
+      background: 'none',
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      fontWeight: 700
+    }
+  }, "Marcar recebido"), /*#__PURE__*/React.createElement("button", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      border: 'none',
+      background: 'none',
+      cursor: 'pointer',
+      fontFamily: 'inherit'
+    }
+  }, "Cobrança")))))))));
 };
 
 // ─── CONTAS A PAGAR ──────────────────────────────────────────────────────────
@@ -11801,210 +10729,183 @@ const ContasPagarScreen = ({
     if (filtro === 'pagos') return t.status === 'pago';
     return true;
   });
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "contas_pagar",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: 10,
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV("button", {
-        onClick: () => onNavigate('financeiro'),
-        style: {
-          background: 'none',
-          border: 'none',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 6,
-          color: C.t500,
-          fontSize: 14,
-          fontFamily: 'inherit'
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.ArrowLeft, {
-          size: 16
-        }, void 0, false), " Financeiro"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-        style: {
-          color: C.t300
-        },
-        children: "›"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-        style: {
-          fontSize: 14,
-          color: C.t900,
-          fontWeight: 500
-        },
-        children: "Contas a Pagar"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3,1fr)',
-        gap: 14,
-        marginBottom: 20
-      },
-      children: [{
-        label: 'A Pagar Total',
-        value: 'R$ 62.500',
-        color: C.orange600
-      }, {
-        label: 'Vencido',
-        value: 'R$ 9.600',
-        color: C.red600
-      }, {
-        label: 'Pago no Mês',
-        value: 'R$ 31.200',
-        color: C.green600
-      }].map(t => /*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '16px 20px'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 12,
-            color: C.t500,
-            marginBottom: 6
-          },
-          children: t.label
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 26,
-            fontWeight: 700,
-            color: t.color
-          },
-          children: t.value
-        }, void 0, false)]
-      }, t.label, true))
-    }, void 0, false), /*#__PURE__*/_jsxDEV(Card, {
-      style: {
-        padding: '20px 24px'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: 16
-        },
-        children: [/*#__PURE__*/_jsxDEV(TabBar, {
-          tabs: [{
-            id: 'todos',
-            label: 'Todos'
-          }, {
-            id: 'pendentes',
-            label: 'A Pagar'
-          }, {
-            id: 'vencidos',
-            label: 'Vencidos'
-          }, {
-            id: 'pagos',
-            label: 'Pagos'
-          }],
-          active: filtro,
-          onChange: setFiltro
-        }, void 0, false), /*#__PURE__*/_jsxDEV(Btn, {
-          variant: "primary",
-          size: "sm",
-          icon: /*#__PURE__*/_jsxDEV(Ic.Plus, {
-            size: 14
-          }, void 0, false),
-          children: "Nova despesa"
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("table", {
-        style: {
-          width: '100%',
-          fontSize: 14
-        },
-        children: [/*#__PURE__*/_jsxDEV("thead", {
-          children: /*#__PURE__*/_jsxDEV("tr", {
-            style: {
-              borderBottom: `1px solid ${C.border}`
-            },
-            children: ['Descrição', 'Fornecedor', 'Vencimento', 'Valor', 'Centro de Custo', 'Status', 'Ações'].map(h => /*#__PURE__*/_jsxDEV("th", {
-              style: {
-                textAlign: 'left',
-                padding: '8px 12px',
-                fontSize: 12,
-                fontWeight: 600,
-                color: C.t500
-              },
-              children: h
-            }, h, false))
-          }, void 0, false)
-        }, void 0, false), /*#__PURE__*/_jsxDEV("tbody", {
-          children: filtrados.map(t => /*#__PURE__*/_jsxDEV("tr", {
-            style: {
-              borderBottom: `1px solid ${C.borderLight}`
-            },
-            children: [/*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px',
-                color: C.t900,
-                fontWeight: 500
-              },
-              children: t.desc
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px',
-                color: C.t700
-              },
-              children: t.fornecedor
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px',
-                color: t.status === 'vencido' ? C.red600 : C.t700
-              },
-              children: t.venc
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px',
-                fontWeight: 600,
-                color: C.t900
-              },
-              children: t.valor
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px'
-              },
-              children: /*#__PURE__*/_jsxDEV(Badge, {
-                color: "gray",
-                children: t.cc
-              }, void 0, false)
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px'
-              },
-              children: /*#__PURE__*/_jsxDEV(Badge, {
-                color: colorMap[t.status],
-                dot: true,
-                children: t.statusLabel
-              }, void 0, false)
-            }, void 0, false), /*#__PURE__*/_jsxDEV("td", {
-              style: {
-                padding: '12px'
-              },
-              children: t.status !== 'pago' && /*#__PURE__*/_jsxDEV("button", {
-                style: {
-                  fontSize: 12,
-                  color: C.navActive,
-                  border: 'none',
-                  background: 'none',
-                  cursor: 'pointer',
-                  fontFamily: 'inherit',
-                  fontWeight: 700
-                },
-                children: "Marcar pago"
-              }, void 0, false)
-            }, void 0, false)]
-          }, t.id, true))
-        }, void 0, false)]
-      }, void 0, true)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => onNavigate('financeiro'),
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6,
+      color: C.t500,
+      fontSize: 14,
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.ArrowLeft, {
+    size: 16
+  }), " Financeiro"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t300
+    }
+  }, "›"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      color: C.t900,
+      fontWeight: 500
+    }
+  }, "Contas a Pagar")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3,1fr)',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, [{
+    label: 'A Pagar Total',
+    value: 'R$ 62.500',
+    color: C.orange600
+  }, {
+    label: 'Vencido',
+    value: 'R$ 9.600',
+    color: C.red600
+  }, {
+    label: 'Pago no Mês',
+    value: 'R$ 31.200',
+    color: C.green600
+  }].map(t => /*#__PURE__*/React.createElement(Card, {
+    key: t.label,
+    style: {
+      padding: '16px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginBottom: 6
+    }
+  }, t.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 26,
+      fontWeight: 700,
+      color: t.color
+    }
+  }, t.value)))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '20px 24px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 16
+    }
+  }, /*#__PURE__*/React.createElement(TabBar, {
+    tabs: [{
+      id: 'todos',
+      label: 'Todos'
+    }, {
+      id: 'pendentes',
+      label: 'A Pagar'
+    }, {
+      id: 'vencidos',
+      label: 'Vencidos'
+    }, {
+      id: 'pagos',
+      label: 'Pagos'
+    }],
+    active: filtro,
+    onChange: setFiltro
+  }), /*#__PURE__*/React.createElement(Btn, {
+    variant: "primary",
+    size: "sm",
+    icon: /*#__PURE__*/React.createElement(Ic.Plus, {
+      size: 14
+    })
+  }, "Nova despesa")), /*#__PURE__*/React.createElement("table", {
+    style: {
+      width: '100%',
+      fontSize: 14
+    }
+  }, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", {
+    style: {
+      borderBottom: `1px solid ${C.border}`
+    }
+  }, ['Descrição', 'Fornecedor', 'Vencimento', 'Valor', 'Centro de Custo', 'Status', 'Ações'].map(h => /*#__PURE__*/React.createElement("th", {
+    key: h,
+    style: {
+      textAlign: 'left',
+      padding: '8px 12px',
+      fontSize: 12,
+      fontWeight: 600,
+      color: C.t500
+    }
+  }, h)))), /*#__PURE__*/React.createElement("tbody", null, filtrados.map(t => /*#__PURE__*/React.createElement("tr", {
+    key: t.id,
+    style: {
+      borderBottom: `1px solid ${C.borderLight}`
+    }
+  }, /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px',
+      color: C.t900,
+      fontWeight: 500
+    }
+  }, t.desc), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px',
+      color: C.t700
+    }
+  }, t.fornecedor), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px',
+      color: t.status === 'vencido' ? C.red600 : C.t700
+    }
+  }, t.venc), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px',
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, t.valor), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px'
+    }
+  }, /*#__PURE__*/React.createElement(Badge, {
+    color: "gray"
+  }, t.cc)), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px'
+    }
+  }, /*#__PURE__*/React.createElement(Badge, {
+    color: colorMap[t.status],
+    dot: true
+  }, t.statusLabel)), /*#__PURE__*/React.createElement("td", {
+    style: {
+      padding: '12px'
+    }
+  }, t.status !== 'pago' && /*#__PURE__*/React.createElement("button", {
+    style: {
+      fontSize: 12,
+      color: C.navActive,
+      border: 'none',
+      background: 'none',
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      fontWeight: 700
+    }
+  }, "Marcar pago"))))))));
 };
 
 // ─── FLUXO DE CAIXA ──────────────────────────────────────────────────────────
@@ -12057,168 +10958,157 @@ const FluxoCaixaScreen = ({
   const chartLabelColor = isDark ? C.t400 : '#5B6470';
   const chartDotFill = isDark ? '#FFFFFF' : '#EEF4FF';
   const chartDotStroke = chartLineColor;
-  return /*#__PURE__*/_jsxDEV(AppShell, {
+  return /*#__PURE__*/React.createElement(AppShell, {
     active: "fluxo_caixa",
-    onNavigate: onNavigate,
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: 10,
-        marginBottom: 20
-      },
-      children: [/*#__PURE__*/_jsxDEV("button", {
-        onClick: () => onNavigate('financeiro'),
-        style: {
-          background: 'none',
-          border: 'none',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 6,
-          color: C.t500,
-          fontSize: 14,
-          fontFamily: 'inherit'
-        },
-        children: [/*#__PURE__*/_jsxDEV(Ic.ArrowLeft, {
-          size: 16
-        }, void 0, false), " Financeiro"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("span", {
-        style: {
-          color: C.t300
-        },
-        children: "›"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("span", {
-        style: {
-          fontSize: 14,
-          color: C.t900,
-          fontWeight: 500
-        },
-        children: "Fluxo de Caixa"
-      }, void 0, false)]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4,1fr)',
-        gap: 14,
-        marginBottom: 20
-      },
-      children: [{
-        label: 'Saldo Atual',
-        value: 'R$ 312k',
-        color: C.blue600
-      }, {
-        label: 'Mín. Projetado',
-        value: 'R$ 302k',
-        color: C.orange600
-      }, {
-        label: 'Máx. Projetado',
-        value: 'R$ 363k',
-        color: C.green600
-      }, {
-        label: 'Saldo 30d',
-        value: 'R$ 331k',
-        color: C.blue600
-      }].map(k => /*#__PURE__*/_jsxDEV(Card, {
-        style: {
-          padding: '16px 20px'
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 12,
-            color: C.t500,
-            marginBottom: 6
-          },
-          children: k.label
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 26,
-            fontWeight: 700,
-            color: k.color
-          },
-          children: k.value
-        }, void 0, false)]
-      }, k.label, true))
-    }, void 0, false), /*#__PURE__*/_jsxDEV(Card, {
-      style: {
-        padding: '20px 24px',
-        marginBottom: 14
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: 20
-        },
-        children: [/*#__PURE__*/_jsxDEV("span", {
-          style: {
-            fontSize: 15,
-            fontWeight: 600,
-            color: C.t900
-          },
-          children: "Saldo Projetado — Junho 2025"
-        }, void 0, false), /*#__PURE__*/_jsxDEV(TabBar, {
-          tabs: [{
-            id: 'semana',
-            label: 'Semana'
-          }, {
-            id: 'mes',
-            label: 'Mês'
-          }, {
-            id: 'trimestre',
-            label: 'Trimestre'
-          }],
-          active: periodo,
-          onChange: setPeriodo
-        }, void 0, false)]
-      }, void 0, true), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          overflowX: 'auto'
-        },
-        children: /*#__PURE__*/_jsxDEV("svg", {
-          viewBox: `-10 -10 ${W + 20} ${H + 30}`,
-          style: {
-            width: '100%',
-            minWidth: 400,
-            height: 160
-          },
-          children: [[0, 0.25, 0.5, 0.75, 1].map(t => /*#__PURE__*/_jsxDEV("line", {
-            x1: 0,
-            x2: W,
-            y1: H - t * H,
-            y2: H - t * H,
-            stroke: chartGridColor,
-            strokeWidth: 1.2
-          }, t, false)), /*#__PURE__*/_jsxDEV("polygon", {
-            points: `0,${H} ${pts} ${W},${H}`,
-            fill: chartAreaColor
-          }, void 0, false), /*#__PURE__*/_jsxDEV("polyline", {
-            points: pts,
-            fill: "none",
-            stroke: chartLineColor,
-            strokeWidth: 2.75,
-            strokeLinecap: "round",
-            strokeLinejoin: "round"
-          }, void 0, false), saldos.map((s, i) => /*#__PURE__*/_jsxDEV("circle", {
-            cx: i / (saldos.length - 1) * W,
-            cy: H - (s - minS) / range * H,
-            r: 4.5,
-            fill: chartDotFill,
-            stroke: chartDotStroke,
-            strokeWidth: 2.25
-          }, i, false)), dados.map((d, i) => /*#__PURE__*/_jsxDEV("text", {
-            x: i / (saldos.length - 1) * W,
-            y: H + 20,
-            textAnchor: "middle",
-            fontSize: 11,
-            fill: chartLabelColor,
-            children: d.data
-          }, i, false))]
-        }, void 0, true)
-      }, void 0, false)]
-    }, void 0, true)]
-  }, void 0, true);
+    onNavigate: onNavigate
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => onNavigate('financeiro'),
+    style: {
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6,
+      color: C.t500,
+      fontSize: 14,
+      fontFamily: 'inherit'
+    }
+  }, /*#__PURE__*/React.createElement(Ic.ArrowLeft, {
+    size: 16
+  }), " Financeiro"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.t300
+    }
+  }, "›"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      color: C.t900,
+      fontWeight: 500
+    }
+  }, "Fluxo de Caixa")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4,1fr)',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, [{
+    label: 'Saldo Atual',
+    value: 'R$ 312k',
+    color: C.blue600
+  }, {
+    label: 'Mín. Projetado',
+    value: 'R$ 302k',
+    color: C.orange600
+  }, {
+    label: 'Máx. Projetado',
+    value: 'R$ 363k',
+    color: C.green600
+  }, {
+    label: 'Saldo 30d',
+    value: 'R$ 331k',
+    color: C.blue600
+  }].map(k => /*#__PURE__*/React.createElement(Card, {
+    key: k.label,
+    style: {
+      padding: '16px 20px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.t500,
+      marginBottom: 6
+    }
+  }, k.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 26,
+      fontWeight: 700,
+      color: k.color
+    }
+  }, k.value)))), /*#__PURE__*/React.createElement(Card, {
+    style: {
+      padding: '20px 24px',
+      marginBottom: 14
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      color: C.t900
+    }
+  }, "Saldo Projetado — Junho 2025"), /*#__PURE__*/React.createElement(TabBar, {
+    tabs: [{
+      id: 'semana',
+      label: 'Semana'
+    }, {
+      id: 'mes',
+      label: 'Mês'
+    }, {
+      id: 'trimestre',
+      label: 'Trimestre'
+    }],
+    active: periodo,
+    onChange: setPeriodo
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      overflowX: 'auto'
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    viewBox: `-10 -10 ${W + 20} ${H + 30}`,
+    style: {
+      width: '100%',
+      minWidth: 400,
+      height: 160
+    }
+  }, [0, 0.25, 0.5, 0.75, 1].map(t => /*#__PURE__*/React.createElement("line", {
+    key: t,
+    x1: 0,
+    x2: W,
+    y1: H - t * H,
+    y2: H - t * H,
+    stroke: chartGridColor,
+    strokeWidth: 1.2
+  })), /*#__PURE__*/React.createElement("polygon", {
+    points: `0,${H} ${pts} ${W},${H}`,
+    fill: chartAreaColor
+  }), /*#__PURE__*/React.createElement("polyline", {
+    points: pts,
+    fill: "none",
+    stroke: chartLineColor,
+    strokeWidth: 2.75,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), saldos.map((s, i) => /*#__PURE__*/React.createElement("circle", {
+    key: i,
+    cx: i / (saldos.length - 1) * W,
+    cy: H - (s - minS) / range * H,
+    r: 4.5,
+    fill: chartDotFill,
+    stroke: chartDotStroke,
+    strokeWidth: 2.25
+  })), dados.map((d, i) => /*#__PURE__*/React.createElement("text", {
+    key: i,
+    x: i / (saldos.length - 1) * W,
+    y: H + 20,
+    textAnchor: "middle",
+    fontSize: 11,
+    fill: chartLabelColor
+  }, d.data))))));
 };
 Object.assign(window, {
   FinanceiroScreen,
@@ -12447,7 +11337,6 @@ Object.assign(window, {
   MedicoesScreen,
   AvaliacoesScreen
 });
-import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 /* === APP === */
 
 const SCREEN_MAP = {
@@ -12525,7 +11414,7 @@ const App = () => {
     window.scrollTo(0, 0);
   };
   const ScreenComponent = SCREEN_MAP[screen];
-  if (!ScreenComponent) return /*#__PURE__*/_jsxDEV("div", {
+  if (!ScreenComponent) return /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh',
       display: 'flex',
@@ -12534,21 +11423,18 @@ const App = () => {
       background: C.bg,
       flexDirection: 'column',
       gap: 16
-    },
-    children: [/*#__PURE__*/_jsxDEV("div", {
-      style: {
-        fontSize: 18,
-        color: C.t500
-      },
-      children: ["Tela \"", screen, "\" não encontrada"]
-    }, void 0, true), /*#__PURE__*/_jsxDEV(Btn, {
-      onClick: () => navigate('login'),
-      children: "Voltar ao início"
-    }, void 0, false)]
-  }, void 0, true);
-  return /*#__PURE__*/_jsxDEV(ScreenComponent, {
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 18,
+      color: C.t500
+    }
+  }, "Tela \"", screen, "\" não encontrada"), /*#__PURE__*/React.createElement(Btn, {
+    onClick: () => navigate('login')
+  }, "Voltar ao início"));
+  return /*#__PURE__*/React.createElement(ScreenComponent, {
     onNavigate: navigate
-  }, void 0, false);
+  });
 };
 
 // ─── Quick navigation panel (dev helper) ─────────────
@@ -12588,129 +11474,120 @@ const QuickNav = ({
     screens: [['resolver_problema', 'Resolver Problema'], ['marketplace', 'Marketplace'], ['fornecedor', 'Painel Fornecedor'], ['cotacoes', 'Cotações'], ['pedidos', 'Pedidos e NF'], ['avaliacoes', 'Avaliações']]
   }];
   const landingLinks = [['Landing Page', 'Landing Page.html'], ['Acesso / Login', 'Landing Page.html#acesso']];
-  return /*#__PURE__*/_jsxDEV("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       position: 'fixed',
       bottom: 24,
       right: 24,
       zIndex: 9999
+    }
+  }, open && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      bottom: 52,
+      right: 0,
+      background: '#fff',
+      borderRadius: 16,
+      boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
+      border: `1px solid ${C.border}`,
+      padding: '12px',
+      width: 320,
+      maxHeight: '70vh',
+      overflowY: 'auto'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 700,
+      color: C.t400,
+      letterSpacing: 0.5,
+      marginBottom: 8,
+      padding: '0 4px'
+    }
+  }, "NAVEGAR PARA TELA"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      color: C.t400,
+      padding: '4px 8px'
+    }
+  }, "LANDING PAGE"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 4
+    }
+  }, landingLinks.map(([label, url]) => /*#__PURE__*/React.createElement("a", {
+    key: url,
+    href: url,
+    style: {
+      padding: '5px 10px',
+      borderRadius: 8,
+      border: `1px solid ${C.navActive || '#1C3A2A'}`,
+      background: C.navActive || '#1C3A2A',
+      fontSize: 12,
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      color: '#fff',
+      transition: 'all 0.1s',
+      textDecoration: 'none'
+    }
+  }, label)))), groups.map(g => /*#__PURE__*/React.createElement("div", {
+    key: g.label,
+    style: {
+      marginBottom: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      color: C.t400,
+      padding: '4px 8px'
+    }
+  }, g.label.toUpperCase()), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 4
+    }
+  }, g.screens.map(([id, label]) => /*#__PURE__*/React.createElement("button", {
+    key: id,
+    onClick: () => {
+      onNavigate(id);
+      setOpen(false);
     },
-    children: [open && /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        position: 'absolute',
-        bottom: 52,
-        right: 0,
-        background: '#fff',
-        borderRadius: 16,
-        boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
-        border: `1px solid ${C.border}`,
-        padding: '12px',
-        width: 320,
-        maxHeight: '70vh',
-        overflowY: 'auto'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          fontSize: 12,
-          fontWeight: 700,
-          color: C.t400,
-          letterSpacing: 0.5,
-          marginBottom: 8,
-          padding: '0 4px'
-        },
-        children: "NAVEGAR PARA TELA"
-      }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          marginBottom: 10
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 11,
-            fontWeight: 600,
-            color: C.t400,
-            padding: '4px 8px'
-          },
-          children: "LANDING PAGE"
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: 4
-          },
-          children: landingLinks.map(([label, url]) => /*#__PURE__*/_jsxDEV("a", {
-            href: url,
-            style: {
-              padding: '5px 10px',
-              borderRadius: 8,
-              border: `1px solid ${C.navActive || '#1C3A2A'}`,
-              background: C.navActive || '#1C3A2A',
-              fontSize: 12,
-              cursor: 'pointer',
-              fontFamily: 'inherit',
-              color: '#fff',
-              transition: 'all 0.1s',
-              textDecoration: 'none'
-            },
-            children: label
-          }, url, false))
-        }, void 0, false)]
-      }, void 0, true), groups.map(g => /*#__PURE__*/_jsxDEV("div", {
-        style: {
-          marginBottom: 10
-        },
-        children: [/*#__PURE__*/_jsxDEV("div", {
-          style: {
-            fontSize: 11,
-            fontWeight: 600,
-            color: C.t400,
-            padding: '4px 8px'
-          },
-          children: g.label.toUpperCase()
-        }, void 0, false), /*#__PURE__*/_jsxDEV("div", {
-          style: {
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: 4
-          },
-          children: g.screens.map(([id, label]) => /*#__PURE__*/_jsxDEV("button", {
-            onClick: () => {
-              onNavigate(id);
-              setOpen(false);
-            },
-            style: {
-              padding: '5px 10px',
-              borderRadius: 8,
-              border: `1px solid ${C.border}`,
-              background: C.borderLight,
-              fontSize: 12,
-              cursor: 'pointer',
-              fontFamily: 'inherit',
-              color: C.t700,
-              transition: 'all 0.1s'
-            },
-            children: label
-          }, id, false))
-        }, void 0, false)]
-      }, g.label, true))]
-    }, void 0, true), /*#__PURE__*/_jsxDEV("button", {
-      onClick: () => setOpen(!open),
-      style: {
-        width: 48,
-        height: 48,
-        borderRadius: 24,
-        background: '#111827',
-        border: 'none',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        boxShadow: '0 4px 16px rgba(0,0,0,0.25)',
-        color: '#fff',
-        fontSize: 20
-      },
-      children: open ? '×' : '☰'
-    }, void 0, false)]
-  }, void 0, true);
+    style: {
+      padding: '5px 10px',
+      borderRadius: 8,
+      border: `1px solid ${C.border}`,
+      background: C.borderLight,
+      fontSize: 12,
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      color: C.t700,
+      transition: 'all 0.1s'
+    }
+  }, label)))))), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setOpen(!open),
+    style: {
+      width: 48,
+      height: 48,
+      borderRadius: 24,
+      background: '#111827',
+      border: 'none',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      boxShadow: '0 4px 16px rgba(0,0,0,0.25)',
+      color: '#fff',
+      fontSize: 20
+    }
+  }, open ? '×' : '☰'));
 };
 const Root = () => {
   const getInitial = () => {
@@ -12758,37 +11635,33 @@ const Root = () => {
     });
   };
   const ScreenComponent = SCREEN_MAP[screen];
-  return ScreenComponent ? /*#__PURE__*/_jsxDEV(ScreenComponent, {
+  return ScreenComponent ? /*#__PURE__*/React.createElement(ScreenComponent, {
     onNavigate: navigate
-  }, void 0, false) : /*#__PURE__*/_jsxDEV("div", {
+  }) : /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       background: C.bg
-    },
-    children: /*#__PURE__*/_jsxDEV("div", {
-      style: {
-        textAlign: 'center'
-      },
-      children: [/*#__PURE__*/_jsxDEV("div", {
-        style: {
-          fontSize: 16,
-          color: C.t500,
-          marginBottom: 16
-        },
-        children: ["Tela \"", screen, "\" não encontrada"]
-      }, void 0, true), /*#__PURE__*/_jsxDEV(Btn, {
-        onClick: () => navigate('login'),
-        children: "Voltar ao início"
-      }, void 0, false)]
-    }, void 0, true)
-  }, void 0, false);
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 16,
+      color: C.t500,
+      marginBottom: 16
+    }
+  }, "Tela \"", screen, "\" não encontrada"), /*#__PURE__*/React.createElement(Btn, {
+    onClick: () => navigate('login')
+  }, "Voltar ao início")));
 };
 const rootEl = document.getElementById('root');
 const reactRoot = ReactDOM.createRoot(rootEl);
-reactRoot.render(/*#__PURE__*/_jsxDEV(Root, {}, void 0, false));
+reactRoot.render(/*#__PURE__*/React.createElement(Root, null));
 Object.assign(window, {
   Root,
   App,
@@ -12807,11 +11680,10 @@ Object.assign(window, {
     console.error('MIS: #root element not found.');
     return;
   }
-  // Fix: ensure hash-based routing
   if (!window.location.hash || window.location.hash === '#' || window.location.hash === '#feed') {
     window.location.hash = '#login';
   }
   var root = ReactDOM.createRoot(container);
   root.render(React.createElement(App));
-  console.log('MIS v1.0.0 — bundle loaded');
+  console.log('MIS v1.0.0 — bundle loaded, screen=' + window.location.hash);
 })();
